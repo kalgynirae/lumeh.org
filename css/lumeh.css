@@ -1,0 +1,219 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+/* One-time stuff */
+html {
+    background-color: #d4d4d4;
+    color: #5e5e5e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background: -webkit-linear-gradient(top, #fafafa, #fafafa 120px, #efefef 148px, #dcdcdc 600px);
+    background: linear-gradient(to bottom, #fafafa, #fafafa 120px, #efefef 148px, #dcdcdc 600px);
+    border: solid 3px white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #a0a0a0;
+    line-height: 1.3;
+    margin: 1em auto;
+    min-width: 640px;
+    max-width: 920px;
+}
+body > header {
+    background-image: url('/image/l.png'),
+                    url('/image/header-colors.png'),
+                    -webkit-linear-gradient(bottom, #eeeeee, #fafafa 2px, #f4f4f4);
+    background-image: url('/image/l.png'),
+                    url('/image/header-colors.png'),
+                    linear-gradient(to top, #eeeeee, #fafafa 2px, #f4f4f4);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: left 12px center, center right 32px;
+    border-radius: 17px;
+    color: #000000;
+    height: 118px;
+}
+body > header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 118px;
+    margin: 0;
+    margin-left: 132px;
+}
+body > nav {
+    background: -webkit-linear-gradient(top, #dadada, #e4e4e4 85%, #e0e0e0);
+    background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0);
+    color: #000000;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 -3px;
+    padding: 0 0.5rem;
+}
+body > nav li {
+    display: inline-block;
+}
+body > nav li > a {
+    color: inherit;
+    display: block;
+    font-size: 1.3em;
+    padding: 0 0.5em;
+    width: auto;
+}
+body > nav li > a:hover,
+body > nav li > a:active,
+body > nav li > a.active {
+    background-color: #fafafa;
+    text-decoration: none;
+}
+body > footer {
+    font-size: 0.85em;
+    text-align: center;
+}
+body > footer p {
+    margin-bottom: 0.5em;
+}
+section {
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 0.8rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Text stuff */
+h1, h2, h3, h4, h5, p, ul, ol, dl, pre, blockquote {
+    margin-bottom: 1rem;
+}
+h1, h2, h3, h4, h5 {
+    margin-top: 1rem;
+}
+h1 { font-size: 1.5em; font-weight: 600; }
+h2 { font-size: 1.2em; font-weight: 600; }
+h3 { font-size: 1.1em; font-weight: 600; }
+h4 { font-size: 1.0em; font-weight: bold; }
+section > h1:first-child {
+    display: none;
+}
+section > header {
+    margin-bottom: 1rem;
+}
+section > header > h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+a {
+    color: #47c3df;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a {
+    color: inherit;
+}
+code {
+    font-family: 'DejaVu Sans Mono';
+    font-size: 0.9em;
+    white-space: pre;
+}
+section blockquote,
+section code,
+section table {
+    background: #efefef;
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+}
+section blockquote,
+section pre > code {
+    display: block;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+}
+section dt {
+    float: left;
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+section ol,
+section ul {
+    list-style-position: outside;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+#TOC ul > li > ul {
+    margin-bottom: 0;
+}
+section ol { list-style-type: decimal; }
+section ul { list-style-type: disc; }
+section table {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+section td {
+    border: solid 1px #c0c0c0;
+    vertical-align: middle;
+}
+form ul {
+    display: table;
+    width: 100%;
+}
+form li {
+    display: table-row;
+}
+form li:hover {
+    background: grey;
+}
+form label,
+form span {
+    display: table-cell;
+    padding: 0.2em 0.5em;
+    vertical-align: middle;
+}
+form label {
+    border-right: 1px solid grey;
+    text-align: right;
+}
+form span {
+    text-align: left;
+}
+figcaption {
+    display: none;
+}
+img.inline {
+    vertical-align: middle;
+}
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+#welcome {
+    float: right;
+    padding-right: 0.5em;
+}
+#version {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+.notice {
+    background-color: #7caee7;
+    border-top: solid 1px #21528a;
+    border-bottom: solid 1px #21528a;
+    color: #21528a;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0.5rem 1rem;
+}
+.footnoteRef {
+    font-size: 0.7em;
+    vertical-align: super;
+}
+.footnoteRef:before { content: "["; }
+.footnoteRef:after { content: "]"; }
+
+.red    { background-color: #e36468 !important; color: inherit; }
+.orange { background-color: #f1b358 !important; color: inherit; }
+.yellow { background-color: #ebf05e !important; color: inherit; }
+.green  { background-color: #8cd05f !important; color: #35710b; }
+.blue   { background-color: #7caee7 !important; color: #21528a; }
+.purple { background-color: #db7de5 !important; color: #75237d; }

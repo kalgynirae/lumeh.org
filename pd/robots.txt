@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /blog
+Disallow: /files
+Disallow: /lymjeh
+Disallow: /wiki-old

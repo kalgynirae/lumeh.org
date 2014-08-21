@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>$pagetitle$</title>
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+  <meta name="description" content="$description-meta$">
+  <meta name="generator" content="websleydale $websleydale-version$">
+  <meta name="generator" content="pandoc">
+
+  <link rel="stylesheet" href="/css/lumeh.css">
+  <link rel="stylesheet" href="/css/print.css">
+  <link rel="stylesheet" href="/css/code.css">
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+  <link rel="icon" href="/image/favicon.ico">
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+  <header>
+    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
+  </header>
+  <nav>
+    <p id="welcome">&nbsp;</p>
+$if(menu)$
+    <ul id="navigation-menu">
+      $menu$
+    </ul>
+$endif$
+  </nav>
+$for(include-before)$
+  $include-before$
+$endfor$
+  <section id="content">
+$if(title)$
+    <header>
+      <h1 class="title">$title$</h1>
+$if(author)$
+      <span class="author">by $for(author)$$author$$sep$, $endfor$</span>
+$endif$
+$if(date)$
+      <span class="date">on $date$</span>
+$endif$
+    </header>
+$endif$
+$if(toc)$
+    <nav id="$idprefix$TOC">
+      $toc$
+    </nav>
+$endif$
+
+$body$
+
+  </section>
+$for(include-after)$
+  $include-after$
+$endfor$
+  <footer>
+    <p>
+$if(source-info)$
+      <span id="source">$source-info$</span>
+$else$
+      <span id="source">lumeh.org</span>
+$endif$
+      | Copyright 2007–2014 Colin Chan
+      | Contact: <img class=inline src="/image/admin-email.png" alt="[admin email]">
+    </p>
+  </footer>
+</body>
+</html>

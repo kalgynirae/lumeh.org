@@ -1,0 +1,11 @@
+% Café Chan
+
+## Now playing (maybe)
+
+If Café Chan is currently playing music, you can tune in here. (If you
+try to play it and nothing happens, Café Chan is probably not playing
+any music.)
+
+<audio src="http://melon.lumeh.org/stream.mp3" preload="none" controls>
+  <a href="http://melon.lumeh.org/stream.mp3" target="cafe-music-stream">http://melon.lumeh.org/stream.mp3</a>
+</audio>

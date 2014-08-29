@@ -6,8 +6,8 @@ AddType audio/x-flac flac
 Options +Indexes
 
 Redirect 301 /files/public/colin_schedule.html http://lumeh.org/colin-schedule
-Redirect 307 /colin-schedule http://lumeh.org/colin-schedule.pdf
-Redirect 307 /colin-resume http://lumeh.org/files/public/resume-20140206.pdf
+Redirect 307 /colin-schedule http://lumeh.org/schedule-20140825.pdf
+Redirect 307 /colin-resume http://lumeh.org/files/public/resume-20140829.pdf
 
 # Remove the www.
 RewriteEngine On

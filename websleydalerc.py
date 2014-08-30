@@ -9,7 +9,8 @@ rockuefort = Git("https://github.com/kalgynirae/rockuefort.git")
 routemaster = Git("https://github.com/routemaster/routemaster-frontend.git")
 subjunctive = Git("https://github.com/kalgynirae/subjunctive.git")
 think_green = Git("https://github.com/kalgynirae/thinking-green.git")
-websleydale_ = Git("https://github.com/kalgynirae/websleydale.git")
+websleydale_ = Git("https://github.com/kalgynirae/websleydale.git",
+                   checkout='test')
 
 root = directory({
     ".htaccess": htaccess["root"],

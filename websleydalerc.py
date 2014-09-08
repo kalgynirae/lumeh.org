@@ -64,6 +64,7 @@ root = directory({
             "games/capture-the-flag",
             "games/narchanso",
             "games/the-base-game",
+            "games/trebuchennis",
         ]
     }),
 })

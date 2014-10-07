@@ -38,15 +38,16 @@ root = directory({
         "%s.html" % name: pandoc(recipes["%s.pd" % name]) for name in [
             "almond_salad_dressing",
             "banana_bread",
+            "chicken_curry",
             "chili",
             "christmas_anything",
             "cookies",
             "creme_brulee_cheesecake",
-            "curry",
             "mung_bean_dal",
             "pumpkin_bread",
             "sugar_cookies",
             "sweet_potato_casserole",
+            "thai_chicken_curry",
         ]
     }),
     "projects": directory({

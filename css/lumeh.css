@@ -37,6 +37,8 @@ body > header h1 {
     line-height: 118px;
     margin: 0;
     margin-left: 132px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 body > nav {
     background: -webkit-linear-gradient(top, #dadada, #e4e4e4 85%, #e0e0e0);

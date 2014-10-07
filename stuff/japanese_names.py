@@ -11,11 +11,11 @@ def generate(fsyl,lsyl):
     f = choice(first)
     for i in range(1,fsyl):
         f += choice(other)
-    
+
     l = choice(first)
     for i in range(1,lsyl):
         l += choice(other)
-    
+
     return f + ' ' + l
 
 syllables = [[1,2],[1,3],[2,2],[2,3],[2,3],[2,4],[3,2],[3,3],[3,3],[3,4],[4,3],[4,4],[4,5]]
@@ -23,22 +23,24 @@ names = [generate(s[0],s[1]) for s in syllables]
 
 print 'Content-type: text/html; charset=UTF-8'
 print
-print """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+print """<!DOCTYPE html>
+<html lang="en-us">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Japanese name generator | lumeh.org</title>
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <meta charset="utf-8">
+  <title>Japanese name generator</title>
+  <link rel="stylesheet" href="/css/lumeh.css">
 </head>
 <body>
-  <div id="header">
-    <img alt="lumeh.org" src="./img/lumpybox.png" width="48" height="48" />
-    <h1 id="title">Japanese name generator</h1>
-    <ul id="menu">
-      <li> </li>
+  <header>
+    <h1>Japanese Name Generator</h1>
+  </header>
+  <nav>
+    <p id="welcome">&nbsp;</p>
+    <ul id="navigation-menu">
+      <li><a href="/">index</a></li>
     </ul>
-  </div>
-  <div id="body">
+  </nav>
+  <section id="content">
     <h2>Background information</h2>
     <p>I programmed this a while ago in Java and then lost it for a while. Recently, I rediscovered it among some old backed-up website stuff and converted it to Python.</p>
     <h2>How it works</h2>
@@ -51,11 +53,6 @@ for n in names:
     print '      <li>%s</li>' % n
 
 print """    </ul>
-  </div>
-  <div id="footer">
-    <span id="contact">
-      Contact: <img class="inline-text" alt="" src="./img/admin_email.png" width="106" height="11" />
-    </span>
-  </div>
+  </section>
 </body>
 </html>"""

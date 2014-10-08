@@ -34,6 +34,7 @@ root = directory({
         "index.html": pandoc(pages["cafe/index.pd"]),
     }),
     "colin/index.html": pandoc(pages["colin/index.pd"]),
+    "colin/events.html": pandoc(pages["colin/events.pd"]),
     "recipes": directory({
         "%s.html" % name: pandoc(recipes["%s.pd" % name]) for name in [
             "almond_salad_dressing",

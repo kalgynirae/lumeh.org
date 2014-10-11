@@ -58,6 +58,9 @@ root = directory({
         "think-green/index.html": pandoc(think_green["README.md"]),
         "websleydale/index.html": pandoc(websleydale_["README.md"]),
     }),
+    "tools": directory({
+        "stopwatch.html": pandoc(pages["tools/stopwatch.pd"], header=pages["tools/stopwatch.header"]),
+    }),
     "wiki": directory({
         "%s.html" % name: pandoc(pages["wiki/%s.pd" % name]) for name in [
             "dragee",
@@ -76,6 +79,7 @@ menu_ = menu([
     ("music", "/music.html"),
     ("projects", "/projects/"),
     ("recipes", "/recipes/"),
+    ("tools", "/tools/"),
     ("wiki", "/wiki/"),
     ("café", "/cafe/"),
 ])

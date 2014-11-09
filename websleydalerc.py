@@ -39,7 +39,7 @@ root = directory({
         "%s.html" % name: pandoc(recipes["%s.pd" % name]) for name in [
             "almond_salad_dressing",
             "banana_bread",
-            "chicken_curry",
+            "beef_curry",
             "chili",
             "christmas_anything",
             "cookies",

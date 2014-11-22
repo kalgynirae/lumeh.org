@@ -46,6 +46,7 @@ root = directory({
             "creme_brulee_cheesecake",
             "mung_bean_dal",
             "pumpkin_bread",
+            "quiche",
             "sugar_cookies",
             "sweet_potato_casserole",
             "thai_chicken_curry",

@@ -40,6 +40,7 @@ root = directory({
             "almond_salad_dressing",
             "banana_bread",
             "beef_curry",
+            "chana_masala",
             "chili",
             "christmas_anything",
             "cookies",

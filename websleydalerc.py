@@ -36,15 +36,17 @@ root = directory({
     "colin/index.html": pandoc(pages["colin/index.pd"]),
     "colin/events.html": pandoc(pages["colin/events.pd"]),
     "recipes": directory({
-        "%s.html" % name: pandoc(recipes["%s.pd" % name]) for name in [
+        "%s.html" % name: pandoc(recipes["%s.md" % name]) for name in [
             "almond_salad_dressing",
             "banana_bread",
             "beef_curry",
+            "calico_beans",
             "chana_masala",
             "chili",
             "christmas_anything",
             "cookies",
             "creme_brulee_cheesecake",
+            "green_bean_bundles",
             "mung_bean_dal",
             "pumpkin_bread",
             "quiche",

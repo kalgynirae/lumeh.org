@@ -30,6 +30,7 @@ root = directory({
     "boxer.html": pandoc(pages["boxer.pd"]),
     "jabberwockus.html": pandoc(pages["jabberwockus.pd"]),
     "lumeh.html": pandoc(pages["lumeh.pd"]),
+    "poetry-yay.html": pandoc(pages["poetry-yay.pd"]),
     "krypto.html": pandoc(pages["krypto.pd"], header=pages["krypto.header"]),
     "cafe": directory({
         "index.html": pandoc(pages["cafe/index.pd"]),

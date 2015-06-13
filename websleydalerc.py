@@ -2,7 +2,7 @@ from websleydale import build, copy, directory, menu, pandoc, set_defaults
 from websleydale.sources import Dir, Git
 
 local = Dir(".")
-pages = Dir("pd")
+pages = Dir("md")
 htaccess = Dir("htaccess")
 recipes = Git("https://github.com/kalgynirae/recipes.git")
 rockuefort = Git("https://github.com/kalgynirae/rockuefort.git")
@@ -24,19 +24,19 @@ root = directory({
     "favicon.ico": local["image/favicon.ico"],
 
     "robots.txt": pages["robots.txt"],
-    "404.shtml": pandoc(pages["404.pd"]),
-    "index.html": pandoc(pages["index.pd"]),
-    "music.html": pandoc(pages["music.pd"]),
-    "boxer.html": pandoc(pages["boxer.pd"]),
-    "jabberwockus.html": pandoc(pages["jabberwockus.pd"]),
-    "lumeh.html": pandoc(pages["lumeh.pd"]),
-    "poetry-yay.html": pandoc(pages["poetry-yay.pd"]),
-    "krypto.html": pandoc(pages["krypto.pd"], header=pages["krypto.header"]),
+    "404.shtml": pandoc(pages["404.md"]),
+    "index.html": pandoc(pages["index.md"]),
+    "music.html": pandoc(pages["music.md"]),
+    "boxer.html": pandoc(pages["boxer.md"]),
+    "jabberwockus.html": pandoc(pages["jabberwockus.md"]),
+    "lumeh.html": pandoc(pages["lumeh.md"]),
+    "poetry-yay.html": pandoc(pages["poetry-yay.md"]),
+    "krypto.html": pandoc(pages["krypto.md"], header=pages["krypto.header"]),
     "cafe": directory({
-        "index.html": pandoc(pages["cafe/index.pd"]),
+        "index.html": pandoc(pages["cafe/index.md"]),
     }),
-    "colin/index.html": pandoc(pages["colin/index.pd"]),
-    "colin/events.html": pandoc(pages["colin/events.pd"]),
+    "colin/index.html": pandoc(pages["colin/index.md"]),
+    "colin/events.html": pandoc(pages["colin/events.md"]),
     "recipes": directory({
         "%s.html" % name: pandoc(recipes["%s.md" % name]) for name in [
             "almond_salad_dressing",
@@ -67,10 +67,10 @@ root = directory({
         "websleydale/index.html": pandoc(websleydale_["README.md"]),
     }),
     "tools": directory({
-        "stopwatch.html": pandoc(pages["tools/stopwatch.pd"], header=pages["tools/stopwatch.header"]),
+        "stopwatch.html": pandoc(pages["tools/stopwatch.md"], header=pages["tools/stopwatch.header"]),
     }),
     "wiki": directory({
-        "%s.html" % name: pandoc(pages["wiki/%s.pd" % name]) for name in [
+        "%s.html" % name: pandoc(pages["wiki/%s.md" % name]) for name in [
             "dragee",
             "early-twenty-first-century",
             "the-caring-continuum",

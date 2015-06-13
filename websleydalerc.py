@@ -74,6 +74,7 @@ root = directory({
             "dragee",
             "early-twenty-first-century",
             "the-caring-continuum",
+            "thestruggle",
             "games/capture-the-flag",
             "games/narchanso",
             "games/the-base-game",

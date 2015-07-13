@@ -4,6 +4,7 @@ from websleydale.sources import Dir, Git
 local = Dir(".")
 pages = Dir("md")
 htaccess = Dir("htaccess")
+pchyme = Git("https://github.com/kalgynirae/pchyme.git")
 recipes = Git("https://github.com/kalgynirae/recipes.git")
 rockuefort = Git("https://github.com/kalgynirae/rockuefort.git")
 routemaster = Git("https://github.com/routemaster/routemaster-frontend.git")
@@ -60,6 +61,7 @@ root = directory({
         ]
     }),
     "projects": directory({
+        "pchyme/index.html": pandoc(pchyme["README.md"]),
         "rockuefort/index.html": pandoc(rockuefort["README.md"]),
         "routemaster/index.html": pandoc(routemaster["README.md"], toc=True),
         "subjunctive/index.html": pandoc(subjunctive["README.md"]),

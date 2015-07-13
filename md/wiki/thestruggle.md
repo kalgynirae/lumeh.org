@@ -24,3 +24,6 @@ appearances are noted in the list below.
 * IKEA Pusheen
 * Sombrero Pusheen
 * Mischievous, plotting Pusheen
+* Awkward Pusheen
+* Chocolate Pusheen
+* Bicycle Pusheen

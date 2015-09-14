@@ -45,6 +45,7 @@ root = directory({
             "beef_curry",
             "calico_beans",
             "chana_masala",
+            "chicken_curry",
             "chili",
             "christmas_anything",
             "cookies",
@@ -58,6 +59,7 @@ root = directory({
             "sugar_cookies",
             "sweet_potato_casserole",
             "thai_chicken_curry",
+            "tuesday_krishna",
         ]
     }),
     "projects": directory({

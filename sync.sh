@@ -22,4 +22,4 @@ rsync \
     --exclude colin-schedule.pdf \
     --exclude japanese_names.py \
     out/ \
-    chanspac@host207.hostmonster.com:\~/public_html/lumeh/
+    lemon:/srv/http/lumeh.org/

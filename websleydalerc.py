@@ -25,7 +25,6 @@ root = directory({
     "favicon.ico": local["image/favicon.ico"],
 
     "robots.txt": pages["robots.txt"],
-    "404.shtml": pandoc(pages["404.md"]),
     "index.html": pandoc(pages["index.md"]),
     "music.html": pandoc(pages["music.md"]),
     "boxer.html": pandoc(pages["boxer.md"]),
@@ -38,6 +37,11 @@ root = directory({
     }),
     "colin/index.html": pandoc(pages["colin/index.md"]),
     "colin/events.html": pandoc(pages["colin/events.md"]),
+    "error": directory({
+        "%s.html" % name: pandoc(pages["error/%s.md" % name]) for name in [
+            "404",
+        ]
+    }),
     "recipes": directory({
         "%s.html" % name: pandoc(recipes["%s.md" % name]) for name in [
             "almond_salad_dressing",

@@ -72,11 +72,23 @@ body > footer {
 body > footer p {
     margin-bottom: 0.5em;
 }
-section {
+body > article,
+body > section {
     background-color: #fafafa;
     border-radius: 10px;
     margin: 0.8rem 1rem;
     padding: 0.5rem 1rem;
+}
+article section,
+section section {
+    background: #efefef;
+    border-top: solid 1px #e0e0e0;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+}
+article article,
+section article {
+    border-top: solid 1px #e0e0e0;
 }
 
 /* Text stuff */
@@ -90,12 +102,16 @@ h1 { font-size: 1.5em; font-weight: 600; }
 h2 { font-size: 1.2em; font-weight: 600; }
 h3 { font-size: 1.1em; font-weight: 600; }
 h4 { font-size: 1.0em; font-weight: bold; }
-section > h1:first-child {
+article > h1:first-child,
+section > h1:first-child
+{
     display: none;
 }
+article > header,
 section > header {
     margin-bottom: 1rem;
 }
+article > header > h1,
 section > header > h1 {
     font-size: 1.7em;
     font-weight: bold;
@@ -117,6 +133,9 @@ code {
     font-size: 0.9em;
     white-space: pre;
 }
+article blockquote,
+article code,
+article table,
 section blockquote,
 section code,
 section table {
@@ -124,17 +143,22 @@ section table {
     border-top: solid 1px #e0e0e0;
     border-bottom: solid 1px #e0e0e0;
 }
+article blockquote,
+article pre > code,
 section blockquote,
 section pre > code {
     display: block;
     margin: 0 -1rem;
     padding: 0 1rem;
 }
+article dt,
 section dt {
     float: left;
     font-weight: 600;
     margin-right: 0.5em;
 }
+article ol,
+article ul,
 section ol,
 section ul {
     list-style-position: outside;
@@ -144,13 +168,21 @@ section ul {
 #TOC ul > li > ul {
     margin-bottom: 0;
 }
-section ol { list-style-type: decimal; }
-section ul { list-style-type: disc; }
+article ol,
+section ol {
+    list-style-type: decimal;
+}
+article ul,
+section ul {
+    list-style-type: disc;
+}
+article table,
 section table {
     border-collapse: collapse;
     margin: 0;
     width: 100%;
 }
+article td,
 section td {
     border: solid 1px #c0c0c0;
     vertical-align: middle;

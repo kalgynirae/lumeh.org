@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /blog
 Disallow: /cafe
 Disallow: /files
-Disallow: /lymjeh

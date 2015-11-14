@@ -19,6 +19,7 @@ root = directory({
     "files/public/.htaccess": htaccess["files_public"],
 
     "css": local["css"],
+    "docs": local["docs"],
     "font": local["font"],
     "image": local["image"],
     "media": local["media"],
@@ -36,7 +37,6 @@ root = directory({
         "index.html": pandoc(pages["cafe/index.md"]),
     }),
     "colin/index.html": pandoc(pages["colin/index.md"]),
-    "colin/events.html": pandoc(pages["colin/events.md"]),
     "error": directory({
         "%s.html" % name: pandoc(pages["error/%s.md" % name]) for name in [
             "404",

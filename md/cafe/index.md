@@ -11,10 +11,10 @@ playing any music.)
   <a href="http://cafe.lumeh.org/" target="cafe-music-stream">music stream</a>
 </audio>
 
-### Current song
-
 <p><em id="song-artist">&nbsp;</em> – <em id="song-title">&nbsp;</em>
+(<span id="song-current-time">&nbsp;</span>/<span id="song-length">&nbsp;</span>)
 <br>from <em id="song-album">&nbsp;</em></p>
+<p>Up next: <em id="next-title">&nbsp;</em></p>
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script>
@@ -24,11 +24,16 @@ $(document).ready(function() {
    url: "http://cafe.lumeh.org:61321/",
    cache: false,
    dataType: "json"
-  }).done(function(song) {
-   $("title").text(song.title + " – " + song.artist);
-   $("#song-title").text(song.title);
-   $("#song-artist").text(song.artist);
-   $("#song-album").text(song.album);
+  }).done(function(data) {
+   $("title").text(data.title + " – " + data.artist);
+   $("#song-title").text(data.title);
+   $("#song-artist").text(data.artist);
+   $("#song-album").text(data.album);
+   $("#song-current-time").fadeTo(200, 0, function() {
+    $("#song-current-time").text(data.current_time).fadeTo(150, 1);
+   });
+   $("#song-length").text(data.length);
+   $("#next-title").text(data.next_title);
   });
  };
  update();

@@ -22,6 +22,7 @@ root = directory({
     "docs": local["docs"],
     "font": local["font"],
     "image": local["image"],
+    "js": local["js"],
     "media": local["media"],
     "favicon.ico": local["image/favicon.ico"],
 

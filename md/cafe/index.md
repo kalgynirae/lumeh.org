@@ -16,7 +16,7 @@ playing any music.)
 <br>from <em id="song-album">&nbsp;</em></p>
 <p>Up next: <em id="next-title">&nbsp;</em></p>
 
-<script src="/jquery-2.1.4.min.js"></script>
+<script src="/js/jquery-2.1.4.min.js"></script>
 <script>
 $(document).ready(function() {
  var update = function() {

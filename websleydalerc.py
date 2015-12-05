@@ -94,7 +94,7 @@ root = directory({
 
 menu_ = menu([
     ("index", "/"),
-    ("blog", "//blog.lumeh.org/"),
+    ("blog", "http://blog.lumeh.org/"),
     ("music", "/music.html"),
     ("projects", "/projects/"),
     ("recipes", "/recipes/"),

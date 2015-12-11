@@ -21,7 +21,7 @@ playing any music.)
 $(document).ready(function() {
  var update = function() {
   $.ajax({
-   url: "http://cafe.lumeh.org:61321/",
+   url: "https://cafe.lumeh.org:61321/",
    cache: false,
    dataType: "json"
   }).done(function(data) {

@@ -4,6 +4,11 @@ I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
 [SoundCloud page] and a [YouTube channel], although the latter is quite empty
 currently.
 
+<p class="notice">
+This page is fairly out-of-date, but I hope to rectify that soon! In the
+meantime, please visit my [SoundCloud page] instead.
+</p>
+
 Unless otherwise specified, these music tracks are licensed under a
 <a rel="license"
   href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative

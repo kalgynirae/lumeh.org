@@ -22,4 +22,4 @@ rsync \
     --exclude colin-schedule.pdf \
     --exclude japanese_names.py \
     out/ \
-    lemon:/srv/http/lumeh.org/
+    lemon.lumeh.org:/srv/http/lumeh.org/

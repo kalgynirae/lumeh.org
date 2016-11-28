@@ -21,10 +21,12 @@ root = directory({
     "css": local["css"],
     "docs": local["docs"],
     "font": local["font"],
+    "guess": local["guess"],
     "image": local["image"],
     "js": local["js"],
     "media": local["media"],
     "favicon.ico": local["image/favicon.ico"],
+    "japanese_names.py": local["japanese_names.py"],
 
     "robots.txt": pages["robots.txt"],
     "index.html": pandoc(pages["index.md"]),

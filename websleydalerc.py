@@ -52,6 +52,7 @@ root = directory({
             "beef_curry",
             "calico_beans",
             "chana_masala",
+            "chana_masala_with_spice_kit",
             "chicken_curry",
             "chili",
             "christmas_anything",

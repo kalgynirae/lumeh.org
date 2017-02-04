@@ -4,11 +4,6 @@ I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
 [SoundCloud page] and a [YouTube channel], although the latter is quite empty
 currently.
 
-<p class="notice">
-This page is fairly out-of-date, but I hope to rectify that soon! In the
-meantime, please visit my [SoundCloud page] instead.
-</p>
-
 Unless otherwise specified, these music tracks are licensed under a
 <a rel="license"
   href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative
@@ -24,14 +19,104 @@ very bottom of any page on this site).
 
 # Recommended listening
 
-*   *Mountains In Space* (2012)
-*   *Recycling Is Fun* (2012)
-*   *Christmas In July* (2011)
-*   *Walkin' Lucas (He's a Fish)* (2011)
+[Good Stuff] is a ~30 minute playlist of what I consider to be my best work. If
+you're short on time, just listen to the first two or three.
 
 # The music
 
+## 2016
+
+*   *Storm in the Valley* – August 2016
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w1QXSNBtV1w" frameborder="0" allowfullscreen></iframe>
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Storm in the Valley.ogg">
+    </audio>
+
+    Based on the Gerudo Valley theme from Ocarina of Time. See the description
+    of the YouTube video for more information.
+
+*   *Ligatures in Space* – January 2016
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Ligatures in Space.mp3">
+    </audio>
+
+## 2015
+
+*   *Battle in the Cathedral (Remastered)* – October 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg">
+    </audio>
+
+    I made the original *Battle in the Cathedral* using [LMMS](https://lmms.io/)
+    instead of FL Studio, but I was never quite happy with how the final mix
+    turned out. So I exported the individual instrument tracks and mixed them
+    again in FL Studio, yielding this.
+
+*   *Windmills... in Space!* – February 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Windmills... in Space!.ogg">
+    </audio>
+
+*   *It's from a Davideo Game* – February 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - It's from a Davideo Game.ogg">
+    </audio>
+
+*   *Shearing the End* – February 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Shearing the End.ogg">
+    </audio>
+
+*   *Three Instruments* – January 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Three Instruments.ogg">
+    </audio>
+
+    https://imgur.com/6gzSeVe
+
+*   *Battle in the Cathedral* – January 2015
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Battle in the Cathedral.ogg">
+    </audio>
+
+## 2014
+
+*   *You're a Hero (Instrumental)* – January 2014  
+    for Whosical the Musical at SwampCon 2014.
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - You're a Hero (Instrumental).mp3">
+    </audio>
+
+    They didn't end up using this one, though.
+
+*   *Capes and Crepes (Instrumental)* – January 2014  
+    for Whosical the Musical at SwampCon 2014.
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3">
+    </audio>
+
+    This was a very silly song about heros liking breakfast food. I was given
+    the lyrics and then wrote this.
+
 ## 2013
+
+*   *Food Cart* – July 2013
+    for [Mideast Sidearm Hideaway].
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Food Cart.ogg">
+    </audio>
 
 *   *Gravitational Conflict* – July 2013  
     for [Mideast Sidearm Hideaway].
@@ -475,6 +560,7 @@ very bottom of any page on this site).
 
 [SoundCloud page]: http://soundcloud.com/synthmaster-lumpy
 [YouTube channel]: http://www.youtube.com/user/Kalgynirae
+[Good Stuff]: https://soundcloud.com/synthmaster-lumpy/sets/good-stuff
 [Minecraft Space Mountain video]: http://www.youtube.com/watch?v=aX-9yozuIQI
 [Mideast Sidearm Hideaway]: https://github.com/ufgmg/mideast-sidearm-hideaway
 [Think Green]: /projects/think-green

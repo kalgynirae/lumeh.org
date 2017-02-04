@@ -3,12 +3,20 @@
 This is [Colin Chan](/colin)'s personal website.
 
 <p class="notice">
-This website is <del>currently</del> <ins>always</ins> under construction.
+This website is <del>currently</del> <ins>always</ins> under construction. If
+you find anything that seems broken, you can let me know by emailing the admin
+address found in the footer.
 </p>
 
 # Features
 
 ## Serious things
+
+*   [music I've written](/music.html)
+*   [my GitHub profile](https://github.com/kalgynirae/)
+*   [my recipes](/recipes/)
+
+## Semi-Serious things
 
 *   [NarChanSo Ball](/wiki/games/narchanso.html)
 *   [Krypto generator](/krypto.html)
@@ -22,8 +30,3 @@ This website is <del>currently</del> <ins>always</ins> under construction.
 *   [Lumeh, God of Light Bulbs](/lumeh.html)
 *   [Poetry Yay](/poetry-yay.html)
 *   [Shoot the boxer](/boxer.html)
-
-# Embedded social media widgets (for science!)
-
-<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/kalgynirae" data-widget-id="350356380890324992">Tweets by @kalgynirae</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

@@ -45,7 +45,7 @@ root = directory({
             "404",
         ]
     }),
-    "recipes": directory({
+    "recipes": directory(dirlist="Recipes", tree={
         "%s.html" % name: pandoc(recipes["%s.md" % name]) for name in [
             "almond_salad_dressing",
             "banana_bread",
@@ -71,7 +71,7 @@ root = directory({
             "tuesday_krishna",
         ]
     }),
-    "projects": directory({
+    "projects": directory(dirlist="Projects", tree={
         "pchyme/index.html": pandoc(pchyme["README.md"]),
         "rockuefort/index.html": pandoc(rockuefort["README.md"]),
         "routemaster/index.html": pandoc(routemaster["README.md"], toc=True),
@@ -79,10 +79,10 @@ root = directory({
         "think-green/index.html": pandoc(think_green["README.md"]),
         "websleydale/index.html": pandoc(websleydale_["README.md"]),
     }),
-    "tools": directory({
+    "tools": directory(dirlist="Tools", tree={
         "stopwatch.html": pandoc(pages["tools/stopwatch.md"], header=pages["tools/stopwatch.header"]),
     }),
-    "wiki": directory({
+    "wiki": directory(dirlist="Wiki", tree={
         "%s.html" % name: pandoc(pages["wiki/%s.md" % name]) for name in [
             "dragee",
             "early-twenty-first-century",
@@ -115,6 +115,8 @@ menu_ = menu([
 set_defaults(
     menu=menu_,
     template=local["templates/lumeh.html"],
+    header_template=local["templates/header.html"],
+    footer_template=local["templates/footer.html"],
 )
 
 build("out", root)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>$pagetitle$</title>
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+  <meta name="description" content="$description-meta$">
+  <meta name="generator" content="websleydale $websleydale-version$">
+  <meta name="generator" content="pandoc">
+
+  <link rel="stylesheet" href="/css/lumeh.css">
+  <link rel="stylesheet" href="/css/print.css">
+  <link rel="stylesheet" href="/css/code.css">
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+  <link rel="icon" href="/image/l.png" sizes="108x108">
+  <link rel="icon" href="/image/favicon.ico">
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+  <header>
+    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
+  </header>
+  <nav>
+    <p id="welcome">&nbsp;</p>
+$if(menu)$
+    <ul id="navigation-menu">
+      $menu$
+    </ul>
+$endif$
+  </nav>
+  <section id="content">

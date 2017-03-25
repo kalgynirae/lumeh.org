@@ -119,7 +119,7 @@ section > header > h1 {
     margin-top: 0;
 }
 a {
-    color: #47c3df;
+    color: #35aac4;
     text-decoration: none;
 }
 a:hover, a:active {
@@ -179,13 +179,21 @@ section ul {
 article table,
 section table {
     border-collapse: collapse;
+    font-size: 0.85em;
     margin: 0;
     width: 100%;
 }
 article td,
-section td {
-    border: solid 1px #c0c0c0;
+article th,
+section td,
+section th {
+    border: solid 1px #e0e0e0;
+    padding: 0.2rem;
     vertical-align: middle;
+}
+article tr:nth-child(odd),
+section tr:nth-child(odd) {
+    background-color: #f8f8f8;
 }
 form ul {
     display: table;

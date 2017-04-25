@@ -24,6 +24,22 @@ you're short on time, just listen to the first two or three.
 
 # The music
 
+## 2017
+
+*   *Swimming in Circles* – April 2017
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Swimming in Circles.ogg">
+    </audio>
+
+    The soundtrack for
+    [Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
+    I made for Ludum Dare 38.  I wrote this in about two hours, and then spent
+    an additional 20 minutes after the submission deadline adding an actual
+    ending and cleaning things up very slightly.  I'm pretty happy with how it
+    turned out given the time limit, but I don't think it's as good as my other
+    recent tracks.
+
 ## 2016
 
 *   *Storm in the Valley* – August 2016

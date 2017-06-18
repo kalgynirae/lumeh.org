@@ -2,7 +2,7 @@
 
 Programmed by Colin Chan <span id="hours">many</span> hours ago.
 
-<table>
+<table id="krypto-table">
   <tr id="goal">
    <td colspan="5">&nbsp;</td>
   </tr>
@@ -14,4 +14,4 @@ Programmed by Colin Chan <span id="hours">many</span> hours ago.
    <td>&nbsp;</td>
   </tr>
 </table>
-<button onclick="generate_krypto_numbers()">Generate</button>
+<button id="krypto-button" onclick="generate_krypto_numbers()">Generate</button>

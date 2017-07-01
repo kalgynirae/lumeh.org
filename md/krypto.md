@@ -1,6 +1,6 @@
 % Krypto Generator
 
-Programmed by Colin Chan <span id="hours">many</span> hours ago.
+Programmed by Colin <span id="hours">many</span> hours ago.
 
 <table id="krypto-table">
   <tr id="goal">

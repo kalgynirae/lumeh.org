@@ -1,121 +1,148 @@
 <style>
-#controls, #time {text-align: center;}
-#time {color: #000000; font-size: 16em; font-weight: bold; line-height: 0.8em;}
-#controls button {font-size: 1.5em; font-weight: bold; line-height: 2em;}
-#controls button:disabled {color: inherit;}
-#start {color: #35710b;}
-#reset {color: #75237d;}
-#toggle-options {cursor: pointer;}
-#options {display: none;}
-label.radio {margin-right: .5em;}
+#time {
+  text-align: center;
+}
+#time {
+  color: #000000;
+  font-size: 16em;
+  font-weight: bold;
+  line-height: 0.85em;
+}
+#controls, #options {
+  align-items: baseline;
+  display: flex;
+  justify-content: center;
+}
+#controls button {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2em;
+  width: 5em;
+}
+#controls button:disabled {
+  color: inherit;
+}
+#start {
+  color: #35710b;
+}
+#reset {
+  color: #75237d;
+}
+#options p {
+  margin: 0.5rem;
+}
+#options input[type=radio] {
+  margin-left: .5em;
+}
 </style>
 
 <script>
-var direction = 'up';
-var initial_time = 0;
-var start_time = 0;
-var pause_time = 0;
-var timer;
+(function () {
+  var direction = 'up';
+  var initialTime = 0;
+  var startTime = 0;
+  var pauseTime = 0;
+  var timer;
 
-function set_options() {
-    var start_minutes = parseInt(document.getElementById('start-minutes').value);
-    var start_seconds = parseInt(document.getElementById('start-seconds').value);
-    initial_time = ((isNaN(start_minutes) ? 0 : start_minutes) * 60 + (isNaN(start_seconds) ? 0 : start_seconds)) * 1000;
-    direction = document.getElementById('direction-up').checked ? 'up' : 'down';
-    stopwatch_reset();
-}
-
-function toggle_options() {
-    document.getElementById('options').style.display = (document.getElementById('options').style.display == 'block') ? 'none' : 'block';
-}
-
-function toggle_state(state) {
+  function toggleState(state) {
     switch (state) {
-        case 'paused': // change to paused state
-            document.getElementById('start').disabled = false;
-            document.getElementById('start').className = '';
-            document.getElementById('pause').disabled = true;
-            document.getElementById('pause').className = 'disabled';
+      case 'paused': {
+        document.getElementById('start').disabled = false;
+        document.getElementById('start').className = '';
+        document.getElementById('pause').disabled = true;
+        document.getElementById('pause').className = 'disabled';
+        document.getElementById('start-minutes').disabled = false;
+        document.getElementById('start-seconds').disabled = false;
+        document.getElementById('direction-up').disabled = false;
+        document.getElementById('direction-down').disabled = false;
         break;
-        case 'running': // change to running state
-            document.getElementById('start').disabled = true;
-            document.getElementById('start').className = 'disabled';
-            document.getElementById('pause').disabled = false;
-            document.getElementById('pause').className = '';
+      }
+      case 'running': {
+        document.getElementById('start').disabled = true;
+        document.getElementById('start').className = 'disabled';
+        document.getElementById('pause').disabled = false;
+        document.getElementById('pause').className = '';
+        document.getElementById('start-minutes').disabled = true;
+        document.getElementById('start-seconds').disabled = true;
+        document.getElementById('direction-up').disabled = true;
+        document.getElementById('direction-down').disabled = true;
         break;
+      }
     }
-}
+  }
 
-function stopwatch_update(time) {
+  function stopwatchUpdate(time) {
     // Assuming time is in milliseconds,
-    var hours   = Math.floor(time / 1000 / 60 / 60);
-    var minutes = Math.floor(time / 1000 / 60 - (hours * 60));
-    var seconds = Math.floor(time / 1000 - (hours * 60 * 60) - (minutes * 60));
-    var tenths  = Math.floor(time / 100 - (hours * 60 * 60 * 10) - (minutes * 60 * 10) - (seconds * 10));
+    const hours   = Math.floor(time / 1000 / 60 / 60);
+    const minutes = Math.floor(time / 1000 / 60 - (hours * 60));
+    const seconds = Math.floor(time / 1000 - (hours * 60 * 60) - (minutes * 60));
+    const tenths  = Math.floor(time / 100 - (hours * 60 * 60 * 10) - (minutes * 60 * 10) - (seconds * 10));
 
-    var html = ((hours > 0) ? hours + 'h<br />' : '') + minutes + ':' + ((seconds < 10) ? '0' : '') + seconds + '.' + tenths;
+    const html = ((hours > 0) ? hours + 'h<br />' : '') + minutes + ':' + ((seconds < 10) ? '0' : '') + seconds + '.' + tenths;
     document.getElementById('time').innerHTML = html;
-}
+  }
 
-function stopwatch_start() {
-    start_time = new Date().getTime();
-    stopwatch_check();
-    toggle_state('running');
-}
+  function stopwatchStart() {
+    startTime = Date.now();
+    stopwatchCheck();
+    toggleState('running');
+  }
 
-function stopwatch_check() {
-    timer = setTimeout('stopwatch_check()', 40);
+  function stopwatchCheck() {
+    timer = window.requestAnimationFrame(stopwatchCheck);
     switch (direction) {
-        case 'up':
-            var time = new Date().getTime() - start_time + initial_time + pause_time;
-            stopwatch_update(time);
+      case 'up': {
+        const time = Date.now() - startTime + initialTime + pauseTime;
+        stopwatchUpdate(time);
         break;
-        case 'down':
-            var time = initial_time - (new Date().getTime() - start_time + pause_time);
-            if (time <= 0) {
-                stopwatch_update(0);
-                alert('Time\'s up!');
-                stopwatch_reset();
-            }
-            else {
-                stopwatch_update(time);
-            }
+      }
+      case 'down': {
+        const time = Math.max(0, initialTime - (Date.now() - startTime + pauseTime));
+        stopwatchUpdate(time);
+        if (time == 0) {
+          alert("Time's up!");
+          stopwatchReset();
+        }
         break;
+      }
     }
-}
+  }
 
-function stopwatch_pause() {
-    pause_time = (new Date().getTime() - start_time) + pause_time;
-    clearTimeout(timer);
-    toggle_state('paused');
-}
+  function stopwatchPause() {
+    pauseTime = (Date.now() - startTime) + pauseTime;
+    window.cancelAnimationFrame(timer);
+    toggleState('paused');
+  }
 
-function stopwatch_reset() {
-    stopwatch_pause();
-    start_time = 0;
-    pause_time = 0;
-    stopwatch_update(initial_time);
-}
+  function stopwatchReset() {
+    stopwatchPause();
+    startTime = 0;
+    pauseTime = 0;
+    direction = document.getElementById('direction-up').checked ? 'up' : 'down';
+    const startMinutes = +document.getElementById('start-minutes').value || 0;
+    const startSeconds = +document.getElementById('start-seconds').value || 0;
+    initialTime = (startMinutes * 60 + startSeconds) * 1000;
+    stopwatchUpdate(initialTime);
+  }
 
-function update_hours() {
-    var programmed_date = 1213655000000;
-    var time_since = Math.round((new Date().getTime() - programmed_date) / 3600000);
-    document.getElementById('programmed-hours').innerHTML = time_since;
-}
+  function stopwatchInitialize() {
+    stopwatchReset();
+    document.getElementById('start').addEventListener('click', stopwatchStart);
+    document.getElementById('pause').addEventListener('click', stopwatchPause);
+    document.getElementById('reset').addEventListener('click', stopwatchReset);
+    document.getElementById('start-minutes').addEventListener('input', stopwatchReset);
+    document.getElementById('start-seconds').addEventListener('input', stopwatchReset);
+    document.getElementById('direction-up').addEventListener('change', stopwatchReset);
+    document.getElementById('direction-down').addEventListener('change', stopwatchReset);
+  };
 
-function stopwatch_initialize() {
-    update_hours();
-    document.getElementById("start").onclick = stopwatch_start;
-    document.getElementById("pause").onclick = stopwatch_pause;
-    document.getElementById("reset").onclick = stopwatch_reset;
-    document.getElementById("toggle-options").onclick = toggle_options;
-    document.getElementById("set-options").onclick = set_options;
-};
+  function updateHours() {
+    const programmedDate = 1213655000000;
+    const timeSince = Math.round((Date.now() - programmedDate) / 3600000);
+    document.getElementById('programmed-hours').innerHTML = timeSince;
+  }
 
-if (/complete|loaded|interactive/.test(document.readyState)) {
-    stopwatch_initialize();
-}
-else {
-    document.addEventListener('DOMContentLoaded', stopwatch_initialize, false);
-}
+  document.addEventListener('DOMContentLoaded', stopwatchInitialize);
+  document.addEventListener('DOMContentLoaded', updateHours);
+})();
 </script>

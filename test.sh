@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cd out && python -m http.server
+cd out && python3 -m http.server

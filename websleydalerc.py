@@ -50,6 +50,7 @@ root = directory({
             "almond_salad_dressing",
             "banana_bread",
             "beef_curry",
+            "bettys_chili",
             "calico_beans",
             "chana_masala",
             "chana_masala_with_spice_kit",

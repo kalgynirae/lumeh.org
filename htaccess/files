@@ -1,4 +1,0 @@
-AuthUserFile /home1/chanspac/lumehorg-users
-AuthName lumeh.org
-AuthType Basic
-require valid-user

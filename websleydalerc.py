@@ -3,7 +3,6 @@ from websleydale.sources import Dir, Git
 
 local = Dir(".")
 pages = Dir("md")
-htaccess = Dir("htaccess")
 pchyme = Git("https://github.com/kalgynirae/pchyme.git")
 recipes = Git("https://github.com/kalgynirae/recipes.git")
 rockuefort = Git("https://github.com/kalgynirae/rockuefort.git")
@@ -14,10 +13,6 @@ websleydale_ = Git("https://github.com/kalgynirae/websleydale.git",
                    checkout='test')
 
 root = directory({
-    ".htaccess": htaccess["root"],
-    "files/.htaccess": htaccess["files"],
-    "files/public/.htaccess": htaccess["files_public"],
-
     "css": local["css"],
     "docs": local["docs"],
     "font": local["font"],

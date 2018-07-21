@@ -70,12 +70,12 @@ root = directory({
         ]
     }),
     "projects": directory(dirlist="Projects", tree={
-        "pchyme/index.html": pandoc(pchyme["README.md"]),
-        "rockuefort/index.html": pandoc(rockuefort["README.md"]),
-        "routemaster/index.html": pandoc(routemaster["README.md"], toc=True),
-        "subjunctive/index.html": pandoc(subjunctive["README.md"]),
-        "think-green/index.html": pandoc(think_green["README.md"]),
-        "websleydale/index.html": pandoc(websleydale_["README.md"]),
+        "pchyme/index.html": pandoc(pchyme["README.md"], title="pchyme"),
+        "rockuefort/index.html": pandoc(rockuefort["README.md"], title="rockuefort"),
+        "routemaster/index.html": pandoc(routemaster["README.md"], title="routemaster", toc=True),
+        "subjunctive/index.html": pandoc(subjunctive["README.md"], title="subjunctive"),
+        "think-green/index.html": pandoc(think_green["README.md"], title="think-green"),
+        "websleydale/index.html": pandoc(websleydale_["README.md"], title="websleydale"),
     }),
     "tools": directory(dirlist="Tools", tree={
         "stopwatch.html": pandoc(pages["tools/stopwatch.md"], header=pages["tools/stopwatch.header"]),

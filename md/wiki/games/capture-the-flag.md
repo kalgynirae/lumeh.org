@@ -1,4 +1,4 @@
-OFFICIAL THE LUMPY'S WEB RULES FOR
+% OFFICIAL THE LUMPY'S WEB RULES FOR CAPTURE THE FLAG
 
       **********************
      ****/________________\****

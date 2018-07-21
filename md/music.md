@@ -24,9 +24,26 @@ you're short on time, just listen to the first two or three.
 
 # The music
 
+## 2018
+
+*   *Glimmering Pavement* – February 2018
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7F4IYSzUPmQ" frameborder="0" allowfullscreen></iframe>
+
+    <audio controls="controls" preload="none">
+      <source src="/music/files/Synthmaster Lumpy - Glimmering Pavement.ogg">
+    </audio>
+
+    I started writing this on my phone during the bus rides home from work, and
+    then moved to my usual computer workflow after I had a few ideas.  In lieu
+    of a better animation, I've just done a screen capture of the playlist in FL
+    Studio.
+
 ## 2017
 
 *   *Swimming in Circles* – April 2017
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6lmSJVmlT4o" frameborder="0" allowfullscreen></iframe>
 
     <audio controls="controls" preload="none">
       <source src="/music/files/Synthmaster Lumpy - Swimming in Circles.ogg">

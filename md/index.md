@@ -25,7 +25,6 @@ address found in the footer.
 
 ## Silly things
 
-*   [Japanese name generator](/japanese_names.py)
 *   [Jabberwockus](/jabberwockus.html)
 *   [Lumeh, God of Light Bulbs](/lumeh.html)
 *   [Poetry Yay](/poetry-yay.html)

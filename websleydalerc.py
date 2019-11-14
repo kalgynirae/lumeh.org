@@ -42,6 +42,8 @@ root = directory({
     "recipes": directory(dirlist="Recipes", tree={
         "%s.html" % name: pandoc(recipes["%s.md" % name]) for name in [
             "almond_salad_dressing",
+            "apple_cider",
+            "apple_crisp",
             "asparagus_mushroom_soup",
             "banana_bread",
             "beef_curry",
@@ -54,18 +56,18 @@ root = directory({
             "chili",
             "christmas_anything",
             "cookies",
+            "cottage_pie",
             "creme_brulee_cheesecake",
+            "first_watch_seasoning",
             "green_bean_bundles",
             "mac_and_cheese",
             "monday_krishna_dal",
-            "mung_bean_dal",
+            "popovers",
             "pumpkin_bread",
             "quiche",
-            "spinach",
             "sugar_cookies",
             "sweet_potato_casserole",
             "thai_chicken_curry",
-            "tuesday_krishna",
         ]
     }),
     "projects": directory(dirlist="Projects", tree={

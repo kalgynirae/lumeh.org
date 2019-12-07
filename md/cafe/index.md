@@ -7,8 +7,8 @@ play it and nothing happens after a while (~15 seconds), and you refresh the
 page and try again and still nothing happens, then Café Chan is probably not
 playing any music.)
 
-<audio src="http://cafe.lumeh.org/" preload="none" controls>
-  <a href="http://cafe.lumeh.org/" target="cafe-music-stream">music stream</a>
+<audio src="https://radio.lumeh.org/café.ogg" preload="none" controls>
+  <a href="https://radio.lumeh.org/café.ogg" target="cafe-music-stream">music stream</a>
 </audio>
 
 <p><em id="song-artist">&nbsp;</em> – <em id="song-title">&nbsp;</em>

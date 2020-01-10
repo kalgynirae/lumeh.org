@@ -1,14 +1,14 @@
 % Café Chan
 
-## Now playing (maybe)
+## Now playing
 
 If Café Chan is currently playing music, you can tune in here. (If you try to
-play it and nothing happens after a while (~15 seconds), and you refresh the
-page and try again and still nothing happens, then Café Chan is probably not
-playing any music.)
+play it and nothing happens after a few seconds, and you refresh the page and
+try again and still nothing happens, then Café Chan is probably not playing any
+music.)
 
 <audio src="https://radio.lumeh.org/café.ogg" preload="none" controls>
-  <a href="https://radio.lumeh.org/café.ogg" target="cafe-music-stream">music stream</a>
+  <a href="https://radio.lumeh.org/café.ogg" target="cafe-music-stream">café stream</a>
 </audio>
 
 <p><em id="song-artist">&nbsp;</em> – <em id="song-title">&nbsp;</em>
@@ -21,7 +21,7 @@ playing any music.)
 $(document).ready(function() {
  var update = function() {
   $.ajax({
-   url: "https://cafe.lumeh.org:61321/",
+   url: "https://radio.lumeh.org:61321/",
    cache: false,
    dataType: "json"
   }).done(function(data) {

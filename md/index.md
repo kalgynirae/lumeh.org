@@ -18,7 +18,7 @@ address found in the footer.
 
 ## Semi-Serious things
 
-*   [NarChanSo Ball](/wiki/games/narchanso.html)
+*   [NarChanSo Ball](//wiki.lumeh.org/games/narchanso-ball/)
 *   [Krypto generator](/krypto.html)
 *   [jQuery guess-the-number game](/guess/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)

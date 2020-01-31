@@ -96,34 +96,17 @@ root = directory(
                 ),
             },
         ),
-        "wiki": directory(
-            dirlist="Wiki",
-            tree={
-                "%s.html" % name: pandoc(pages["wiki/%s.md" % name])
-                for name in [
-                    "dragee",
-                    "early-twenty-first-century",
-                    "the-caring-continuum",
-                    "thestruggle",
-                    "games/capture-the-flag",
-                    "games/narchanso",
-                    "games/the-base-game",
-                    "games/trebuchennis",
-                ]
-            },
-        ),
     }
 )
 
 menu_ = menu(
     [
         ("index", "/"),
-        ("blog", "http://blog.lumeh.org/"),
         ("music", "/music.html"),
         ("projects", "/projects/"),
         ("recipes", "/recipes/"),
         ("tools", "/tools/"),
-        ("wiki", "/wiki/"),
+        ("wiki", "//wiki.lumeh.org/"),
         ("café", "/cafe/"),
     ]
 )

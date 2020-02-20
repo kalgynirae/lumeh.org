@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>websleydale</title>
+  <meta name="description" content="">
+  <meta name="generator" content="websleydale ">
+  <meta name="generator" content="pandoc">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/lumeh.css">
+  <link rel="stylesheet" href="/css/print.css">
+  <link rel="stylesheet" href="/css/code.css">
+  <link rel="icon" href="/image/l.png" sizes="108x108">
+  <link rel="icon" href="/image/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
+  </header>
+  <nav>
+    <p id="welcome">&nbsp;</p>
+    <ul id="navigation-menu">
+      <li><a href="/">index</a></li><!--
+      --><li><a href="/music.html">music</a></li><!--
+      --><li><a href="/projects/">projects</a></li><!--
+      --><li><a href="/recipes/">recipes</a></li><!--
+      --><li><a href="/tools/">tools</a></li><!--
+      --><li><a href="//wiki.lumeh.org/">wiki</a></li><!--
+      --><li><a href="/cafe/">café</a></li>
+    </ul>
+  </nav>
+  <section id="content">
+
+<p><strong>Websleydale</strong> is a Python 3 program that builds your website by compiling source files with <a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a>.</p>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li><a href="http://www.johnmacfarlane.net/pandoc/">Pandoc</a> – installed and on your PATH as <code>pandoc</code></li>
+</ul>
+<h1 id="installation">Installation</h1>
+<p>Clone this git repository and put the <code>wb</code> script on your PATH somehow. For example, if you have <code>~/bin</code> in your PATH, you might do:</p>
+<pre><code>$ git clone &lt;clone url&gt; &amp;&amp; cd websleydale
+$ ln -s `pwd`/wb ~/bin/wb</code></pre>
+<h1 id="usage">Usage</h1>
+<ol type="1">
+<li><p>Author your website pages in <a href="http://www.johnmacfarlane.net/pandoc/README.html#pandocs-markdown">Pandoc’s markdown format</a>.</p></li>
+<li><p>Make an HTML template file for Pandoc. You can use <a href="https://github.com/jgm/pandoc-templates/blob/master/default.html5">Pandoc’s default HTML5 template</a> as a starting point. See the <a href="http://www.johnmacfarlane.net/pandoc/README.html#templates">Pandoc docs</a> for more details.</p></li>
+<li><p>Write a <code>websleydalerc.py</code> script in the root dir of your project. See the sample below.</p></li>
+<li><p>Run <code>wb</code> (Websleydale build) from the root dir of your project.</p>
+<pre><code>$ wb</code></pre>
+<p><code>wb</code> just executes the <code>websleydalerc.py</code> script with a little magic to make sure the <code>websleydale</code> Python package is on the Python path.</p></li>
+</ol>
+<h2 id="sample-websleydalerc.py-file">Sample websleydalerc.py file</h2>
+<p>This is the configuration I’m using for <a href="http://lumeh.org/">lumeh.org</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">from</span> websleydale <span class="im">import</span> build, copy, directory, menu, pandoc, set_defaults</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="im">from</span> websleydale.sources <span class="im">import</span> Dir, Git</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>local <span class="op">=</span> Dir(<span class="st">&quot;.&quot;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>pages <span class="op">=</span> Dir(<span class="st">&quot;pd&quot;</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a>htaccess <span class="op">=</span> Dir(<span class="st">&quot;htaccess&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>recipes <span class="op">=</span> Git(<span class="st">&quot;https://github.com/kalgynirae/recipes.git&quot;</span>)</span>
+<span id="cb3-8"><a href="#cb3-8"></a>rockuefort <span class="op">=</span> Git(<span class="st">&quot;https://github.com/kalgynirae/rockuefort.git&quot;</span>)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>routemaster <span class="op">=</span> Git(<span class="st">&quot;https://github.com/routemaster/routemaster-frontend.git&quot;</span>)</span>
+<span id="cb3-10"><a href="#cb3-10"></a>subjunctive <span class="op">=</span> Git(<span class="st">&quot;https://github.com/kalgynirae/subjunctive.git&quot;</span>)</span>
+<span id="cb3-11"><a href="#cb3-11"></a>think_green <span class="op">=</span> Git(<span class="st">&quot;https://github.com/kalgynirae/thinking-green.git&quot;</span>)</span>
+<span id="cb3-12"><a href="#cb3-12"></a>websleydale_ <span class="op">=</span> Git(<span class="st">&quot;https://github.com/kalgynirae/websleydale.git&quot;</span>)</span>
+<span id="cb3-13"><a href="#cb3-13"></a></span>
+<span id="cb3-14"><a href="#cb3-14"></a>root <span class="op">=</span> directory({</span>
+<span id="cb3-15"><a href="#cb3-15"></a>    <span class="st">&quot;.htaccess&quot;</span>: htaccess[<span class="st">&quot;root&quot;</span>],</span>
+<span id="cb3-16"><a href="#cb3-16"></a>    <span class="st">&quot;files/.htaccess&quot;</span>: htaccess[<span class="st">&quot;files&quot;</span>],</span>
+<span id="cb3-17"><a href="#cb3-17"></a>    <span class="st">&quot;files/public/.htaccess&quot;</span>: htaccess[<span class="st">&quot;files_public&quot;</span>],</span>
+<span id="cb3-18"><a href="#cb3-18"></a></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    <span class="st">&quot;css&quot;</span>: local[<span class="st">&quot;css&quot;</span>],</span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="st">&quot;font&quot;</span>: local[<span class="st">&quot;font&quot;</span>],</span>
+<span id="cb3-21"><a href="#cb3-21"></a>    <span class="st">&quot;image&quot;</span>: local[<span class="st">&quot;image&quot;</span>],</span>
+<span id="cb3-22"><a href="#cb3-22"></a>    <span class="st">&quot;media&quot;</span>: local[<span class="st">&quot;media&quot;</span>],</span>
+<span id="cb3-23"><a href="#cb3-23"></a>    <span class="st">&quot;favicon.ico&quot;</span>: local[<span class="st">&quot;image/favicon.ico&quot;</span>],</span>
+<span id="cb3-24"><a href="#cb3-24"></a></span>
+<span id="cb3-25"><a href="#cb3-25"></a>    <span class="st">&quot;robots.txt&quot;</span>: pages[<span class="st">&quot;robots.txt&quot;</span>],</span>
+<span id="cb3-26"><a href="#cb3-26"></a>    <span class="st">&quot;404.shtml&quot;</span>: pandoc(pages[<span class="st">&quot;404.pd&quot;</span>]),</span>
+<span id="cb3-27"><a href="#cb3-27"></a>    <span class="st">&quot;index.html&quot;</span>: pandoc(pages[<span class="st">&quot;index.pd&quot;</span>]),</span>
+<span id="cb3-28"><a href="#cb3-28"></a>    <span class="st">&quot;music.html&quot;</span>: pandoc(pages[<span class="st">&quot;music.pd&quot;</span>]),</span>
+<span id="cb3-29"><a href="#cb3-29"></a>    <span class="st">&quot;boxer.html&quot;</span>: pandoc(pages[<span class="st">&quot;boxer.pd&quot;</span>]),</span>
+<span id="cb3-30"><a href="#cb3-30"></a>    <span class="st">&quot;jabberwockus.html&quot;</span>: pandoc(pages[<span class="st">&quot;jabberwockus.pd&quot;</span>]),</span>
+<span id="cb3-31"><a href="#cb3-31"></a>    <span class="st">&quot;krypto.html&quot;</span>: pandoc(pages[<span class="st">&quot;krypto.pd&quot;</span>], header<span class="op">=</span>pages[<span class="st">&quot;krypto.header&quot;</span>]),</span>
+<span id="cb3-32"><a href="#cb3-32"></a>    <span class="st">&quot;cafe&quot;</span>: directory({</span>
+<span id="cb3-33"><a href="#cb3-33"></a>        <span class="st">&quot;index.html&quot;</span>: pandoc(pages[<span class="st">&quot;cafe/index.pd&quot;</span>]),</span>
+<span id="cb3-34"><a href="#cb3-34"></a>    }),</span>
+<span id="cb3-35"><a href="#cb3-35"></a>    <span class="st">&quot;recipes&quot;</span>: directory({</span>
+<span id="cb3-36"><a href="#cb3-36"></a>        <span class="st">&quot;</span><span class="sc">%s</span><span class="st">.html&quot;</span> <span class="op">%</span> name: pandoc(recipes[<span class="st">&quot;</span><span class="sc">%s</span><span class="st">.pd&quot;</span> <span class="op">%</span> name]) <span class="cf">for</span> name <span class="kw">in</span> [</span>
+<span id="cb3-37"><a href="#cb3-37"></a>            <span class="st">&quot;chili&quot;</span>,</span>
+<span id="cb3-38"><a href="#cb3-38"></a>            <span class="st">&quot;christmas_anything&quot;</span>,</span>
+<span id="cb3-39"><a href="#cb3-39"></a>            <span class="st">&quot;cookies&quot;</span>,</span>
+<span id="cb3-40"><a href="#cb3-40"></a>            <span class="st">&quot;creme_brulee_cheesecake&quot;</span>,</span>
+<span id="cb3-41"><a href="#cb3-41"></a>            <span class="st">&quot;curry&quot;</span>,</span>
+<span id="cb3-42"><a href="#cb3-42"></a>            <span class="st">&quot;krishna_dressing&quot;</span>,</span>
+<span id="cb3-43"><a href="#cb3-43"></a>            <span class="st">&quot;mung_bean_dal&quot;</span>,</span>
+<span id="cb3-44"><a href="#cb3-44"></a>            <span class="st">&quot;pumpkin_bread&quot;</span>,</span>
+<span id="cb3-45"><a href="#cb3-45"></a>            <span class="st">&quot;sugar_cookies&quot;</span>,</span>
+<span id="cb3-46"><a href="#cb3-46"></a>            <span class="st">&quot;sweet_potato_casserole&quot;</span>,</span>
+<span id="cb3-47"><a href="#cb3-47"></a>        ]</span>
+<span id="cb3-48"><a href="#cb3-48"></a>    }),</span>
+<span id="cb3-49"><a href="#cb3-49"></a>    <span class="st">&quot;projects&quot;</span>: directory({</span>
+<span id="cb3-50"><a href="#cb3-50"></a>        <span class="st">&quot;rockuefort/index.html&quot;</span>: pandoc(rockuefort[<span class="st">&quot;README.md&quot;</span>]),</span>
+<span id="cb3-51"><a href="#cb3-51"></a>        <span class="st">&quot;routemaster/index.html&quot;</span>: pandoc(routemaster[<span class="st">&quot;README.md&quot;</span>], toc<span class="op">=</span><span class="va">True</span>),</span>
+<span id="cb3-52"><a href="#cb3-52"></a>        <span class="st">&quot;subjunctive/index.html&quot;</span>: pandoc(subjunctive[<span class="st">&quot;README.md&quot;</span>]),</span>
+<span id="cb3-53"><a href="#cb3-53"></a>        <span class="st">&quot;think-green/index.html&quot;</span>: pandoc(think_green[<span class="st">&quot;README.md&quot;</span>]),</span>
+<span id="cb3-54"><a href="#cb3-54"></a>        <span class="st">&quot;websleydale/index.html&quot;</span>: pandoc(websleydale_[<span class="st">&quot;README.md&quot;</span>]),</span>
+<span id="cb3-55"><a href="#cb3-55"></a>    }),</span>
+<span id="cb3-56"><a href="#cb3-56"></a>    <span class="st">&quot;wiki&quot;</span>: directory({</span>
+<span id="cb3-57"><a href="#cb3-57"></a>        <span class="st">&quot;</span><span class="sc">%s</span><span class="st">.html&quot;</span> <span class="op">%</span> name: pandoc(pages[<span class="st">&quot;wiki/</span><span class="sc">%s</span><span class="st">.pd&quot;</span> <span class="op">%</span> name]) <span class="cf">for</span> name <span class="kw">in</span> [</span>
+<span id="cb3-58"><a href="#cb3-58"></a>            <span class="st">&quot;dragee&quot;</span>,</span>
+<span id="cb3-59"><a href="#cb3-59"></a>            <span class="st">&quot;early-twenty-first-century&quot;</span>,</span>
+<span id="cb3-60"><a href="#cb3-60"></a>            <span class="st">&quot;the-caring-continuum&quot;</span>,</span>
+<span id="cb3-61"><a href="#cb3-61"></a>            <span class="st">&quot;games/capture-the-flag&quot;</span>,</span>
+<span id="cb3-62"><a href="#cb3-62"></a>            <span class="st">&quot;games/narchanso&quot;</span>,</span>
+<span id="cb3-63"><a href="#cb3-63"></a>            <span class="st">&quot;games/the-base-game&quot;</span>,</span>
+<span id="cb3-64"><a href="#cb3-64"></a>        ]</span>
+<span id="cb3-65"><a href="#cb3-65"></a>    }),</span>
+<span id="cb3-66"><a href="#cb3-66"></a>})</span>
+<span id="cb3-67"><a href="#cb3-67"></a></span>
+<span id="cb3-68"><a href="#cb3-68"></a>menu_ <span class="op">=</span> menu([</span>
+<span id="cb3-69"><a href="#cb3-69"></a>    (<span class="st">&quot;index&quot;</span>, <span class="st">&quot;/&quot;</span>),</span>
+<span id="cb3-70"><a href="#cb3-70"></a>    (<span class="st">&quot;music&quot;</span>, <span class="st">&quot;/music.html&quot;</span>),</span>
+<span id="cb3-71"><a href="#cb3-71"></a>    (<span class="st">&quot;projects&quot;</span>, <span class="st">&quot;/projects/&quot;</span>),</span>
+<span id="cb3-72"><a href="#cb3-72"></a>    (<span class="st">&quot;recipes&quot;</span>, <span class="st">&quot;/recipes/&quot;</span>),</span>
+<span id="cb3-73"><a href="#cb3-73"></a>    (<span class="st">&quot;wiki&quot;</span>, <span class="st">&quot;/wiki/&quot;</span>),</span>
+<span id="cb3-74"><a href="#cb3-74"></a>    (<span class="st">&quot;café&quot;</span>, <span class="st">&quot;/cafe/&quot;</span>),</span>
+<span id="cb3-75"><a href="#cb3-75"></a>])</span>
+<span id="cb3-76"><a href="#cb3-76"></a></span>
+<span id="cb3-77"><a href="#cb3-77"></a>set_defaults(</span>
+<span id="cb3-78"><a href="#cb3-78"></a>    menu<span class="op">=</span>menu_,</span>
+<span id="cb3-79"><a href="#cb3-79"></a>    template<span class="op">=</span>local[<span class="st">&quot;templates/lumeh.html&quot;</span>],</span>
+<span id="cb3-80"><a href="#cb3-80"></a>)</span>
+<span id="cb3-81"><a href="#cb3-81"></a></span>
+<span id="cb3-82"><a href="#cb3-82"></a>build(<span class="st">&quot;out&quot;</span>, root)</span></code></pre></div>
+
+  </section>
+  <footer id="copyright">
+    <p>
+      <span id="source"><a href="https://github.com/kalgynirae/websleydale/blob/8cfde1b02247b7e216c4fdc27f6e16d909cbbcfb/README.md">kalgynirae/websleydale</a> on GitHub</span>
+      | Copyright 2007–2020 Colin Chan
+      | Contact: <img class=inline src="/image/admin-email.png" alt="[admin email]">
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+[submodule "projects/rockuefort"]
+	path = projects/rockuefort
+	url = https://github.com/kalgynirae/rockuefort.git
+[submodule "projects/thinking-green"]
+	path = projects/thinking-green
+	url = https://github.com/kalgynirae/thinking-green.git
+[submodule "projects/websleydale"]
+	path = projects/websleydale
+	url = https://github.com/kalgynirae/websleydale.git
+[submodule "projects/slideception"]
+	path = projects/slideception
+	url = https://github.com/kalgynirae/slideception.git
+[submodule "projects/voidpop"]
+	path = projects/voidpop
+	url = https://github.com/kalgynirae/voidpop.git
+[submodule "projects/pchyme"]
+	path = projects/pchyme
+	url = https://github.com/kalgynirae/pchyme.git
+[submodule "projects/recipes"]
+	path = projects/recipes
+	url = https://github.com/kalgynirae/recipes.git

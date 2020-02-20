@@ -1,0 +1,342 @@
+---
+---
+@import normalize.css
+
+@font-face
+  font-family: 'DejaVu Sans Mono'
+  font-style: normal
+  font-weight: 400
+  src: local('DejaVu Sans Mono'), local('DejaVuSansMono'), url('https://lumeh.org/font/DejaVuSansMono.ttf') format('truetype')
+@font-face
+  font-family: 'DejaVu Sans Mono'
+  font-style: normal
+  font-weight: 700
+  src: local('DejaVu Sans Mono Bold'), local('DejaVuSansMono-Bold'), url('https://lumeh.org/font/DejaVuSansMono-Bold.ttf') format('truetype')
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 400
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('https://lumeh.org/font/SourceSansPro-400.woff') format('woff')
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 600
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('https://lumeh.org/font/SourceSansPro-600.woff') format('woff')
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 700
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('https://lumeh.org/font/SourceSansPro-700.woff') format('woff')
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: italic
+  font-weight: 400
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('https://lumeh.org/font/SourceSansPro-400italic.woff') format('woff')
+
+$page-border-radius: 20px
+$page-border-width: 3px
+$header-height: 118px
+$logo-width: 108px
+$logo-padding: 12px
+$nav-height: 30px
+$shadow-color: #a0a0a0
+
+$green: #8fd261
+$blue: #7eb1ea
+$bg-light: #fafafa
+$bg-dark: #efefef
+$bg-highlight: #f4f0b8
+
+html
+  background-color: #c7c6ca
+  color: #5b5b5c
+  font-family: "Source Sans Pro", sans-serif
+  line-height: 1.3
+  padding: 1rem 1rem 3rem
+
+.page
+  background-color: $bg-light
+  border-radius: $page-border-radius
+  box-shadow: 0 0 7px $shadow-color
+  margin: 0 auto
+  min-width: 640px
+  max-width: 920px
+
+  > *
+    padding: 0 1rem
+  > :first-child
+    border-radius: $page-border-radius $page-border-radius 0 0
+  > :last-child
+    border-radius: 0 0 $page-border-radius $page-border-radius
+    overflow: hidden
+
+#site-header
+  background-image: url("//lumeh.org/image/l.png"), url("//lumeh.org/image/header-colors.png"), linear-gradient(to bottom, #f4f4f4, $bg-light $header-height - 3px, #ececec $header-height)
+  background-repeat: no-repeat, no-repeat, repeat
+  background-position: left $logo-padding center, center right 32px
+  border: solid $page-border-width #ffffff
+  border-bottom: none
+  color: #000000
+  height: $header-height
+
+  #site-title
+    font-size: 48px
+    font-weight: bold
+    line-height: $header-height
+    margin: 0
+    padding-left: calc(#{$logo-width + 2 * $logo-padding} - 1rem)
+    overflow: hidden
+    white-space: nowrap
+
+  #site-title-l
+    font-family: "DejaVu Sans Mono"
+    margin-right: -2px
+
+#site-menu
+  background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
+  color: #000000
+  height: $nav-height
+  line-height: $nav-height
+  padding: 0 0.5rem !important
+
+  ul
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li a
+      color: inherit
+      display: block
+      font-size: 1.3em
+      padding: 0 0.5rem
+      &:hover,
+      &:active,
+      &.active
+        background-color: $bg-light
+        text-decoration: none
+
+#breadcrumbs
+  ol
+    display: flex
+    list-style: none
+    margin: 0.5em 0
+    padding: 0
+  li
+    & + li:before
+      content: " » "
+      white-space: pre
+
+#authors
+  float: right
+
+#edit
+  background-color: $bg-dark
+  border-top: dashed 2px #e0e0e0
+  display: block
+  padding: 0.5em 1rem
+  &:hover
+    background-color: $bg-light
+
+#footer
+  font-size: 0.85em
+  text-align: center
+  padding-top: 1em
+
+  p
+    padding: 0
+
+.page .main-content
+  padding-bottom: 2em
+
+.page .comment
+  background: $bg-dark
+  border-top: solid 1px #e0e0e0
+  padding-bottom: 1em
+
+  h1
+    font-size: 1.1em
+    &.title
+      font-size: 1.1em
+      font-weight: 700
+  h2, h3, h4, h5
+    font-size: 1em
+    font-weight: 600
+
+p
+  margin: 0.5em 0
+
+h1,
+h2,
+h3,
+h4,
+  margin: 0
+  margin-top: 0.5em
+  padding: 0
+
+h1
+  font-size: 1.6em
+  font-weight: 600
+  &.title
+    font-size: 1.8em
+
+h2
+  font-size: 1.4em
+  font-weight: 600
+
+h3
+  font-size: 1.2em
+  font-weight: 600
+
+h4
+  font-size: 1em
+  font-weight: bold
+
+a
+  color: #35aac4
+  text-decoration: none
+  &:hover,
+  &:active
+    text-decoration: underline
+
+img.inline
+  vertical-align: middle
+
+strong
+  font-weight: 600
+
+code
+  background: $bg-dark
+  border-top: solid 1px #e6e6e6
+  border-bottom: solid 1px #e8e8e8
+  font-family: "DejaVu Sans Mono"
+  font-size: 0.9em
+  padding: 0 0.1em
+  white-space: pre
+
+@mixin toplevel-block
+  background: $bg-dark
+  border-top: solid 1px #e0e0e0
+  border-bottom: solid 1px #e0e0e0
+  margin: 0.5em -1rem
+  padding: 0 1rem
+
+blockquote
+  @include toplevel-block
+  > footer
+    text-align: right
+
+pre
+  @include toplevel-block
+  > code
+    border: none
+    display: block
+    line-height: 1.15
+    margin: 0.5em 0
+
+figure
+  border: solid 1px #e0e0e0
+  //border-top: 0px
+  border-radius: 10px
+  overflow: hidden
+  margin: 1em 2.5em
+  padding: 0 1rem
+
+  &.example
+    &:hover
+      box-shadow: 0 0 10px -4px $blue
+      border-color: $blue
+
+    //&:before
+    //  background: $blue
+    //  color: $bg-light
+    //  content: "example"
+    //  display: block
+    //  font-variant: small-caps
+    //  font-weight: 700
+    //  line-height: 1em
+    //  margin: 0 -1rem
+    //  padding: 0 0.5rem
+
+  & > div:first-child pre.highlight
+    border-top: 0
+    margin-top: 0
+    padding-top: 0.5em
+
+    > code
+      margin-top: 0
+
+ol,
+ul
+  list-style-position: outside
+  padding: 0
+  margin: 0.5em 2.5em 0
+
+table
+  border-collapse: collapse
+  font-size: 0.9em
+  width: 100%
+
+  tr:nth-child(odd)
+    background-color: #f8f8f8
+
+  td,
+  th
+    border: solid 1px #e0e0e0
+    padding: 0.2rem
+    vertical-align: middle
+
+@media only print
+  #site-header,
+  #site-menu,
+  #breadcrumbs,
+  #edit
+    display: none
+
+  html
+    background: none
+    color: black
+
+  .page
+    background: none
+    border: none
+    border-radius: 0
+    box-shadow: none
+    margin: 0
+    max-width: none
+    min-width: 0
+
+  blockquote,
+  code,
+  table
+    background: none
+
+.language-yaml
+  .s
+    color: #c4a800
+
+.language-python
+  .k
+    font-weight: bold
+  .mi
+    color: #3c74c0
+  .s
+    color: #c4a800
+
+@keyframes blinky
+  0%
+    background-color: $bg-light
+  40%
+    background-color: $bg-light
+  50%
+    background-color: $bg-highlight
+  60%
+    background-color: $bg-highlight
+  85%
+    background-color: $bg-light
+  100%
+    background-color: $bg-highlight
+
+*:target
+  animation: 1s blinky
+  background-color: $bg-highlight

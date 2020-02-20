@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cafe
+Disallow: /files

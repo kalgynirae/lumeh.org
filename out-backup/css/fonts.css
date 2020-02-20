@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('DejaVu Sans Mono'), local('DejaVuSansMono'), url('//lumeh.org/font/DejaVuSansMono.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('DejaVu Sans Mono Bold'), local('DejaVuSansMono-Bold'), url('//lumeh.org/font/DejaVuSansMono-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('//lumeh.org/font/SourceSansPro-400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('//lumeh.org/font/SourceSansPro-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('//lumeh.org/font/SourceSansPro-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('//lumeh.org/font/SourceSansPro-400italic.woff') format('woff');
+}

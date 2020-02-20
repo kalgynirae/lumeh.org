@@ -5,20 +5,16 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-    background: -webkit-linear-gradient(top, #fafafa, #fafafa 120px, #efefef 148px, #dcdcdc 600px);
     background: linear-gradient(to bottom, #fafafa, #fafafa 120px, #efefef 148px, #dcdcdc 600px);
     border: solid 3px white;
     border-radius: 20px;
     box-shadow: 0 0 7px #a0a0a0;
     line-height: 1.3;
-    margin: 1em auto;
+    margin: 1rem auto;
     min-width: 640px;
     max-width: 920px;
 }
 body > header {
-    background-image: url('/image/l.png'),
-                    url('/image/header-colors.png'),
-                    -webkit-linear-gradient(bottom, #eeeeee, #fafafa 2px, #f4f4f4);
     background-image: url('/image/l.png'),
                     url('/image/header-colors.png'),
                     linear-gradient(to top, #eeeeee, #fafafa 2px, #f4f4f4);
@@ -38,7 +34,6 @@ body > header h1 {
     white-space: nowrap;
 }
 body > nav {
-    background: -webkit-linear-gradient(top, #dadada, #e4e4e4 85%, #e0e0e0);
     background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0);
     color: #000000;
     height: 30px;

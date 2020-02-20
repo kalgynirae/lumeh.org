@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>subjunctive</title>
+  <meta name="description" content="">
+  <meta name="generator" content="websleydale ">
+  <meta name="generator" content="pandoc">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/lumeh.css">
+  <link rel="stylesheet" href="/css/print.css">
+  <link rel="stylesheet" href="/css/code.css">
+  <link rel="icon" href="/image/l.png" sizes="108x108">
+  <link rel="icon" href="/image/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
+  </header>
+  <nav>
+    <p id="welcome">&nbsp;</p>
+    <ul id="navigation-menu">
+      <li><a href="/">index</a></li><!--
+      --><li><a href="/music.html">music</a></li><!--
+      --><li><a href="/projects/">projects</a></li><!--
+      --><li><a href="/recipes/">recipes</a></li><!--
+      --><li><a href="/tools/">tools</a></li><!--
+      --><li><a href="//wiki.lumeh.org/">wiki</a></li><!--
+      --><li><a href="/cafe/">café</a></li>
+    </ul>
+  </nav>
+  <section id="content">
+
+<p><strong>Subjunctive</strong> – a <em>tile-based puzzle game</em> engine for Python 3</p>
+<p>Note: Subjunctive’s API is <strong>not at all stable</strong>. We are still in the early development stages and things are likely to change a lot!</p>
+<hr />
+<h2 id="status-of-the-games">Status of the games</h2>
+<h3 id="think-green">Think Green</h3>
+<p><strong>Think Green</strong> is complete except for the following things, which are totally missing:</p>
+<ul>
+<li>title screen / death screen</li>
+<li>score display</li>
+<li>music</li>
+</ul>
+<h3 id="floorpaint">Floorpaint</h3>
+<p><strong>Floorpaint</strong> has partially complete level-file-loading, but that’s about it. It is missing:</p>
+<ul>
+<li>core game mechanics (currently you can cross over your path)</li>
+<li>level generation</li>
+<li>graphics</li>
+<li>title screen / instructions</li>
+<li>music</li>
+</ul>
+<h2 id="set-up">Set-up</h2>
+<h3 id="dependencies">Dependencies</h3>
+<p><strong>Subjunctive</strong> requires:</p>
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li><a href="http://www.python.org/download/">Python 3.3+</a> and (optional, but recommended) <a href="http://www.virtualenv.org/en/latest/index.html">virtualenv</a></li>
+<li><a href="http://www.libsdl.org/download-2.0.php">sdl2</a>, <a href="http://www.libsdl.org/projects/SDL_image/">sdl2_image</a>, <a href="http://www.libsdl.org/projects/SDL_mixer/">sdl2_mixer</a></li>
+</ul>
+<blockquote>
+<p><strong>Hint:</strong> If you’re not already using Linux, now would be a good time to consider doing so. Installing all this stuff would be as simple as</p>
+<pre><code>$ pacman -S git python3 python3-virtualenv sdl2 sdl2_gfx sdl2_image sdl2_mixer</code></pre>
+</blockquote>
+<p>To get all everything set up, clone our repository, create a virtualenv, and install dependencies:</p>
+<pre><code>$ git clone https://github.com/ufgmg/subjunctive
+$ cd subjunctive
+$ virtualenv env
+$ env/bin/pip install -e .</code></pre>
+<blockquote>
+<p><strong>Notes for Windows users:</strong> You’ll have to modify the commands slightly to work for Windows. For example, the Windows version of <code>virtualenv</code> names the <code>bin</code> directory <code>Scripts</code> instead. You’ll also have to type the <code>.py</code> extension when you run <code>virtualenv.py</code>. If you have trouble, make sure that the directory containing <code>virtualenv.py</code> is in your PATH environment variable.</p>
+<pre><code>$ git clone https://github.com/ufgmg/subjunctive
+$ cd subjunctive
+$ virtualenv.py env
+$ env/Scripts/pip.exe install --allow-unverified pysdl2 -e .</code></pre>
+<p>We recommend running these commands via Git Bash (which should have been installed along with Git) instead of the Windows command prompt.</p>
+</blockquote>
+<h3 id="running-the-games">Running the games</h3>
+<p>After installing as described in the previous section, you can run the games like so:</p>
+<pre><code>$ env/bin/&lt;game&gt;.py</code></pre>
+<p>For example,</p>
+<pre><code>$ env/bin/think-green.py</code></pre>
+<blockquote>
+<p><strong>Windows:</strong></p>
+<pre><code>$ env/Scripts/python.exe env/Scripts/think-green.py</code></pre>
+</blockquote>
+<h3 id="adding-a-new-game">Adding a new game</h3>
+<p>Add your game’s script to the <code>scripts</code> list in <code>setup.py</code>. Then, re-run</p>
+<pre><code>$ env/bin/pip install -e .</code></pre>
+<blockquote>
+<p><strong>Windows:</strong></p>
+<pre><code>$ env/Scripts/pip.exe install --allow-unverified pysdl2 -e .</code></pre>
+</blockquote>
+<h2 id="goals-design-principles">Goals / design principles</h2>
+<p>Obviously the main goal is that it be <em>significantly</em> easier to implement a game with Subjunctive than without. To accomplish that, here are some general design principles:</p>
+<ul>
+<li>Provide sane and useful defaults.</li>
+<li>Make it easy to override defaults.</li>
+<li>Let client code be as beautiful and succinct as possible.</li>
+</ul>
+<p>And, as usual, <a href="http://www.python.org/dev/peps/pep-0020/">the Zen of Python</a> provides excellent guidance.</p>
+<h2 id="contributing">Contributing</h2>
+<h3 id="guidelines">Guidelines</h3>
+<h4 id="codetext-format">Code/text format</h4>
+<ul>
+<li><p><strong>Indent with spaces (four per indentation level).</strong> Make sure your editor inserts spaces when you press the Tab key.</p></li>
+<li><p><strong>Read <a href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a>.</strong></p></li>
+<li><p><strong>Use UNIX-style line endings.</strong> Make sure your editor saves files with UNIX line endings (or that Git is <a href="https://help.github.com/articles/dealing-with-line-endings">configured to normalize line endings when you commit</a>).</p></li>
+<li><p><strong>Avoid trailing whitespace.</strong> This means that blank lines cannot not contain any spaces or tabs! You can set up your editor to highlight or automatically remove trailing whitespace.</p></li>
+<li><p><strong>Make sure the file ends with a newline.</strong> <code>git diff</code> will show if you are about to commit a file with the newline removed. The reason for this is that many UNIX-style command-line tools think of the newline as a <em>terminator</em> rather than a separator. I think this interpretation is better in the majority of cases (one such case is concatenating two files: <code>cat &lt;file&gt; &lt;file2&gt;</code>).</p>
+<p>The crux of the matter is that you must make sure your editor writes a newline at the end of the file (if necessary, leave a blank line at the end).</p></li>
+</ul>
+<h4 id="commit-messages">Commit messages</h4>
+<p>Refer to <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a>.</p>
+<h3 id="set-up-for-contributing">Set-up for contributing</h3>
+<p>So, you want to help out? It’s pretty easy, but there are a few things you need to set up first.</p>
+<ol type="1">
+<li><p><strong>Python</strong></p>
+<p>You need Python 3.3 or newer. You should be able to open a terminal and run the Python interpreter by typing <code>python</code> or <code>python3</code>.</p>
+<p>If you already know some programming, the official <a href="http://docs.python.org/3/tutorial/introduction.html">Python Tutorial</a> will teach you the basics. Be sure to run the Python interpreter and <em>try the examples as you read</em>! If you don’t know any programming yet, <a href="http://www.codecademy.com/tracks/python">Codeacademy’s Python track</a> is a good place to start.</p></li>
+<li><p><strong>Git</strong></p>
+<p>Install the standard Git from <a href="http://git-scm.com/downloads" class="uri">http://git-scm.com/downloads</a>. Unless you know better, use the default options. If you’re on Windows, you should also install the <a href="http://blob.andrewnurse.net/gitcredentialwinstore/git-credential-winstore.exe">Git credential helper</a> so you don’t have to enter your username and password every time.</p>
+<p>If you have never used Git before, I recommend <a href="http://rypress.com/tutorials/git/index.html">Ry’s Git Tutorial</a> to learn the basics. If you already know the basics but need a reference (and you find the manual pages too confusing), look at <a href="http://gitref.org/">Git Reference</a>.</p>
+<p>On Linux or Mac OS, you’ll run Git commands using any terminal program. On Windows, you’ll use <strong>Git Bash</strong> (which was installed with Git).</p>
+<p>Don’t forget to configure Git with your name and email address:</p>
+<pre><code>$ git config --global user.name &quot;John Smith&quot;
+$ git config --global user.email &quot;johnsmith@juno.com&quot;</code></pre>
+<p>Note that this email address will be publicly viewable through GitHub.</p></li>
+<li><p><strong>GitHub</strong></p>
+<p>Create an account on <a href="https://github.com/">GitHub</a> and log in. Make sure the email that you configured Git with is associated with your account (you can associate additional email addresses in the account settings).</p>
+<p>Navigate to this page and click the <em>Fork</em> button. Once the process completes, look down the right side of the page for the <em>clone URL</em> (on Windows you’ll want the HTTPS URL; on Linux or Mac OS you probably want the SSH URL). Use this to clone the repository to your computer.</p>
+<pre><code>$ git clone &lt;URL&gt;</code></pre>
+<p>This will create a directory called <code>subjunctive</code>.</p>
+<p>You’ll also want to set up <em>our</em> repository as a remote.</p>
+<pre><code>$ git remote add ufgmg https://github.com/ufgmg/subjunctive.git</code></pre></li>
+<li><p><strong>your editor</strong></p>
+<p>I strongly recommend against trying to use an IDE for this relatively small project! For Linux, I recommend Vim (if you can handle the awesome) or Gedit. For Windows, I recommend <a href="http://www.sublimetext.com/3">Sublime Text</a> (shareware but awesome) or <a href="http://notepad-plus-plus.org/">Notepad++</a> (open source).</p>
+<p>Figure out how to set up your editor so that it follows the rules mentioned in the Code Guidelines above.</p></li>
+</ol>
+<h3 id="git-workflow">Git Workflow</h3>
+<ol type="1">
+<li><p><strong>Fetch</strong> the latest commits from all of your remote repositories.</p>
+<pre><code>$ git fetch --all</code></pre></li>
+<li><p><strong>Checkout</strong> a new branch for the feature you want to work on, starting from the <code>ufgmg/master</code> branch.</p>
+<pre><code>$ git checkout ufgmg/master
+$ git checkout -b &lt;new branch name&gt;</code></pre></li>
+<li><p><strong>Do stuff.</strong> Write codes, consume foods, etc.</p></li>
+<li><p><strong>Commit</strong> as necessary. Some steps are optional.</p>
+<pre><code>$ git status          # See what files have uncommitted changes
+$ git diff            # See your actual changes line-by-line
+$ git add &lt;files&gt;     # Add files to the staging area
+$ git status          # Check that you&#39;ve staged the right files
+$ git diff --cached   # (paranoid) see the line-by-line staged changes
+$ git commit          # Commit it</code></pre></li>
+<li><p>Repeat steps 3–4 as necessary.</p></li>
+<li><p>Maybe <strong>rebase</strong> to include newer commits from other people.</p>
+<p>Say, for example, that a new feature or fix has been committed on <code>ufgmg/master</code> and you need to incorporate it into your branch. Usually the best way to do this is via a rebase.</p>
+<pre><code>$ git fetch --all
+$ git rebase ufgmg/master</code></pre>
+<p>Basically what this does is tries to apply your commits, one at a time, on to the commits already on <code>ufgmg/master</code>. If conflicts occur (which they often do!), the rebase will pause for you to fix the issues. Running <code>git status</code> liberally during a rebase will help you stay sane.</p>
+<p>Note that rebasing causes <em>your</em> commits to be re-written (i.e., they get new hashes), so if you’ve already pushed your branch then pushing it again after the rebase will most likely fail (because doing so would mean replacing the commits you had pushed earlier). If you know no one else is using your branch, you can use the <code>--force</code> option when you push; alternatively, you can just give your branch a new name and then push it.</p></li>
+<li><p>Repeat steps 3–6 as necessary.</p></li>
+<li><p><strong>Push</strong> to your GitHub repository.</p>
+<pre><code>$ git push origin &lt;branch name&gt;</code></pre></li>
+<li><p>Repeat steps 3–8 as necessary.</p></li>
+<li><p>Maybe <strong>rebase</strong> to clean up your branch’s history.</p></li>
+<li><p>Send a <strong>pull request</strong>.</p></li>
+</ol>
+
+  </section>
+  <footer id="copyright">
+    <p>
+      <span id="source"><a href="https://github.com/kalgynirae/subjunctive/blob/8e92ddf8c2e2ad8a7f9a75b557f711089996da78/README.md">kalgynirae/subjunctive</a> on GitHub</span>
+      | Copyright 2007–2020 Colin Chan
+      | Contact: <img class=inline src="/image/admin-email.png" alt="[admin email]">
+    </p>
+  </footer>
+</body>
+</html>

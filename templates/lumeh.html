@@ -2,82 +2,67 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>$pagetitle$</title>
-$for(author-meta)$
-  <meta name="author" content="$author-meta$">
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$">
-$endif$
-  <meta name="description" content="$description-meta$">
-  <meta name="generator" content="websleydale $websleydale-version$">
-  <meta name="generator" content="pandoc">
+  <title>{{ page.title }}</title>
+  {% for name, value in page.meta %}
+  <meta name="{{ name }}" content="{{ value }}">
+  {% endfor %}
 
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/lumeh.css">
-  <link rel="stylesheet" href="/css/print.css">
-  <link rel="stylesheet" href="/css/code.css">
-$for(css)$
-  <link rel="stylesheet" href="$css$">
-$endfor$
   <link rel="icon" href="/image/l.png" sizes="108x108">
   <link rel="icon" href="/image/favicon.ico">
-$if(math)$
-  $math$
-$endif$
-$for(header-includes)$
-  $header-includes$
-$endfor$
 </head>
 <body>
-  <header>
-    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
-  </header>
-  <nav>
-    <p id="welcome">&nbsp;</p>
-$if(menu)$
-    <ul id="navigation-menu">
-      $menu$
-    </ul>
-$endif$
-  </nav>
-$for(include-before)$
-  $include-before$
-$endfor$
-  <section id="content">
-$if(title)$
-    <header>
-      <h1 class="title">$title$</h1>
-$if(author)$
-      <span class="author">by $for(author)$$author$$sep$, $endfor$</span>
-$endif$
-$if(date)$
-      <span class="date">on $date$</span>
-$endif$
+  <div class="page">
+    <header id="site-header">
+      <h1 id="site-title"><span id="site-title-l">l</span>umeh.org</h1>
     </header>
-$endif$
-$if(toc)$
-    <nav id="$idprefix$TOC">
-      $toc$
+    <nav id="site-menu">
+      <ul>
+        <li><a href="/">index</a></li>
+        <li><a href="/music.html">music</a></li>
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/recipes/">recipes</a></li>
+        <li><a href="/tools/">tools</a></li>
+        <li><a href="//wiki.lumeh.org/">wiki</a></li>
+        <li><a href="/cafe/">café</a></li>
+      </ul>
     </nav>
-$endif$
+        <header id="authors">
+        <p>Contributors: {{ page.authors }}</p>
+    </header>
+    <nav id="breadcrumbs">
+      <ol>
+        <li><a href="/">wiki</a></li>
+        <li><a href="/{{ page.dest }}">{{ page.dest }}</a></li>
+      </ol>
+    </nav>
+    <article class="main-content">
+      <header>
+        <h1 class="title">{{ page.title }}</h1>
+      </header>
 
-$body$
+{{ page.content }}
 
-  </section>
-$for(include-after)$
-  $include-after$
-$endfor$
-  <footer id="copyright">
-    <p>
-$if(source-info)$
-      <span id="source">$source-info$</span>
-$else$
-      <span id="source">lumeh.org</span>
-$endif$
-      | Copyright 2007–2020 Colin Chan
-      | Contact: <img class=inline src="/image/admin-email.png" alt="[admin email]">
+    </article>
+    {% for comment in page.comments %}
+    <article class="comment">
+      <header>
+        <h1 class="title">Comment by <span class="author">{{ comment.author }}</span> on <span class="date">{{ comment.date }}</span></h1>
+      </header>
+
+{{ comment.content }}
+
+    </article>
+    {% endfor %}
+    <a id="edit" href="https://github.com/kalgynirae/wiki.lumeh.org/edit/master/{{ page.path }}" target="_blank">Edit / Add a comment</a>
+  </div>
+  <footer id="footer">
+    <p id="copyright">
+      <a href="https://github.com/kalgynirae/lumeh.org/blob/master/{{ page.path }}" target="_blank">kalgynirae/lumeh.org</a> on GitHub
+      | Copyright 2007–{{ time.strftime("%Y") }} Colin Chan
+    </p>
+    <p id="license">
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
     </p>
   </footer>
 </body>

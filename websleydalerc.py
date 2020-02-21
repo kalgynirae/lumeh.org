@@ -14,29 +14,41 @@ def page(path, *args, header=None, title=None, toc=None, **kwargs):
 site = Site(
     name="lumeh.org",
     tree={
+        "": page(root / "md/index.md"),
+        "boxer.html": page(root / "md/boxer.md"),
+        "cafe/": page(root / "md/cafe/index.md"),
+        "colin/": page(root / "md/colin/index.md"),
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
         "css/normalize.css": file(root / "css/normalize.css"),
         "docs": directory(root / "docs"),
+        "error/404.html": page(root / "md/error/404.md"),
+        "favicon.ico": file(root / "image/favicon.ico"),
         "font": directory(root / "font"),
         "guess": directory(root / "guess"),
         "image": directory(root / "image"),
-        "js": directory(root / "js"),
-        "media": directory(root / "media"),
-        "favicon.ico": file(root / "image/favicon.ico"),
-        "robots.txt": file(root / "robots.txt"),
-        "boxer.html": page(root / "md/boxer.md"),
-        "index.html": page(root / "md/index.md"),
         "jabberwockus.html": page(root / "md/jabberwockus.md"),
+        "js": directory(root / "js"),
         "krypto.html": page(root / "md/krypto.md", header="md/krypto.header"),
         "lumeh.html": page(root / "md/lumeh.md"),
+        "media": directory(root / "media"),
         "music.html": page(root / "md/music.md"),
         "poetry-yay.html": page(root / "md/poetry-yay.md"),
-        "unofficial_opposites.html": page(root / "md/unofficial_opposites.md"),
-        "blog/index.html": page(root / "md/blog/index.md"),
-        "cafe/index.html": page(root / "md/cafe/index.md"),
-        "colin/index.html": page(root / "md/colin/index.md"),
-        "error/404.html": page(root / "md/error/404.md"),
-        "tools/stopwatch.html": page(root / "md/tools/stopwatch.md"),
+        "projects/pchyme/": page(root / "projects/pchyme/README.md", title="pchyme"),
+        "projects/rockuefort/": page(
+            root / "projects/rockuefort/README.md", title="rockuefort"
+        ),
+        "projects/slideception/": page(
+            root / "projects/slideception/README.md", title="routemaster", toc=True
+        ),
+        "projects/thinking-green/": page(
+            root / "projects/thinking-green/README.md", title="think-green"
+        ),
+        "projects/voidpop/": page(
+            root / "projects/voidpop/README.md", title="websleydale"
+        ),
+        "projects/websleydale/": page(
+            root / "projects/websleydale/README.md", title="websleydale"
+        ),
         **{
             f"recipes/{name}.html": page(root / f"projects/recipes/{name}.md")
             for name in [
@@ -67,25 +79,11 @@ site = Site(
                 "thai_chicken_curry",
             ]
         },
-        "projects/pchyme/index.html": page(root / "projects/pchyme/README.md", title="pchyme"),
-        "projects/rockuefort/index.html": page(
-            root / "projects/rockuefort/README.md", title="rockuefort"
-        ),
-        "projects/slideception/index.html": page(
-            root / "projects/slideception/README.md", title="routemaster", toc=True
-        ),
-        "projects/thinking-green/index.html": page(
-            root / "projects/thinking-green/README.md", title="think-green"
-        ),
-        "projects/voidpop/index.html": page(
-            root / "projects/voidpop/README.md", title="websleydale"
-        ),
-        "projects/websleydale/index.html": page(
-            root / "projects/websleydale/README.md", title="websleydale"
-        ),
-        "tools/stopwatch.html": page(
+        "robots.txt": file(root / "robots.txt"),
+        "tools/stopwatch/": page(
             root / "md/tools/stopwatch.md", header="md/tools/stopwatch.header"
         ),
+        "unofficial_opposites.html": page(root / "md/unofficial_opposites.md"),
     },
 )
 build(site, dest="out")

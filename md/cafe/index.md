@@ -1,4 +1,6 @@
-% Café Chan
+---
+title: Café Chan
+---
 
 ## Now playing
 

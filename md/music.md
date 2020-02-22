@@ -1,4 +1,6 @@
-% Music
+---
+title: Music
+---
 
 I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
 [SoundCloud page] and a [YouTube channel], although the latter is quite empty

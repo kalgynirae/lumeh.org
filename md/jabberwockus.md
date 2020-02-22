@@ -1,4 +1,6 @@
-% Jabberwockus
+---
+title: Jabberwockus
+---
 
 “Jabberwocky” by Lewis Carroll, translated into Latin by Karl Krehbiel
 

@@ -1,4 +1,6 @@
-% Index
+---
+title: Index
+---
 
 This is [Colin Chan](/colin)'s personal website.
 
@@ -12,14 +14,14 @@ address found in the footer.
 
 ## Serious things
 
-*   [music I've written](/music.html)
+*   [music I've written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
 *   [my recipes](/recipes/)
 
 ## Semi-Serious things
 
-*   [NarChanSo Ball](//wiki.lumeh.org/games/narchanso-ball/)
-*   [Krypto generator](/krypto.html)
+*   [NarChanSo Ball](/wiki/games/narchanso-ball/)
+*   [Krypto generator](/krypto/)
 *   [jQuery guess-the-number game](/guess/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)
 

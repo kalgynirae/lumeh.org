@@ -1,6 +1,8 @@
-% Lumeh, God of Light Bulbs
-% Colin Chan
-% 2009-10-19
+---
+title: Lumeh, God of Light Bulbs
+author: Colin Chan
+date: 2009-10-19
+---
 
 > | Thomas Edward was quite smart,
 > | But money had he none.

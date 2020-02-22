@@ -1,4 +1,6 @@
-% The Stopwatch
+---
+title: The Stopwatch
+---
 
 Programmed by Colin <span id="programmed-hours">many</span> hours ago.
 

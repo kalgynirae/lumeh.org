@@ -1,6 +1,8 @@
-% Poetry Yay
-% Colin Chan
-% 2009-?-?
+---
+title: Poetry Yay
+author: Colin Chan
+date: 2009-?-?
+---
 
 > | Long, long ago up on top of a sign
 > | Lived an old rotten sponge and a small piece of twine.

@@ -19,23 +19,28 @@
     <nav id="site-menu">
       <ul>
         <li><a href="/">index</a></li>
-        <li><a href="/music.html">music</a></li>
+        <li><a href="/music/">music</a></li>
         <li><a href="/projects/">projects</a></li>
         <li><a href="/recipes/">recipes</a></li>
         <li><a href="/tools/">tools</a></li>
-        <li><a href="//wiki.lumeh.org/">wiki</a></li>
+        <li><a href="/wiki/">wiki</a></li>
         <li><a href="/cafe/">café</a></li>
       </ul>
     </nav>
         <header id="authors">
         <p>Contributors: {{ page.authors }}</p>
     </header>
+    {% if page.path != "." %}
     <nav id="breadcrumbs">
       <ol>
-        <li><a href="/">wiki</a></li>
-        <li><a href="/{{ page.dest }}">{{ page.dest }}</a></li>
+        {% set ns = namespace(href="") %}
+        {% for component in page.path.split("/") %}
+        {% set ns.href = ns.href + "/" + component %}
+        <li><a href="{{ ns.href }}">{{ component }}</a></li>
+        {% endfor %}
       </ol>
     </nav>
+    {% endif %}
     <article class="main-content">
       <header>
         <h1 class="title">{{ page.title }}</h1>

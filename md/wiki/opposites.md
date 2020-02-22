@@ -1,4 +1,6 @@
-% Unofficial Opposites
+---
+title: Unofficial Opposites
+---
 
 **Unofficial Opposites**
 

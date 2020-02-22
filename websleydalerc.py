@@ -15,7 +15,7 @@ site = Site(
     name="lumeh.org",
     tree={
         "": page(root / "md/index.md"),
-        "boxer.html": page(root / "md/boxer.md"),
+        "boxer/": page(root / "md/boxer.md"),
         "cafe/": page(root / "md/cafe/index.md"),
         "colin/": page(root / "md/colin/index.md"),
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
@@ -26,13 +26,13 @@ site = Site(
         "font": directory(root / "font"),
         "guess": directory(root / "guess"),
         "image": directory(root / "image"),
-        "jabberwockus.html": page(root / "md/jabberwockus.md"),
+        "jabberwockus/": page(root / "md/jabberwockus.md"),
         "js": directory(root / "js"),
-        "krypto.html": page(root / "md/krypto.md", header="md/krypto.header"),
-        "lumeh.html": page(root / "md/lumeh.md"),
+        "krypto/": page(root / "md/krypto.md", header="md/krypto.header"),
+        "lumeh/": page(root / "md/lumeh.md"),
         "media": directory(root / "media"),
-        "music.html": page(root / "md/music.md"),
-        "poetry-yay.html": page(root / "md/poetry-yay.md"),
+        "music/": page(root / "md/music.md"),
+        "poetry-yay/": page(root / "md/poetry-yay.md"),
         "projects/pchyme/": page(root / "projects/pchyme/README.md", title="pchyme"),
         "projects/rockuefort/": page(
             root / "projects/rockuefort/README.md", title="rockuefort"
@@ -83,7 +83,10 @@ site = Site(
         "tools/stopwatch/": page(
             root / "md/tools/stopwatch.md", header="md/tools/stopwatch.header"
         ),
-        "unofficial_opposites.html": page(root / "md/unofficial_opposites.md"),
+        **{
+            f"{path.relative_to(root/'md').with_suffix('')}/": page(path)
+            for path in root.glob("md/wiki/**/*.md")
+        },
     },
 )
 build(site, dest="out")

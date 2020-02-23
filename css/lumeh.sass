@@ -4,54 +4,55 @@
   font-family: 'DejaVu Sans Mono'
   font-style: normal
   font-weight: 400
-  src: local('DejaVu Sans Mono'), local('DejaVuSansMono'), url('https://lumeh.org/font/DejaVuSansMono.ttf') format('truetype')
+  src: local('DejaVu Sans Mono'), local('DejaVuSansMono'), url('/font/DejaVuSansMono.ttf') format('truetype')
 @font-face
   font-family: 'DejaVu Sans Mono'
   font-style: normal
   font-weight: 700
-  src: local('DejaVu Sans Mono Bold'), local('DejaVuSansMono-Bold'), url('https://lumeh.org/font/DejaVuSansMono-Bold.ttf') format('truetype')
+  src: local('DejaVu Sans Mono Bold'), local('DejaVuSansMono-Bold'), url('/font/DejaVuSansMono-Bold.ttf') format('truetype')
 @font-face
   font-family: 'Source Sans Pro'
   font-style: normal
   font-weight: 400
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('https://lumeh.org/font/SourceSansPro-400.woff') format('woff')
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('/font/SourceSansPro-400.woff') format('woff')
 @font-face
   font-family: 'Source Sans Pro'
   font-style: normal
   font-weight: 600
-  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('https://lumeh.org/font/SourceSansPro-600.woff') format('woff')
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('/font/SourceSansPro-600.woff') format('woff')
 @font-face
   font-family: 'Source Sans Pro'
   font-style: normal
   font-weight: 700
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('https://lumeh.org/font/SourceSansPro-700.woff') format('woff')
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('/font/SourceSansPro-700.woff') format('woff')
 @font-face
   font-family: 'Source Sans Pro'
   font-style: italic
   font-weight: 400
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('https://lumeh.org/font/SourceSansPro-400italic.woff') format('woff')
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('/font/SourceSansPro-400italic.woff') format('woff')
 
 $page-border-radius: 20px
 $page-border-width: 3px
-$header-height: 118px
-$logo-width: 108px
+$header-height: 104px
+$logo-width: 96px
 $logo-padding: 12px
 $nav-height: 30px
 $shadow-color: #a0a0a0
 
-$green: #8fd261
-$blue: #7eb1ea
-$orange: #f4c15b
-$yellow: #eef361
-$red: #e5676a
-$purple: #e082e9
+$red: #dc4f4f
+$orange: #f4b437
+$yellow: #ded040
+$green: #8ce040
+$link: #25aad4
+$blue: #589ce0
+$purple: #bc64e0
 $bg-light: #fafafa
 $bg-dark: #efefef
 $bg-highlight: #f4f0b8
 
 html
   background-color: #c7c6ca
-  color: #5b5b5c
+  color: #505054
   font-family: "Source Sans Pro", sans-serif
   line-height: 1.3
   padding: 1rem 1rem 3rem
@@ -61,7 +62,7 @@ html
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
   margin: 0 auto
-  min-width: 640px
+  min-width: 600px
   max-width: 920px
 
   > *
@@ -72,11 +73,11 @@ html
     border-radius: 0 0 $page-border-radius $page-border-radius
     overflow: hidden
 
-$shadow-gradient: linear-gradient(to top, rgba(black, 0.05), rgba(black, 0) 3px)
-$logo: url("/image/l.png")
+$shadow-gradient: linear-gradient(to top, rgba(black, 0.04), rgba(black, 0) 2px)
+$logo: url("/image/logo.svg")
 $stripes-shadow-size: 15px
 $stripes-shadow-opacity: 0.1
-$stripes-gradient: linear-gradient(112deg, rgba($orange, 0) calc(65% - 1px - #{$stripes-shadow-size}), rgba($orange, $stripes-shadow-opacity) calc(65% - 1px), $orange 65%, $orange calc(70% - 1px), $yellow 70%, $yellow calc(75% - 1px), $blue 75%, $blue calc(80% - 1px), $red 80%, $red calc(85% - 1px), $purple 85%, $purple calc(90% - 1px), rgba($purple, $stripes-shadow-opacity) 90%, rgba($purple, 0) calc(90% + #{$stripes-shadow-size}))
+$stripes-gradient: linear-gradient(112deg, rgba($green, 0) calc(70% - 1px - #{$stripes-shadow-size}), rgba($green, $stripes-shadow-opacity) calc(70% - 1px), $green 70%, $green calc(75% - 1px), $yellow 75%, $yellow calc(80% - 1px), $blue 80%, $blue calc(85% - 1px), $red 85%, $red calc(90% - 1px), $purple 90%, $purple calc(95% - 1px), rgba($purple, $stripes-shadow-opacity) 95%, rgba($purple, 0) calc(95% + #{$stripes-shadow-size}))
 $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 
 #site-header
@@ -87,13 +88,14 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   border-bottom: none
   color: #000000
   height: $header-height
+  padding: 0
 
   #site-title
     font-size: 48px
     font-weight: bold
     line-height: $header-height
     margin: 0
-    padding-left: calc(#{$logo-width + 2 * $logo-padding} - 1rem)
+    padding-left: ($logo-width + 2 * $logo-padding)
     overflow: hidden
     white-space: nowrap
 
@@ -131,10 +133,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     list-style: none
     margin: 0.5em 0
     padding: 0
-  li
-    & + li:before
-      content: " » "
-      white-space: pre
+  li a
+    padding: 0 0.2em
 
 #authors
   float: right
@@ -153,7 +153,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   padding-top: 1em
 
   p
-    padding: 0
+    margin: 0
 
 .page .main-content
   padding-bottom: 2em
@@ -187,7 +187,7 @@ h1
   font-size: 1.6em
   font-weight: 600
   &.title
-    font-size: 1.8em
+    font-weight: 700
 
 h2
   font-size: 1.4em
@@ -202,7 +202,7 @@ h4
   font-weight: bold
 
 a
-  color: #35aac4
+  color: $link
   text-decoration: none
   &:hover,
   &:active

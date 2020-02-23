@@ -2,15 +2,15 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} • {{ site.name }}</title>
   {% for author in page.authors %}
   <meta name="author" content="{{ author }}">
   {% endfor %}
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   {% endif %}
-  <meta name="generator" content="{{ websleydale.version }}">
-  <meta name="viewport" content="width=640, initial-scale=1">
+  <meta name="generator" content="{{ site.generator }}">
+  <meta name="viewport" content="width=480, initial-scale=1">
   <link rel="stylesheet" href="/css/lumeh.css">
   <link rel="icon" href="/image/logo-192.png" sizes="192x192">
   <link rel="icon" href="/image/logo-16.png" sizes="16x16">
@@ -33,7 +33,7 @@
       </ul>
     </nav>
     <header id="authors">
-      <p>Contributors: <a href="{{ site.repo_base_url }}commits/master/{{ page.source_path }}">{{ page.authors|join(", ")|truncate(40, end=", et al") }}</a></p>
+      <p>Contributors: <a href="{{ site.repo_url }}/commits/master/{{ page.source_path }}">{{ page.authors|join(", ")|truncate(40, end=", et al") }}</a></p>
     </header>
     {% if page.path != "." %}
     <nav id="breadcrumbs">
@@ -60,23 +60,15 @@
 {{ comment.content|trim|safe }}
     </article>
     {% endfor %}
-    <a id="edit" href="{{ site.repo_base_url }}edit/master/{{ page.source_path }}" target="_blank">Edit / Add a comment</a>
+    <a id="edit" href="{{ site.repo_url }}/edit/master/{{ page.source_path }}" target="_blank">Edit / Add a comment</a>
   </div>
   <footer id="footer">
     <p id="copyright">
-      <a href="{{ site.repo_base_url }}blob/master/{{ page.source_path }}" target="_blank">kalgynirae/lumeh.org</a> on GitHub
-      | Copyright 2007–{{ time.strftime("%Y") }} Colin Chan | Contact: <img class="inline" src="/image/admin-email.png">
+      <a href="{{ site.repo_url }}" target="_blank">{{ site.repo_name }}</a> on GitHub
+      | Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan | Contact: <img class="inline" src="/image/admin-email.png">
     </p>
     <p id="license">
       This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-    </p>
-    <p>
-      <h3>site</h3>
-      {{ site }}
-    </p>
-    <p>
-      <h3>page</h3>
-      {{ page }}
     </p>
   </footer>
 </body>

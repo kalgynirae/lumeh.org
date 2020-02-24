@@ -39,7 +39,7 @@
     <nav id="breadcrumbs">
       <ol>
         {% set ns = namespace(href="") %}
-        {% for component in page.path.split("/") %}
+        {% for component in page.path.split("/")[1:] if component != "index.html" %}
         {% set ns.href = ns.href + "/" + component %}
         <li>/<a href="{{ ns.href }}">{{ component }}</a></li>
         {% endfor %}

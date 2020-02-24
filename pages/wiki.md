@@ -1,26 +1,27 @@
 ---
-title: Index
+title: Wiki Index
 ---
 
 # Python
 
-* [Local Variable]({% link python/local-variable.md %})
+* [Local Variable](python/local-variable/)
 
 # Games
 
-* [Capture the Flag]({% link games/capture-the-flag.md %})
-* [NarChanSo Ball]({% link games/narchanso-ball.md %})
-* [The Base Game]({% link games/the-base-game.md %})
-* [Trebuchennis]({% link games/trebuchennis.md %})
+* [Capture the Flag](games/capture-the-flag/)
+* [NarChanSo Ball](games/narchanso-ball/)
+* [The Base Game](games/the-base-game/)
+* [Trebuchennis](games/trebuchennis/)
 
 # Miscellaneous
 
-* [Dragée]({% link dragee.md %})
-* [Early Twenty-First Century]({% link early-twenty-first-century.md %})
-* [The Caring Continuum]({% link the-caring-continuum.md %})
-* [#thestruggle]({% link thestruggle.md %})
+* [#thestruggle](thestruggle/)
+* [Dragée](dragee)
+* [Early Twenty-First Century](early-twenty-first-century/)
+* [Opposites](opposites/)
+* [The Caring Continuum](the-caring-continuum/)
 
 # Meta
 
-* [Comments]({% link meta/comments.md %})
-* [Style Test]({% link meta/style-test.md %})
+* [Comments](meta/comments/)
+* [Style Test](meta/style-test/)

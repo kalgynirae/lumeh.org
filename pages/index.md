@@ -21,13 +21,14 @@ address found in the footer.
 ## Semi-Serious things
 
 *   [NarChanSo Ball](/wiki/games/narchanso-ball/)
-*   [Krypto generator](/krypto/)
+*   [Krypto generator](/tools/krypto-generator/)
+*   [stopwatch](/tools/stopwatch/)
 *   [jQuery guess-the-number game](/guess/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)
 
 ## Silly things
 
-*   [Jabberwockus](/jabberwockus.html)
-*   [Lumeh, God of Light Bulbs](/lumeh.html)
-*   [Poetry Yay](/poetry-yay.html)
-*   [Shoot the boxer](/boxer.html)
+*   [Jabberwockus](/poetry/jabberwockus/)
+*   [Lumeh, God of Light Bulbs](/poetry/lumeh-god-of-light-bulbs/)
+*   [Poetry Yay](/poetry/poetry-yay/)
+*   [Shoot the boxer](/boxer/)

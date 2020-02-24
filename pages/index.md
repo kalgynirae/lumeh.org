@@ -2,13 +2,9 @@
 title: Index
 ---
 
-This is [Colin Chan](/colin)'s personal website.
-
-<p class="notice">
-This website is <del>currently</del> <ins>always</ins> under construction. If
-you find anything that seems broken, you can let me know by emailing the admin
-address found in the footer.
-</p>
+**lumeh.org** is Colin Chan's personal website.  It is ~~currently~~ *always*
+under construction. If you find anything that seems broken or wrong, you can
+file an issue on GitHub or email the admin (see info about both in the footer).
 
 # Features
 
@@ -17,6 +13,7 @@ address found in the footer.
 *   [music I've written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
 *   [my recipes](/recipes/)
+*   [my résumé (PDF)](/docs/resume-20170228.pdf)
 
 ## Semi-Serious things
 

@@ -1,4 +1,4 @@
-from websleydale import Site, build, directory, file, markdown, root, sass
+from websleydale import Author, Site, build, directory, file, markdown, root, sass
 
 
 def page(path, *args, header=None, title=None, toc=None, **kwargs):
@@ -12,6 +12,13 @@ def page(path, *args, header=None, title=None, toc=None, **kwargs):
 
 
 site = Site(
+    known_authors={
+        Author(
+            display_name="kalgynirae",
+            email="colinchan@lumeh.org",
+            url="https://github.com/kalgynirae/",
+        )
+    },
     name="lumeh.org",
     repo_name="kalgynirae/lumeh.org",
     repo_url="https://github.com/kalgynirae/lumeh.org",
@@ -29,7 +36,9 @@ site = Site(
             for path in root.glob("projects/*/README.md")
         },
         **{
-            f"/recipes/{name.replace('_', '-')}/": page(root / f"projects/recipes/{name}.md")
+            f"/recipes/{name.replace('_', '-')}/": page(
+                root / f"projects/recipes/{name}.md"
+            )
             for name in [
                 "almond_salad_dressing",
                 "apple_cider",

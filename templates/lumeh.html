@@ -32,8 +32,15 @@
         <li><a href="/cafe/">café</a></li>
       </ul>
     </nav>
-    <header id="authors">
-      <p>Contributors: <a href="{{ site.repo_url }}/commits/master/{{ page.source_path }}">{{ page.authors|join(", ")|truncate(40, end=", et al") }}</a></p>
+    <header id="page-info">
+      <p>
+        Last updated: <a href="{{ page.repo_url }}/commits/master/{{ page.repo_source_path }}">{{ page.updated_date.strftime("%Y-%m-%d") }}</a>
+        <br>
+        Contributors:
+        {% for author in page.authors %}
+        <a href="{{ author.url }}">{{ author.display_name }}</a>
+        {% endfor %}
+      </p>
     </header>
     {% if page.path != "." %}
     <nav id="breadcrumbs">
@@ -60,7 +67,7 @@
 {{ comment.content|trim|safe }}
     </article>
     {% endfor %}
-    <a id="edit" href="{{ site.repo_url }}/edit/master/{{ page.source_path }}" target="_blank">Edit / Add a comment</a>
+    <a id="edit" href="{{ page.repo_url }}/edit/master/{{ page.repo_source_path }}" target="_blank">Edit / Add a comment</a>
   </div>
   <footer id="footer">
     <p id="copyright">

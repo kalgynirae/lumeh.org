@@ -1,13 +1,23 @@
-  </section>
-  <footer id="copyright">
-    <p>
-$if(source-info)$
-      <span id="source">$source-info$</span>
-$else$
-      <span id="source">lumeh.org</span>
-$endif$
-      | Copyright 2007–2020 Colin Chan
-      | Contact: <img class=inline src="/image/admin-email.png" alt="[admin email]">
+    </article>
+    {% for comment in page.comments %}
+    <article class="comment">
+      <header>
+        <h1 class="title">Comment by <span class="author">{{ comment.author }}</span> on <span class="date">{{ comment.date }}</span></h1>
+      </header>
+{{ comment.content|trim|safe }}
+    </article>
+    {% endfor %}
+    {% if source.repo_url %}
+    <a id="edit" href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit / Add a comment</a>
+    {% endif %}
+  </div>
+  <footer id="footer">
+    <p id="copyright">
+      <a href="{{ site.repo_url }}" target="_blank">{{ site.repo_name }}</a> on GitHub
+      | Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan | Contact: <img class="inline" src="/image/admin-email.png">
+    </p>
+    <p id="license">
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
     </p>
   </footer>
 </body>

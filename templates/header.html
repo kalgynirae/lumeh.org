@@ -2,44 +2,62 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>$pagetitle$</title>
-$for(author-meta)$
-  <meta name="author" content="$author-meta$">
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$">
-$endif$
-  <meta name="description" content="$description-meta$">
-  <meta name="generator" content="websleydale $websleydale-version$">
-  <meta name="generator" content="pandoc">
-
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/fonts.css">
+  <title>{{ page.title }} • {{ site.name }}</title>
+  {% for author in source.authors %}
+  <meta name="author" content="{{ author }}">
+  {% endfor %}
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  <meta name="generator" content="{{ site.generator }}">
+  <meta name="viewport" content="width=480, initial-scale=1">
   <link rel="stylesheet" href="/css/lumeh.css">
-  <link rel="stylesheet" href="/css/print.css">
-  <link rel="stylesheet" href="/css/code.css">
-$for(css)$
-  <link rel="stylesheet" href="$css$">
-$endfor$
-  <link rel="icon" href="/image/l.png" sizes="108x108">
-  <link rel="icon" href="/image/favicon.ico">
-$if(math)$
-  $math$
-$endif$
-$for(header-includes)$
-  $header-includes$
-$endfor$
+  <link rel="icon" href="/image/logo-192.png" sizes="192x192">
+  <link rel="icon" href="/image/logo-16.png" sizes="16x16">
+  <link rel="icon" href="/image/logo-32.png" sizes="32x32">
 </head>
 <body>
-  <header>
-    <h1><span style="font-family: 'DejaVu Sans Mono'">l</span>umeh.org</h1>
-  </header>
-  <nav>
-    <p id="welcome">&nbsp;</p>
-$if(menu)$
-    <ul id="navigation-menu">
-      $menu$
-    </ul>
-$endif$
-  </nav>
-  <section id="content">
+  <div class="page">
+    <header id="site-header">
+      <h1 id="site-title"><span id="site-title-l">l</span>umeh.org</h1>
+    </header>
+    <nav id="site-menu">
+      <ul>
+        <li><a href="/">index</a></li>
+        <li><a href="/music/">music</a></li>
+        <li><a href="/projects/">projects</a></li>
+        <li><a href="/recipes/">recipes</a></li>
+        <li><a href="/tools/">tools</a></li>
+        <li><a href="/wiki/">wiki</a></li>
+        <li><a href="/cafe/">café</a></li>
+      </ul>
+    </nav>
+    {% if source.repo_url %}
+    <header id="page-info">
+      <p>
+        Last modified: <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+        {% if source.authors %}
+        <br>
+        Contributors:
+        {% for author in source.authors %}
+        <a href="{{ author.url }}">{{ author.display_name }}</a>{% if not loop.last %},{% endif %}
+        {% endfor %}
+        {% endif %}
+      </p>
+    </header>
+    {% endif %}
+    {% if page.path != "." %}
+    <nav id="breadcrumbs">
+      <ol>
+        {% set ns = namespace(href="") %}
+        {% for component in page.path.split("/")[1:] if component != "index.html" %}
+        {% set ns.href = ns.href + "/" + component %}
+        <li>/<a href="{{ ns.href }}">{{ component }}</a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+    {% endif %}
+    <article class="main-content">
+      <header>
+        <h1 class="title">{{ page.title }}</h1>
+      </header>

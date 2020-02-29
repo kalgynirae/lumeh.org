@@ -1,9 +1,33 @@
 from functools import partial
 
-from websleydale import Author, Site, build, dir, file, markdown, root, sass, jinja, fake
+from websleydale import (
+    Author,
+    Site,
+    build,
+    dir,
+    fake,
+    file,
+    jinja,
+    markdown,
+    root,
+    sass,
+)
+
+
+def index(path):
+    return {
+        f"{path}/.header.html": jinja(
+            fake({"title": str(path)}), template="header.html"
+        ),
+        f"{path}/.footer.html": jinja(
+            fake({"title": str(path)}), template="footer.html"
+        ),
+    }
+
 
 def page(source):
-    return jinja(markdown(source), template="lumeh.html")
+    return jinja(markdown(source), template="page.html")
+
 
 site = Site(
     known_authors={
@@ -72,16 +96,9 @@ site = Site(
                 "thai_chicken_curry",
             ]
         },
-        **{
-            f"{dir}/index.html": jinja(
-                fake({"title": str(dir)}), template="lumeh.html"
-            )
-            for dir in [
-                "projects",
-                "recipes",
-                "tools",
-            ]
-        },
+        **index("projects"),
+        **index("recipes"),
+        **index("tools"),
     },
 )
 build(site, dest="out")

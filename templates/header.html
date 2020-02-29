@@ -10,7 +10,7 @@
   <meta name="description" content="{{ page.description }}">
   {% endif %}
   <meta name="generator" content="{{ site.generator }}">
-  <meta name="viewport" content="width=480, initial-scale=1">
+  <meta name="viewport" content="width=480, maximum-scale=1.0">
   <link rel="stylesheet" href="/css/lumeh.css">
   <link rel="icon" href="/image/logo-192.png" sizes="192x192">
   <link rel="icon" href="/image/logo-16.png" sizes="16x16">
@@ -32,7 +32,7 @@
         <li><a href="/cafe/">café</a></li>
       </ul>
     </nav>
-    {% if source.repo_url %}
+    {% if source.repo_url and page.path != "index.html" %}
     <header id="page-info">
       <p>
         Last modified: <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
@@ -46,13 +46,17 @@
       </p>
     </header>
     {% endif %}
-    {% if page.path != "." %}
+    {% if page.path %}
     <nav id="breadcrumbs">
       <ol>
-        {% set ns = namespace(href="") %}
-        {% for component in page.path.split("/")[1:] if component != "index.html" %}
-        {% set ns.href = ns.href + "/" + component %}
-        <li>/<a href="{{ ns.href }}">{{ component }}</a></li>
+        {% set ns = namespace(path="", prevname="") %}
+        {% for component in page.path.split("/") if component and not component.endswith(".html") %}
+        {% set ns.path = ns.path + component + "/" %}
+        {% if ns.path in site.tree %}
+        <li>/<a href="/{{ ns.path }}">{{ ns.prevname + component }}</a></li>
+        {% else %}
+        {% set ns.prevname = component + "/" %}
+        {% endif %}
         {% endfor %}
       </ol>
     </nav>

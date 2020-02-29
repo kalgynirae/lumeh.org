@@ -16,12 +16,8 @@ from websleydale import (
 
 def index(path):
     return {
-        f"{path}/.header.html": jinja(
-            fake({"title": str(path)}), template="header.html"
-        ),
-        f"{path}/.footer.html": jinja(
-            fake({"title": str(path)}), template="footer.html"
-        ),
+        f"{path}/.header.html": jinja(fake(), template="header.html"),
+        f"{path}/.footer.html": jinja(fake(), template="footer.html"),
     }
 
 
@@ -42,7 +38,6 @@ site = Site(
     repo_url="https://github.com/kalgynirae/lumeh.org",
     tree={
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
-        "css/normalize.css": file(root / "css/normalize.css"),
         "docs": dir(root / "docs"),
         "font": dir(root / "font"),
         "guess": dir(root / "guess"),

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} • {{ site.name }}</title>
-  {% for author in page.authors %}
+  {% for author in source.authors %}
   <meta name="author" content="{{ author }}">
   {% endfor %}
   {% if page.description %}
@@ -32,16 +32,20 @@
         <li><a href="/cafe/">café</a></li>
       </ul>
     </nav>
+    {% if source.repo_url %}
     <header id="page-info">
       <p>
-        Last updated: <a href="{{ page.repo_url }}/commits/master/{{ page.repo_source_path }}">{{ page.updated_date.strftime("%Y-%m-%d") }}</a>
+        Last modified: <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+        {% if source.authors %}
         <br>
         Contributors:
-        {% for author in page.authors %}
-        <a href="{{ author.url }}">{{ author.display_name }}</a>
+        {% for author in source.authors %}
+        <a href="{{ author.url }}">{{ author.display_name }}</a>{% if not loop.last %},{% endif %}
         {% endfor %}
+        {% endif %}
       </p>
     </header>
+    {% endif %}
     {% if page.path != "." %}
     <nav id="breadcrumbs">
       <ol>
@@ -67,7 +71,9 @@
 {{ comment.content|trim|safe }}
     </article>
     {% endfor %}
-    <a id="edit" href="{{ page.repo_url }}/edit/master/{{ page.repo_source_path }}" target="_blank">Edit / Add a comment</a>
+    {% if source.repo_url %}
+    <a id="edit" href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit / Add a comment</a>
+    {% endif %}
   </div>
   <footer id="footer">
     <p id="copyright">

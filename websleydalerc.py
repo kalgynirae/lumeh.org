@@ -1,15 +1,9 @@
-from websleydale import Author, Site, build, directory, file, markdown, root, sass
+from functools import partial
 
+from websleydale import Author, Site, build, dir, file, markdown, root, sass, jinja, fake
 
-def page(path, *args, header=None, title=None, toc=None, **kwargs):
-    if header is not None:
-        print(f"warning: page {path} has header={header!r}")
-    if title is not None:
-        print(f"warning: page {path} has title={title!r}")
-    if toc is not None:
-        print(f"warning: page {path} has toc={toc!r}")
-    return markdown(path, *args, template="lumeh.html", **kwargs)
-
+def page(source):
+    return jinja(markdown(source), template="lumeh.html")
 
 site = Site(
     known_authors={
@@ -23,20 +17,31 @@ site = Site(
     repo_name="kalgynirae/lumeh.org",
     repo_url="https://github.com/kalgynirae/lumeh.org",
     tree={
-        "/css/lumeh.css": sass(root / "css/lumeh.sass"),
-        "/css/normalize.css": file(root / "css/normalize.css"),
-        "/docs": directory(root / "docs"),
-        "/font": directory(root / "font"),
-        "/guess": directory(root / "guess"),
-        "/image": directory(root / "image"),
-        "/js": directory(root / "js"),
-        "/media": directory(root / "media"),
+        "css/lumeh.css": sass(root / "css/lumeh.sass"),
+        "css/normalize.css": file(root / "css/normalize.css"),
+        "docs": dir(root / "docs"),
+        "font": dir(root / "font"),
+        "guess": dir(root / "guess"),
+        "image": dir(root / "image"),
+        "js": dir(root / "js"),
+        "media": dir(root / "media"),
+        "redirects.conf": file(root / "redirects.conf"),
+        "robots.txt": file(root / "robots.txt"),
         **{
-            f"/{path.relative_to(root).parent}/": page(path)
-            for path in root.glob("projects/*/README.md")
+            (
+                f"{path.relative_to(root/'pages').with_suffix('.html')}"
+                if path.name == "index.md"
+                else f"{path.relative_to(root/'pages').with_suffix('')}/"
+            ): page(path)
+            for path in root.glob("pages/**/*.md")
         },
         **{
-            f"/recipes/{name.replace('_', '-')}/": page(
+            f"projects/{path.name}/": page(path / "README.md")
+            for path in root.glob("projects/*")
+            if not path.name == "recipes"
+        },
+        **{
+            f"recipes/{name.replace('_', '-')}/": page(
                 root / f"projects/recipes/{name}.md"
             )
             for name in [
@@ -67,13 +72,16 @@ site = Site(
                 "thai_chicken_curry",
             ]
         },
-        "/redirects.conf": file(root / "redirects.conf"),
-        "/robots.txt": file(root / "robots.txt"),
         **{
-            f"/{path.relative_to(root/'pages').with_suffix('')}/": page(path)
-            for path in root.glob("pages/**/*.md")
+            f"{dir}/index.html": jinja(
+                fake({"title": str(dir)}), template="lumeh.html"
+            )
+            for dir in [
+                "projects",
+                "recipes",
+                "tools",
+            ]
         },
-        "/": page(root / "pages/index.md"),
     },
 )
 build(site, dest="out")

@@ -16,7 +16,9 @@ from websleydale import (
 
 def index(path):
     return {
-        f"{path}/.header.html": jinja(fake(), template="header.html"),
+        f"{path}/.header.html": jinja(
+            fake({"title": str(path), "hide_title": True}), template="header.html"
+        ),
         f"{path}/.footer.html": jinja(fake(), template="footer.html"),
     }
 
@@ -91,6 +93,7 @@ site = Site(
                 "thai_chicken_curry",
             ]
         },
+        **index("files/public"),
         **index("projects"),
         **index("recipes"),
         **index("tools"),

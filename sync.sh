@@ -3,12 +3,15 @@
 chmod -R u=rwX,go=rX out
 rsync \
     "$@" \
-    --checksum \
     --itemize-changes \
     --recursive \
     --perms \
-    --times \
     --delete \
-    --exclude files/ \
+    --include /files/ \
+    --include /files/public/ \
+    --include /files/public/.header.html \
+    --include /files/public/.footer.html \
+    --exclude /files/public/* \
+    --exclude /files/* \
     out/ \
     lemon.lumeh.org:/srv/http/lumeh.org/

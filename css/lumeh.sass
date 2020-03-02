@@ -180,6 +180,20 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   p
     margin: 0
 
+// Directory listings
+.list
+  // Hide the Modified column
+  .m
+    display: none
+  // Hide the first row ("..")
+  tbody > tr:first-child
+    display: none
+  // Swap row coloring because of the first row removal
+  tr:nth-child(even)
+    background-color: $bg-light
+  tr:nth-child(odd)
+    background-color: $bg-dark
+
 .page .main-content
   padding-bottom: 2em
 
@@ -299,7 +313,7 @@ table
   font-size: 0.9em
   width: 100%
 
-  tr:nth-child(even)
+  th, tr:nth-child(even)
     background-color: $bg-dark
 
   td,

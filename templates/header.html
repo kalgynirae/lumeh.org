@@ -10,7 +10,7 @@
   <meta name="description" content="{{ page.description }}">
   {% endif %}
   <meta name="generator" content="{{ site.generator }}">
-  <meta name="viewport" content="width=480, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/lumeh.css">
   <link rel="icon" href="/image/logo-192.png" sizes="192x192">
   <link rel="icon" href="/image/logo-16.png" sizes="16x16">
@@ -62,7 +62,7 @@
     </nav>
     {% endif %}
     <article class="main-content">
-      {% if page.title %}
+      {% if page.title and not page.hide_title %}
       <header>
         <h1 class="title">{{ page.title }}</h1>
       </header>

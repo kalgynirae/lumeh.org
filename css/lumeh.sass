@@ -119,11 +119,11 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 
 $menu-gradient: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
 #site-menu
-  background-image: $menu-gradient, radial-gradient(farthest-side at 100% 50%, rgba(black, 0.5), rgba(black, 0)), $menu-gradient
-  background-attachment: local, scroll, scroll
-  background-position: right, right, left
-  background-repeat: no-repeat, no-repeat, repeat
-  background-size: 12px, 12px 50px, auto
+  background-image: $menu-gradient, url("/image/menu-scroll-indicator.svg"), linear-gradient(to left, rgba(#a0a0a0, 1), rgba(#a0a0a0, 0)), $menu-gradient
+  background-attachment: local, scroll, scroll, scroll
+  background-position: right, right, right, left
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat
+  background-size: 20px, auto, 16px, auto
   color: #000000
   font-size: 1.2em
   line-height: 1.5em

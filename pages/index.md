@@ -3,8 +3,21 @@ title: Index
 ---
 
 **lumeh.org** is Colin Chan's personal website.  It is ~~currently~~ *always*
-under construction. If you find anything that seems broken or wrong, you can
-file an issue on GitHub or email the admin (see info about both in the footer).
+under <span id=construction>construction</span>. If you find anything that seems
+broken or wrong, you can file an issue on GitHub or email the admin (see info
+about both in the footer).
+
+<style>
+#construction:hover {text-decoration: underline}
+</style>
+<script>
+function increaseConstruction() {
+  const construction = document.getElementById("construction");
+  construction.innerHTML = '<img alt="construction" src="/image/construction.gif">';
+  construction.removeEventListener("click", increaseConstruction);
+}
+document.getElementById("construction").addEventListener("click", increaseConstruction);
+</script>
 
 # Features
 

@@ -93,7 +93,6 @@ site = Site(
                 "thai_chicken_curry",
             ]
         },
-        **index("files/public"),
         **index("projects"),
         **index("recipes"),
         **index("tools"),

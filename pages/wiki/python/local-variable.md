@@ -1,6 +1,5 @@
 ---
 title: Local Variable
-comments: []
 ---
 
 A **local variable** is a variable that exists only within a function.

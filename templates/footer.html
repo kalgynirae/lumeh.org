@@ -1,14 +1,6 @@
     </article>
-    {% for comment in page.comments %}
-    <article class="comment">
-      <header>
-        <h1 class="title">Comment by <span class="author">{{ comment.author }}</span> on <span class="date">{{ comment.date }}</span></h1>
-      </header>
-{{ comment.content|trim|safe }}
-    </article>
-    {% endfor %}
     {% if source.repo_url %}
-    <a id="edit" href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit / Add a comment</a>
+    <a id="edit" href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit this page</a>
     {% endif %}
   </div>
   <footer id="footer">

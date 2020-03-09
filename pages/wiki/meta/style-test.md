@@ -1,14 +1,9 @@
 ---
 title: Style Test
-comments:
-  - author: Colin
-    date: 2020-02-11
-    content: >
-      foo
 ---
 
 This page <s>tests</s> displays a **variety of *styles*** for your viewing
-pleasure. 
+pleasure.
 
 There are paragraphs, sentences, emphases, quotations, blocks of `code`,
 horizontal rules, etc.

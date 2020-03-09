@@ -23,5 +23,4 @@ title: Wiki Index
 
 # Meta
 
-* [Comments](meta/comments/)
 * [Style Test](meta/style-test/)

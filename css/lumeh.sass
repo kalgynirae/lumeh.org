@@ -176,7 +176,7 @@ $menu-gradient: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
   padding-top: 1em
 
   a
-    color: darken($link, 10)
+    color: scale-color($link, $lightness: -10%, $saturation: -20%)
   p
     margin: 0
 
@@ -232,6 +232,24 @@ a
   &:hover,
   &:active
     text-decoration: underline
+
+a.anchor
+  color: inherit
+  text-decoration: none
+
+  h1, h2, h3, h4
+    border-top: 1px solid transparent
+    border-bottom: 1px solid transparent
+    margin: 0.5em -1rem 0
+    padding: 0 1rem
+
+    &:hover
+      background: scale-color($blue, $lightness: 70%)
+      border-top: 1px solid $blue
+      border-bottom: 1px solid $blue
+      box-shadow: 0 0 10px -4px $blue
+    &:target
+      background: scale-color($blue, $lightness: 70%)
 
 p img, img.inline
   vertical-align: middle
@@ -344,21 +362,3 @@ table
     color: #3c74c0
   .s
     color: #c4a800
-
-@keyframes blinky
-  0%
-    background-color: $bg-light
-  40%
-    background-color: $bg-light
-  50%
-    background-color: $bg-highlight
-  60%
-    background-color: $bg-highlight
-  85%
-    background-color: $bg-light
-  100%
-    background-color: $bg-highlight
-
-*:target
-  animation: 1s blinky
-  background-color: $bg-highlight

@@ -117,13 +117,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     font-family: "DejaVu Sans Mono"
     margin-right: -2px
 
-$menu-gradient: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
 #site-menu
-  background-image: $menu-gradient, url("/image/menu-scroll-indicator.svg"), linear-gradient(to left, rgba(#a0a0a0, 1), rgba(#a0a0a0, 0)), $menu-gradient
-  background-attachment: local, scroll, scroll, scroll
-  background-position: right, right, right, left
-  background-repeat: no-repeat, no-repeat, no-repeat, repeat
-  background-size: 20px, auto, 16px, auto
+  background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
   color: #000000
   font-size: 1.2em
   line-height: 1.5em

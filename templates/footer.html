@@ -14,7 +14,7 @@
   </footer>
   <script>
     const menu = document.getElementById("site-menu");
-    if (menu.scrollWidth > menu.clientWidth) {
+    if (menu.scrollWidth > menu.clientWidth + 20) {
       menu.classList.add("truncated");
       function hideScrollGradient() {
         menu.classList.remove("truncated");

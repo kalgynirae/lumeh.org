@@ -12,5 +12,16 @@
       The content of this page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
     </p>
   </footer>
+  <script>
+    const menu = document.getElementById("site-menu");
+    if (menu.scrollWidth > menu.clientWidth) {
+      menu.classList.add("truncated");
+      function hideScrollGradient() {
+        menu.classList.remove("truncated");
+        menu.removeEventListener("scroll", hideScrollGradient);
+      }
+      menu.addEventListener("scroll", hideScrollGradient);
+    }
+  </script>
 </body>
 </html>

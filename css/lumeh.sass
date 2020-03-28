@@ -124,6 +124,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   line-height: 1.5em
   overflow-x: auto
   padding: 0 0.5rem !important
+  position: relative
 
   ul
     display: flex
@@ -142,6 +143,14 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
       &.active
         background-color: $bg-light
         text-decoration: none
+
+  &.truncated ul::after
+    background: linear-gradient(to right, rgba(white, 0), rgba(white, 1))
+    content: " "
+    position: absolute
+    right: 0
+    width: 1.5rem
+
 
 #breadcrumbs
   ol

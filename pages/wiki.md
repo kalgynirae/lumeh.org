@@ -5,6 +5,7 @@ title: Wiki Index
 # Linux
 
 * [i3 + Firefox Context Menu Alignment Issue](linux/i3-firefox-context-menu-alignment-issue/)
+* [PulseAudio](linux/pulseaudio/)
 
 # Python
 

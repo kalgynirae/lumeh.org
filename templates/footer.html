@@ -1,5 +1,5 @@
     </article>
-    {% if source.repo_url %}
+    {% if source.repo_url and source.is_committed %}
     <a id="edit" href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit this page</a>
     {% endif %}
   </div>

@@ -35,7 +35,12 @@
     {% if source.repo_url and page.path != "index.html" %}
     <header id="page-info">
       <p>
-        Last modified: <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+        Last modified:
+        {% if source.is_committed %}
+        <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+        {% else %}
+        (uncommitted)
+        {% endif %}
         {% if source.authors %}
         <br>
         Contributors:

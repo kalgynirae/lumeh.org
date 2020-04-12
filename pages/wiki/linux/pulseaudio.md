@@ -2,9 +2,14 @@
 title: PulseAudio
 ---
 
-PulseAudio is the sound system used by most desktop Linux distributions. It’s
-mostly straightforward, but there are a few helpful things that are worth
-documenting here.
+PulseAudio is the sound system used by most desktop Linux distributions. The
+goal of this guide is to teach you the basic knowledge you’ll need to be able
+to solve your own audio routing situations (e.g., routing an application’s sound
+and your microphone into Discord while still being able to hear the
+application).
+
+If you already know the concepts, you can skip down to [Routing
+Audio](#routing-audio).
 
 # Important Concepts
 

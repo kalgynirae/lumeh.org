@@ -88,12 +88,16 @@ $ pacmd list-sinks | grep -E 'name:|device\.description'
 The name is the part between the `<>` brackets (i.e., the brackets are not part
 of the name).
 
-Save the device name(s) in shell variables to save typing in future commands.
+<aside class=tip>
+
+**Tip:** Save the device name(s) in shell variables to save typing in future commands.
 
 ```bash
 $ speakers=alsa_output.pci-0000_00_1f.3.analog-stereo
 $ headphones=bluez_sink.38_18_4C_7D_5C_08.a2dp_sink
 ```
+
+</aside>
 
 ## Changing Device Descriptions
 
@@ -132,7 +136,8 @@ $ pacmd load-module module-null-sink \
 You can omit the `sink_name` and `sink_properties` arguments if you don’t care
 about the name and description (you’ll get the defaults, “null” and “Null
 Output”). But if this is part of a more complex setup, it’s worth it to set
-descriptive names from the beginning.
+descriptive names from the beginning (see [Application to
+Application](#application-to-application) for a practical example).
 
 <aside class=important>
 
@@ -204,7 +209,7 @@ First, create a null sink called “Discord Input”.
 
 ```bash
 $ pacmd load-module module-null-sink \
-    sink_name=discord
+    sink_name=discord \
     sink_properties=\'device.description=\"Discord Input\"\'
 ```
 

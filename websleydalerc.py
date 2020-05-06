@@ -82,6 +82,7 @@ site = Site(
                 "cookies",
                 "cottage_pie",
                 "creme_brulee_cheesecake",
+                "curry_chicken_pot_pie",
                 "dal",
                 "first_watch_seasoning",
                 "green_bean_bundles",

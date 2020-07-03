@@ -24,640 +24,667 @@ at the very bottom of any page on this site).
 [Good Stuff] is a ~30 minute playlist of what I consider to be my best work. If
 you're short on time, just listen to the first two or three.
 
-# The music
+ The music
 
-## 2018
 
-*   *Glimmering Pavement* – February 2018
+# 2018
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7F4IYSzUPmQ" frameborder="0" allowfullscreen></iframe>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" download>Download</a>
+## *Glimmering Pavement*
 
-    I started writing this on my phone during the bus rides home from work, and
-    then moved to my usual computer workflow after I had a few ideas.  In lieu
-    of a better animation, I've just done a screen capture of the playlist in FL
-    Studio.
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" video="https://www.youtube.com/embed/7F4IYSzUPmQ">
 
-## 2017
+*February 2018:* I started writing this on my phone during the bus rides home
+from work, and then moved to my usual computer workflow after I had a few ideas.
+In lieu of a better animation, I've just done a screen capture of the playlist
+in FL Studio.
 
-*   *Swimming in Circles* – April 2017
+</l-music>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6lmSJVmlT4o" frameborder="0" allowfullscreen></iframe>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" download>Download</a>
+# 2017
 
-    The soundtrack for
-    [Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
-    I made for Ludum Dare 38.  I wrote this in about two hours, and then spent
-    an additional 20 minutes after the submission deadline adding an actual
-    ending and cleaning things up very slightly.  I'm pretty happy with how it
-    turned out given the time limit, but I don't think it's as good as my other
-    recent tracks.
 
-## 2016
+## *Swimming in Circles*
 
-*   *Storm in the Valley* – August 2016
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" video="https://www.youtube.com/embed/6lmSJVmlT4o">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/w1QXSNBtV1w" frameborder="0" allowfullscreen></iframe>
+*April 2017:* The soundtrack for
+[Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
+I made for Ludum Dare 38.  I wrote this in about two hours, and then spent
+an additional 20 minutes after the submission deadline adding an actual
+ending and cleaning things up very slightly.  I'm pretty happy with how it
+turned out given the time limit, but I don't think it's as good as my other
+recent tracks.
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" download>Download</a>
+</l-music>
 
-    Based on the Gerudo Valley theme from Ocarina of Time. See the description
-    of the YouTube video for more information.
 
-*   *Ligatures in Space* – January 2016
+# 2016
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Ligatures in Space.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Ligatures in Space.mp3" download>Download</a>
 
-## 2015
+## *Storm in the Valley*
 
-*   *Battle in the Cathedral (Remastered)* – October 2015
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" video="https://www.youtube.com/embed/w1QXSNBtV1w">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg" download>Download</a>
+*August 2016:* Based on the Gerudo Valley theme from Ocarina of Time. See the description
+of the YouTube video for more information.
 
-    I made the original *Battle in the Cathedral* using [LMMS](https://lmms.io/)
-    instead of FL Studio, but I was never quite happy with how the final mix
-    turned out. So I exported the individual instrument tracks and mixed them
-    again in FL Studio, yielding this.
+</l-music>
 
-*   *Windmills... in Space!* – February 2015
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KvIuU1sofBY" frameborder="0" allowfullscreen></iframe>
+## *Ligatures in Space*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" download>Download</a>
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Ligatures in Space.mp3" src-flac="/files/music/Synthmaster Lumpy - Ligatures in Space.flac">
 
-    Based on the Song of Storms theme from Ocarina of Time. See the description
-    of the YouTube video for more information.
+*January 2016*
 
-*   *It's from a Davideo Game* – February 2015
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg" download>Download</a>
 
-*   *Shearing the End* – February 2015
+# 2015
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Shearing the End.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Shearing the End.ogg" download>Download</a>
 
-*   *Three Instruments* – January 2015
+## *Battle in the Cathedral (Remastered)*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Three Instruments.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Three Instruments.ogg" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg" src-flac="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).flac">
 
-    https://imgur.com/6gzSeVe
+*October 2015:* I made the original *Battle in the Cathedral* using [LMMS](https://lmms.io/)
+instead of FL Studio, but I was never quite happy with how the final mix
+turned out. So I exported the individual instrument tracks and mixed them
+again in FL Studio, yielding this.
 
-*   *Battle in the Cathedral* – January 2015
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Battle in the Cathedral.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Battle in the Cathedral.ogg" download>Download</a>
 
-## 2014
+## *Windmills... in Space!*
 
-*   *You're a Hero (Instrumental)* – January 2014  
-    for Whosical the Musical at SwampCon 2014.
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" video="https://www.youtube.com/embed/KvIuU1sofBY">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3" download>Download</a>
+*February 2015:* Based on the Song of Storms theme from Ocarina of Time. See the description
+of the YouTube video for more information.
 
-    They didn't end up using this one, though.
+</l-music>
 
-*   *Capes and Crepes (Instrumental)* – January 2014  
-    for Whosical the Musical at SwampCon 2014.
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3" download>Download</a>
+## *It's from a Davideo Game*
 
-    This was a very silly song about heros liking breakfast food. I was given
-    the lyrics and then wrote this.
+<l-music src-ogg="/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg" src-flac="/files/music/Synthmaster Lumpy - It's from a Davideo Game.flac">
 
-## 2013
+*February 2015*
 
-*   *Food Cart* – July 2013
-    for [Mideast Sidearm Hideaway].
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Food Cart.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Food Cart.ogg" download>Download</a>
 
-*   *Gravitational Conflict* – July 2013  
-    for [Mideast Sidearm Hideaway].
+## *Shearing the End*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Gravitational Conflict.ogg">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Gravitational Conflict.ogg" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Shearing the End.ogg" src-flac="/files/music/Synthmaster Lumpy - Shearing the End.flac">
 
-    I finally finished the older track "battle music (rough draft)". I got a
-    little bit carried away with the chords toward the end of the saxophone
-    solo, and then the part after that references the melody and chords from
-    "Black Hole" (but it's kind of difficult to pick out).
+*February 2015*
 
-*   *Black Hole* – May 2013  
-    for [Mideast Sidearm Hideaway].
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Black Hole.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Black Hole.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Black Hole.mp3" download>Download</a>
 
-    The beginning of this track is intended to accompany a short (roughly 10
-    seconds) cutscene in which the black hole appears and steals some parts
-    from your ship. The remainder of the track is a background music loop for
-    the game's overworld.
+## *Three Instruments*
 
-*   *Space* – January 2013  
-    for [Mideast Sidearm Hideaway].
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Three Instruments.ogg" src-flac="/files/music/Synthmaster Lumpy - Three Instruments.flac">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Space.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Space.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Space.mp3" download>Download</a>
+*January 2015:* <a href="https://imgur.com/6gzSeVe" rel=external>https://imgur.com/6gzSeVe</a>
 
-    Title screen music, perhaps?
+</l-music>
 
-*   *Can't Hold Us (instrumental backing track)* – January 2013
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3" download>Download</a>
+## *Battle in the Cathedral*
 
-    I made this for a friend who was writing his own words to it. Dunno if
-    he ever finished recording it. This could still use some improvement.
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Battle in the Cathedral.ogg" src-flac="/files/music/Synthmaster Lumpy - Battle in the Cathedral.flac">
 
-## 2012
+*January 2015*
 
-*   *Mountains In Space* – July 2012  
-    for the [Minecraft Space Mountain video].
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Mountains In Space.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Mountains In Space.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Mountains In Space.mp3" download>Download</a>
 
-*   [Think Green] soundtrack – April 2012
+## *Strange Music (loop)*
 
-    *   *Tiny World*
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Strange Music (loop).ogg">
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Tiny World.ogg">
-          <source src="/files/music/Synthmaster Lumpy - Tiny World.mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Tiny World.mp3" download>Download</a>
+*???*
 
-    *   *Recycling Is Fun*
+</l-music>
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Recycling Is Fun.ogg">
-          <source src="/files/music/Synthmaster Lumpy - Recycling Is Fun.mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Recycling Is Fun.mp3" download>Download</a>
 
-    *   *Death Error*
+# 2014
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Death Error.ogg">
-          <source src="/files/music/Synthmaster Lumpy - Death Error.mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Death Error.mp3" download>Download</a>
 
-*   *Town Theme (orchestrated, draft)* – March 2012
+## *You're a Hero (Instrumental)*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3" download>Download</a>
+<l-music src-mp3="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3" src-flac="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3">
 
-    This is an orchestration of [Joey Franco's town theme], which was
-    originally written for piano. He's slightly upset because I messed up part
-    of the chord progression. In my defense, I'm still planning to fix it if I
-    ever end up working on this again.
+*January 2014:* for Whosical the Musical at SwampCon 2014. They didn't end up
+using this one, though.
 
-*   *The Game* – March 2012
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - The Game.ogg">
-      <source src="/files/music/Synthmaster Lumpy - The Game.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - The Game.mp3" download>Download</a>
 
-    This is a piano duet. [Sheet music](/files/sheets/the-game.pdf) is available.
+## *Capes and Crepes (Instrumental)*
 
-    *   *The Game (chiptune version)*
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3" src-flac="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).flac">
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - The Game (chiptune version).ogg">
-          <source src="/files/music/Synthmaster Lumpy - The Game (chiptune version).mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - The Game (chiptune version).mp3" download>Download</a>
+*January 2014:* for Whosical the Musical at SwampCon 2014. This was a very
+silly song about heros liking breakfast food. I was given the lyrics and then
+wrote this.
 
-*   *another theme* – February 2012
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - another theme.ogg">
-      <source src="/files/music/Synthmaster Lumpy - another theme.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - another theme.mp3" download>Download</a>
 
-*   *theme* – February 2012
+# 2013
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - theme.ogg">
-      <source src="/files/music/Synthmaster Lumpy - theme.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - theme.mp3" download>Download</a>
 
-*   *Exploding Soda Machine (Notion 3)* – February 2012
+## *Food Cart*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Food Cart.ogg">
 
-    I was experimenting with the demo version of Notion 3. This is just a
-    re-creation of my earlier track *Exploding Soda Machine*.
+*July 2013:* for [Mideast Sidearm Hideaway].
 
-*   *battle music (rough draft)* – February 2012
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - battle music (rough draft).ogg">
-      <source src="/files/music/Synthmaster Lumpy - battle music (rough draft).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - battle music (rough draft).mp3" download>Download</a>
 
-*   *Coat Hanger Stew* – January 2012
+## *Gravitational Conflict*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Coat Hanger Stew.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Coat Hanger Stew.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Coat Hanger Stew.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Gravitational Conflict.ogg">
 
-## 2011
+*July 2013:* for [Mideast Sidearm Hideaway]. I finally finished the older track "battle music (rough draft)". I got a little
+bit carried away with the chords toward the end of the saxophone solo, and then
+the part after that references the melody and chords from "Black Hole" (but it's
+kind of difficult to pick out).
 
-*   *Background Music for the Approach* – December 2011
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Background Music for the Approach.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Background Music for the Approach.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Background Music for the Approach.mp3" download>Download</a>
 
-*   *Exploding Soda Machine* – December 2011
+## *Black Hole*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Exploding Soda Machine.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Exploding Soda Machine.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Exploding Soda Machine.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Black Hole.ogg" src-mp3="/files/music/Synthmaster Lumpy - Black Hole.mp3">
 
-*   *The Village* – August 2011
+*July 2013:* for [Mideast Sidearm Hideaway]. The beginning of this track is intended to accompany a short (roughly 10
+seconds) cutscene in which the black hole appears and steals some parts
+from your ship. The remainder of the track is a background music loop for
+the game's overworld.
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - The Village.ogg">
-      <source src="/files/music/Synthmaster Lumpy - The Village.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - The Village.mp3" download>Download</a>
+</l-music>
 
-*   *The Shop* – August 2011
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - The Shop.ogg">
-      <source src="/files/music/Synthmaster Lumpy - The Shop.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - The Shop.mp3" download>Download</a>
+## *Space*
 
-    This actually doesn't sound at all like shop music. It sounds more like
-    credits or menu music.
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Space.ogg" src-mp3="/files/music/Synthmaster Lumpy - Space.mp3" src-flac="/files/music/Synthmaster Lumpy - Space.flac">
 
-*   *Christmas In July* – July 2011
+*July 2013:* for [Mideast Sidearm Hideaway].
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Christmas In July.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Christmas In July.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Christmas In July.mp3" download>Download</a>
+</l-music>
 
-    My first Christmas medley! Included tunes (in order of initial
-    appearance—some overlap):
 
-    *   God Rest Ye Merry, Gentlemen
-    *   The First Noel
-    *   Il est né
-    *   Sing We Now of Christmas
-    *   Lo, How a Rose E'er Blooming
-    *   Up on the House Top
-    *   Jingle Bells
-    *   Do You Hear What I Hear?
-    *   Look Down (Les Misérables)
-    *   Carol of the Bells
-    *   Ding Dong Merrily on High
+## *Can't Hold Us (instrumental backing track)*
 
-*   *experimental memphis* – July 2011
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg" src-mp3="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - experimental memphis.ogg">
-      <source src="/files/music/Synthmaster Lumpy - experimental memphis.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - experimental memphis.mp3" download>Download</a>
+*January 2013:* I made this for a friend who was writing his own words to it.
+Dunno if he ever finished recording it. This could still use some improvement.
 
-    I tried this after listening to the soundtrack for *Memphis* (the musical)
-    a few times. I was just going for a sort of gospel-y feel, I guess. This
-    was tricky because the saxophone sample I was using only did short notes.
+</l-music>
 
-*   *On The Clock (long version)* – June 2011
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg">
-      <source src="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3" download>Download</a>
+# 2012
 
-    This track is an extension of the older *On The Clock* that matches up
-    perfectly with Ke$ha's *Tik Tok*. The added build-up section that starts
-    about 2/3 of the way through is spiffy.
 
-*   *RandyRacer* – May 2011
+## *Mountains In Space*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - RandyRacer.ogg">
-      <source src="/files/music/Synthmaster Lumpy - RandyRacer.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - RandyRacer.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Mountains In Space.ogg" src-mp3="/files/music/Synthmaster Lumpy - Mountains In Space.mp3">
 
-    This is Randy Adams's theme song.
+*July 2012:* for the [Minecraft Space Mountain video].
 
-*   *Les Misérables bows music loop* – May 2011
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3" download>Download</a>
 
-    This really needs to be re-balanced. Too much bass and horn.
+## *Tiny World*
 
-*   *Contest Entry* – April 2011
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Tiny World.ogg" src-mp3="/files/music/Synthmaster Lumpy - Tiny World.mp3">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Contest Entry.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Contest Entry.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Contest Entry.mp3" download>Download</a>
+*April 2012:* For [Think Green].
 
-    Anthony Narciso, Jeffrey Narciso, and I had a contest to see who could
-    write the coolest track in an hour. We constrained ourselves thusly: (1)
-    must include a pitched instrument; (2) must include drums; (3) must be
-    loudest at the end. I gave myself the additional constraint that all of my
-    layers needed to sound good together. It turned out okay…
+</l-music>
 
-*   *No Quest* – March 2011
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - No Quest.ogg">
-      <source src="/files/music/Synthmaster Lumpy - No Quest.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - No Quest.mp3" download>Download</a>
+## *Recycling Is Fun*
 
-*   *Norman's Theme* – March 2011
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Recycling Is Fun.ogg" src-mp3="/files/music/Synthmaster Lumpy - Recycling Is Fun.mp3">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Norman's Theme.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Norman's Theme.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Norman's Theme.mp3" download>Download</a>
+*April 2012:* For [Think Green].
 
-*   *Walkin' Lucas (He's a Fish)* – March 2011
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3" download>Download</a>
 
-    Written for David Troner's fish named Lucas. The ending (the last 17 or so
-    seconds) is basically perfect.
+## *Death Error*
 
-## 2010
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Death Error.ogg" src-mp3="/files/music/Synthmaster Lumpy - Death Error.mp3">
 
-*   *God Stress Ye, Merry Mentlegen* – December 2010
+*April 2012:* For [Think Green].
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.ogg">
-      <source src="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3" download>Download</a>
+</l-music>
 
-    You don't think Christmas music can be annoying? Think again!
 
-*   *God Rest Ye Merry, Gentlemen* – December 2010
+## *Town Theme (orchestrated, draft)*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.ogg">
-      <source src="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3">
 
-    As far as I can tell, this is the correct punctuation of the title.
-    I wrote this in response to calzoneman's God Rest Ye Merry Gentlemen. The
-    ending explosion is the same as from *On The Clock*. It just sounded right.
+*March 2012:* This is an orchestration of [Joey Franco's town theme], which was
+originally written for piano. He's slightly upset because I messed up part of
+the chord progression. In my defense, I'm still planning to fix it if I ever end
+up working on this again.
 
-*   *Surrogate Melon* – December 2010
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Surrogate Melon.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Surrogate Melon.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Surrogate Melon.mp3" download>Download</a>
 
-*   *Anthony Narciso, You Should Vote* – June 2010
+## *The Game*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - The Game.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Game.mp3">
 
-    No comment.
+*March 2012:* This is a piano duet. [Sheet music](/files/sheets/the-game.pdf)
+is available.
 
-*   *On The Clock* – June 2010
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - On The Clock.ogg">
-      <source src="/files/music/Synthmaster Lumpy - On The Clock.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - On The Clock.mp3" download>Download</a>
 
-    Written using the chords from Ke$ha's *Tik Tok*. I tried to hide this fact
-    until the point in the middle where it becomes completely obvious.
+## *The Game (chiptune version)*
 
-*   *Latin Prepositions* – January 2010
+<l-music src-ogg="/files/music/Synthmaster Lumpy - The Game (chiptune version).ogg" src-mp3="/files/music/Synthmaster Lumpy - The Game (chiptune version).mp3">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Latin Prepositions.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Latin Prepositions.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Latin Prepositions.mp3" download>Download</a>
+</l-music>
 
-    Written for my high school Latin project. There's one obvious mistake in
-    this, where I say the wrong translation for "post montem". That was a
-    recording mistake that I didn't notice until it was too late to fix. Oh
-    well. I'm also not a big fan of my singing.
 
-    *   *Latin Prepositions (vocoder mix)*
+## *another theme*
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).ogg">
-          <source src="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - another theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - another theme.mp3">
 
-    *   *Latin Prepositions (instrumental mix)*
+*February 2012*
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).ogg">
-          <source src="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).mp3" download>Download</a>
+</l-music>
 
-## Really old...
 
-*   *Sing We Now Of Christmas* – December 2009
+## *theme*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - theme.mp3">
 
-    Just a chiptunified version of a standard four-part arrangement—Not very
-    exciting. I think I was experimenting with Milky Tracker.
+*February 2012*
 
-*   *cmbgmabb5* – July 2009
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - cmbgmabb5.ogg">
-      <source src="/files/music/Synthmaster Lumpy - cmbgmabb5.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - cmbgmabb5.mp3" download>Download</a>
 
-    This is named after the chords that I used—except I messed up and typed the
-    wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
+## *Exploding Soda Machine (Notion 3)*
 
-*   *The Birthday Song* – January 2007
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).ogg" src-mp3="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).mp3">
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - The Birthday Song.ogg">
-      <source src="/files/music/Synthmaster Lumpy - The Birthday Song.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - The Birthday Song.mp3" download>Download</a>
+*February 2012:* I was experimenting with the demo version of Notion 3. This is just a
+re-creation of my earlier track *Exploding Soda Machine*.
 
-*   *That Box of Cookie Crisp is Upside Down* – January 2007
+</l-music>
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.ogg">
-      <source src="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.mp3" download>Download</a>
 
-*   *Raid The Bass (Required)* – October 2006
+## *battle music (rough draft)*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - battle music (rough draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - battle music (rough draft).mp3">
 
-*   *Track 7* – August 2006
+*February 2012*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Track 7.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Track 7.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Track 7.mp3" download>Download</a>
+</l-music>
 
-    I was experimenting with using LSDJ (in an emulator) to create the gameboy
-    notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 
-*   *Find The Bass (Required)* – August 2006
+## *Coat Hanger Stew*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg">
-      <source src="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Coat Hanger Stew.ogg" src-mp3="/files/music/Synthmaster Lumpy - Coat Hanger Stew.mp3">
 
-*   *Ultimate Banana Landscape* – June 2006
+*January 2012*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3" download>Download</a>
+</l-music>
 
-    This is clearly a parody of the Mario theme music.
 
-*   *Over The Purple Rainbow* – June 2006
+# 2011
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3" download>Download</a>
 
-*   *Lumpy's Theme* – April 2006
+## *Background Music for the Approach*
 
-    <audio controls="controls" preload="none">
-      <source src="/files/music/Synthmaster Lumpy - Lumpy's Theme.ogg">
-      <source src="/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3">
-    </audio>
-    <a href="/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3" download>Download</a>
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Background Music for the Approach.ogg" src-mp3="/files/music/Synthmaster Lumpy - Background Music for the Approach.mp3">
 
-    *   *Lumpy's Theme (gameboy version)*
+*December 2011*
 
-        <audio controls="controls" preload="none">
-          <source src="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).ogg">
-          <source src="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3">
-        </audio>
-        <a href="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3" download>Download</a>
+</l-music>
+
+
+## *Exploding Soda Machine*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Exploding Soda Machine.ogg" src-mp3="/files/music/Synthmaster Lumpy - Exploding Soda Machine.mp3">
+
+*December 2011*
+
+</l-music>
+
+
+## *The Village*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - The Village.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Village.mp3">
+
+*August 2011*
+
+</l-music>
+
+
+## *The Shop*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - The Shop.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Shop.mp3">
+
+*August 2011:* This actually doesn't sound at all like shop music. It sounds more like
+credits or menu music.
+
+</l-music>
+
+
+## *Christmas In July*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Christmas In July.ogg" src-mp3="/files/music/Synthmaster Lumpy - Christmas In July.mp3">
+
+*July 2011:* My first Christmas medley! Included tunes (in order of initial
+appearance—some overlap):
+
+* God Rest Ye Merry, Gentlemen
+* The First Noel
+* Il est né
+* Sing We Now of Christmas
+* Lo, How a Rose E'er Blooming
+* Up on the House Top
+* Jingle Bells
+* Do You Hear What I Hear?
+* Look Down (Les Misérables)
+* Carol of the Bells
+* Ding Dong Merrily on High
+
+</l-music>
+
+
+## *experimental memphis*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - experimental memphis.ogg" src-mp3="/files/music/Synthmaster Lumpy - experimental memphis.mp3">
+
+*July 2011:* I tried this after listening to the soundtrack for *Memphis* (the
+musical) a few times. I was just going for a sort of gospel-y feel, I guess.
+This was tricky because the saxophone sample I was using only did short notes.
+
+</l-music>
+
+
+## *On The Clock (long version)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3">
+
+*June 2011:* This track is an extension of the older *On The Clock* that
+matches up perfectly with Ke$ha's *Tik Tok*. The added build-up section that
+starts about 2/3 of the way through is spiffy.
+
+</l-music>
+
+
+## *RandyRacer*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - RandyRacer.ogg" src-mp3="/files/music/Synthmaster Lumpy - RandyRacer.mp3" src-flac="/files/music/Synthmaster Lumpy - RandyRacer.flac">
+
+*May 2011:* This is Randy Adams's theme song.
+
+</l-music>
+
+
+## *Les Misérables bows music loop*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg" src-mp3="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3">
+
+*May 2011:* This really needs to be re-balanced. Too much bass and horn.
+
+</l-music>
+
+
+## *Contest Entry*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Contest Entry.ogg" src-mp3="/files/music/Synthmaster Lumpy - Contest Entry.mp3">
+
+*April 2011:* Anthony Narciso, Jeffrey Narciso, and I had a contest to see who
+could write the coolest track in an hour. We constrained ourselves thusly: (1)
+must include a pitched instrument; (2) must include drums; (3) must be loudest
+at the end. I gave myself the additional constraint that all of my layers needed
+to sound good together. It turned out okay…
+
+</l-music>
+
+
+## *No Quest*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - No Quest.ogg" src-mp3="/files/music/Synthmaster Lumpy - No Quest.mp3">
+
+*March 2011*
+
+</l-music>
+
+
+## *Norman's Theme*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Norman's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Norman's Theme.mp3">
+
+*March 2011*
+
+</l-music>
+
+
+## *Walkin' Lucas (He's a Fish)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg" src-mp3="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3">
+
+*March 2011:* Written for David Troner's fish named Lucas. The ending (the last
+17 or so seconds) is basically perfect.
+
+</l-music>
+
+
+# 2010
+
+
+## *God Stress Ye, Merry Mentlegen*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3">
+
+*December 2010:* You don't think Christmas music can be annoying? Think again!
+
+</l-music>
+
+
+## *God Rest Ye Merry, Gentlemen*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3">
+
+*December 2010:* As far as I can tell, this is the correct punctuation of the
+title.  I wrote this in response to calzoneman's God Rest Ye Merry Gentlemen.
+The ending explosion is the same as from *On The Clock*. It just sounded right.
+
+</l-music>
+
+
+## *Surrogate Melon*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Surrogate Melon.ogg" src-mp3="/files/music/Synthmaster Lumpy - Surrogate Melon.mp3">
+
+*December 2010*
+
+</l-music>
+
+
+## *Surrogate Melon (extended version)*
+
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Surrogate Melon (extended version).mp3">
+
+*December 2010*
+
+</l-music>
+
+
+## *Anthony Narciso, You Should Vote*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg" src-mp3="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3">
+
+*June 2010:* No comment.
+
+</l-music>
+
+
+## *On The Clock*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock.ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock.mp3">
+
+*June 2010:* Written using the chords from Ke$ha's *Tik Tok*. I tried to hide
+this fact until the point in the middle where it becomes completely obvious.
+
+</l-music>
+
+
+## *Latin Prepositions*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions.ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions.mp3">
+
+*January 2010:* Written for my high school Latin project. There's one obvious
+mistake in this, where I say the wrong translation for "post montem". That was a
+recording mistake that I didn't notice until it was too late to fix. Oh well.
+I'm also not a big fan of my singing.
+
+</l-music>
+
+
+## *Latin Prepositions (vocoder mix)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).mp3">
+
+</l-music>
+
+
+## *Latin Prepositions (instrumental mix)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).mp3">
+
+</l-music>
+
+
+# Really old...
+
+
+## *Sing We Now Of Christmas*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg" src-mp3="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3">
+
+*December 2009:* Just a chiptunified version of a standard four-part
+arrangement—Not very exciting. I think I was experimenting with Milky Tracker.
+
+</l-music>
+
+
+## *Chocobo Minor*
+
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Chocobo Minor.mp3">
+
+*???*
+
+</l-music>
+
+
+## *cmbgmabb5*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - cmbgmabb5.ogg" src-mp3="/files/music/Synthmaster Lumpy - cmbgmabb5.mp3">
+
+*July 2009:* This is named after the chords that I used—except I messed up and
+typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
+
+</l-music>
+
+
+## *The Birthday Song*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - The Birthday Song.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Birthday Song.mp3">
+
+*January 2007*
+
+</l-music>
+
+
+## *That Box of Cookie Crisp is Upside Down*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.ogg" src-mp3="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.mp3">
+
+*January 2007*
+
+</l-music>
+
+
+## *Raid The Bass (Required)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3">
+
+*October 2006*
+
+</l-music>
+
+
+## *Track 7*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Track 7.ogg" src-mp3="/files/music/Synthmaster Lumpy - Track 7.mp3">
+
+*August 2006:* I was experimenting with using LSDJ (in an emulator) to create
+the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
+
+</l-music>
+
+
+## *Find The Bass (Required)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3">
+
+*August 2006*
+
+</l-music>
+
+
+## *Ultimate Banana Landscape*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg" src-mp3="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3">
+
+*June 2006:* This is clearly a parody of the Mario theme music.
+
+</l-music>
+
+
+## *Over The Purple Rainbow*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg" src-mp3="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3">
+
+*June 2006*
+
+</l-music>
+
+
+## *Lumpy's Theme*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3">
+
+*April 2006*
+
+</l-music>
+
+
+## *Lumpy's Theme (gameboy version)*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3">
+
+</l-music>
+
 
 [SoundCloud page]: http://soundcloud.com/synthmaster-lumpy
 [YouTube channel]: http://www.youtube.com/user/Kalgynirae
@@ -666,3 +693,58 @@ you're short on time, just listen to the first two or three.
 [Mideast Sidearm Hideaway]: https://github.com/ufgmg/mideast-sidearm-hideaway
 [Think Green]: /projects/think-green
 [Joey Franco's town theme]: https://soundcloud.com/norphan/town-theme
+
+
+<script>
+class LumehMusic extends HTMLElement {
+  constructor() {
+    super();
+
+    var sources = [];
+    for (const ext of ['ogg', 'mp3', 'flac']) {
+      if (this.hasAttribute(`src-${ext}`)) {
+        sources.push(this.getAttribute(`src-${ext}`));
+      }
+    }
+
+    // Audio player
+    var audio = document.createElement('audio');
+    audio.setAttribute('controls', '');
+    audio.setAttribute('preload', 'none');
+    for (const source of sources) {
+      var sourcetag = document.createElement('source');
+      sourcetag.setAttribute('src', source);
+      audio.appendChild(sourcetag);
+    }
+    this.appendChild(audio);
+
+    // Download links
+    var downloads = document.createElement('span');
+    downloads.textContent = "Download:";
+    for (const source of sources) {
+      var extension = source.split('.').pop();
+      var downloadlink = document.createElement('a');
+      downloadlink.setAttribute('href', source);
+      downloadlink.setAttribute('download', '');
+      downloadlink.textContent = `[${extension}]`;
+      downloads.appendChild(document.createTextNode(' '));
+      downloads.appendChild(downloadlink);
+    }
+    this.appendChild(document.createTextNode(' '));
+    this.appendChild(downloads);
+
+    // YouTube embed
+    if (this.hasAttribute('video')) {
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute('class', 'youtube-video');
+      iframe.setAttribute('width', 560);
+      iframe.setAttribute('height', 315);
+      iframe.setAttribute('frameborder', 0);
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('src', this.getAttribute('video'));
+      this.appendChild(iframe);
+    }
+  }
+}
+customElements.define('l-music', LumehMusic);
+</script>

@@ -4,14 +4,18 @@ title: Café Chan
 
 ## Now playing
 
-If Café Chan is currently playing music, you can tune in here. (If you try to
-play it and nothing happens after a few seconds, and you refresh the page and
-try again and still nothing happens, then Café Chan is probably not playing any
-music.)
+If Café Chan is currently playing music, you can tune in here. Note that using
+the browser's built-in audio player is frequently unreliable (especially on
+smartphones). It's more reliable to listen via an external audio player that can
+open HTTP streams (for example, [VLC] or [mpv]). Open this URL:
+`https://radio.lumeh.org/café.ogg`.
 
 <audio src="https://radio.lumeh.org/café.ogg" preload="none" controls>
   <a href="https://radio.lumeh.org/café.ogg" target="cafe-music-stream">café stream</a>
 </audio>
+
+[VLC]: https://www.videolan.org/vlc/
+[mpv]: https://mpv.io/
 
 <p><em id="song-artist">&nbsp;</em> – <em id="song-title">&nbsp;</em>
 (<span id="song-current-time">&nbsp;</span>/<span id="song-length">&nbsp;</span>)
@@ -39,6 +43,6 @@ $(document).ready(function() {
   });
  };
  update();
- setInterval(update, 5000);
+ setInterval(update, 8000);
 });
 </script>

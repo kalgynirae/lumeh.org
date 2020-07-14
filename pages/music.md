@@ -19,12 +19,11 @@ If you can't figure out how to download the music, or if you have questions
 about the Creative Commons license, send me an email (the address is displayed
 at the very bottom of any page on this site).
 
+
 # Recommended listening
 
 [Good Stuff] is a ~30 minute playlist of what I consider to be my best work. If
 you're short on time, just listen to the first two or three.
-
- The music
 
 
 # 2018

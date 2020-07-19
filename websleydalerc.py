@@ -92,6 +92,7 @@ site = Site(
                 "popovers",
                 "pumpkin_bread",
                 "quiche",
+                "shortbread_cookies",
                 "sweet_potato_casserole",
                 "thai_chicken_curry",
             ]

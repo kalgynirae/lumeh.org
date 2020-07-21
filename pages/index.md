@@ -26,7 +26,7 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 *   [music I've written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
 *   [my recipes](/recipes/)
-*   [my résumé (PDF)](/docs/resume-20170228.pdf)
+*   [my résumé (PDF)](/docs/resume-20200720.pdf)
 
 ## Semi-Serious things
 

@@ -88,6 +88,7 @@ site = Site(
                 "first_watch_seasoning",
                 "green_bean_bundles",
                 "lemonade",
+                "little_white_ball_cookies",
                 "mac_and_cheese",
                 "popovers",
                 "pumpkin_bread",

@@ -31,6 +31,7 @@ We have resurrected the Café Chan orchestral Christmas music stream:
 # Cookie Recipes
 
 * [Chonklate Chip Cookies]
+* [Little White Ball Cookies]
 * [Shortbread Cookies]
 * [Alton Brown's Sugar Cookies]
 
@@ -39,6 +40,7 @@ recommend baking your cookies ahead of time, because cookies are great.
 
 [Alton Brown's Sugar Cookies]: https://www.foodnetwork.com/recipes/alton-brown/sugar-cookies-recipe-1914697
 [Chonklate Chip Cookies]: /recipes/chonklate-chip-cookies/
+[Little White Ball Cookies]: /recipes/little-white-ball-cookies/
 [Shortbread Cookies]: /recipes/shortbread-cookies/
 
 <style>

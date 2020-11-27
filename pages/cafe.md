@@ -8,10 +8,10 @@ If Café Chan is currently playing music, you can tune in here. Note that using
 the browser's built-in audio player is frequently unreliable (especially on
 smartphones). It's more reliable to listen via an external audio player that can
 open HTTP streams (for example, [VLC] or [mpv]). Open this URL:
-`https://radio.lumeh.org/café.ogg`.
+`https://radio.lumeh.org/cafe.ogg`.
 
-<audio src="https://radio.lumeh.org/café.ogg" preload="none" controls>
-  <a href="https://radio.lumeh.org/café.ogg" target="cafe-music-stream">café stream</a>
+<audio src="https://radio.lumeh.org/cafe.ogg" preload="none" controls>
+  <a href="https://radio.lumeh.org/cafe.ogg" target="cafe-music-stream">café stream</a>
 </audio>
 
 [VLC]: https://www.videolan.org/vlc/

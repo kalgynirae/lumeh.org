@@ -26,6 +26,20 @@ at the very bottom of any page on this site).
 you're short on time, just listen to the first two or three.
 
 
+# 2020
+
+
+## *Plausible Geometry*
+
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" video="https://www.youtube.com/embed/GcHz6Ycd61Y">
+
+*December 2020:* I upgraded to the "All Plugins" edition of FL Studio during a
+recent sale, and made this track to try out some of the new plugins. I tried to
+make more use of syncopation to get a better groove, and I think it worked!
+
+</l-music>
+
+
 # 2018
 
 

@@ -14,7 +14,7 @@ Yes.
 ## What?? How???
 
 It's like normal Christmas in July, but you do it at
-your own house and join our [Discord server]. We'll be
+your own house and join our [~~Discord server~~]. We'll be
 online from **2pm to 6pm (PDT)**. Come for a quick hello, or
 stay for the whole thing. It's *your* Christmas!
 
@@ -22,11 +22,11 @@ stay for the whole thing. It's *your* Christmas!
 
 We have resurrected the Café Chan orchestral Christmas music stream:
 
-<audio src="https://radio.lumeh.org/christmas1.ogg" preload="none" controls>
-  <a href="https://radio.lumeh.org/christmas1.ogg" target="cafe-music-stream">christmas1 stream</a>
-</audio>
+(the audio stream is no longer active, but check [/cafe] to see what's currently
+playing)
 
-[Discord server]: https://discord.gg/HQQWbHp
+[Discord server]: #
+[/cafe]: /cafe/
 
 # Cookie Recipes
 

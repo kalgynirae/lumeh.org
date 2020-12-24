@@ -21,4 +21,4 @@ games have been played as of 9 September 2014.
 [tennis]: https://en.wikipedia.org/wiki/Tennis
 [trebuchets]: https://en.wikipedia.org/wiki/Trebuchet
 [tennis court lines]: https://en.wikipedia.org/wiki/Tennis#Lines
-[early twenty-first century]: {% link early-twenty-first-century.md %}
+[early twenty-first century]: /wiki/early-twenty-first-century/

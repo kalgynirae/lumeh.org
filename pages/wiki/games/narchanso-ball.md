@@ -98,4 +98,4 @@ maintaining the non-competitive nature of NarChanSo Ball.
 *   Give the offense enough room at the start of the round. Otherwise, they
     will probably ask for a re-kick.
 
-[early twenty-first century]: {% link early-twenty-first-century.md %}
+[early twenty-first century]: /wiki/early-twenty-first-century/

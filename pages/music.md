@@ -3,8 +3,8 @@ title: Music
 ---
 
 I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
-[SoundCloud page] and a [YouTube channel], although the latter is quite empty
-currently.
+[YouTube channel] and a [SoundCloud page], but the latter rarely gets updated
+these days.
 
 Unless otherwise specified, these music tracks are licensed under a
 <a rel="license"
@@ -15,15 +15,21 @@ correct attribution (list both the title and the artist) and (b) remix/modify
 the music as long as you give the correct attribution and release your modified
 version under a similar license.
 
-If you can't figure out how to download the music, or if you have questions
-about the Creative Commons license, send me an email (the address is displayed
-at the very bottom of any page on this site).
-
 
 # Recommended listening
 
-[Good Stuff] is a ~30 minute playlist of what I consider to be my best work. If
-you're short on time, just listen to the first two or three.
+This is a short list of the tracks that I think are the best.
+
+1. [Windmills... in Space!](#windmills-in-space)
+2. [Recycling is Fun](#recycling-is-fun)
+3. [Glimmering Pavement](#glimmering-pavement)
+4. [Plausible Geometry](#plausible-geometry)
+5. [Storm in the Valley](#storm-in-the-valley)
+6. [Gravitational Conflict](#gravitational-conflict)
+7. [Ligatures In Space](#ligatures-in-space)
+8. [Walkin' Lucas (He's a Fish)](#walkin-lucas-he-s-a-fish)
+9. [Mountains In Space](#mountains-in-space)
+10. [Battle in the Cathedral (Remastered)](#battle-in-the-cathedral-remastered)
 
 
 # 2020

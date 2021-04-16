@@ -2,6 +2,12 @@
 title: Wiki Index
 ---
 
+The wiki is intended to be a collection of information, curated by Colin,
+about a wide variety of topics. Presently, though, the width is very small.
+
+All content in this wiki is licensed under a
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 # Linux
 
 * [i3 + Firefox Context Menu Alignment Issue](linux/i3-firefox-context-menu-alignment-issue/)

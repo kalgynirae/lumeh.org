@@ -37,8 +37,7 @@ We won’t do a gift exchange this year.
 
 ## What’s on the menu (so far)?
 
-* general Christmas atmosphere (but maybe a little less so than usual in the
-  temperature department; our air conditioner is not the best)
+* general Christmas atmosphere
 * meatball bar (selection of meatballs and veggie balls w/ various sauces)
 * hot apple cider
 * cinnamon star bread

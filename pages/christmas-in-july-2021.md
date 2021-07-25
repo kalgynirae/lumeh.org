@@ -39,8 +39,13 @@ We won’t do a gift exchange this year.
 
 * general Christmas atmosphere
 * meatball bar (selection of meatballs and veggie balls w/ various sauces)
+* salami and cheeses
+* broccoli salad
+* house salad
 * hot apple cider
 * cinnamon star bread
+* brownies
+* ginger snaps
 * <span style="cursor: default; display: inline-block; border-radius: 3px; border: 1px dashed grey; color: grey; font-size: 0.8em; padding: 0.1em 0.4em">YOUR FOOD ITEM COULD BE HERE!</span>
 
 <style>

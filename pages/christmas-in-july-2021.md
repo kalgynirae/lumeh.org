@@ -46,6 +46,7 @@ We won’t do a gift exchange this year.
 * cinnamon star bread
 * brownies
 * ginger snaps
+* *many* beverage options
 * <span style="cursor: default; display: inline-block; border-radius: 3px; border: 1px dashed grey; color: grey; font-size: 0.8em; padding: 0.1em 0.4em">YOUR FOOD ITEM COULD BE HERE!</span>
 
 <style>

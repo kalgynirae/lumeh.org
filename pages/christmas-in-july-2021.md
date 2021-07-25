@@ -23,9 +23,11 @@ Potentially. Let Colin know if you’re interested.
 ## Do I need to RSVP?
 
 Please do! You can message Colin directly, or you can join the [Café Chan
-Discord server] and react YES to the announcement in the #bay-area channel.
-(Other reasons to join the Discord server include future events, Among Us,
-crosswords, and food opportunities.)
+Discord server] and react YES to the announcement in the #bay-area channel
+(note: if you're new to the Discord server, you need to visit #roles first and
+opt-in to the Valued Customers role; that will give you access to the #bay-area
+channel). (Other reasons to join the Discord server include future events, Among
+Us, crosswords, and food opportunities.)
 
 [Café Chan Discord server]: https://discord.gg/qG4NfvWHkw
 

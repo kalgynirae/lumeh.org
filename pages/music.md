@@ -54,7 +54,7 @@ multi-story swimming pool, and I used the [Godot game engine] to build it.
 
 ## *Plausible Geometry*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" video="https://www.youtube.com/embed/GcHz6Ycd61Y">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" video="https://www.youtube-nocookie.com/embed/GcHz6Ycd61Y">
 
 *December 2020:* I upgraded to the "All Plugins" edition of FL Studio during a
 recent sale, and made this track to try out some of the new plugins. I tried to
@@ -68,7 +68,7 @@ make more use of syncopation to get a better groove, and I think it worked!
 
 ## *Glimmering Pavement*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" video="https://www.youtube.com/embed/7F4IYSzUPmQ">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" video="https://www.youtube-nocookie.com/embed/7F4IYSzUPmQ">
 
 *February 2018:* I started writing this on my phone during the bus rides home
 from work, and then moved to my usual computer workflow after I had a few ideas.
@@ -83,7 +83,7 @@ in FL Studio.
 
 ## *Swimming in Circles*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" video="https://www.youtube.com/embed/6lmSJVmlT4o">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" video="https://www.youtube-nocookie.com/embed/6lmSJVmlT4o">
 
 *April 2017:* The soundtrack for
 [Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
@@ -101,7 +101,7 @@ recent tracks.
 
 ## *Storm in the Valley*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" video="https://www.youtube.com/embed/w1QXSNBtV1w">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" video="https://www.youtube-nocookie.com/embed/w1QXSNBtV1w">
 
 *August 2016:* Based on the Gerudo Valley theme from Ocarina of Time. See the description
 of the YouTube video for more information.
@@ -135,7 +135,7 @@ again in FL Studio, yielding this.
 
 ## *Windmills... in Space!*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" video="https://www.youtube.com/embed/KvIuU1sofBY">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" video="https://www.youtube-nocookie.com/embed/KvIuU1sofBY">
 
 *February 2015:* Based on the Song of Storms theme from Ocarina of Time. See the description
 of the YouTube video for more information.

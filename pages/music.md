@@ -6,16 +6,6 @@ I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
 [YouTube channel] and a [SoundCloud page], but the latter rarely gets updated
 these days.
 
-Unless otherwise specified, these music tracks are licensed under a
-<a rel="license"
-  href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative
-Commons Attribution-ShareAlike 3.0 Unported License</a>. Basically, you have
-permission to (a) use and distribute the music as long as you give the
-correct attribution (list both the title and the artist) and (b) remix/modify
-the music as long as you give the correct attribution and release your modified
-version under a similar license.
-
-
 # Recommended listening
 
 This is a short list of the tracks that I think are the best.
@@ -259,7 +249,7 @@ the game's overworld.
 
 ## *Can't Hold Us (instrumental backing track)*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg" src-mp3="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg" src-mp3="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3" license=none>
 
 *January 2013:* I made this for a friend who was writing his own words to it.
 Dunno if he ever finished recording it. This could still use some improvement.
@@ -308,7 +298,7 @@ Dunno if he ever finished recording it. This could still use some improvement.
 
 ## *Town Theme (orchestrated, draft)*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3" license=none>
 
 *March 2012:* This is an orchestration of [Joey Franco's town theme], which was
 originally written for piano. He's slightly upset because I messed up part of
@@ -456,7 +446,7 @@ This was tricky because the saxophone sample I was using only did short notes.
 
 ## *On The Clock (long version)*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3" license=none>
 
 *June 2011:* This track is an extension of the older *On The Clock* that
 matches up perfectly with Ke$ha's *Tik Tok*. The added build-up section that
@@ -476,7 +466,7 @@ starts about 2/3 of the way through is spiffy.
 
 ## *Les Misérables bows music loop*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg" src-mp3="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg" src-mp3="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3" license=none>
 
 *May 2011:* This really needs to be re-balanced. Too much bass and horn.
 
@@ -576,7 +566,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 
 ## *On The Clock*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock.ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock.mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock.ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock.mp3" license=none>
 
 *June 2010:* Written using the chords from Ke$ha's *Tik Tok*. I tried to hide
 this fact until the point in the middle where it becomes completely obvious.
@@ -615,7 +605,7 @@ I'm also not a big fan of my singing.
 
 ## *Sing We Now Of Christmas*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg" src-mp3="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg" src-mp3="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3" license=none>
 
 *December 2009:* Just a chiptunified version of a standard four-part
 arrangement—Not very exciting. I think I was experimenting with Milky Tracker.
@@ -625,7 +615,7 @@ arrangement—Not very exciting. I think I was experimenting with Milky Tracker.
 
 ## *Chocobo Minor*
 
-<l-music src-mp3="/files/music/Synthmaster Lumpy - Chocobo Minor.mp3">
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Chocobo Minor.mp3" license=none>
 
 *???*
 
@@ -662,7 +652,7 @@ typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
 
 ## *Raid The Bass (Required)*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3" license=none>
 
 *October 2006*
 
@@ -681,7 +671,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 
 ## *Find The Bass (Required)*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3" license=none>
 
 *August 2006*
 
@@ -699,7 +689,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 
 ## *Over The Purple Rainbow*
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg" src-mp3="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg" src-mp3="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3" license=none>
 
 *June 2006*
 
@@ -768,6 +758,27 @@ class LumehMusic extends HTMLElement {
     }
     this.appendChild(document.createTextNode(' '));
     this.appendChild(downloads);
+
+    // License
+    var license = document.createElement('span');
+    license.textContent = "License:";
+    if (this.hasAttribute('license')) {
+      if (this.getAttribute('license') == 'none') {
+        license.textContent += ' All rights reserved';
+      } else {
+        license.textContent += ' unknown';
+      }
+    } else {
+      var licenselink = document.createElement('a');
+      licenselink.setAttribute('href', 'https://creativecommons.org/licenses/by-sa/4.0/');
+      licenselink.setAttribute('rel', 'external');
+      licenselink.setAttribute('target', '_blank');
+      licenselink.textContent = 'CC BY-SA 4.0';
+      license.appendChild(document.createTextNode(' '));
+      license.appendChild(licenselink);
+    }
+    this.appendChild(document.createTextNode(' '));
+    this.appendChild(license);
 
     // YouTube embed
     if (this.hasAttribute('video')) {

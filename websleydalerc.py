@@ -78,6 +78,7 @@ site = Site(
                 "chancakes",
                 "chicken_curry",
                 "chicken_curry_v2",
+                "chickpeas_pressure_cooker",
                 "chili",
                 "chonklate_chip_cookies",
                 "christmas_anything",

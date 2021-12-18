@@ -25,7 +25,7 @@ away from the mouse cursor. Here’s the relevant excerpt from [my
 /* Offset right-click menus a bit so they don’t appear
    with the first item already highlighted */
 #contentAreaContextMenu {
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 ```
 

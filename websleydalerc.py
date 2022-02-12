@@ -31,7 +31,7 @@ site = Site(
     known_authors={
         Author(
             display_name="kalgynirae",
-            email="colinchan@lumeh.org",
+            emails={"colinchan@lumeh.org", "colin+git@lumeh.org"},
             url="https://github.com/kalgynirae/",
         )
     },
@@ -95,6 +95,7 @@ site = Site(
                 "popovers",
                 "pumpkin_bread",
                 "quiche",
+                "salmon_pate",
                 "shortbread_cookies",
                 "sweet_potato_casserole",
                 "thai_chicken_curry",

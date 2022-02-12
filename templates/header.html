@@ -45,7 +45,11 @@
         <br>
         Contributors:
         {% for author in source.authors %}
-        <a href="{{ author.url }}">{{ author.display_name }}</a>{% if not loop.last %},{% endif %}
+          {% if author.url != None %}
+          <a href="{{ author.url }}">{{ author.display_name }}</a>{% if not loop.last %},{% endif %}
+          {% else %}
+          {{ author.display_name }}{% if not loop.last %},{% endif %}
+          {% endif %}
         {% endfor %}
         {% endif %}
       </p>

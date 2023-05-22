@@ -47,6 +47,7 @@ site = Site(
         "js": dir(root / "js"),
         "media": dir(root / "media"),
         "redirects.conf": file(root / "redirects.conf"),
+        "redirects.caddy": file(root / "redirects.caddy"),
         "robots.txt": file(root / "robots.txt"),
         **{
             (

@@ -2,9 +2,10 @@
 title: Music
 ---
 
-I produce music under the alias <em>Synthmaster Lumpy</em>. I have a
-[YouTube channel] and a [SoundCloud page], but the latter rarely gets updated
-these days.
+I play the pipe organ and the piano, occasionally sing, and even more occasionally compose video-game-style music!  My [YouTube channel] has recordings of arrangements I've written of many hymns (eventually I'll have a separate page on this website for those).
+
+The rest of this page is dedicated to the video game music I produce under the alias
+<em>Synthmaster Lumpy</em>. I also have a [SoundCloud page], but I no longer update it.
 
 # Recommended listening
 

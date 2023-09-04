@@ -61,7 +61,7 @@
         {% set ns = namespace(path="", prevname="") %}
         {% for component in page.path.split("/") if component and not component.endswith(".html") %}
         {% set ns.path = ns.path + component + "/" %}
-        {% if ns.path in site.tree or ns.path + ".header.html" in site.tree %}
+        {% if ns.path in site.tree or ns.path + "index.html" in site.tree %}
         <li>/<a href="/{{ ns.path }}">{{ ns.prevname + component }}</a></li>
         {% else %}
         {% set ns.prevname = component + "/" %}

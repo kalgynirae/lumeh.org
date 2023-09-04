@@ -7,20 +7,12 @@ from websleydale import (
     dir,
     fake,
     file,
+    index,
     jinja,
     markdown,
     root,
     sass,
 )
-
-
-def index(path):
-    return {
-        f"{path}/.header.html": jinja(
-            fake({"title": str(path), "hide_title": True}), template="header.html"
-        ),
-        f"{path}/.footer.html": jinja(fake(), template="footer.html"),
-    }
 
 
 def page(source):
@@ -49,20 +41,20 @@ site = Site(
         "redirects.conf": file(root / "redirects.conf"),
         "redirects.caddy": file(root / "redirects.caddy"),
         "robots.txt": file(root / "robots.txt"),
-        **{
+        **index({
             (
                 f"{path.relative_to(root/'pages').with_suffix('.html')}"
                 if path.name == "index.md"
                 else f"{path.relative_to(root/'pages').with_suffix('')}/"
             ): page(path)
             for path in root.glob("pages/**/*.md")
-        },
-        **{
+        }, "poetry", "tools"),
+        **index({
             f"projects/{path.name}/": page(path / "README.md")
             for path in root.glob("projects/*")
             if not path.name == "recipes"
-        },
-        **{
+        }, "projects"),
+        **index({
             f"recipes/{name.replace('_', '-')}/": page(
                 root / f"projects/recipes/{name}.md"
             )
@@ -101,10 +93,7 @@ site = Site(
                 "sweet_potato_casserole",
                 "thai_chicken_curry",
             ]
-        },
-        **index("projects"),
-        **index("recipes"),
-        **index("tools"),
+        }, "recipes"),
     },
 )
 build(site, dest="out")

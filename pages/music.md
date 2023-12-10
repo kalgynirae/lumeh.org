@@ -718,7 +718,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 [Good Stuff]: https://soundcloud.com/synthmaster-lumpy/sets/good-stuff
 [Minecraft Space Mountain video]: http://www.youtube.com/watch?v=aX-9yozuIQI
 [Mideast Sidearm Hideaway]: https://github.com/ufgmg/mideast-sidearm-hideaway
-[Think Green]: /projects/think-green
+[Think Green]: /projects/thinking-green
 [Joey Franco's town theme]: https://soundcloud.com/norphan/town-theme
 
 

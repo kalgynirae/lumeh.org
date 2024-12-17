@@ -24,8 +24,13 @@ site = Site(
         Author(
             display_name="kalgynirae",
             emails={"colinchan@lumeh.org", "colin+git@lumeh.org"},
-            url="https://github.com/kalgynirae/",
-        )
+            url="https://github.com/kalgynirae",
+        ),
+        Author(
+            display_name="tylerlaprade",
+            emails={"pinkmonkeyblue@gmail.com"},
+            url="https://github.com/tylerlaprade",
+        ),
     },
     name="lumeh.org",
     repo_name="kalgynirae/lumeh.org",

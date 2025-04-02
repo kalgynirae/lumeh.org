@@ -36,6 +36,7 @@ site = Site(
     repo_name="kalgynirae/lumeh.org",
     repo_url="https://github.com/kalgynirae/lumeh.org",
     tree={
+        "assets": dir(root / "assets"),
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
         "docs": dir(root / "docs"),
         "font": dir(root / "font"),

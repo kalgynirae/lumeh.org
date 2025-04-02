@@ -1,35 +1,86 @@
 @import normalize.scss
 
 @font-face
-  font-family: 'DejaVu Sans Mono'
+  font-family: 'Inter'
   font-style: normal
-  font-weight: 400
-  src: local('DejaVu Sans Mono'), local('DejaVuSansMono'), url('/font/DejaVuSansMono.ttf') format('truetype')
+  font-weight: 100 900
+  font-display: swap
+  size-adjust: 90%
+  src: url('/font/InterVariable.woff2') format('woff2')
 @font-face
-  font-family: 'DejaVu Sans Mono'
-  font-style: normal
-  font-weight: 700
-  src: local('DejaVu Sans Mono Bold'), local('DejaVuSansMono-Bold'), url('/font/DejaVuSansMono-Bold.ttf') format('truetype')
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: normal
-  font-weight: 400
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('/font/SourceSansPro-400.woff') format('woff')
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: normal
-  font-weight: 600
-  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('/font/SourceSansPro-600.woff') format('woff')
-@font-face
-  font-family: 'Source Sans Pro'
-  font-style: normal
-  font-weight: 700
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url('/font/SourceSansPro-700.woff') format('woff')
-@font-face
-  font-family: 'Source Sans Pro'
+  font-family: 'Inter'
   font-style: italic
+  font-weight: 100 900
+  font-display: swap
+  size-adjust: 90%
+  src: url('/font/InterVariable-Italic.woff2') format('woff2')
+@font-feature-values 'Inter'
+  @styleset
+    open-digits: 1;
+    disambiguation-except-zero: 4;
+@mixin font-inter-small
+  font-family: 'Inter', sans-serif
+  font-size: 0.8rem
+  font-variation-settings: "opsz" 14
   font-weight: 400
-  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url('/font/SourceSansPro-400italic.woff') format('woff')
+  font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+@mixin font-inter-regular
+  font-family: 'Inter', sans-serif
+  font-size: 0.95rem
+  font-weight: 400
+  font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+@mixin font-inter-menu
+  font-family: 'Inter', sans-serif
+  font-size: 1.2rem
+  font-variation-settings: "opsz" 24
+  font-weight: 450
+  font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+
+@font-face
+  font-family: 'Berkeley Mono'
+  font-stretch: 60 100
+  font-weight: 100 900
+  font-style: oblique 0deg 16deg
+  font-display: swap
+  src: url('/assets/font/Berkeley Mono Variable.woff2') format('woff2')
+@mixin font-berkeley-mono-inline
+  font-family: 'Berkeley Mono', monospace
+  font-size: 0.92em
+  font-weight: 520
+  font-stretch: 88%
+  font-variant-ligatures: none
+@mixin font-berkeley-mono-block
+  font-family: 'Berkeley Mono', monospace
+  font-size: 0.92rem
+  font-weight: 450
+  font-stretch: 88%
+  line-height: normal
+  font-variant-ligatures: none
+
+@font-face
+  font-family: 'Fern'
+  font-style: normal
+  font-weight: 400 800
+  font-display: swap
+  src: url('/assets/font/FernVariable-Roman-VF-Testing.woff2') format('opentype')
+@font-face
+  font-family: 'Fern'
+  font-style: italic
+  font-weight: 400 800
+  font-display: swap
+  src: url('/assets/font/FernVariable-Italic-VF-Testing.woff2') format('opentype')
+@mixin font-fern-small
+  font-family: 'Fern', serif
+  font-size: 0.85rem
+  font-variation-settings: "opsz" 8
+  font-weight: 480
+  line-height: 1.4
+@mixin font-fern-regular
+  font-family: 'Fern', serif
+  font-size: 1rem
+  font-variation-settings: "opsz" 9
+  font-weight: 450
+  line-height: 1.4
 
 $page-border-radius: 20px
 $page-border-width: 3px
@@ -40,23 +91,22 @@ $shadow-color: #a0a0a0
 
 $mobile-width: 580px
 
-$red: #dc4f4f
-$orange: #f4b437
-$yellow: #ded040
-$green: #8ce040
-$link: #25aad4
-$blue: #589ce0
-$purple: #bc64e0
-$bg-light: #fafafa
-$bg-dark: #efefef
-$bg-highlight: #f4f0b8
+$red: oklch(62% 0.18 24)
+$orange: oklch(80% 0.15 80)
+$yellow: oklch(84% 0.16 104)
+$green: oklch(82% 0.20 127)
+$link: oklch(65% 0.12 225)
+$blue: oklch(68% 0.12 250)
+$purple: oklch(65% 0.19 315)
+$bg-light: oklch(98% 0 0)
+$bg-dark: oklch(95% 0 0)
+$bg-highlight: oklch(94% 0.07 104)
 
 html
   background-color: #c7c6ca
-  color: #505054
-  font-family: "Source Sans Pro", sans-serif
+  color: #303032
+  @include font-fern-regular
   font-size: 1.1em
-  line-height: 1.3
   padding: 1rem 1rem 3rem
 
   @media (max-width: $mobile-width)
@@ -88,7 +138,7 @@ $shadow-gradient: linear-gradient(to top, rgba(black, 0.04), rgba(black, 0) 2px)
 $logo: url("/image/logo.svg")
 $stripes-shadow-size: 15px
 $stripes-shadow-opacity: 0.1
-$stripes-gradient: linear-gradient(112deg, rgba($green, 0) calc(70% - 1px - #{$stripes-shadow-size}), rgba($green, $stripes-shadow-opacity) calc(70% - 1px), $green 70%, $green calc(75% - 1px), $yellow 75%, $yellow calc(80% - 1px), $blue 80%, $blue calc(85% - 1px), $red 85%, $red calc(90% - 1px), $purple 90%, $purple calc(95% - 1px), rgba($purple, $stripes-shadow-opacity) 95%, rgba($purple, 0) calc(95% + #{$stripes-shadow-size}))
+$stripes-gradient: linear-gradient(112deg, transparent calc(70% - 2px - #{$stripes-shadow-size}), oklch(from $green l c h / $stripes-shadow-opacity) calc(70% - 1px), $green 70%, $green calc(75% - 4px), transparent calc(75% - 2px), $yellow 75%, $yellow calc(80% - 4px), transparent calc(80% - 2px), $blue 80%, $blue calc(85% - 4px), transparent calc(85% - 2px), $red 85%, $red calc(90% - 4px), transparent calc(90% - 2px), $purple 90%, $purple calc(95% - 2px), oklch(from $purple l c h / $stripes-shadow-opacity) 95%, transparent calc(95% + #{$stripes-shadow-size}))
 $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 
 #site-header
@@ -105,22 +155,19 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     border: none
 
   #site-title
-    font-size: 48px
-    font-weight: bold
+    @include font-fern-regular
+    font-size: 54px
+    font-weight: 550
     line-height: $header-height
     margin: 0
     padding-left: ($logo-width + 2 * $logo-padding)
     overflow: hidden
     white-space: nowrap
 
-  #site-title-l
-    font-family: "DejaVu Sans Mono"
-    margin-right: -2px
-
 #site-menu
   background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
   color: #000000
-  font-size: 1.2em
+  @include font-inter-menu
   line-height: 1.5em
   overflow-x: auto
   padding: 0 0.5rem !important
@@ -153,6 +200,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 
 
 #breadcrumbs
+  @include font-inter-regular
   ol
     display: flex
     flex-wrap: wrap
@@ -163,10 +211,12 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     padding: 0 0.2em
 
 #page-info
+  @include font-inter-regular
   float: right
   text-align: right
 
 #edit
+  @include font-inter-regular
   background-color: $bg-dark
   border-top: dashed 2px #e0e0e0
   display: block
@@ -175,12 +225,12 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     background-color: $bg-light
 
 #footer
-  font-size: 0.85em
+  @include font-inter-small
   text-align: center
   padding-top: 1em
 
   a
-    color: scale-color($link, $lightness: -10%, $saturation: -20%)
+    color: oklch(from $link calc(l - 0.15) calc(c - 0.02) h)
   p
     margin: 0
 
@@ -206,25 +256,32 @@ p
   margin: 0.5em 0
 
 h1
-  font-size: 1.6em
-  font-weight: 600
+  font-size: 1.8em
+  font-variation-settings: "opsz" 12
+  font-weight: 450
   &.title
-    font-weight: 700
     margin: 0
     margin-top: 1em
     padding: 0
 
 h2
   font-size: 1.4em
-  font-weight: 600
+  font-variation-settings: "opsz" 11
+  font-weight: 580
 
 h3
   font-size: 1.2em
-  font-weight: 600
+  font-variation-settings: "opsz" 10
+  font-weight: 650
 
 h4
   font-size: 1em
-  font-weight: bold
+  font-weight: 700
+
+h5
+  font-size: 1em
+  font-style: italic
+  font-weight: 700
 
 a
   color: $link
@@ -249,12 +306,12 @@ a.anchor
     padding: 0 1rem
 
     &:hover
-      background: scale-color($blue, $lightness: 70%)
+      background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
       border-top: 1px solid $blue
       border-bottom: 1px solid $blue
       box-shadow: 0 0 10px -4px $blue
     &:target
-      background: scale-color($blue, $lightness: 70%)
+      background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
 
 p img, img.inline
   vertical-align: middle
@@ -268,16 +325,12 @@ p > img:first-child
   max-width: 100%
 
 strong
-  font-weight: 600
+  font-weight: 650
 
 code
-  background: $bg-dark
-  border-top: solid 1px #e6e6e6
-  border-bottom: solid 1px #e8e8e8
-  font-family: "DejaVu Sans Mono"
-  font-size: 0.9em
-  padding: 0 0.1em
+  @include font-berkeley-mono-inline
   white-space: pre
+  padding: 0 0.1em
 
 iframe
   display: block
@@ -299,9 +352,9 @@ pre
   overflow: auto
   @include toplevel-block
   > code
-    border: none
+    @include font-berkeley-mono-block
+    background: $bg-dark
     display: block
-    line-height: 1.15
     margin: 0.5em 0
 
 aside,

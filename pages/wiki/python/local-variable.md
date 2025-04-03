@@ -20,9 +20,9 @@ In the body of `sum`, `a` and `b` are local variables. Outside of `sum`, `a` and
 
 </figure>
 
-# Shadowing
+## Shadowing
 
-It's possible to have a local variable and a global variable with the same name.
+It’s possible to have a local variable and a global variable with the same name.
 
 <figure class=example>
 
@@ -50,7 +50,7 @@ variable* `x`), while the *global variable* `x` remained unchanged.
 
 </figure>
 
-# What makes a variable *local*?
+## What makes a variable *local*?
 
 A variable is local if it *could be assigned to* anywhere within the function.
 When Python first sees the function definition, it scans the whole function to
@@ -87,12 +87,12 @@ executed.
 
 </figure>
 
-## Overriding
+### Overriding
 
-A function can override Python's decision about whether a variable is local by
+A function can override Python’s decision about whether a variable is local by
 using `global` (or `nonlocal`). This statement accepts a list of variable names
 and tells Python that those variables should be considered global (or non-local)
-instead of local. (*Non-local* is a more complex topic, so we won't address it
+instead of local. (*Non-local* is a more complex topic, so we won’t address it
 here.)
 
 <figure class=example>
@@ -100,12 +100,12 @@ here.)
 ```python
 x = 5
 
-def display_x():
+def modify_x():
     global x
     x = 6
 ```
 
-In `display_x`, `x` is a global variable due to the `global x` statement. The
+In `modify_x`, `x` is a global variable due to the `global x` statement. The
 `x = 6` assignment modifies the global variable.
 
 </figure>
@@ -114,10 +114,10 @@ Because `global`/`nonlocal` affect how variable names are interpreted throughout
 the whole function, it is best practice to put them at the very top of the
 function.
 
-## UnboundLocalError
+### UnboundLocalError
 
 `UnboundLocalError` means that your code tried to *use* a variable before any
-value was assigned to it. It's just like `NameError` but for local
+value was assigned to it. It’s just like `NameError` but for local
 variables.
 
 <figure class=example>

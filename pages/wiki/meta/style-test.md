@@ -8,14 +8,14 @@ pleasure.
 There are paragraphs, sentences, emphases, quotations, blocks of `code`,
 horizontal rules, etc.
 
-# H1 (non-title)
+## H2
 
 It can be interesting to compare the visual appearance of normal text with that
 of heading text of various sizes.
 
-# H1 again
+## H2 again
 
-## H2: The Sub-Heading
+### H3: The Sub-Heading
 
 Consider the following code excerpt.
 
@@ -29,10 +29,10 @@ def maybe_return_something() -> Optional[Any]:
     return random.choice(random.choice([[None], globals().values()]))
 ```
 
-## H2 again
-### H3: The Sub-Sub-Heading
+### H3 again
+#### H4: The Sub-Sub-Heading
 
-#### H4: Hardly even a heading any more
+##### H5: Hardly even a heading any more
 
 
 <blockquote cite="https://en.wikisource.org/wiki/The_Ethics_of_Belief">

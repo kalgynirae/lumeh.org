@@ -2,29 +2,33 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="96"
    height="96"
    viewBox="0 0 25.399999 25.400001"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/home/colin/code/lumeh.org/image/logo-192.png"
-   inkscape:export-xdpi="192"
-   inkscape:export-ydpi="192">
+   inkscape:export-filename="logo-16.png"
+   inkscape:export-xdpi="16"
+   inkscape:export-ydpi="16"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
     <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
-       id="filter1011">
+       id="filter1011"
+       x="-0.047244095"
+       y="-0.049675381"
+       width="1.0944882"
+       height="1.0993508">
       <feFlood
          flood-opacity="0.309804"
          flood-color="rgb(0,0,0)"
@@ -62,24 +66,32 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="35.309973"
-     inkscape:cy="70.847007"
+     inkscape:cx="35.266951"
+     inkscape:cy="70.887455"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="2504"
-     inkscape:window-height="1359"
-     inkscape:window-x="24"
-     inkscape:window-y="49"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1869"
+     inkscape:window-height="1213"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      units="px"
      inkscape:snap-text-baseline="true"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid4528"
-       dotted="true" />
+       dotted="true"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
     <sodipodi:guide
        position="12.699999,0.52916669"
        orientation="1,0"
@@ -110,7 +122,7 @@
      transform="translate(0,-271.59998)">
     <path
        sodipodi:type="star"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#8ce040;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter:url(#filter1011)"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#a1da29;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;filter:url(#filter1011)"
        id="path817"
        sodipodi:sides="5"
        sodipodi:cx="12.7"
@@ -123,12 +135,14 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="M 12.7,296.47082 1.7033248e-7,287.24373 4.850968,272.31398 l 15.698063,0 L 25.4,287.24373 Z"
-       inkscape:transform-center-y="1.275167" />
+       inkscape:transform-center-y="1.275167"
+       transform="translate(0)" />
     <path
-       inkscape:connector-curvature="0"
-       id="path878"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.33276367px;line-height:57.62896729px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 10.75768,285.11013 v -7.31226 H 8.2440906 v -1.90424 h 4.9933254 v 9.2165 q 0,1.11715 0.346994,1.58263 0.346994,0.46548 1.176394,0.46548 h 1.980403 v 1.90423 h -2.674391 q -1.768822,0 -2.538979,-0.91403 -0.770157,-0.91404 -0.770157,-3.03831 z" />
+       d="M 13.651933,4.7105102 V 15.145745 q 0,0.613314 0.364433,0.871084 0.364433,0.25777 0.968859,0.25777 0.382211,0 0.737755,-0.08 0.355545,-0.08889 0.675535,-0.213327 l 0.57776,1.599951 q -0.444431,0.231104 -1.084411,0.399988 -0.631092,0.168884 -1.466621,0.168884 -1.537731,0 -2.328818,-0.879973 -0.791086,-0.879973 -0.791086,-2.373261 V 6.3726812 H 8.4876475 v -1.662171 z"
+       id="text821"
+       style="font-weight:600;font-size:17.3328px;line-height:57.629px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583px"
+       transform="translate(0,271.59998)"
+       aria-label="l" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -138,14 +152,14 @@
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.33276367px;line-height:57.62896729px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458338px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="12.699999"
-       y="17.46249"
-       id="text821"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:17.3328px;line-height:57.629px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="13.074177"
+       y="17.883438"
+       id="text1"><tspan
          sodipodi:role="line"
-         id="tspan819"
-         x="12.699999"
-         y="17.46249"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.33276367px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458338px">l</tspan></text>
+         id="tspan1"
+         x="13.074177"
+         y="17.883438"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:17.3328px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.264583px">l</tspan></text>
   </g>
 </svg>

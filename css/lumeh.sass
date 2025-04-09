@@ -42,45 +42,41 @@
   font-weight: 100 900
   font-style: oblique 0deg 16deg
   font-display: swap
+  size-adjust: 88%
   src: url('/assets/font/Berkeley Mono Variable.woff2') format('woff2')
 @mixin font-berkeley-mono-inline
   font-family: 'Berkeley Mono', monospace
-  font-size: 0.92em
-  font-weight: 520
-  font-stretch: 88%
+  font-size: 1em
+  font-weight: 450
+  font-stretch: 80%
   font-variant-ligatures: none
 @mixin font-berkeley-mono-block
   font-family: 'Berkeley Mono', monospace
-  font-size: 0.92rem
+  font-size: 1rem
   font-weight: 450
-  font-stretch: 88%
+  font-stretch: 90%
   line-height: normal
   font-variant-ligatures: none
 
 @font-face
-  font-family: 'Fern'
+  font-family: 'Crimson Pro'
   font-style: normal
-  font-weight: 400 800
+  font-weight: 200 900
   font-display: swap
-  src: url('/assets/font/FernVariable-Roman-VF-Testing.woff2') format('opentype')
+  size-adjust: 110%
+  src: url('/font/CrimsonPro[wght].ttf') format('opentype')
 @font-face
-  font-family: 'Fern'
+  font-family: 'Crimson Pro'
   font-style: italic
-  font-weight: 400 800
+  font-weight: 200 900
   font-display: swap
-  src: url('/assets/font/FernVariable-Italic-VF-Testing.woff2') format('opentype')
-@mixin font-fern-small
-  font-family: 'Fern', serif
-  font-size: 0.85rem
-  font-variation-settings: "opsz" 8
-  font-weight: 480
-  line-height: 1.4
-@mixin font-fern-regular
-  font-family: 'Fern', serif
-  font-size: 1rem
-  font-variation-settings: "opsz" 9
-  font-weight: 450
-  line-height: 1.4
+  size-adjust: 110%
+  src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
+@mixin font-crimson-pro-regular
+  font-family: 'Crimson Pro', serif
+  font-size: 1.1rem
+  font-weight: 400
+  line-height: 1.30
 
 $page-border-radius: 20px
 $page-border-width: 3px
@@ -95,7 +91,7 @@ $red: oklch(62% 0.18 24)
 $orange: oklch(80% 0.15 80)
 $yellow: oklch(84% 0.16 104)
 $green: oklch(82% 0.20 127)
-$link: oklch(65% 0.12 225)
+$link: oklch(60% 0.14 225)
 $blue: oklch(68% 0.12 250)
 $purple: oklch(65% 0.19 315)
 $bg-light: oklch(98% 0 0)
@@ -105,8 +101,7 @@ $bg-highlight: oklch(94% 0.07 104)
 html
   background-color: #c7c6ca
   color: #303032
-  @include font-fern-regular
-  font-size: 1.1em
+  @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
 
   @media (max-width: $mobile-width)
@@ -147,7 +142,6 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   background-position: 0 0, left $logo-padding center
   border: solid $page-border-width #ffffff
   border-bottom: none
-  color: #000000
   height: $header-height
   padding: 0
 
@@ -155,8 +149,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     border: none
 
   #site-title
-    @include font-fern-regular
-    font-size: 54px
+    @include font-crimson-pro-regular
+    font-size: 3rem
     font-weight: 550
     line-height: $header-height
     margin: 0
@@ -253,25 +247,27 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   padding-bottom: 2em
 
 p
-  margin: 0.5em 0
+  margin-bottom: 0.5rem
+  margin-top: 0
 
 h1
-  font-size: 1.8em
-  font-variation-settings: "opsz" 12
-  font-weight: 450
+  margin-top: 2rem
+  margin-bottom: 1rem
+  font-size: 2.0em
+  font-weight: 200
   &.title
-    margin: 0
-    margin-top: 1em
     padding: 0
 
 h2
-  font-size: 1.4em
-  font-variation-settings: "opsz" 11
+  margin-top: 2rem
+  margin-bottom: 1rem
+  font-size: 1.5em
   font-weight: 580
 
 h3
+  margin-top: 1rem
+  margin-bottom: 0.5rem
   font-size: 1.2em
-  font-variation-settings: "opsz" 10
   font-weight: 650
 
 h4
@@ -302,7 +298,8 @@ a.anchor
   h1, h2, h3, h4
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-    margin: 0.5em -1rem 0
+    margin-left: -1rem
+    margin-right: -1rem
     padding: 0 1rem
 
     &:hover
@@ -325,7 +322,7 @@ p > img:first-child
   max-width: 100%
 
 strong
-  font-weight: 650
+  font-weight: 600
 
 code
   @include font-berkeley-mono-inline
@@ -341,7 +338,7 @@ iframe
   border-top: solid 1px #e0e0e0
   border-bottom: solid 1px #e0e0e0
   margin: 0.5em -1rem
-  padding: 0 1rem
+  padding: 0.25em 1rem
 
 blockquote
   @include toplevel-block
@@ -355,7 +352,6 @@ pre
     @include font-berkeley-mono-block
     background: $bg-dark
     display: block
-    margin: 0.5em 0
 
 aside,
 figure
@@ -363,12 +359,13 @@ figure
   border-radius: 10px
   overflow: hidden
   margin: 1em 2.5em
-  padding: 0 1rem
+  padding: 0.5rem 1rem 0
 
-  & > div:first-child pre.highlight
+  &:has(pre:first-child)
+    padding-top: 0
+  & > pre:first-child
     border-top: 0
     margin-top: 0
-    padding-top: 0.5em
 
     > code
       margin-top: 0
@@ -387,7 +384,7 @@ ol,
 ul
   list-style-position: outside
   padding: 0
-  margin: 0.5em 2.5em 0
+  margin: 0.5em 2.5em 0.5em
 
 table
   border-collapse: collapse

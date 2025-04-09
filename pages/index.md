@@ -19,8 +19,6 @@ function increaseConstruction() {
 document.getElementById("construction").addEventListener("click", increaseConstruction);
 </script>
 
-# Features
-
 ## Serious things
 
 *   [music I've written](/music/)

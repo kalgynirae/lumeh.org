@@ -11,13 +11,12 @@ application).
 If you already know the concepts, you can skip down to [Routing
 Audio](#routing-audio).
 
-# Important Concepts
+## Important Concepts
 
 * There are two types of devices:
 
   * **sink**: a device that an application can send audio to (e.g., a set of
     speakers)
-
   * **source**: a device that an application can get audio from (e.g., a
     microphone)
 
@@ -28,7 +27,6 @@ Audio](#routing-audio).
 
   * **sink-input**: a stream going to a sink (e.g., the sound output by an
     application, going to speakers)
-
   * **source-output**: a stream coming from a source (e.g., the sound input to
     an application, coming from a microphone)
 
@@ -42,7 +40,7 @@ Audio](#routing-audio).
   * **monitor**: a hidden source that automatically exists for each sink and
     allows accessing the audio that is being sent to that sink
 
-## pavucontrol
+### pavucontrol
 
 **pavucontrol** (PulseAudio Volume Control) is the best way to interact with
 PulseAudio because it doesn’t try to simplify or hide these concepts from you
@@ -61,7 +59,7 @@ pavucontrol lets you choose which sinks and sources they are attached to.
 </figure>
 
 
-# Device Naming
+## Device Naming
 
 Each device has a name used internally by PulseAudio as well as a *description*
 which is meant to be human-readable.
@@ -76,7 +74,7 @@ Sometimes the “human-readability” of the description is questionable.
 
 </figure>
 
-## Finding Device Names
+### Finding Device Names
 
 Use the `list-sinks` or `list-sources`
 commands and search for the lines that contain `name:` or `device.description
@@ -104,7 +102,7 @@ $ headphones=bluez_sink.38_18_4C_7D_5C_08.a2dp_sink
 
 </aside>
 
-## Changing Device Descriptions
+### Changing Device Descriptions
 
 Use the `update-sink-proplist` or `update-source-proplist` commands to change
 the `device.description` property.
@@ -122,9 +120,9 @@ Now that’s what I call “human-readable”!
 </figure>
 
 
-# Useful Modules
+## Useful Modules
 
-## Null Sink
+### Null Sink
 
 A **null sink** is a virtual sink that discards audio sent to it. That’s not
 very useful by itself, but the **monitor** that comes with it can be very
@@ -157,7 +155,7 @@ to PulseAudio.
 
 Use pavucontrol to route application audio to the null sink as desired.
 
-## Combined Sink
+### Combined Sink
 
 A **combined sink** is a virtual sink that forwards audio to multiple other
 sinks.
@@ -179,7 +177,7 @@ sinks are being combined except by unloading the module and loading it again.
 
 </aside>
 
-## Loopback
+### Loopback
 
 A **loopback** forwards audio from a source to a sink.
 
@@ -200,9 +198,9 @@ set the correct source and sink for the loopback; then they will make sense.
 </aside>
 
 
-# Routing Audio
+## Routing Audio
 
-## Application to Application
+### Application to Application
 
 Use a [null sink](#null-sink) to receive the audio from the source application,
 and configure the other application to read from the monitor of the null sink.
@@ -230,7 +228,7 @@ Voilà!
 
 </figure>
 
-## Application to Application+Speakers
+### Application to Application+Speakers
 
 Follow the previous instructions, then add a [combined sink](#combined-sink)
 that forwards to the null sink and the speakers.
@@ -247,7 +245,7 @@ $ pacmd load-module module-combine-sink slaves=discord,$speakers
 
 </figure>
 
-## Application to Application+Speakers *and* Microphone to Application
+### Application to Application+Speakers *and* Microphone to Application
 
 Follow the previous instructions, then add a [loopback](#loopback) that forwards
 the microphone to the null sink.

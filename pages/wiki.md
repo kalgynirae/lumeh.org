@@ -5,23 +5,23 @@ title: Wiki Index
 The wiki is intended to be a collection of information, curated by Colin,
 about a wide variety of topics. Presently, though, the width is very small.
 
-# Linux
+## Linux
 
 * [i3 + Firefox Context Menu Alignment Issue](linux/i3-firefox-context-menu-alignment-issue/)
 * [PulseAudio](linux/pulseaudio/)
 
-# Python
+## Python
 
 * [Local Variable](python/local-variable/)
 
-# Games
+## Games
 
 * [Capture the Flag](games/capture-the-flag/)
 * [NarChanSo Ball](games/narchanso-ball/)
 * [The Base Game](games/the-base-game/)
 * [Trebuchennis](games/trebuchennis/)
 
-# Miscellaneous
+## Miscellaneous
 
 * [#thestruggle](thestruggle/)
 * [Dragée](dragee)
@@ -29,6 +29,6 @@ about a wide variety of topics. Presently, though, the width is very small.
 * [Opposites](opposites/)
 * [The Caring Continuum](the-caring-continuum/)
 
-# Meta
+## Meta
 
 * [Style Test](meta/style-test/)

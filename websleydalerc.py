@@ -22,7 +22,7 @@ def page(source):
 site = Site(
     known_authors={
         Author(
-            display_name="kalgynirae",
+            display_name="Colin",
             emails={"colinchan@lumeh.org", "colin+git@lumeh.org"},
             url="https://github.com/kalgynirae",
         ),

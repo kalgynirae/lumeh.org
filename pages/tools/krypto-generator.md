@@ -21,7 +21,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
 <style type="text/css">
 #krypto-table {
     background-color: #efefef;
-    font-family: "Georgia", serif;
+    font-family: "Crimson Pro", "Georgia", serif;
     font-size: 3.5em;
     font-weight: bold;
     margin-bottom: 0.5em;
@@ -29,7 +29,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
 }
 #krypto-table td {
     border: solid 1px #cccccc;
-    padding: 0.5em 0;
+    padding: 0.25em 0;
     text-align: center;
 }
 #numbers td {

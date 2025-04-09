@@ -7,7 +7,7 @@ I play the pipe organ and the piano, occasionally sing, and even more occasional
 The rest of this page is dedicated to the video game music I produce under the alias
 <em>Synthmaster Lumpy</em>. I also have a [SoundCloud page], but I no longer update it.
 
-# Recommended listening
+## Recommended listening
 
 This is a short list of the tracks that I think are the best.
 
@@ -24,10 +24,10 @@ This is a short list of the tracks that I think are the best.
 1. [Battle in the Cathedral (Remastered)](#battle-in-the-cathedral-remastered)
 
 
-# 2021
+## 2021
 
 
-## *Let's Godot Swimming*
+### Let's Godot Swimming
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Let's Godot Swimming.ogg" src-flac="/files/music/Synthmaster Lumpy - Let's Godot Swimming.flac">
 
@@ -40,10 +40,10 @@ multi-story swimming pool, and I used the [Godot game engine] to build it.
 
 [Godot game engine]: https://godotengine.org/
 
-# 2020
+## 2020
 
 
-## *Plausible Geometry*
+### Plausible Geometry
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" video="https://www.youtube-nocookie.com/embed/GcHz6Ycd61Y">
 
@@ -54,10 +54,10 @@ make more use of syncopation to get a better groove, and I think it worked!
 </l-music>
 
 
-# 2018
+## 2018
 
 
-## *Glimmering Pavement*
+### Glimmering Pavement
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" video="https://www.youtube-nocookie.com/embed/7F4IYSzUPmQ">
 
@@ -69,10 +69,10 @@ in FL Studio.
 </l-music>
 
 
-# 2017
+## 2017
 
 
-## *Swimming in Circles*
+### Swimming in Circles
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" video="https://www.youtube-nocookie.com/embed/6lmSJVmlT4o">
 
@@ -87,10 +87,10 @@ recent tracks.
 </l-music>
 
 
-# 2016
+## 2016
 
 
-## *Storm in the Valley*
+### Storm in the Valley
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" video="https://www.youtube-nocookie.com/embed/w1QXSNBtV1w">
 
@@ -100,7 +100,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *Ligatures in Space*
+### Ligatures in Space
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Ligatures in Space.mp3" src-flac="/files/music/Synthmaster Lumpy - Ligatures in Space.flac">
 
@@ -109,10 +109,10 @@ of the YouTube video for more information.
 </l-music>
 
 
-# 2015
+## 2015
 
 
-## *Battle in the Cathedral (Remastered)*
+### Battle in the Cathedral (Remastered)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg" src-flac="/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).flac">
 
@@ -124,7 +124,7 @@ again in FL Studio, yielding this.
 </l-music>
 
 
-## *Windmills... in Space!*
+### Windmills... in Space!
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" video="https://www.youtube-nocookie.com/embed/KvIuU1sofBY">
 
@@ -134,7 +134,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *It's from a Davideo Game*
+### It's from a Davideo Game
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg" src-flac="/files/music/Synthmaster Lumpy - It's from a Davideo Game.flac">
 
@@ -143,7 +143,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *Shearing the End*
+### Shearing the End
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Shearing the End.ogg" src-flac="/files/music/Synthmaster Lumpy - Shearing the End.flac">
 
@@ -152,7 +152,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *Three Instruments*
+### Three Instruments
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Three Instruments.ogg" src-flac="/files/music/Synthmaster Lumpy - Three Instruments.flac">
 
@@ -161,7 +161,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *Battle in the Cathedral*
+### Battle in the Cathedral
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Battle in the Cathedral.ogg" src-flac="/files/music/Synthmaster Lumpy - Battle in the Cathedral.flac">
 
@@ -170,7 +170,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-## *Strange Music (loop)*
+### Strange Music (loop)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Strange Music (loop).ogg">
 
@@ -179,10 +179,10 @@ of the YouTube video for more information.
 </l-music>
 
 
-# 2014
+## 2014
 
 
-## *You're a Hero (Instrumental)*
+### You're a Hero (Instrumental)
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3" src-flac="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3">
 
@@ -192,7 +192,7 @@ using this one, though.
 </l-music>
 
 
-## *Capes and Crepes (Instrumental)*
+### Capes and Crepes (Instrumental)
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3" src-flac="/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).flac">
 
@@ -203,10 +203,10 @@ wrote this.
 </l-music>
 
 
-# 2013
+## 2013
 
 
-## *Food Cart*
+### Food Cart
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Food Cart.ogg">
 
@@ -215,7 +215,7 @@ wrote this.
 </l-music>
 
 
-## *Gravitational Conflict*
+### Gravitational Conflict
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Gravitational Conflict.ogg">
 
@@ -227,7 +227,7 @@ kind of difficult to pick out).
 </l-music>
 
 
-## *Black Hole*
+### Black Hole
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Black Hole.ogg" src-mp3="/files/music/Synthmaster Lumpy - Black Hole.mp3">
 
@@ -239,7 +239,7 @@ the game's overworld.
 </l-music>
 
 
-## *Space*
+### Space
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Space.ogg" src-mp3="/files/music/Synthmaster Lumpy - Space.mp3" src-flac="/files/music/Synthmaster Lumpy - Space.flac">
 
@@ -248,7 +248,7 @@ the game's overworld.
 </l-music>
 
 
-## *Can't Hold Us (instrumental backing track)*
+### Can't Hold Us (instrumental backing track)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg" src-mp3="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3" license=none>
 
@@ -258,10 +258,10 @@ Dunno if he ever finished recording it. This could still use some improvement.
 </l-music>
 
 
-# 2012
+## 2012
 
 
-## *Mountains In Space*
+### Mountains In Space
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Mountains In Space.ogg" src-mp3="/files/music/Synthmaster Lumpy - Mountains In Space.mp3">
 
@@ -270,7 +270,7 @@ Dunno if he ever finished recording it. This could still use some improvement.
 </l-music>
 
 
-## *Tiny World*
+### Tiny World
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Tiny World.ogg" src-mp3="/files/music/Synthmaster Lumpy - Tiny World.mp3">
 
@@ -279,7 +279,7 @@ Dunno if he ever finished recording it. This could still use some improvement.
 </l-music>
 
 
-## *Recycling Is Fun*
+### Recycling Is Fun
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Recycling Is Fun.ogg" src-mp3="/files/music/Synthmaster Lumpy - Recycling Is Fun.mp3">
 
@@ -288,7 +288,7 @@ Dunno if he ever finished recording it. This could still use some improvement.
 </l-music>
 
 
-## *Death Error*
+### Death Error
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Death Error.ogg" src-mp3="/files/music/Synthmaster Lumpy - Death Error.mp3">
 
@@ -297,7 +297,7 @@ Dunno if he ever finished recording it. This could still use some improvement.
 </l-music>
 
 
-## *Town Theme (orchestrated, draft)*
+### Town Theme (orchestrated, draft)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3" license=none>
 
@@ -309,7 +309,7 @@ up working on this again.
 </l-music>
 
 
-## *The Game*
+### The Game
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Game.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Game.mp3">
 
@@ -319,14 +319,14 @@ is available.
 </l-music>
 
 
-## *The Game (chiptune version)*
+### The Game (chiptune version)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Game (chiptune version).ogg" src-mp3="/files/music/Synthmaster Lumpy - The Game (chiptune version).mp3">
 
 </l-music>
 
 
-## *another theme*
+### another theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - another theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - another theme.mp3">
 
@@ -335,7 +335,7 @@ is available.
 </l-music>
 
 
-## *theme*
+### theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - theme.mp3">
 
@@ -344,7 +344,7 @@ is available.
 </l-music>
 
 
-## *Exploding Soda Machine (Notion 3)*
+### Exploding Soda Machine (Notion 3)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).ogg" src-mp3="/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).mp3">
 
@@ -354,7 +354,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-## *battle music (rough draft)*
+### battle music (rough draft)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - battle music (rough draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - battle music (rough draft).mp3">
 
@@ -363,7 +363,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-## *Coat Hanger Stew*
+### Coat Hanger Stew
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Coat Hanger Stew.ogg" src-mp3="/files/music/Synthmaster Lumpy - Coat Hanger Stew.mp3">
 
@@ -372,10 +372,10 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-# 2011
+## 2011
 
 
-## *Background Music for the Approach*
+### Background Music for the Approach
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Background Music for the Approach.ogg" src-mp3="/files/music/Synthmaster Lumpy - Background Music for the Approach.mp3">
 
@@ -384,7 +384,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-## *Exploding Soda Machine*
+### Exploding Soda Machine
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Exploding Soda Machine.ogg" src-mp3="/files/music/Synthmaster Lumpy - Exploding Soda Machine.mp3">
 
@@ -393,7 +393,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-## *The Village*
+### The Village
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Village.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Village.mp3">
 
@@ -402,7 +402,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 </l-music>
 
 
-## *The Shop*
+### The Shop
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Shop.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Shop.mp3">
 
@@ -412,7 +412,7 @@ credits or menu music.
 </l-music>
 
 
-## *Christmas In July*
+### Christmas In July
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Christmas In July.ogg" src-mp3="/files/music/Synthmaster Lumpy - Christmas In July.mp3">
 
@@ -434,7 +434,7 @@ appearance—some overlap):
 </l-music>
 
 
-## *experimental memphis*
+### experimental memphis
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - experimental memphis.ogg" src-mp3="/files/music/Synthmaster Lumpy - experimental memphis.mp3">
 
@@ -445,7 +445,7 @@ This was tricky because the saxophone sample I was using only did short notes.
 </l-music>
 
 
-## *On The Clock (long version)*
+### On The Clock (long version)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3" license=none>
 
@@ -456,7 +456,7 @@ starts about 2/3 of the way through is spiffy.
 </l-music>
 
 
-## *RandyRacer*
+### RandyRacer
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - RandyRacer.ogg" src-mp3="/files/music/Synthmaster Lumpy - RandyRacer.mp3" src-flac="/files/music/Synthmaster Lumpy - RandyRacer.flac">
 
@@ -465,7 +465,7 @@ starts about 2/3 of the way through is spiffy.
 </l-music>
 
 
-## *Les Misérables bows music loop*
+### Les Misérables bows music loop
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg" src-mp3="/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3" license=none>
 
@@ -474,7 +474,7 @@ starts about 2/3 of the way through is spiffy.
 </l-music>
 
 
-## *Contest Entry*
+### Contest Entry
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Contest Entry.ogg" src-mp3="/files/music/Synthmaster Lumpy - Contest Entry.mp3">
 
@@ -487,7 +487,7 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-## *No Quest*
+### No Quest
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - No Quest.ogg" src-mp3="/files/music/Synthmaster Lumpy - No Quest.mp3">
 
@@ -496,7 +496,7 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-## *Norman's Theme*
+### Norman's Theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Norman's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Norman's Theme.mp3">
 
@@ -505,7 +505,7 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-## *Walkin' Lucas (He's a Fish)*
+### Walkin' Lucas (He's a Fish)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg" src-mp3="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3">
 
@@ -515,10 +515,10 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-# 2010
+## 2010
 
 
-## *God Stress Ye, Merry Mentlegen*
+### God Stress Ye, Merry Mentlegen
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3">
 
@@ -527,7 +527,7 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-## *God Rest Ye Merry, Gentlemen*
+### God Rest Ye Merry, Gentlemen
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3">
 
@@ -538,7 +538,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 </l-music>
 
 
-## *Surrogate Melon*
+### Surrogate Melon
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Surrogate Melon.ogg" src-mp3="/files/music/Synthmaster Lumpy - Surrogate Melon.mp3">
 
@@ -547,7 +547,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 </l-music>
 
 
-## *Surrogate Melon (extended version)*
+### Surrogate Melon (extended version)
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Surrogate Melon (extended version).mp3">
 
@@ -556,7 +556,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 </l-music>
 
 
-## *Anthony Narciso, You Should Vote*
+### Anthony Narciso, You Should Vote
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg" src-mp3="/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3">
 
@@ -565,7 +565,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 </l-music>
 
 
-## *On The Clock*
+### On The Clock
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock.ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock.mp3" license=none>
 
@@ -575,7 +575,7 @@ this fact until the point in the middle where it becomes completely obvious.
 </l-music>
 
 
-## *Latin Prepositions*
+### Latin Prepositions
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions.ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions.mp3">
 
@@ -587,24 +587,24 @@ I'm also not a big fan of my singing.
 </l-music>
 
 
-## *Latin Prepositions (vocoder mix)*
+### Latin Prepositions (vocoder mix)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).mp3">
 
 </l-music>
 
 
-## *Latin Prepositions (instrumental mix)*
+### Latin Prepositions (instrumental mix)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).mp3">
 
 </l-music>
 
 
-# Really old...
+## Really old...
 
 
-## *Sing We Now Of Christmas*
+### Sing We Now Of Christmas
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg" src-mp3="/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3" license=none>
 
@@ -614,7 +614,7 @@ arrangement—Not very exciting. I think I was experimenting with Milky Tracker.
 </l-music>
 
 
-## *Chocobo Minor*
+### Chocobo Minor
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Chocobo Minor.mp3" license=none>
 
@@ -623,7 +623,7 @@ arrangement—Not very exciting. I think I was experimenting with Milky Tracker.
 </l-music>
 
 
-## *cmbgmabb5*
+### cmbgmabb5
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - cmbgmabb5.ogg" src-mp3="/files/music/Synthmaster Lumpy - cmbgmabb5.mp3">
 
@@ -633,7 +633,7 @@ typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
 </l-music>
 
 
-## *The Birthday Song*
+### The Birthday Song
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Birthday Song.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Birthday Song.mp3">
 
@@ -642,7 +642,7 @@ typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
 </l-music>
 
 
-## *That Box of Cookie Crisp is Upside Down*
+### That Box of Cookie Crisp is Upside Down
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.ogg" src-mp3="/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.mp3">
 
@@ -651,7 +651,7 @@ typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
 </l-music>
 
 
-## *Raid The Bass (Required)*
+### Raid The Bass (Required)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3" license=none>
 
@@ -660,7 +660,7 @@ typed the wrong chords. "cmgmcmbflatcmgmaflatbflat" would be more accurate.
 </l-music>
 
 
-## *Track 7*
+### Track 7
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Track 7.ogg" src-mp3="/files/music/Synthmaster Lumpy - Track 7.mp3">
 
@@ -670,7 +670,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-## *Find The Bass (Required)*
+### Find The Bass (Required)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg" src-mp3="/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3" license=none>
 
@@ -679,7 +679,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-## *Ultimate Banana Landscape*
+### Ultimate Banana Landscape
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg" src-mp3="/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3">
 
@@ -688,7 +688,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-## *Over The Purple Rainbow*
+### Over The Purple Rainbow
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg" src-mp3="/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3" license=none>
 
@@ -697,7 +697,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-## *Lumpy's Theme*
+### Lumpy's Theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3">
 
@@ -706,7 +706,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-## *Lumpy's Theme (gameboy version)*
+### Lumpy's Theme (gameboy version)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3">
 

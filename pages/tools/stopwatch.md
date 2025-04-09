@@ -24,9 +24,11 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
 }
 #time {
   color: #000000;
-  font-size: 16em;
+  font-family: "Inter";
+  font-feature-settings: "tnum";
+  font-size: 12em;
   font-weight: bold;
-  line-height: 0.85em;
+  line-height: 1em;
 }
 #controls, #options {
   align-items: baseline;

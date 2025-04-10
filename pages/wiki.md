@@ -1,5 +1,5 @@
 ---
-title: Wiki Index
+title: Wiki
 ---
 
 The wiki is intended to be a collection of information, curated by Colin,

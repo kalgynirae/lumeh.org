@@ -11,7 +11,7 @@ The rest of this page is dedicated to the video game music I produce under the a
 
 This is a short list of the tracks that I think are the best.
 
-1. [Windmills... in Space!](#windmills-in-space)
+1. [Windmills… in Space!](#windmills-in-space)
 1. [Recycling is Fun](#recycling-is-fun)
 1. [Glimmering Pavement](#glimmering-pavement)
 1. [Plausible Geometry](#plausible-geometry)
@@ -45,7 +45,7 @@ multi-story swimming pool, and I used the [Godot game engine] to build it.
 
 ### Plausible Geometry
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" video="https://www.youtube-nocookie.com/embed/GcHz6Ycd61Y">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" youtube="https://www.youtube.com/watch?v=GcHz6Ycd61Y">
 
 *December 2020:* I upgraded to the "All Plugins" edition of FL Studio during a
 recent sale, and made this track to try out some of the new plugins. I tried to
@@ -59,7 +59,7 @@ make more use of syncopation to get a better groove, and I think it worked!
 
 ### Glimmering Pavement
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" video="https://www.youtube-nocookie.com/embed/7F4IYSzUPmQ">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg" src-flac="/files/music/Synthmaster Lumpy - Glimmering Pavement.flac" youtube="https://www.youtube.com/watch?v=7F4IYSzUPmQ">
 
 *February 2018:* I started writing this on my phone during the bus rides home
 from work, and then moved to my usual computer workflow after I had a few ideas.
@@ -74,7 +74,7 @@ in FL Studio.
 
 ### Swimming in Circles
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" video="https://www.youtube-nocookie.com/embed/6lmSJVmlT4o">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" youtube="https://www.youtube.com/watch?v=6lmSJVmlT4o">
 
 *April 2017:* The soundtrack for
 [Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
@@ -92,7 +92,7 @@ recent tracks.
 
 ### Storm in the Valley
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" video="https://www.youtube-nocookie.com/embed/w1QXSNBtV1w">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Storm in the Valley.ogg" src-mp3="/files/music/Synthmaster Lumpy - Storm in the Valley.mp3" youtube="https://www.youtube.com/watch?v=w1QXSNBtV1w">
 
 *August 2016:* Based on the Gerudo Valley theme from Ocarina of Time. See the description
 of the YouTube video for more information.
@@ -124,9 +124,9 @@ again in FL Studio, yielding this.
 </l-music>
 
 
-### Windmills... in Space!
+### Windmills… in Space!
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" video="https://www.youtube-nocookie.com/embed/KvIuU1sofBY">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg" src-flac="/files/music/Synthmaster Lumpy - Windmills... in Space!.flac" youtube="https://www.youtube.com/watch?v=KvIuU1sofBY">
 
 *February 2015:* Based on the Song of Storms theme from Ocarina of Time. See the description
 of the YouTube video for more information.
@@ -745,9 +745,24 @@ class LumehMusic extends HTMLElement {
     }
     this.appendChild(audio);
 
+    var links = document.createElement('div');
+    links.classList.add('links');
+
+    // Video links
+    if (this.hasAttribute('youtube')) {
+      var video = document.createElement('span');
+      video.textContent = 'Video: '
+      var youtube = document.createElement('a');
+      youtube.setAttribute('href', this.getAttribute('youtube'))
+      youtube.setAttribute('rel', 'external');
+      youtube.textContent = 'YouTube'
+      video.appendChild(youtube);
+      links.appendChild(video);
+    }
+
     // Download links
     var downloads = document.createElement('span');
-    downloads.textContent = "Download:";
+    downloads.textContent = 'Download:';
     for (const source of sources) {
       var extension = source.split('.').pop();
       var downloadlink = document.createElement('a');
@@ -757,17 +772,16 @@ class LumehMusic extends HTMLElement {
       downloads.appendChild(document.createTextNode(' '));
       downloads.appendChild(downloadlink);
     }
-    this.appendChild(document.createTextNode(' '));
-    this.appendChild(downloads);
+    links.appendChild(downloads);
 
     // License
     var license = document.createElement('span');
-    license.textContent = "License:";
+    license.textContent = 'License: ';
     if (this.hasAttribute('license')) {
       if (this.getAttribute('license') == 'none') {
-        license.textContent += ' All rights reserved';
+        license.textContent += 'All rights reserved';
       } else {
-        license.textContent += ' unknown';
+        license.textContent += 'unknown';
       }
     } else {
       var licenselink = document.createElement('a');
@@ -775,23 +789,11 @@ class LumehMusic extends HTMLElement {
       licenselink.setAttribute('rel', 'external');
       licenselink.setAttribute('target', '_blank');
       licenselink.textContent = 'CC BY-SA 4.0';
-      license.appendChild(document.createTextNode(' '));
       license.appendChild(licenselink);
     }
-    this.appendChild(document.createTextNode(' '));
-    this.appendChild(license);
+    links.appendChild(license);
 
-    // YouTube embed
-    if (this.hasAttribute('video')) {
-      var iframe = document.createElement('iframe');
-      iframe.setAttribute('class', 'youtube-video');
-      iframe.setAttribute('width', 560);
-      iframe.setAttribute('height', 315);
-      iframe.setAttribute('frameborder', 0);
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.setAttribute('src', this.getAttribute('video'));
-      this.appendChild(iframe);
-    }
+    this.appendChild(links);
   }
 }
 customElements.define('l-music', LumehMusic);

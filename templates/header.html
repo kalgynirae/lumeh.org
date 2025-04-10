@@ -35,33 +35,37 @@
     <header class=page-info>
       {% if page.path %}
       <nav class=breadcrumbs>
-        <ol>
-          {% set ns = namespace(path="", prevname="") %}
-          {% for component in page.path.split("/") if component and not component.endswith(".html") %}
-          {% set ns.path = ns.path + component + "/" %}
-          {% if ns.path in site.tree or ns.path + "index.html" in site.tree %}
-          <li>/<a href="/{{ ns.path }}">{{ ns.prevname + component }}</a></li>
-          {% else %}
-          {% set ns.prevname = component + "/" %}
-          {% endif %}
-          {% endfor %}
-        </ol>
+        {% set ns = namespace(path="", prevname="") %}
+        {% for component in page.path.split("/") if component and not component.endswith(".html") %}
+        {% set ns.path = ns.path + component + "/" %}
+        {%- if ns.path in site.tree or ns.path + "index.html" in site.tree -%}
+        <span>/</span><a href="/{{ ns.path }}">{{ ns.prevname + component }}</a>
+        {%- else %}
+        {% set ns.prevname = component + "/" %}
+        {% endif %}
+        {% endfor %}
       </nav>
       {% endif %}
       {% if source.repo_url %}
-      <span class=source-info-modified>
-        <span class=label>Last modified</span>
-        <span>
-        {% if source.is_committed %}
-        <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
-        {% else %}
-        (uncommitted)
-        {% endif %}
+        {% if source.repo_name != "kalgynirae/lumeh.org" %}
+        <span class=source-info>
+          <span class=label>Source repo</span>
+          <a href="{{ source.repo_url }}">{{ source.repo_name }}</a>
         </span>
-      </span>
+        {% endif %}
+        <span class=source-info>
+          <span class=label>Last modified</span>
+          <span>
+          {% if source.is_committed %}
+          <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+          {% else %}
+          (uncommitted)
+          {% endif %}
+          </span>
+        </span>
       {% endif %}
       {% if source.authors %}
-      <span class=source-info-contributors>
+      <span class=source-info>
         <span class=label>Contributors</span>
         <span>
         {% for author in source.authors %}

@@ -22,17 +22,18 @@
   font-family: 'Inter', sans-serif
   font-size: 0.8rem
   font-variation-settings: "opsz" 14
-  font-weight: 400
+  font-weight: 440
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
 @mixin font-inter-regular
   font-family: 'Inter', sans-serif
   font-size: 0.95rem
+  font-variation-settings: "opsz" 20
   font-weight: 400
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
 @mixin font-inter-menu
   font-family: 'Inter', sans-serif
-  font-size: 1.2rem
-  font-variation-settings: "opsz" 24
+  font-size: 1.15rem
+  font-variation-settings: "opsz" 30
   font-weight: 450
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
 
@@ -79,7 +80,7 @@
   line-height: 1.30
 
 $page-border-radius: 20px
-$page-border-width: 3px
+$page-border-width: 2px
 $header-height: 104px
 $logo-width: 96px
 $logo-padding: 12px
@@ -95,11 +96,13 @@ $link: oklch(60% 0.14 225)
 $blue: oklch(68% 0.12 250)
 $purple: oklch(65% 0.19 315)
 $bg-light: oklch(98% 0 0)
-$bg-dark: oklch(95% 0 0)
+$bg-dark: oklch(94% 0 0)
+$bg-page-info: oklch(92% 0 0)
+$bg-darker: #c7c6ca
 $bg-highlight: oklch(94% 0.07 104)
 
 html
-  background-color: #c7c6ca
+  background-color: $bg-darker
   color: #303032
   @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
@@ -159,10 +162,9 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     white-space: nowrap
 
 #site-menu
-  background: linear-gradient(to bottom, #dadada, #e4e4e4 85%, #e0e0e0)
-  color: #000000
+  background: linear-gradient(to bottom, #e0e0e0, #f4f4f4 100%)
   @include font-inter-menu
-  line-height: 1.5em
+  line-height: 1.5
   overflow-x: auto
   padding: 0 0.5rem !important
   position: relative
@@ -192,29 +194,48 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     right: 0
     width: 1.5rem
 
+.page-info
+  min-height: 2rem
 
-#breadcrumbs
-  @include font-inter-regular
-  ol
+  background-color: $bg-page-info
+  box-shadow: inset 0 0.4em 0.3em -0.5em $shadow-color, inset 0 -0.4em 0.4em -0.6em $shadow-color
+  @include font-inter-small
+
+  display: flex
+  align-items: center
+  column-gap: 0.5rem
+  flex-wrap: nowrap
+
+  .breadcrumbs
+    @include font-inter-regular
+    flex-grow: 1
+    ol
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      margin: 0
+      padding: 0
+    li a
+      padding: 0 0.2em
+
+  .source-info-contributors, .source-info-modified
+    border-left: 1px solid $shadow-color
+
+    padding-left: 0.5rem
+
     display: flex
-    flex-wrap: wrap
-    list-style: none
-    margin: 0.5em 0
-    padding: 0
-  li a
-    padding: 0 0.2em
+    flex-direction: column
+    line-height: 1
+    text-align: right
+    .label
+      font-variant: all-small-caps
 
-#page-info
-  @include font-inter-regular
-  float: right
-  text-align: right
-
-#edit
+.edit-this-page
   @include font-inter-regular
   background-color: $bg-dark
   border-top: dashed 2px #e0e0e0
   display: block
-  padding: 0.5em 1rem
+  padding: 0.25rem 1rem 0.5rem
   &:hover
     background-color: $bg-light
 
@@ -403,9 +424,7 @@ table
 @media print
   #site-header,
   #site-menu,
-  #breadcrumbs,
-  #page-info,
-  #edit
+  .edit-this-page
     display: none
 
   html
@@ -421,6 +440,9 @@ table
     margin: 0
     max-width: none
     min-width: 0
+
+  .page-info
+    box-shadow: none
 
   blockquote,
   code,

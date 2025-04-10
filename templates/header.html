@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }} • {{ site.name }}</title>
+  <title>{{ page.title }} ⯂ {{ site.name }}</title>
   {% for author in source.authors %}
   <meta name="author" content="{{ author.display_name }}">
   {% endfor %}
@@ -32,18 +32,38 @@
         <li><a href="https://www.chan.cafe/">café</a></li>
       </ul>
     </nav>
-    {% if source.repo_url and page.path != "index.html" %}
-    <header id="page-info">
-      <p>
-        Last modified:
+    <header class=page-info>
+      {% if page.path %}
+      <nav class=breadcrumbs>
+        <ol>
+          {% set ns = namespace(path="", prevname="") %}
+          {% for component in page.path.split("/") if component and not component.endswith(".html") %}
+          {% set ns.path = ns.path + component + "/" %}
+          {% if ns.path in site.tree or ns.path + "index.html" in site.tree %}
+          <li>/<a href="/{{ ns.path }}">{{ ns.prevname + component }}</a></li>
+          {% else %}
+          {% set ns.prevname = component + "/" %}
+          {% endif %}
+          {% endfor %}
+        </ol>
+      </nav>
+      {% endif %}
+      {% if source.repo_url %}
+      <span class=source-info-modified>
+        <span class=label>Last modified</span>
+        <span>
         {% if source.is_committed %}
         <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
         {% else %}
         (uncommitted)
         {% endif %}
-        {% if source.authors %}
-        <br>
-        Contributors:
+        </span>
+      </span>
+      {% endif %}
+      {% if source.authors %}
+      <span class=source-info-contributors>
+        <span class=label>Contributors</span>
+        <span>
         {% for author in source.authors %}
           {% if author.url != None %}
           <a href="{{ author.url }}">{{ author.display_name }}</a>{% if not loop.last %},{% endif %}
@@ -51,25 +71,10 @@
           {{ author.display_name }}{% if not loop.last %},{% endif %}
           {% endif %}
         {% endfor %}
-        {% endif %}
-      </p>
+        </span>
+      </span>
+      {% endif %}
     </header>
-    {% endif %}
-    {% if page.path %}
-    <nav id="breadcrumbs">
-      <ol>
-        {% set ns = namespace(path="", prevname="") %}
-        {% for component in page.path.split("/") if component and not component.endswith(".html") %}
-        {% set ns.path = ns.path + component + "/" %}
-        {% if ns.path in site.tree or ns.path + "index.html" in site.tree %}
-        <li>/<a href="/{{ ns.path }}">{{ ns.prevname + component }}</a></li>
-        {% else %}
-        {% set ns.prevname = component + "/" %}
-        {% endif %}
-        {% endfor %}
-      </ol>
-    </nav>
-    {% endif %}
     <article class="main-content">
       {% if page.title and not page.hide_title %}
       <header>

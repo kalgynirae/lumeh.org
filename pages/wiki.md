@@ -9,6 +9,7 @@ about a wide variety of topics. Presently, though, the width is very small.
 
 * [i3 + Firefox Context Menu Alignment Issue](linux/i3-firefox-context-menu-alignment-issue/)
 * [PulseAudio](linux/pulseaudio/)
+* [Reboot to Windows](linux/reboot-to-windows/)
 
 ## Python
 

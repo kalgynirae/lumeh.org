@@ -146,13 +146,15 @@ html
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
   margin: 0 auto
-  max-width: 920px
+  max-width: 1040px
 
   @media (max-width: $mobile-width)
     border-radius: 0
 
   > *
     padding: 0 1rem
+    @media (max-width: $mobile-width)
+      padding: 0 0.5rem
   > :first-child
     border-radius: $page-border-radius $page-border-radius 0 0
     @media (max-width: $mobile-width)
@@ -197,8 +199,11 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   @include font-inter-menu
   line-height: 1.5
   overflow-x: auto
-  padding: 0 0.5rem !important
+  padding: 0 0.5rem
   position: relative
+
+  @media (max-width: $mobile-width)
+    padding: 0
 
   ul
     display: flex
@@ -274,8 +279,10 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 #footer
   @include font-inter-small
   text-align: center
-  padding-top: 1em
+  padding-top: 1rem
 
+  @media (max-width: $mobile-width)
+    padding: 1rem 0.5rem 0
   a
     color: oklch(from $link calc(l - 0.15) calc(c - 0.02) h)
   p
@@ -303,7 +310,7 @@ p
   margin-top: 0
 
 h1
-  margin-top: 2rem
+  margin-top: 1.5rem
   margin-bottom: 1rem
   font-size: 2.0em
   font-weight: 250
@@ -311,13 +318,13 @@ h1
     padding: 0
 
 h2
-  margin-top: 2rem
+  margin-top: 2.6rem
   margin-bottom: 1rem
   font-size: 1.5em
   font-weight: 580
 
 h3
-  margin-top: 1rem
+  margin-top: 1.3rem
   margin-bottom: 0.5rem
   font-size: 1.2em
   font-weight: 650
@@ -389,8 +396,14 @@ iframe
   background: $bg-dark
   border-top: solid 1px #e0e0e0
   border-bottom: solid 1px #e0e0e0
-  margin: 0.5em -1rem
+  margin: 0 -1rem 0.5rem
   padding: 0.25em 1rem
+
+@mixin toplevel-block-header
+  background: $bg-dark
+  border: solid 1px #e0e0e0
+  margin: 0 -0.5rem
+  padding: 0 0.5rem
 
 blockquote
   @include toplevel-block
@@ -409,7 +422,7 @@ pre
       color: inherit
       font-family: inherit
       font-size: inherit
-      font-weight: 550
+      font-weight: 600
     span.abridged
       color: $text-faint
       font-style: oblique
@@ -418,13 +431,12 @@ pre
       font-style: oblique
     span.prompt
       color: $text-green
-      font-weight: 550
+      font-weight: 600
     span.shebang
       color: $text-subtle
       font-style: oblique
 
-aside,
-figure
+aside, figure:not(.fullwidth)
   border: solid 1px $blue
   border-radius: 10px
   overflow: hidden
@@ -440,7 +452,6 @@ figure
     > code
       margin-top: 0
 
-aside
   &.tip
     border-color: $green
 
@@ -450,11 +461,31 @@ aside
   &.update
     border-color: $purple
 
+figure.fullwidth
+  margin: 0
+
+  > figcaption:first-child
+    color: $text-green
+    @include toplevel-block
+    @include font-inter-regular
+    margin: 0 -1rem
+    padding: 0.25rem 1rem
+
+    .bi
+      width: 1em
+      height: 1em
+      vertical-align: -0.125em
+      padding-right: 0.125em
+
+  > figcaption:last-child
+    // TODO: style this
+    background-color: red
+
 ol,
 ul
   list-style-position: outside
   padding: 0
-  margin: 0 0 0.5em 2.5em
+  margin: 0 0 0.5em 2.5rem
 
 ul.index
   margin-top: 1rem

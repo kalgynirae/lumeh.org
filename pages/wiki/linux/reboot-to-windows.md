@@ -2,84 +2,88 @@
 title: Reboot to Windows
 ---
 
-My PC dual-boots Windows and Linux, but I use Linux ~95% of the time. Since I like my PC to boot as quickly as possible, I’ve settled on the following setup:
+My PC dual-boots Windows and Linux, but I use Linux ~95% of the time. Since I like my PC to boot as
+quickly as possible, I’ve settled on the following setup:
 
-* The PC always boots into Linux first. There is no boot selection screen.
-* In Linux, I’ve added a *Reboot to Windows* option to both my login manager and my
-  desktop environment.
-* To allow Windows’s *Update and shut down* process to work unattended, I’ve set up a systemd timer
-  to reboot into Windows if nobody has logged into the machine after 90 seconds.
+* The PC boots directly into Linux. There is no interactive boot menu.
+* I’ve added *Reboot to Windows* options to my login manager and desktop environment.
+* The PC reboots to Windows automatically after two minutes if I haven’t logged in.
 
-This page documents the details of my setup.
+If you’re curious how any of this works, read on!
 
-## EFI boot entries
+## Prerequisites
 
-The main prerequisite is a system that boots using [UEFI] with boot entries for both Linux and Windows. For this setup to be effective, the Linux boot entry should always boot into Linux. If it instead shows a fancy boot menu (such as [GRUB]) that remembers your previous selection, that won’t play well. (You can likely configure your boot menu to select Linux automatically, but that’s out of the scope of this page.)
+Before I dive into the details, please note that these solutions require that your machine:
+
+1. boots using [UEFI],
+2. has separate EFI boot entries for Linux and Windows,
+3. doesn’t use a fancy boot menu that remembers your previous selection.
 
 [UEFI]: https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface
-[GRUB]: https://wiki.archlinux.org/title/GRUB
 
-`efibootmgr` lists the existing boot entries:
-```
-$ efibootmgr
+The first two criteria are easy to verify from Linux: run `efibootmgr`, and check that there are
+entries for both Linux and Windows.
+
+<pre><samp><span class=prompt>$</span> <kbd>efibootmgr</kbd>
 BootCurrent: 0000
 Timeout: 0 seconds
 BootOrder: 0000,0002,0001,0003,0004,0005,0006
-Boot0000* Arch Linux	HD(2,GPT,47be9262-66d7-7743-be45-99e62dee1724,0x76c00800,0x100000)/\vmlinuz-linux69006e0069007400720064003d005c0069006e0069007400720061006d00660073002d006c0069006e00750078002e0069006d006700200072006f006f0074003d004c004100420045004c003d00610072006300680072006f006f0074002000720077002000610075006400690074003d003000
-Boot0001* UEFI OS	HD(1,GPT,dd9ddf9f-afcd-4776-9d72-db7cc812b6d2,0x800,0xa00000)/\EFI\BOOT\BOOTX64.EFI0000424f
-Boot0002* Windows Boot Manager	HD(2,GPT,7dd2e191-7af4-4540-a427-32f1d99adb12,0xa00800,0x32000)/\EFI\MICROSOFT\BOOT\BOOTMGFW.EFI57494e444f5753000100000088000000780000004200430044004f0042004a004500430054003d007b00390064006500610038003600320063002d0035006300640064002d0034006500370030002d0061006300630031002d006600330032006200330034003400640034003700390035007d0000004d000100000010000000040000007fff0400
-Boot0003* UEFI: ScarlettWelcome Disk, Partition 1	PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)/Pci(0x8,0x0)/Pci(0x0,0x1)/USB(2,0)/USB(1,4)/HD(1,MBR,0x2d82c634,0x3f,0x141)0000424f
-Boot0004* UEFI:CD/DVD Drive	BBS(129,,0x0)
-Boot0005* UEFI:Removable Device	BBS(130,,0x0)
-Boot0006* UEFI:Network Device	BBS(131,,0x0)
-```
+Boot0000* Arch Linux	HD(2,GPT,47be9262-66d7-7743-be45-99e62de<span class=abridged>[…]</span>
+Boot0001* UEFI OS	HD(1,GPT,dd9ddf9f-afcd-4776-9d72-db7cc81<span class=abridged>[…]</span>
+Boot0002* Windows Boot Manager	HD(2,GPT,7dd2e191-7af4-4540-a427<span class=abridged>[…]</span>
+<span class=abridged>[…]</span>
+</samp></pre>
 
-You can see that, for my machine, `0000` is Linux and `0002` is Windows, and `0000` is the one that will be booted first.
+You can see that, for my machine, `0000` is Linux and `0002` is Windows, and `0000` is the one that
+will be booted first.
 
-### BootNext
+The third criterion is important because these solutions assume that the machine will boot directly
+into Linux by default. If your Linux installation came with an interactive boot menu (such as
+[GRUB]), you can likely reconfigure that boot menu to automatically default to Linux.
 
-UEFI supports overriding the boot order for the next boot only. For my machine, to boot into Windows next, I would run:
-```
-$ sudo efibootmgr --bootnext 0002
-```
+[GRUB]: https://wiki.archlinux.org/title/GRUB
+
+## BootNext
+
+UEFI supports overriding the boot order for the next boot only by setting the `BootNext` EFI
+variable. For example, if I want my machine to boot into Windows next, I can run:
+
+<pre><samp><span class=prompt>$</span> <kbd>sudo efibootmgr --bootnext 0002</kbd>
+BootNext: 0002
+BootCurrent: 0000
+<span class=abridged>[…remaining output same as before]</span>
+</samp></pre>
 
 ## reboot-to-windows script
 
-I didn’t want to hard-code my machine’s boot ID for Windows (which could change if I re-install in the future), so I wrote a script to find it.
+In the above sections, we saw that my machine’s boot ID for Windows is `0002`. I didn’t want to
+hard-code this ID (since it could change if I re-install in the future), so I wrote a script to find
+it and reboot the machine.
 
-<span class=path>/home/colin/bin/reboot-to-windows</span>
-```bash
-#!/bin/bash
-
-set-next-boot() {
-  local output
-  if output=$(efibootmgr | grep "$1") && [[ $output =~ Boot([[:xdigit:]]{4}) ]]; then
-    sudo efibootmgr --bootnext "${BASH_REMATCH[1]}"
-  else
-    echo >&2 "No EFI boot entry found matching ${1@Q}"
-    return 1
-  fi
-}
-
-if ! set-next-boot Windows; then
-  echo >&2 "Failed to set next boot; aborting"
+<figure>
+<figcaption><span class=path>/home/colin/bin/reboot-to-windows</span></figcaption>
+<pre><code><span class=shebang>#!/bin/bash</span>
+<br>if output=$(<span class=command>efibootmgr | grep Windows</span>) && [[ $output =~ Boot([[:xdigit:]]{4}) ]]; then
+  windows_id=${BASH_REMATCH[1]}
+else
+  echo &gt;&2 "No EFI boot entry found matching 'Windows'"
   exit 1
 fi
-
-systemctl --quiet --no-block reboot
-```
-
-The script first defines `set-next-boot()`, which searches the boot entries for a given string and, if
-one is found, runs `efibootmgr` to set the next boot. Then, the script calls
-that function with the hard-coded string *Windows* and initiates a reboot.
+<br>if ! <span class=command>sudo efibootmgr --bootnext "$windows_id"</span>; then
+  echo &gt;&2 "Failed to set next boot; aborting"
+  exit 1
+fi
+<br><span class=command>systemctl --quiet --no-block reboot</span>
+</code></pre>
+</figure>
 
 ### sudo configuration
 
 `efibootmgr` needs elevated privileges to modify EFI variables. To avoid being prompted
 for a password, I added the following to <span class=path>/etc/sudoers</span>.
 
-```sudoers
-%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/efibootmgr --bootnext ^[[\:xdigit\:]]+$
+```
+%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/efibootmgr ^--bootnext [[:xdigit:]]+$
 ```
 
 This allows any member of the [*wheel* group] to run this specific command without providing a
@@ -88,41 +92,51 @@ password. In case you’re not familiar with configuring sudo, note that you sho
 [*wheel* group]: https://en.wikipedia.org/wiki/Wheel_(computing)#Wheel_group
 [use the `visudo` command]: https://wiki.archlinux.org/title/Sudo#Using_visudo
 
-## greetd configuration
+## Login manager configuration
 
-(TODO)
+I use [greetd] as my login manager, but this should work for any login manager that supports Wayland sessions.
 
-## Automatic reboot after a delay
+[greetd]: https://wiki.archlinux.org/title/Greetd
 
-(TODO)
+<figure>
+<figcaption><span class=path>/usr/share/wayland-sessions/reboot-to-windows.desktop</span></figcaption>
+<pre><code>[Desktop Entry]
+Name=Reboot to Windows
+Exec=/home/colin/bin/reboot-to-windows
+Type=Application
+</code></pre>
+</figure>
 
-<span class=path>/etc/systemd/system/reboot-to-windows.service</span>
-```systemd
-[Service]
+## Automatic reboot to Windows
+
+I achieve this with a systemd service and timer.
+
+<figure>
+<figcaption><span class=path>/etc/systemd/system/reboot-to-windows.service</span></figcaption>
+<pre><code>[Service]
 Type=oneshot
-ExecCondition=bash -c "! loginctl list-sessions --json=short | jq -e '.[]|select(.seat != null and .user != \"greeter\")'"
+ExecCondition=bash -c "! loginctl list-sessions --json=short | jq -e '.[]|select(.seat != null && .user != \"greeter\")'"
 ExecStart=/home/colin/bin/reboot-to-windows
-```
+</code></pre>
+</figure>
 
-The interesting part of this service is the condition:
-```bash
-! loginctl list-sessions --json=short \
-  | jq -e '.[] | select( .seat != null and .user != "greeter" )'
-```
-The human-readable output of `loginctl list-sessions`:
-```
-$ loginctl list-sessions
-SESSION  UID USER  SEAT  LEADER CLASS   TTY  IDLE SINCE
-      1 1000 colin -     809    manager -    no   -
-      4 1000 colin seat0 1110   user    tty1 no   -
-```
-Then I’m selecting only sessions for which `seat` is populated and `user` is not *greeter*.
+The interesting part of this service is the `ExecCondition`, which uses [jq] to parse the JSON from
+`loginctl` and look for any active sessions for users other than *greeter* (the user that my login
+manager runs as). The `-e` flag makes jq’s exit code reflect whether a session was found, and the
+`!` at the start of the pipeline negates the result so that the condition fails if any session was
+found (meaning the reboot should not proceed).
 
-<span class=path>/etc/systemd/system/reboot-to-windows.timer</span>
-```systemd
-[Timer]
-OnActiveSec=90s
+[jq]: https://jqlang.org/
 
-[Install]
+The corresponding timer triggers this service to start two minutes after the machine boots. 
+
+<figure>
+<figcaption><span class=path>/etc/systemd/system/reboot-to-windows.timer</span></figcaption>
+<pre><code>[Timer]
+OnActiveSec=2m
+<br>[Install]
 WantedBy=multi-user.target
-```
+</code></pre>
+</figure>
+
+Remember to enable the timer with `systemctl enable reboot-to-windows.timer`.

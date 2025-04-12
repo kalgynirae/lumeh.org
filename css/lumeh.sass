@@ -103,9 +103,38 @@ $bg-page-info: oklch(92% 0 0)
 $bg-darker: #c7c6ca
 $bg-highlight: oklch(94% 0.07 104)
 
+$text-faint: #a9a39e
+$text-subtle: #79736f
+$text-normal: #302d2a
+$text-bright: #0d0b08
+$text-red: #9f4138
+$text-red-dim: #be8981
+$text-red-bright: #c25147
+$text-orange: #925001
+$text-orange-dim: #b59072
+$text-orange-bright: #b36300
+$text-yellow: #857100
+$text-yellow-dim: #aca075
+$text-yellow-bright: #a18800
+$text-green: #41721e
+$text-green-dim: #8aa178
+$text-green-bright: #518c27
+$text-cyan: #007265
+$text-cyan-dim: #77a197
+$text-cyan-bright: #008d7d
+$text-blue: #1c67a2
+$text-blue-dim: #7d9cb9
+$text-blue-bright: #237fc6
+$text-violet: #6655a0
+$text-violet-dim: #9a92b8
+$text-violet-bright: #7d69c4
+$text-magenta: #894780
+$text-magenta-dim: #b08ba7
+$text-magenta-bright: #a8589e
+
 html
   background-color: $bg-darker
-  color: #303032
+  color: $text-normal
   @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
 
@@ -371,17 +400,35 @@ blockquote
 pre
   overflow: auto
   @include toplevel-block
-  > code
+  > code, > samp
     @include font-berkeley-mono-block
     background: $bg-dark
     display: block
+
+    kbd, span.command
+      color: inherit
+      font-family: inherit
+      font-size: inherit
+      font-weight: 550
+    span.abridged
+      color: $text-faint
+      font-style: oblique
+    span.comment
+      color: $text-subtle
+      font-style: oblique
+    span.prompt
+      color: $text-green
+      font-weight: 550
+    span.shebang
+      color: $text-subtle
+      font-style: oblique
 
 aside,
 figure
   border: solid 1px $blue
   border-radius: 10px
   overflow: hidden
-  margin: 1em 2.5em
+  margin: 1rem 2rem
   padding: 0.5rem 1rem 0
 
   &:has(pre:first-child)

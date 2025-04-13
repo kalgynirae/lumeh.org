@@ -1,8 +1,6 @@
-# Git Building Blocks
+# The Building Blocks of Git
 
 NOTE: This page is very much a work-in-progress.
-
-# The Building Blocks of Git
 
 Some people learn best by understanding concepts from the ground up, while
 others prefer to learn in more of a top-down way. For Git, I think it makes

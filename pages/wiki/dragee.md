@@ -10,6 +10,6 @@ a type of confectionery.
 This is the correct term for the "edible ball bearings" The Doctor mentions in
 S2E11 of Doctor Who.
 
-# See also
+## See also
 
 *   ["Dragée" on Wikipedia](https://en.wikipedia.org/wiki/Drag%C3%A9e)

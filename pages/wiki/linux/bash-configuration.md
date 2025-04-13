@@ -9,7 +9,7 @@ users, with explanations!
 
 ## Where did my history go?
 
-If you've ever wanted to check how Bash behaves in the absence of your
+If you’ve ever wanted to check how Bash behaves in the absence of your
 personal configs, you may have run a command like `bash --noprofile --norc`.
 Unfortunately, when you did this, you probably mysteriously lost a bunch of your
 command history. To avoid this, set `HISTFILE` to a nonstandard path (i.e., not
@@ -20,7 +20,7 @@ the default `~/.bash_history`) in your `.bashrc` file:
 HISTFILE=~/.bash_history_actual
 ```
 
-**Explanation:** Bash's default behavior is to keep only 500 entries in the
+**Explanation:** Bash’s default behavior is to keep only 500 entries in the
 history file. If you run Bash without loading your personal configs, Bash will
 truncate the history file to 500 entries when it exits. Using a nonstandard
 history file ensures that Bash will only touch *your* history file when it has

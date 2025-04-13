@@ -4,9 +4,9 @@ NOTE: This page is very much a work-in-progress.
 
 Some people learn best by understanding concepts from the ground up, while
 others prefer to learn in more of a top-down way. For Git, I think it makes
-sense to learn from the ground up even if that isn't the way you normally learn
-best.  That's because Git actually has a *very small* number of core concepts,
-so it's fairly easy to learn them, and once you do, you'll be able to work out
+sense to learn from the ground up even if that isn’t the way you normally learn
+best.  That’s because Git actually has a *very small* number of core concepts,
+so it’s fairly easy to learn them, and once you do, you’ll be able to work out
 the solutions to almost any problems you encounter in Git.
 
 ## Commits are snapshots
@@ -24,13 +24,13 @@ the previous commit.
 
 Adding to the confusion, there are many commands in Git itself that treat
 commits as if they were diffs rather than snapshots. For example, `git show
-<hash>` displays a commit as if it were a diff, but what it's really doing is
+<hash>` displays a commit as if it were a diff, but what it’s really doing is
 computing on-the-fly the differences between this commit and its parent commit.
 
 ## Commits have parents
 
 Every* commit has one or more parent commits. If you have a specific commit, you
-can find out its parent commit, and that commit's parent commit, and so on. So
+can find out its parent commit, and that commit’s parent commit, and so on. So
 Git can track down the whole history leading to a particular commit just from
 the information stored in that commit, no branches involved.
 
@@ -41,7 +41,7 @@ the information stored in that commit, no branches involved.
 ## Tags and branches are pointers to commits
 
 Both tags and branches are little more than named pointers to specific commits.
-The difference is that tags don't move, while branches move as you create new
+The difference is that tags don’t move, while branches move as you create new
 commits.
 
 We often think of branches as containing *sequences* of commits, but the reality
@@ -51,7 +51,7 @@ commit, which itself has a parent commit, and so on.
 Many Git commands appear to treat a branch as if it contains many commits.  For
 example, `git rebase` appears to move "the whole branch" to another base. Under
 the hood, Git is computing on-the-fly the set of commits that are reachable from
-the branch but not from the branch's configured upstream, and then rebasing
+the branch but not from the branch’s configured upstream, and then rebasing
 the computed set of commits. The branch does not actually *contain* that set of
 commits, but we often think of it that way when performing operations.
 

@@ -2,7 +2,7 @@
 title: Index
 ---
 
-**lumeh.org** is Colin Chan's personal website.  It is ~~currently~~ *always*
+**lumeh.org** is Colin Chan’s personal website.  It is ~~currently~~ *always*
 under <span id=construction>construction</span>. If you find anything that seems
 broken or wrong, you can file an issue on GitHub or email the admin (see info
 about both in the footer).
@@ -21,7 +21,7 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 
 ## Serious things
 
-*   [music I've written](/music/)
+*   [music I’ve written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
 *   [my preferred Google Docs styles](https://docs.google.com/document/d/1HnU8OpUeEzo_AIq4NqNBGNsGCAvGBrmvfOCYuv5SR5w/edit?usp=sharing)
 *   [my recipes](/recipes/)

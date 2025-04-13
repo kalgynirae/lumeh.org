@@ -9,20 +9,20 @@ date: 2009-10-19
 > So quick was he to answer when\
 > Zeus called and told him, “Son…
 >
-> “I'm having trouble reading books\
+> “I’m having trouble reading books\
 > In the middle of the night.\
 > These lightning bolts burn holes right through;\
 > I need a softer light.
 >
 > “I asked some other people too,\
-> And when they weren't enthused\
-> I decided I'd give a prize\
-> For whoever's light I used.”
+> And when they weren’t enthused\
+> I decided I’d give a prize\
+> For whoever’s light I used.”
 >
 > Thomas thought it over,\
 > Then gave Zeus his reply:\
-> “I'll make the best light ever made!\
-> Well, at least, I'll try.”
+> “I’ll make the best light ever made!\
+> Well, at least, I’ll try.”
 >
 > So Thomas set to work at once,\
 > To finish his design.\
@@ -51,7 +51,7 @@ date: 2009-10-19
 >
 > “You have failed my contest, sir,\
 > And that being the case,\
-> There's only one thing left to do:\
+> There’s only one thing left to do:\
 > I must kill you with this mace.”
 >
 > Thomas Edward cowered with fear\
@@ -69,14 +69,14 @@ date: 2009-10-19
 > And with a frail buzzing sound,\
 > He began to brightly glow.
 >
-> Zeus's eyes were blinded.\
+> Zeus’s eyes were blinded.\
 > Lumeh was alight;\
 > He suddenly exploded,\
 > But Thomas was alright.
 >
 > Thomas looked with wonder,\
 > For though Lumeh was defunct,\
-> To Thomas Edward's light bulb\
+> To Thomas Edward’s light bulb\
 > A bright glowing was adjunct.
 >
 > So Zeus ordered his minions to\

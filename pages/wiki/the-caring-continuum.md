@@ -3,7 +3,7 @@ title: The Caring Continuum
 ---
 
 The Caring Continuum is an illustration that explains the usage of the phrase
-"I couldn't care less".
+"I couldn’t care less".
 
 ## Illustration
 
@@ -12,7 +12,7 @@ The illustration was created by Kevin MacLeod and is originally from
 
 ![The Caring Continuum](/media/caring_continuum.png)
 
-## Roasty's response
+## Roasty’s response
 
 In September of 2008, **Roasty** replied:
 

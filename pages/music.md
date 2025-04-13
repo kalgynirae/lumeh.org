@@ -2,7 +2,7 @@
 title: Music
 ---
 
-I play the pipe organ and the piano, occasionally sing, and even more occasionally compose video-game-style music!  My [YouTube channel] has recordings of arrangements I've written of many hymns (eventually I'll have a separate page on this website for those).
+I play the pipe organ and the piano, occasionally sing, and even more occasionally compose video-game-style music!  My [YouTube channel] has recordings of arrangements I’ve written of many hymns (eventually I’ll have a separate page on this website for those).
 
 The rest of this page is dedicated to the video game music I produce under the alias
 <em>Synthmaster Lumpy</em>. I also have a [SoundCloud page], but I no longer update it.
@@ -15,11 +15,11 @@ This is a short list of the tracks that I think are the best.
 1. [Recycling is Fun](#recycling-is-fun)
 1. [Glimmering Pavement](#glimmering-pavement)
 1. [Plausible Geometry](#plausible-geometry)
-1. [Let's Godot Swimming](#let-s-godot-swimming)
+1. [Let’s Godot Swimming](#lets-godot-swimming)
 1. [Storm in the Valley](#storm-in-the-valley)
 1. [Gravitational Conflict](#gravitational-conflict)
 1. [Ligatures In Space](#ligatures-in-space)
-1. [Walkin' Lucas (He's a Fish)](#walkin-lucas-he-s-a-fish)
+1. [Walkin’ Lucas (He’s a Fish)](#walkin-lucas-hes-a-fish)
 1. [Mountains In Space](#mountains-in-space)
 1. [Battle in the Cathedral (Remastered)](#battle-in-the-cathedral-remastered)
 
@@ -27,7 +27,7 @@ This is a short list of the tracks that I think are the best.
 ## 2021
 
 
-### Let's Godot Swimming
+### Let’s Godot Swimming
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Let's Godot Swimming.ogg" src-flac="/files/music/Synthmaster Lumpy - Let's Godot Swimming.flac">
 
@@ -63,7 +63,7 @@ make more use of syncopation to get a better groove, and I think it worked!
 
 *February 2018:* I started writing this on my phone during the bus rides home
 from work, and then moved to my usual computer workflow after I had a few ideas.
-In lieu of a better animation, I've just done a screen capture of the playlist
+In lieu of a better animation, I’ve just done a screen capture of the playlist
 in FL Studio.
 
 </l-music>
@@ -77,11 +77,11 @@ in FL Studio.
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Swimming in Circles.ogg" src-flac="/files/music/Synthmaster Lumpy - Swimming in Circles.flac" youtube="https://www.youtube.com/watch?v=6lmSJVmlT4o">
 
 *April 2017:* The soundtrack for
-[Something's Fishy](https://github.com/kalgynirae/somethings-fishy), a game
+[Something’s Fishy](https://github.com/kalgynirae/somethings-fishy), a game
 I made for Ludum Dare 38.  I wrote this in about two hours, and then spent
 an additional 20 minutes after the submission deadline adding an actual
-ending and cleaning things up very slightly.  I'm pretty happy with how it
-turned out given the time limit, but I don't think it's as good as my other
+ending and cleaning things up very slightly.  I’m pretty happy with how it
+turned out given the time limit, but I don’t think it’s as good as my other
 recent tracks.
 
 </l-music>
@@ -134,7 +134,7 @@ of the YouTube video for more information.
 </l-music>
 
 
-### It's from a Davideo Game
+### It’s from a Davideo Game
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg" src-flac="/files/music/Synthmaster Lumpy - It's from a Davideo Game.flac">
 
@@ -182,11 +182,11 @@ of the YouTube video for more information.
 ## 2014
 
 
-### You're a Hero (Instrumental)
+### You’re a Hero (Instrumental)
 
 <l-music src-mp3="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3" src-flac="/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3">
 
-*January 2014:* for Whosical the Musical at SwampCon 2014. They didn't end up
+*January 2014:* for Whosical the Musical at SwampCon 2014. They didn’t end up
 using this one, though.
 
 </l-music>
@@ -221,7 +221,7 @@ wrote this.
 
 *July 2013:* for [Mideast Sidearm Hideaway]. I finally finished the older track "battle music (rough draft)". I got a little
 bit carried away with the chords toward the end of the saxophone solo, and then
-the part after that references the melody and chords from "Black Hole" (but it's
+the part after that references the melody and chords from "Black Hole" (but it’s
 kind of difficult to pick out).
 
 </l-music>
@@ -234,7 +234,7 @@ kind of difficult to pick out).
 *July 2013:* for [Mideast Sidearm Hideaway]. The beginning of this track is intended to accompany a short (roughly 10
 seconds) cutscene in which the black hole appears and steals some parts
 from your ship. The remainder of the track is a background music loop for
-the game's overworld.
+the game’s overworld.
 
 </l-music>
 
@@ -248,7 +248,7 @@ the game's overworld.
 </l-music>
 
 
-### Can't Hold Us (instrumental backing track)
+### Can’t Hold Us (instrumental backing track)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg" src-mp3="/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3" license=none>
 
@@ -301,9 +301,9 @@ Dunno if he ever finished recording it. This could still use some improvement.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg" src-mp3="/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3" license=none>
 
-*March 2012:* This is an orchestration of [Joey Franco's town theme], which was
-originally written for piano. He's slightly upset because I messed up part of
-the chord progression. In my defense, I'm still planning to fix it if I ever end
+*March 2012:* This is an orchestration of [Joey Franco’s town theme], which was
+originally written for piano. He’s slightly upset because I messed up part of
+the chord progression. In my defense, I’m still planning to fix it if I ever end
 up working on this again.
 
 </l-music>
@@ -406,7 +406,7 @@ re-creation of my earlier track *Exploding Soda Machine*.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - The Shop.ogg" src-mp3="/files/music/Synthmaster Lumpy - The Shop.mp3">
 
-*August 2011:* This actually doesn't sound at all like shop music. It sounds more like
+*August 2011:* This actually doesn’t sound at all like shop music. It sounds more like
 credits or menu music.
 
 </l-music>
@@ -423,7 +423,7 @@ appearance—some overlap):
 * The First Noel
 * Il est né
 * Sing We Now of Christmas
-* Lo, How a Rose E'er Blooming
+* Lo, How a Rose E’er Blooming
 * Up on the House Top
 * Jingle Bells
 * Do You Hear What I Hear?
@@ -450,7 +450,7 @@ This was tricky because the saxophone sample I was using only did short notes.
 <l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock (long version).ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock (long version).mp3" license=none>
 
 *June 2011:* This track is an extension of the older *On The Clock* that
-matches up perfectly with Ke$ha's *Tik Tok*. The added build-up section that
+matches up perfectly with Ke$ha’s *Tik Tok*. The added build-up section that
 starts about 2/3 of the way through is spiffy.
 
 </l-music>
@@ -460,7 +460,7 @@ starts about 2/3 of the way through is spiffy.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - RandyRacer.ogg" src-mp3="/files/music/Synthmaster Lumpy - RandyRacer.mp3" src-flac="/files/music/Synthmaster Lumpy - RandyRacer.flac">
 
-*May 2011:* This is Randy Adams's theme song.
+*May 2011:* This is Randy Adams’s theme song.
 
 </l-music>
 
@@ -496,7 +496,7 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-### Norman's Theme
+### Norman’s Theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Norman's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Norman's Theme.mp3">
 
@@ -505,11 +505,11 @@ to sound good together. It turned out okay…
 </l-music>
 
 
-### Walkin' Lucas (He's a Fish)
+### Walkin’ Lucas (He’s a Fish)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg" src-mp3="/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3">
 
-*March 2011:* Written for David Troner's fish named Lucas. The ending (the last
+*March 2011:* Written for David Troner’s fish named Lucas. The ending (the last
 17 or so seconds) is basically perfect.
 
 </l-music>
@@ -522,7 +522,7 @@ to sound good together. It turned out okay…
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3">
 
-*December 2010:* You don't think Christmas music can be annoying? Think again!
+*December 2010:* You don’t think Christmas music can be annoying? Think again!
 
 </l-music>
 
@@ -532,7 +532,7 @@ to sound good together. It turned out okay…
 <l-music src-ogg="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.ogg" src-mp3="/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3">
 
 *December 2010:* As far as I can tell, this is the correct punctuation of the
-title.  I wrote this in response to calzoneman's God Rest Ye Merry Gentlemen.
+title.  I wrote this in response to calzoneman’s God Rest Ye Merry Gentlemen.
 The ending explosion is the same as from *On The Clock*. It just sounded right.
 
 </l-music>
@@ -569,7 +569,7 @@ The ending explosion is the same as from *On The Clock*. It just sounded right.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - On The Clock.ogg" src-mp3="/files/music/Synthmaster Lumpy - On The Clock.mp3" license=none>
 
-*June 2010:* Written using the chords from Ke$ha's *Tik Tok*. I tried to hide
+*June 2010:* Written using the chords from Ke$ha’s *Tik Tok*. I tried to hide
 this fact until the point in the middle where it becomes completely obvious.
 
 </l-music>
@@ -579,10 +579,10 @@ this fact until the point in the middle where it becomes completely obvious.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Latin Prepositions.ogg" src-mp3="/files/music/Synthmaster Lumpy - Latin Prepositions.mp3">
 
-*January 2010:* Written for my high school Latin project. There's one obvious
+*January 2010:* Written for my high school Latin project. There’s one obvious
 mistake in this, where I say the wrong translation for "post montem". That was a
-recording mistake that I didn't notice until it was too late to fix. Oh well.
-I'm also not a big fan of my singing.
+recording mistake that I didn’t notice until it was too late to fix. Oh well.
+I’m also not a big fan of my singing.
 
 </l-music>
 
@@ -697,7 +697,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-### Lumpy's Theme
+### Lumpy’s Theme
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme.ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3">
 
@@ -706,7 +706,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-### Lumpy's Theme (gameboy version)
+### Lumpy’s Theme (gameboy version)
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).ogg" src-mp3="/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3">
 
@@ -719,7 +719,7 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 [Minecraft Space Mountain video]: http://www.youtube.com/watch?v=aX-9yozuIQI
 [Mideast Sidearm Hideaway]: https://github.com/ufgmg/mideast-sidearm-hideaway
 [Think Green]: /projects/thinking-green
-[Joey Franco's town theme]: https://soundcloud.com/norphan/town-theme
+[Joey Franco’s town theme]: https://soundcloud.com/norphan/town-theme
 
 
 <script>

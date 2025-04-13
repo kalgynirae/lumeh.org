@@ -13,16 +13,16 @@ Yes.
 
 ## What?? How???
 
-It's like normal Christmas in July, but you do it at
-your own house and join our [~~Discord server~~]. We'll be
+It’s like normal Christmas in July, but you do it at
+your own house and join our [~~Discord server~~]. We’ll be
 online from **2pm to 6pm (PDT)**. Come for a quick hello, or
-stay for the whole thing. It's *your* Christmas!
+stay for the whole thing. It’s *your* Christmas!
 
 ## How am I supposed to get in the Christmas spirit?
 
 We have resurrected the Café Chan orchestral Christmas music stream:
 
-(the audio stream is no longer active, but check [/cafe] to see what's currently
+(the audio stream is no longer active, but check [/cafe] to see what’s currently
 playing)
 
 [Discord server]: #
@@ -33,12 +33,12 @@ playing)
 * [Chonklate Chip Cookies]
 * [Little White Ball Cookies]
 * [Shortbread Cookies]
-* [Alton Brown's Sugar Cookies]
+* [Alton Brown’s Sugar Cookies]
 
 If possible, join the Discord while baking your cookies. Otherwise, we strongly
 recommend baking your cookies ahead of time, because cookies are great.
 
-[Alton Brown's Sugar Cookies]: https://www.foodnetwork.com/recipes/alton-brown/sugar-cookies-recipe-1914697
+[Alton Brown’s Sugar Cookies]: https://www.foodnetwork.com/recipes/alton-brown/sugar-cookies-recipe-1914697
 [Chonklate Chip Cookies]: /recipes/chonklate-chip-cookies/
 [Little White Ball Cookies]: /recipes/little-white-ball-cookies/
 [Shortbread Cookies]: /recipes/shortbread-cookies/

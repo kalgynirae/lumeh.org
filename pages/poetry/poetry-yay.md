@@ -10,6 +10,6 @@ date: 2009-?-?
 > “But <span style="text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: red">youre</span> rotten, my friend.” said the small piece of twine.
 >
 > “That I am, that I am,” said the sponge to the twine.\
-> “But I think you'll find me in the prime of my time.\
-> For I know when it's wrong and when it is fine\
+> “But I think you’ll find me in the prime of my time.\
+> For I know when it’s wrong and when it is fine\
 > To use an apostrophe.  You fail, Mr. Twine.”

@@ -2,6 +2,8 @@
 title: i3 + Firefox Context Menu Alignment Issue
 ---
 
+# i3 + Firefox Content Menu Alignment Issue
+
 For a long time, I have experienced an issue when running Firefox in the [i3
 window manager]. Although I still don’t know why the issue occurs, I finally
 have a good solution.

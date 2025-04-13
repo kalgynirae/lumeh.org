@@ -2,18 +2,22 @@
 title: Style Test
 ---
 
+# Style Test
+
 This page <s>tests</s> displays a **variety of *styles*** for your viewing
 pleasure.
 
 There are paragraphs, sentences, emphases, quotations, blocks of `code`,
 horizontal rules, etc.
 
-## H2
+## H2 one
 
 It can be interesting to compare the visual appearance of normal text with that
 of heading text of various sizes.
 
-## H2 again
+## H2 two
+
+Text text text.
 
 ### H3: The Sub-Heading
 
@@ -30,10 +34,12 @@ def maybe_return_something() -> Optional[Any]:
 ```
 
 ### H3 again
+
+And a little bit more.
+
 #### H4: The Sub-Sub-Heading
 
 ##### H5: Hardly even a heading any more
-
 
 <blockquote cite="https://en.wikisource.org/wiki/The_Ethics_of_Belief">
 
@@ -69,6 +75,3 @@ for it.
 <footer>William Kingdon Clifford, <cite>The Ethics of Belief</cite></footer>
 
 </blockquote>
-
-
-[The Ethics of Belief (1877)]: https://en.wikisource.org/wiki/The_Ethics_of_Belief

@@ -2,6 +2,8 @@
 title: The Base Game
 ---
 
+# The Base Game
+
 **The Base Game** is a slight variation on what Wikipedia dubs the
 ["Homefree variant" of Manhunt]. It was created by various members of the Chan
 and Narciso families in the [early twenty-first century].

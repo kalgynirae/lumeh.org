@@ -2,24 +2,26 @@
 title: NarChanSo Ball
 ---
 
+# NarChanSo Ball
+
 **NarChanSo Ball** is a non-competitive team sport involving a playground ball and
 a soccer goal. It was created by Colin Chan, Ian Chan, and Anthony Narciso in
 the [early twenty-first century].
 
-# Why NarChanSo Ball?
+## Why NarChanSo Ball?
 
 NarChanSo Ball is simple and flexible. It requires only two pieces of
 equipment and can be played with both small and large numbers of players. Its
 non-competitive nature allows for spontaneous team-shuffling and inclusion of
 all players regardless of their athletic ability.
 
-# Materials
+## Materials
 
 *   A playground ball (rubber, preferably about 10 inches in diameter)
 *   A large field with a soccer goal at one end (one half of a full-sized
     soccer field is ideal)
 
-# Gameplay
+## Gameplay
 
 A game of NarChanSo Ball consists of many short rounds. The players are
 partitioned into two teams. For each round, one team is designated the
@@ -33,12 +35,12 @@ the ball into the goal. The round ends as soon as the ball touches the ground
 or a defensive player tags the offensive player who is holding the ball.  Teams
 then switch roles for the next round.
 
-## Choosing teams
+### Choosing teams
 
 Teams should have roughly even numbers of players. As the game is
 non-competitive, players may be shuffled between teams at any time.
 
-## The round
+### The round
 
 The round begins at the moment an offensive player first touches the ball. The
 round ends when any of the following occurs:
@@ -66,34 +68,34 @@ The full procedure surrounding a round is as follows:
     entered the goal, then the offense and defense retain their roles for the
     next round. In the other cases, the teams switch roles for the next round.
 
-### Starting positions
+#### Starting positions
 
 Members of the offense start anywhere on the field in front of the goal.
 Members of the defense start anywhere behind (or in) the goal.
 
-### Tagging
+#### Tagging
 
 Contacting a player with a single hand constitues a tag.
 
-### Re-kicking
+#### Re-kicking
 
 If the offense determines that the ball was kicked too close to the goal or
 that the defense ran onto the field too quickly to give the offense sufficient
 starting space, they may request a re-kick.
 
-## Scorekeeping
+### Scorekeeping
 
 **No score or tally of the number of goals may be kept.** This rule is crucial to
 maintaining the non-competitive nature of NarChanSo Ball.
 
-# Tips and recommendations
+## Tips and recommendations
 
-## For offense
+### For offense
 
 *   It is difficult to catch a ball that has been kicked very high. Let the
     ball bounce a couple of times before attempting to catch it.
 
-## For defense
+### For defense
 
 *   Give the offense enough room at the start of the round. Otherwise, they
     will probably ask for a re-kick.

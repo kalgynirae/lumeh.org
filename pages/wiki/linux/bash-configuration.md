@@ -2,12 +2,14 @@
 title: Bash Configuration
 ---
 
+# Bash Configuration
+
 This page is a collection of miscellaneous recommended configuration for Bash
 users, with explanations!
 
-# History
+## History
 
-## Where did my history go?
+### Where did my history go?
 
 If you’ve ever wanted to check how Bash behaves in the absence of your
 personal configs, you may have run a command like `bash --noprofile --norc`.
@@ -26,16 +28,16 @@ truncate the history file to 500 entries when it exits. Using a nonstandard
 history file ensures that Bash will only touch *your* history file when it has
 also loaded your other history settings.
 
-# Readline (inputrc)
+## Readline (inputrc)
 
-## Improving readability
+### Improving readability
 
 ```inputrc
 set blink-matching-paren on
 set colored-completion-prefix on
 ```
 
-## Reducing keystrokes
+### Reducing keystrokes
 
 ```inputrc
 set completion-ignore-case on

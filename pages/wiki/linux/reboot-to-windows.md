@@ -2,6 +2,8 @@
 title: Reboot to Windows
 ---
 
+# Reboot to Windows
+
 My PC dual-boots Windows and Linux, but I use Linux ~95% of the time. Since I like my PC to boot as
 quickly as possible, I’ve settled on the following setup:
 

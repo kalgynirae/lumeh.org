@@ -32,12 +32,10 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 *   [NarChanSo Ball](/wiki/games/narchanso-ball/)
 *   [Krypto generator](/tools/krypto-generator/)
 *   [stopwatch](/tools/stopwatch/)
-*   [jQuery guess-the-number game](/guess/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)
 
 ## Silly things
 
-*   [Jabberwockus](/poetry/jabberwockus/)
 *   [Lumeh, God of Light Bulbs](/poetry/lumeh-god-of-light-bulbs/)
+*   [Jabberwockus](/poetry/jabberwockus/)
 *   [Poetry Yay](/poetry/poetry-yay/)
-*   [Shoot the boxer](/boxer/)

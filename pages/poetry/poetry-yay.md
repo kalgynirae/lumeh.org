@@ -4,6 +4,8 @@ author: Colin Chan
 date: 2009-?-?
 ---
 
+# Poetry Yay
+
 > Long, long ago up on top of a sign\
 > Lived an old rotten sponge and a small piece of twine.\
 > Said the sponge to the twine, “I am feeling quite fine.”\
@@ -13,3 +15,5 @@ date: 2009-?-?
 > “But I think you’ll find me in the prime of my time.\
 > For I know when it’s wrong and when it is fine\
 > To use an apostrophe.  You fail, Mr. Twine.”
+
+Written by Colin in the [early twenty-first century](/wiki/early-twenty-first-century/).

@@ -1,6 +1,9 @@
 ---
 title: Jabberwockus
+author: Karl Krehbiel
 ---
+
+# Jabberwockus
 
 “Jabberwocky” by Lewis Carroll, translated into pseudo-Latin by Karl Krehbiel
 

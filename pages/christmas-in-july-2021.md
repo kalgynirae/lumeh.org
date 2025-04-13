@@ -2,6 +2,8 @@
 title: Christmas in July 2021
 ---
 
+# Christmas in July 2021
+
 It’s everyone’s favorite Christmas sibling, Christmas in July!
 
 ![Café Chan Christmas in July “eXMASperience”](/media/christmas-in-july-2021.png "Christmas in July “eXMASperience” advertisement banner")

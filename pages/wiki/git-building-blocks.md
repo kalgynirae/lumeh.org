@@ -1,3 +1,5 @@
+# Git Building Blocks
+
 NOTE: This page is very much a work-in-progress.
 
 # The Building Blocks of Git

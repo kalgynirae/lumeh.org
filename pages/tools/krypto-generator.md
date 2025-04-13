@@ -2,6 +2,8 @@
 title: Krypto Generator
 ---
 
+# Krypto Generator
+
 Programmed by Colin <span id="hours">many</span> hours ago.
 
 <table id="krypto-table">

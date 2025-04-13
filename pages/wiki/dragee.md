@@ -2,6 +2,8 @@
 title: Dragée
 ---
 
+# Dragée
+
 A dragée is a small, hard sugary cake decoration. According to Wikipedia, it is
 a type of confectionery.
 

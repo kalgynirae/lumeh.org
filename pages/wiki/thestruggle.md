@@ -1,6 +1,8 @@
 ---
-title: #thestruggle
+title: '#thestruggle'
 ---
+
+# #thestruggle
 
 **#thestruggle** documents scenarios for which an appropriate Pusheen sticker
 does not exist in Facebook Messenger.

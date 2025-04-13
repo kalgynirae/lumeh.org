@@ -2,6 +2,8 @@
 title: Christmas in July (2020 Virtual Edition)
 ---
 
+# Christmas in July (2020 Virtual Edition)
+
 Due to circumstances, Christmas is online this year.
 Merry Christmas!
 

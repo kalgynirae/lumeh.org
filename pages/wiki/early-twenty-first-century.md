@@ -2,6 +2,8 @@
 title: Early Twenty-First Century
 ---
 
+# Early Twenty-First Century
+
 The early twenty-first century is the preferred time period used to describe
 events that definitely occurred in this century but for which the precise year
 of occurrence is unknown.

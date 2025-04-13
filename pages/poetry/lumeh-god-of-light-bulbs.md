@@ -4,6 +4,8 @@ author: Colin Chan
 date: 2009-10-19
 ---
 
+# Lumeh, God of Light Bulbs
+
 > Thomas Edward was quite smart,\
 > But money had he none.\
 > So quick was he to answer when\
@@ -83,3 +85,5 @@ date: 2009-10-19
 > The prize to Thomas bestow.\
 > And all light bulbs from that point forth\
 > Produced a useful glow.
+
+Written by Colin in the [early twenty-first century](/wiki/early-twenty-first-century/).

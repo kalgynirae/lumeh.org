@@ -142,6 +142,10 @@ html
     padding: 0 0 3rem
 
 .page
+  --page-padding: 1rem
+  @media (max-width: $mobile-width)
+    --page-padding: 0.5rem
+
   background-color: $bg-light
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
@@ -151,17 +155,12 @@ html
   @media (max-width: $mobile-width)
     border-radius: 0
 
-  > *
-    padding: 0 1rem
-    @media (max-width: $mobile-width)
-      padding: 0 0.5rem
   > :first-child
     border-radius: $page-border-radius $page-border-radius 0 0
     @media (max-width: $mobile-width)
       border-radius: 0
   > :last-child
     border-radius: 0 0 $page-border-radius $page-border-radius
-    overflow: hidden
     @media (max-width: $mobile-width)
       border-radius: 0
 
@@ -194,12 +193,15 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     overflow: hidden
     white-space: nowrap
 
+    @media (max-width: $mobile-width)
+      font-size: 2.5rem
+
 #site-menu
   background: linear-gradient(to bottom, #e0e0e0, #f4f4f4 100%)
   @include font-inter-menu
   line-height: 1.5
   overflow-x: auto
-  padding: 0 0.5rem
+  padding: 0 calc(var(--page-padding) - 0.5rem)
   position: relative
 
   @media (max-width: $mobile-width)
@@ -236,6 +238,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   background-color: $bg-page-info
   box-shadow: inset 0 0.4em 0.3em -0.5em $shadow-color, inset 0 -0.4em 0.4em -0.6em $shadow-color
   @include font-inter-small
+  padding: 0 var(--page-padding)
 
   display: flex
   align-items: center
@@ -272,7 +275,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   background-color: $bg-dark
   border-top: dashed 2px #e0e0e0
   display: block
-  padding: 0.25rem 1rem 0.5rem
+  padding: 0.25rem var(--page-padding) 0.5rem
   &:hover
     background-color: $bg-light
 
@@ -302,8 +305,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   tr:nth-child(odd)
     background-color: $bg-dark
 
-.page .main-content
-  padding-bottom: 1rem
+.main-content
+  padding: 1rem var(--page-padding) 1rem
 
 p
   margin-bottom: 0.5rem
@@ -354,12 +357,12 @@ a.anchor
   color: inherit
   text-decoration: none
 
-  h1, h2, h3, h4
+  h1, h2, h3, h4, h5
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-    margin-left: -1rem
-    margin-right: -1rem
-    padding: 0 1rem
+    margin-left: calc(-1 * var(--page-padding))
+    margin-right: calc(-1 * var(--page-padding))
+    padding: 0 var(--page-padding)
 
     &:hover
       background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
@@ -385,7 +388,8 @@ strong
 
 code
   @include font-berkeley-mono-inline
-  white-space: pre
+  hyphens: manual
+  white-space: pre-wrap
   padding: 0 0.05em
 
 iframe
@@ -396,14 +400,8 @@ iframe
   background: $bg-dark
   border-top: solid 1px #e0e0e0
   border-bottom: solid 1px #e0e0e0
-  margin: 0 -1rem 0.5rem
-  padding: 0.25em 1rem
-
-@mixin toplevel-block-header
-  background: $bg-dark
-  border: solid 1px #e0e0e0
-  margin: 0 -0.5rem
-  padding: 0 0.5rem
+  margin: 0 calc(-1 * var(--page-padding)) 0.5rem
+  padding: 0.25em var(--page-padding)
 
 blockquote
   @include toplevel-block
@@ -417,6 +415,7 @@ pre
     @include font-berkeley-mono-block
     background: $bg-dark
     display: block
+    white-space: pre
 
     kbd, span.command
       color: inherit
@@ -441,7 +440,7 @@ aside, figure:not(.fullwidth)
   border-radius: 10px
   overflow: hidden
   margin: 1rem 2rem
-  padding: 0.5rem 1rem 0
+  padding: 0.5rem var(--page-padding) 0
 
   &:has(pre:first-child)
     padding-top: 0
@@ -468,8 +467,10 @@ figure.fullwidth
     color: $text-green
     @include toplevel-block
     @include font-inter-regular
-    margin: 0 -1rem
-    padding: 0.25rem 1rem
+    margin: 0 calc(-1 * var(--page-padding))
+    padding: 0.25rem var(--page-padding)
+    overflow-x: auto
+    white-space: nowrap
 
     .bi
       width: 1em
@@ -493,6 +494,7 @@ ul.index
 table
   border-collapse: collapse
   font-size: 0.9em
+  margin-bottom: 0.5rem
   width: 100%
 
   th, tr:nth-child(even)

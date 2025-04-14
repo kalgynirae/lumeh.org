@@ -29,7 +29,12 @@ site = Site(
             url="https://github.com/kalgynirae",
         ),
         Author(
-            display_name="tylerlaprade",
+            display_name="Benjamin",
+            emails={"github@benjam.info"},
+            url="https://github.com/bgw",
+        ),
+        Author(
+            display_name="Tyler",
             emails={"pinkmonkeyblue@gmail.com"},
             url="https://github.com/tylerlaprade",
         ),

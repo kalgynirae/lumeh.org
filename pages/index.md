@@ -19,7 +19,9 @@ function increaseConstruction() {
 document.getElementById("construction").addEventListener("click", increaseConstruction);
 </script>
 
-## Serious things
+## Highlights
+
+### Serious things
 
 *   [music I’ve written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
@@ -27,14 +29,14 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 *   [my recipes](/recipes/)
 *   [my résumé (PDF)](/docs/resume-20241215.pdf)
 
-## Semi-Serious things
+### Semi-Serious things
 
 *   [NarChanSo Ball](/wiki/games/narchanso-ball/)
 *   [Krypto generator](/tools/krypto-generator/)
 *   [stopwatch](/tools/stopwatch/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)
 
-## Silly things
+### Silly things
 
 *   [Lumeh, God of Light Bulbs](/poetry/lumeh-god-of-light-bulbs/)
 *   [Jabberwockus](/poetry/jabberwockus/)

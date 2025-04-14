@@ -1,4 +1,5 @@
 import logging
+from collections import ChainMap
 from functools import partial
 
 from websleydale import (
@@ -56,11 +57,13 @@ site = Site(
             ): page(path)
             for path in root.glob("pages/**/*.md")
         }, "poetry", "tools"),
-        **index({
+        **index(ChainMap({
             f"projects/{path.name}/": page(path / "README.md")
             for path in root.glob("projects/*")
             if not path.name == "recipes"
-        }, "projects"),
+        }, {
+                f"projects/lumeh.org/": page(root/"README.md"),
+            }), "projects"),
         **index({
             f"recipes/{name.replace('_', '-')}/": page(
                 root / f"projects/recipes/{name}.md"

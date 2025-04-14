@@ -18,6 +18,8 @@ if you’re reading it there, I hope the explanation is useful!
 
 To build the site: `uv run -s build.py`
 
+To view the built site locally: `./test.sh`
+
 ## Contributing
 
 TODO: write something about contributions

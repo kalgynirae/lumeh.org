@@ -1,3 +1,4 @@
+import logging
 from functools import partial
 
 from websleydale import (
@@ -103,4 +104,6 @@ site = Site(
         }, "recipes"),
     },
 )
+
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 build(site, dest="out")

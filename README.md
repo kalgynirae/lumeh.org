@@ -8,7 +8,7 @@ for this website.
 
 ## Usage
 
-TODO: update this!
+To build the site: `uv run -s build.py`
 
 ## Contributing
 

@@ -83,9 +83,6 @@
 
 $page-border-radius: 20px
 $page-border-width: 2px
-$header-height: 104px
-$logo-width: 96px
-$logo-padding: 12px
 $shadow-color: #a0a0a0
 
 $mobile-width: 580px
@@ -105,8 +102,7 @@ $bg-highlight: oklch(94% 0.07 104)
 
 $text-faint: #a9a39e
 $text-subtle: #79736f
-$text-normal: #302d2a
-$text-bright: #0d0b08
+$text-normal: #201e1c
 $text-red: #9f4138
 $text-red-dim: #be8981
 $text-red-bright: #c25147
@@ -138,14 +134,20 @@ html
   @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
 
+  --header-height: 104px
+  --logo-padding: 12px
+  --logo-size: 96px
+  --page-padding: 1rem
+
   @media (max-width: $mobile-width)
     padding: 0 0 3rem
 
-.page
-  --page-padding: 1rem
-  @media (max-width: $mobile-width)
+    --header-height: 88px
+    --logo-padding: 8px
+    --logo-size: 72px
     --page-padding: 0.5rem
 
+.page
   background-color: $bg-light
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
@@ -174,22 +176,24 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 #site-header
   background-image: $shadow-gradient, $logo, $stripes-gradient, $header-gradient
   background-repeat: no-repeat, no-repeat, no-repeat, repeat
-  background-position: 0 0, left $logo-padding center
+  background-position: 0 0, left var(--logo-padding) center
+  background-size: auto, var(--logo-size)
   border: solid $page-border-width #ffffff
   border-bottom: none
-  height: $header-height
+  height: var(--header-height)
   padding: 0
 
   @media (max-width: $mobile-width)
     border: none
 
   #site-title
+    color: black
     @include font-crimson-pro-regular
     font-size: 3rem
     font-weight: 550
-    line-height: $header-height
+    line-height: var(--header-height)
     margin: 0
-    padding-left: ($logo-width + 2 * $logo-padding)
+    padding-left: calc(var(--logo-size) + 2 * var(--logo-padding))
     overflow: hidden
     white-space: nowrap
 

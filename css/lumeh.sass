@@ -390,11 +390,15 @@ p > img:first-child
 strong
   font-weight: 600
 
-code
+code, kbd
   @include font-berkeley-mono-inline
   hyphens: manual
   white-space: pre-wrap
   padding: 0 0.05em
+
+kbd > kbd
+  border: solid 1px
+  box-shadow: 1px 1px
 
 iframe
   display: block
@@ -481,6 +485,9 @@ figure.fullwidth
       height: 1em
       vertical-align: -0.125em
       padding-right: 0.125em
+
+    .excerpt
+      font-style: italic
 
   > figcaption:last-child
     // TODO: style this

@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang=en-us>
 <head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} ⯂ {{ site.name }}</title>
+  <meta charset=utf-8>
+  <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.name }}</title>
   {% for author in source.authors %}
-  <meta name="author" content="{{ author.display_name }}">
+  <meta name=author content="{{ author.display_name }}">
   {% endfor %}
   {% if page.description %}
-  <meta name="description" content="{{ page.description }}">
+  <meta name=description content="{{ page.description }}">
   {% endif %}
-  <meta name="generator" content="{{ site.generator }}">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/lumeh.css">
-  <link rel="icon" href="/image/logo-192.png" sizes="192x192">
-  <link rel="icon" href="/image/logo-16.png" sizes="16x16">
-  <link rel="icon" href="/image/logo-32.png" sizes="32x32">
+  <meta name=generator content="{{ site.generator }}">
+  <meta name=color-scheme content="only light">
+  <meta name=theme-color content="oklch(82% 0.20 127)">
+  <meta name=viewport content="width=device-width">
+  <link rel=preload href=/font/InterVariable.woff2 as=font type=font/woff2 crossorigin>
+  <link rel=preload href=/font/CrimsonPro%5Bwght%5D.ttf as=font type=font/ttf>
+  <link rel=preload href=/font/CrimsonPro-Italic%5Bwght%5D.ttf as=font type=font/ttf crossorigin>
+  <link rel=stylesheet href=/css/lumeh.css>
+  <link rel=icon href=/image/logo-192.png sizes=192x192>
+  <link rel=icon href=/image/logo-16.png sizes=16x16>
+  <link rel=icon href=/image/logo-32.png sizes=32x32>
 </head>
 <body>
-  <div class="page">
-    <header id="site-header">
-      <h1 id="site-title">lumeh.org</h1>
+  <div class=page>
+    <header id=site-header>
+      <div id=site-title>lumeh.org</div>
     </header>
-    <nav id="site-menu">
+    <nav id=site-menu>
       <ul>
-        <li><a href="/">index</a></li>
-        <li><a href="/wiki/">wiki</a></li>
-        <li><a href="/music/">music</a></li>
-        <li><a href="/recipes/">recipes</a></li>
-        <li><a href="/tools/">tools</a></li>
-        <li><a href="/projects/">projects</a></li>
-        <li><a href="https://www.chan.cafe/">café</a></li>
+        <li><a href=/>index</a></li>
+        <li><a href=/wiki/>wiki</a></li>
+        <li><a href=/music/>music</a></li>
+        <li><a href=/recipes/>recipes</a></li>
+        <li><a href=/tools/>tools</a></li>
+        <li><a href=/projects/>projects</a></li>
+        <li><a href=https://www.chan.cafe/>café</a></li>
       </ul>
     </nav>
     <header class=page-info>
@@ -79,4 +84,4 @@
       </span>
       {% endif %}
     </header>
-    <article class="main-content">
+    <article class=main-content>

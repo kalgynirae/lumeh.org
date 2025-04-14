@@ -1,15 +1,15 @@
     </article>
     {% if source.repo_url and source.is_committed %}
-    <a class=edit-this-page href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target="_blank">Edit this page</a>
+    <a class=edit-this-page href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target=_blank>Edit this page</a>
     {% endif %}
   </div>
-  <footer id="footer">
-    <p id="copyright">
-      <a href="{{ site.repo_url }}" target="_blank">{{ site.repo_name }}</a> on GitHub
-      | Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan | Contact: <img class="inline" src="/image/admin-email.png">
+  <footer id=footer>
+    <p id=copyright>
+      <a href="{{ site.repo_url }}" target=_blank>{{ site.repo_name }}</a> on GitHub
+      | Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan | Contact: <img class=inline src=/image/admin-email.png alt="admin AT lumeh DOT org">
     </p>
-    <p id="license">
-      Unless otherwise specified, content on lumeh.org is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">CC BY-NC-SA 4.0</a> license.
+    <p id=license>
+      Unless otherwise specified, content on lumeh.org is licensed under a <a rel=license href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">CC BY-NC-SA 4.0</a> license.
     </p>
   </footer>
   <script>

@@ -393,8 +393,11 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
     def render_heading(self, token: Heading) -> str:
         level = token.level
         inner = self.render_inner(token)
-        identifier = self.ids.get_id(self.render_to_plain(token))
-        return f'<a class=anchor href="#{identifier}"><h{level} id="{identifier}">{inner}</h{level}></a>'
+        if level > 1:
+            identifier = self.ids.get_id(self.render_to_plain(token))
+            return f'<a class=anchor href="#{identifier}"><h{level} id="{identifier}">{inner}</h{level}></a>'
+        else:
+            return f'<h{level}>{inner}</h{level}>'
 
 
 def index_page(paths: list[str]) -> jinja:

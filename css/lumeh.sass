@@ -134,15 +134,15 @@ html
   @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
 
-  --header-height: 104px
   --logo-padding: 12px
   --logo-size: 96px
+  --header-height: 108px
   --page-padding: 1rem
 
   @media (max-width: $mobile-width)
     padding: 0 0 3rem
 
-    --header-height: 88px
+    --header-height: 80px
     --logo-padding: 8px
     --logo-size: 72px
     --page-padding: 0.5rem
@@ -186,19 +186,19 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   @media (max-width: $mobile-width)
     border: none
 
-  #site-title
-    color: black
-    @include font-crimson-pro-regular
-    font-size: 3rem
-    font-weight: 550
-    line-height: var(--header-height)
-    margin: 0
-    padding-left: calc(var(--logo-size) + 2 * var(--logo-padding))
-    overflow: hidden
-    white-space: nowrap
+#site-title
+  color: black
+  @include font-crimson-pro-regular
+  font-size: 2.8rem
+  font-weight: 550
+  line-height: var(--header-height)
+  margin: 0
+  padding-left: calc(var(--logo-size) + 2 * var(--logo-padding))
+  overflow: hidden
+  white-space: nowrap
 
-    @media (max-width: $mobile-width)
-      font-size: 2.5rem
+  @media (max-width: $mobile-width)
+    font-size: 2.4rem
 
 #site-menu
   background: linear-gradient(to bottom, #e0e0e0, #f4f4f4 100%)

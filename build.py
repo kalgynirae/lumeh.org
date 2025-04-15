@@ -17,8 +17,8 @@ from websleydale import (
 )
 
 
-def page(source):
-    return jinja(markdown(source), template="page.html")
+def page(source, *, title: str | None = None):
+    return jinja(markdown(source), template="page.html", title=title)
 
 
 site = Site(
@@ -62,13 +62,15 @@ site = Site(
             ): page(path)
             for path in root.glob("pages/**/*.md")
         }, "poetry", "tools"),
-        **index(ChainMap({
-            f"projects/{path.name}/": page(path / "README.md")
-            for path in root.glob("projects/*")
-            if not path.name == "recipes"
-        }, {
-                f"projects/lumeh.org/": page(root/"README.md"),
-            }), "projects"),
+        **index({
+            "projects/lumeh.org/": page(root / "README.md", title="lumeh.org"),
+            "projects/pchyme/": page(root / "projects/pchyme/README.md", title="pchyme"),
+            "projects/rockuefort/": page(root / "projects/rockuefort/README.md", title="Rockuefort"),
+            "projects/slideception/": page(root / "projects/slideception/README.md", title="slideception"),
+            "projects/thinking-green/": page(root / "projects/thinking-green/README.md", title="Thinking Green"),
+            "projects/voidpop/": page(root / "projects/voidpop/README.md", title="Voidpop"),
+            "projects/websleydale/": page(root / "projects/websleydale/README.md", title="Websleydale"),
+        }, "projects"),
         **index({
             f"recipes/{name.replace('_', '-')}/": page(
                 root / f"projects/recipes/{name}.md"

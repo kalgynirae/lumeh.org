@@ -320,8 +320,9 @@ class fake(TextProducer):
 
 
 class string(TextProducer):
-    def __init__(self, s: str) -> None:
+    def __init__(self, s: str, pageinfo: dict | None = None) -> None:
         self.s = s
+        self.pageinfo = pageinfo
 
     async def run(self, info: Info) -> TextResult:
         sourceinfo = SourceInfo(
@@ -332,13 +333,14 @@ class string(TextProducer):
             repo_url=None,
             updated_date=datetime.now(),
         )
-        return TextResult(sourceinfo=sourceinfo, content=self.s, pageinfo={})
+        return TextResult(sourceinfo=sourceinfo, content=self.s, pageinfo=self.pageinfo or {})
 
 
 class jinja(FileProducer):
-    def __init__(self, source: TextProducer, template: str) -> None:
+    def __init__(self, source: TextProducer, template: str, title: str | None = None) -> None:
         self.source = source
         self.template = jinjaenv.get_template(template)
+        self.title = title
 
     async def run(self, info: Info) -> FileResult:
         source = await self.source.run(info)
@@ -348,6 +350,8 @@ class jinja(FileProducer):
 
         pageinfo["content"] = content
         pageinfo["path"] = info.path
+        if self.title is not None:
+            pageinfo["title"] = self.title
         rendered = self.template.render(
             page=pageinfo, site=info.site, source=source.sourceinfo
         )
@@ -400,9 +404,9 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
             return f'<h{level}>{inner}</h{level}>'
 
 
-def index_page(paths: list[str]) -> jinja:
+def index_page(paths: list[str], *, title: str) -> jinja:
     items = [f'  <li><a href="{escape(path)}">{escape(path, quote=False)}</a></li>\n' for path in paths]
-    content = string(f"<ul class=index>\n{''.join(items)}</ul>")
+    content = string(f"<ul class=index>\n{''.join(items)}</ul>", pageinfo={"title": title})
     return jinja(content, template="page.html")
 
 
@@ -419,6 +423,6 @@ def index(tree: Dict[str, FileProducer], *dirs: str) -> Dict[str, FileProducer]:
     return {
         **tree,
         **{
-            f"{dir}/index.html": index_page(paths) for dir, paths in index_paths.items()
+            f"{dir}/index.html": index_page(paths, title=dir.capitalize()) for dir, paths in index_paths.items()
         },
     }

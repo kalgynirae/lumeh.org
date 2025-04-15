@@ -4,8 +4,8 @@ title: Index
 
 **lumeh.org** is Colin Chan’s personal website.  It is ~~currently~~ *always*
 under <span id=construction>construction</span>. If you find anything that seems
-broken or wrong, you can file an issue on GitHub or email the admin (see info
-about both in the footer).
+broken or wrong, you can file an issue on GitHub or email the admin (me)—info
+about both is at the bottom of the page.
 
 <style>
 #construction:hover {text-decoration: underline}

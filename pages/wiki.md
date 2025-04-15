@@ -2,8 +2,7 @@
 title: Wiki
 ---
 
-The wiki is intended to be a collection of information, curated by Colin,
-about a wide variety of topics. Presently, though, the width is very small.
+A haphazard collection of information curated by me!
 
 ## Linux
 

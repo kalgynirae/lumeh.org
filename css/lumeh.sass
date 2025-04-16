@@ -154,7 +154,7 @@ html
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
   margin: 0 auto
-  max-width: 1040px
+  max-width: 960px
 
   @media (max-width: $mobile-width)
     border-radius: 0
@@ -429,17 +429,20 @@ blockquote
 pre
   overflow: auto
   @include toplevel-block
+
   > code, > samp
     @include font-berkeley-mono-block
     background: $bg-dark
     display: block
     padding: 0
     white-space: pre
+    width: min-content
 
     kbd, samp
       @include font-berkeley-mono-block
       font-weight: 600
       padding: 0
+      white-space: pre
     span.command
       font-weight: 600
     span.abridged

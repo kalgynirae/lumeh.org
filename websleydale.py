@@ -102,15 +102,20 @@ def build(site: Site, *, dest: str) -> None:
         paths.append(pathstr)
 
     results = asyncio.run(gather(awaitables))
+    successes = 0
+    failures = 0
     for result, path in zip(results, paths):
         if isinstance(result, Exception):
+            failures += 1
             logger.error(
                 "[%s] %s: %s", path, result.__class__.__name__, result, exc_info=result
             )
         elif result is None:
-            logger.info("[%s] Success!", path)
+            successes += 1
         else:
+            failures += 1
             logger.error("[%s] got unexpected result %r", path, result)
+    logger.info("%s SUCCESS / %s FAILURE", successes, failures)
 
 
 async def copy(dest: Path, source_producer: FileProducer, info: Info) -> None:

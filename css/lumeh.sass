@@ -133,11 +133,13 @@ html
   color: $text-normal
   @include font-crimson-pro-regular
   padding: 1rem 1rem 3rem
+  scroll-behavior: smooth
 
   --logo-padding: 12px
   --logo-size: 96px
   --header-height: 108px
   --page-padding: 1rem
+  --paragraph-spacing: 0.65rem
 
   @media (max-width: $mobile-width)
     padding: 0 0 3rem
@@ -310,37 +312,45 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     background-color: $bg-dark
 
 .main-content
-  padding: 1rem var(--page-padding) 1rem
+  padding: calc(var(--paragraph-spacing) * 2) var(--page-padding) 1rem
 
 p
-  margin-bottom: 0.5rem
+  margin-bottom: var(--paragraph-spacing)
   margin-top: 0
 
 h1
-  margin-top: 1rem
-  margin-bottom: 1rem
+  margin-top: 0
+  margin-bottom: calc(var(--paragraph-spacing) * 2)
   font-size: 2.0em
   font-weight: 250
   &.title
     padding: 0
 
 h2
-  margin-top: 2.6rem
-  margin-bottom: 1rem
+  margin-top: calc(var(--paragraph-spacing) * 4)
+  scroll-margin-top: calc(var(--paragraph-spacing) * 4)
+  margin-bottom: calc(var(--paragraph-spacing) * 2)
   font-size: 1.5em
   font-weight: 580
 
 h3
-  margin-top: 1.3rem
-  margin-bottom: 0.5rem
+  margin-top: calc(var(--paragraph-spacing) * 2)
+  scroll-margin-top: calc(var(--paragraph-spacing) * 2)
+  margin-bottom: var(--paragraph-spacing)
   font-size: 1.2em
   font-weight: 650
 
 h4
+  margin-top: var(--paragraph-spacing)
+  scroll-margin-top: var(--paragraph-spacing)
+  margin-bottom: 0
   font-size: 1em
   font-weight: 700
 
 h5
+  margin-top: var(--paragraph-spacing)
+  scroll-margin-top: var(--paragraph-spacing)
+  margin-bottom: 0
   font-size: 1em
   font-style: italic
   font-weight: 700
@@ -390,7 +400,7 @@ p > img:first-child
 strong
   font-weight: 600
 
-code, kbd
+code, kbd, samp
   @include font-berkeley-mono-inline
   hyphens: manual
   white-space: pre-wrap
@@ -408,7 +418,7 @@ iframe
   background: $bg-dark
   border-top: solid 1px #e0e0e0
   border-bottom: solid 1px #e0e0e0
-  margin: 0 calc(-1 * var(--page-padding)) 0.5rem
+  margin: 0 calc(-1 * var(--page-padding)) var(--paragraph-spacing)
   padding: 0.25em var(--page-padding)
 
 blockquote
@@ -423,12 +433,14 @@ pre
     @include font-berkeley-mono-block
     background: $bg-dark
     display: block
+    padding: 0
     white-space: pre
 
-    kbd, span.command
-      color: inherit
-      font-family: inherit
-      font-size: inherit
+    kbd, samp
+      @include font-berkeley-mono-block
+      font-weight: 600
+      padding: 0
+    span.command
       font-weight: 600
     span.abridged
       color: $text-faint
@@ -436,6 +448,8 @@ pre
     span.comment
       color: $text-subtle
       font-style: oblique
+      > em
+        font-style: normal
     span.prompt
       color: $text-green
       font-weight: 600
@@ -497,7 +511,7 @@ ol,
 ul
   list-style-position: outside
   padding: 0
-  margin: 0 0 0.5em 2.5rem
+  margin: 0 0 var(--paragraph-spacing) 2.5rem
 
 table
   border-collapse: collapse
@@ -516,6 +530,7 @@ table
 
 span.path
   font-weight: 500
+  white-space: nowrap
 
 @media print
   #site-header,

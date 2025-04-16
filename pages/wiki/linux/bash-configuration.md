@@ -12,11 +12,8 @@ for you.
 
 ### Use a custom HISTFILE
 
-If you’ve ever wanted to check how Bash behaves in the absence of your
-personal configs, you may have run a command like `bash --noprofile --norc`.
-Unfortunately, when you did this, you probably mysteriously lost a bunch of your
-command history. To avoid this, set `HISTFILE` to a nonstandard path in your
-`.bashrc` file:
+Using the default history file makes it very easy to *accidentally* lose
+history. Setting `HISTFILE` to a nonstandard path protects you.
 
 <figure class=fullwidth>
 <figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-minus-fill" viewBox="0 0 16 16">
@@ -27,11 +24,20 @@ HISTFILE=~/.bash_history_actual
 </code></pre>
 </figure>
 
-**Explanation:** Bash’s default behavior is to keep only 500 entries in the
-history file. If you run Bash without loading your personal configs, Bash will
-truncate the history file to 500 entries when it starts. Putting your history
-file at a nonstandard path ensures that Bash can touch your history file only if
-it has also loaded your other history settings.
+Here are some of the ways you can lose history while using the default history
+file:
+
+* by running `bash --noprofile --norc` (which you might reasonably do if you’re
+  trying to check Bash’s out-of-the-box behavior).
+* by configuring your history settings in <span class=path>.bashrc</span> but
+  forgetting to source that from <span class=path>.bash_profile</span>.
+
+Each of these causes Bash to start with its default settings, and the default
+behavior is to immediately truncate the history file to 500 entries. By keeping
+your history in a nonstandard file, you ensure that Bash will only touch your
+history file when it has also loaded your other history settings. If you start
+Bash in a way that doesn’t load your settings, it will use the default history
+file, not your custom one.
 
 ### Save more history
 
@@ -55,11 +61,12 @@ HISTSIZE=-1
 In older versions of Bash (I’m not sure how old), setting at least one of
 these variables to a negative value caused problems. I suggest checking `man
 bash` on your system to ensure that your version explicitly supports such values
-(search for the phrase “*values less than zero*”).
+(search for the phrase “*values less than zero*” and verify that it appears for
+both variables).
 
 If you don’t want to make these values unbounded, I suggest setting
 `HISTFILESIZE` to 500,000. Based on my personal experience, that should be
-enough to store several years of history even for a heavy terminal user.
+enough to keep many years of history even with very heavy terminal use.
 
 ## Readline
 

@@ -39,6 +39,31 @@ history file when it has also loaded your other history settings. If you start
 Bash in a way that doesn’t load your settings, it will use the default history
 file, not your custom one.
 
+**To safely move your existing history file:** First, close all terminals. Then,
+in a new terminal:
+
+<pre><samp><span class=comment># Copy the existing history file to the new path</span>
+<span class=prompt>$</span> <kbd>cp -i .bash_history .bash_history_actual</kbd>
+<span class=comment># Edit your .bashrc to add <kbd>HISTFILE=~/.bash_history_actual</kbd></span>
+<span class=prompt>$</span> <kbd>nano .bashrc</kbd>
+</samp></pre>
+
+Then, verify that commands are being saved to the new file. In a new terminal:
+
+<pre><samp><span class=comment># Run any easy-to-spot command</span>
+<span class=prompt>$</span> <kbd>echo hello there</kbd>
+hello there
+<span class=prompt>$</span> <kbd>history -a</kbd>
+<span class=prompt>$</span> <kbd>tail .bash_history_actual</kbd>
+<span class=comment># (Verify that <samp>echo hello there</samp> appears)</span>
+</samp></pre>
+
+The original <span class=path>.bash_history</span> can now be deleted or
+kept as a backup (but rename it to avoid confusing your future self).
+
+<pre><samp><span class=prompt>$</span> <kbd>mv .bash_history .bash_history.backup.$(date +%Y%m%d)</kbd>
+</samp></pre>
+
 ### Save more history
 
 Bash’s default is to store only 500 lines of history, which is tiny. In recent

@@ -7,7 +7,6 @@ rsync \
     --recursive \
     --perms \
     --delete \
-    --exclude /files \
     --exclude /games \
     out/ \
     lemon.lumeh.org:/srv/http/lumeh.org/

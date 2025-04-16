@@ -118,12 +118,12 @@ def build(site: Site, *, dest: str) -> None:
     logger.info("%s SUCCESS / %s FAILURE", successes, failures)
 
 
-async def copy(dest: Path, source_producer: FileProducer, info: Info) -> None:
+async def copy(dest: Path, source_producer: FileProducer, info: Info, merge_dirs: bool = False) -> None:
     source = await source_producer.run(info)
     if source.path.is_dir():
         logger.debug("Copying directory %s -> %s", source.path, dest)
         dest.parent.mkdir(exist_ok=True, parents=True)
-        shutil.copytree(source.path, dest, copy_function=shutil.copy)
+        shutil.copytree(source.path, dest, copy_function=shutil.copy, dirs_exist_ok=merge_dirs)
     else:
         if info.path.endswith("/"):
             dest = dest / "index.html"
@@ -219,6 +219,17 @@ class dir(FileProducer):
 
     async def run(self, info: Info) -> FileResult:
         return FileResult(sourceinfo=None, path=self.path)
+
+
+class merge(FileProducer):
+    def __init__(self, *dirs: dir) -> None:
+        self.dirs = dirs
+
+    async def run(self, info: Info) -> FileResult:
+        dest = outdir()
+        for dir in self.dirs:
+            await copy(dest, dir, info, merge_dirs=True)
+        return FileResult(sourceinfo=None, path=dest)
 
 
 async def _git_file_info(file: Path, site: Site) -> GitFileInfo:

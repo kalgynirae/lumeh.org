@@ -55,7 +55,7 @@
         {% if source.repo_name != "kalgynirae/lumeh.org" %}
         <span class=source-info>
           <span class=label>Source repo</span>
-          <a href="{{ source.repo_url }}">{{ source.repo_name }}</a>
+          <a href="{{ source.repo_url }}">{{ source.repo_name.removeprefix("kalgynirae/") }}</a>
         </span>
         {% endif %}
         <span class=source-info>
@@ -71,7 +71,7 @@
       {% endif %}
       {% if source.authors %}
       <span class=source-info>
-        <span class=label>Contributors</span>
+        <span class=label>Authors</span>
         <span>
         {% for author in source.authors %}
           {% if author.url != None %}

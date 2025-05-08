@@ -138,6 +138,7 @@ html
   --logo-padding: 12px
   --logo-size: 96px
   --header-height: 108px
+  --page-max-width: 960px
   --page-padding: 1rem
   --paragraph-spacing: 0.7rem
 
@@ -154,7 +155,7 @@ html
   border-radius: $page-border-radius
   box-shadow: 0 0 7px $shadow-color
   margin: 0 auto
-  max-width: 960px
+  max-width: var(--page-max-width)
 
   @media (max-width: $mobile-width)
     border-radius: 0
@@ -286,16 +287,24 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     background-color: $bg-light
 
 #footer
+  max-width: var(--page-max-width)
+  margin: auto
   @include font-inter-small
   text-align: center
   padding-top: 1rem
 
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  column-gap: 0.25em
+
   @media (max-width: $mobile-width)
+    flex-direction: column
     padding: 1rem 0.5rem 0
   a
     color: oklch(from $link calc(l - 0.15) calc(c - 0.02) h)
-  p
-    margin: 0
+  span
+    text-wrap: balance
 
 // Directory listings
 .list

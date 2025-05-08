@@ -4,13 +4,10 @@
     {% endif %}
   </div>
   <footer id=footer>
-    <p id=copyright>
-      <a href="{{ site.repo_url }}" target=_blank>{{ site.repo_name }}</a> on GitHub
-      | Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan | Contact: <img class=inline src=/image/admin-email.png alt="admin AT lumeh DOT org">
-    </p>
-    <p id=license>
-      Unless otherwise specified, content on lumeh.org is licensed under a <a rel=license href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">CC BY-NC-SA 4.0</a> license.
-    </p>
+    <span id=built-from>Built from <a href="{{ site.repo_url }}" target=_blank>{{ site.repo_name }}</a>.</span>
+    <span id=contact>Contact <img class=inline src=/image/admin-email.png alt="admin AT lumeh DOT org">.</span>
+    <span id=copyright>Copyright 2007–{{ site.time.strftime("%Y") }} Colin Chan.</span>
+    <span id=license>Unless otherwise specified, content on lumeh.org may be reused under the <a rel=license href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">CC BY-NC-SA 4.0 license</a>.</span>
   </footer>
   <script>
     const menu = document.getElementById("site-menu");

@@ -67,6 +67,7 @@ site = Site(
             "projects/lumeh.org/": page(root / "README.md", title="lumeh.org"),
             "projects/pchyme/": page(root / "projects/pchyme/README.md", title="pchyme"),
             "projects/rockuefort/": page(root / "projects/rockuefort/README.md", title="Rockuefort"),
+            "projects/sfago2024.org/": page(root / "projects/sfago2024.org.md", title="sfago2024.org"),
             "projects/slideception/": page(root / "projects/slideception/README.md", title="slideception"),
             "projects/thinking-green/": page(root / "projects/thinking-green/README.md", title="Thinking Green"),
             "projects/voidpop/": page(root / "projects/voidpop/README.md", title="Voidpop"),

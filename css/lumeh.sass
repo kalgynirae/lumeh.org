@@ -91,10 +91,10 @@ $red: oklch(62% 0.18 24)
 $orange: oklch(80% 0.15 80)
 $yellow: oklch(84% 0.16 104)
 $green: oklch(82% 0.20 127)
-$link: oklch(60% 0.14 225)
+$link: oklch(55% 0.11 225)
 $blue: oklch(68% 0.12 250)
 $purple: oklch(65% 0.19 315)
-$bg-light: oklch(98% 0 0)
+$bg-light: oklch(99% 0 0)
 $bg-dark: oklch(94% 0 0)
 $bg-page-info: oklch(92% 0 0)
 $bg-darker: #c7c6ca
@@ -225,6 +225,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
       color: inherit
       display: block
       text-align: center
+      text-decoration: none
       padding: 0 0.5rem
       &:hover,
       &:active,
@@ -291,20 +292,15 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   margin: auto
   @include font-inter-small
   text-align: center
-  padding-top: 1rem
-
-  display: flex
-  justify-content: center
-  flex-wrap: wrap
-  column-gap: 0.25em
+  padding-top: calc(var(--paragraph-spacing) * 2)
 
   @media (max-width: $mobile-width)
-    flex-direction: column
     padding: 1rem 0.5rem 0
   a
-    color: oklch(from $link calc(l - 0.15) calc(c - 0.02) h)
-  span
-    text-wrap: balance
+    color: oklch(from $link calc(l - 0.12) calc(c - 0.03) h)
+    text-decoration: underline
+  p
+    margin-bottom: 0.25em
 
 // Directory listings
 .list
@@ -395,10 +391,13 @@ a.anchor
     &:target
       background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
 
+img.inline
+  display: inline-block
+
 p img, img.inline
   vertical-align: middle
 
-p > img:first-child
+p > img:not(.inline)
   border: solid 1px #e0e0e0
   display: block
   height: auto
@@ -594,3 +593,27 @@ l-music
     display: flex
     column-gap: 0.5rem
     flex-wrap: wrap
+
+.hymns
+  display: grid
+  grid-template-columns: repeat(auto, 5)
+  row-gap: var(--paragraph-spacing)
+
+  .number
+    grid-column: 1
+    font-weight: 600
+  .tune
+    grid-column: 2
+  .type
+    grid-column: 3
+  .key
+    grid-column: 4
+  .links
+    display: flex
+    flex-direction: column
+    grid-column: 5
+
+.icon
+  display: inline-block
+  vertical-align: -.125em
+  width: 1em

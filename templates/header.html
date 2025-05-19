@@ -52,12 +52,10 @@
       </nav>
       {% endif %}
       {% if source.repo_url %}
-        {% if source.repo_name != "kalgynirae/lumeh.org" %}
         <span class=source-info>
           <span class=label>Source repo</span>
           <a href="{{ source.repo_url }}">{{ source.repo_name.removeprefix("kalgynirae/") }}</a>
         </span>
-        {% endif %}
         <span class=source-info>
           <span class=label>Last modified</span>
           <span>

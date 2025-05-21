@@ -19,23 +19,26 @@
     open-digits: 1;
     disambiguation-except-zero: 4;
 @mixin font-inter-small
-  font-family: 'Inter', sans-serif
+  font-family: 'Inter', Verdana, Helvetica, sans-serif
   font-size: 0.8rem
   font-variation-settings: "opsz" 14
   font-weight: 440
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+  letter-spacing: normal
 @mixin font-inter-regular
-  font-family: 'Inter', sans-serif
+  font-family: 'Inter', Verdana, Helvetica, sans-serif
   font-size: 0.95rem
   font-variation-settings: "opsz" 20
   font-weight: 400
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+  letter-spacing: normal
 @mixin font-inter-menu
-  font-family: 'Inter', sans-serif
+  font-family: 'Inter', Verdana, Helvetica, sans-serif
   font-size: 1.15rem
   font-variation-settings: "opsz" 30
   font-weight: 450
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+  letter-spacing: normal
 
 @font-face
   font-family: 'Berkeley Mono'
@@ -51,14 +54,16 @@
   font-weight: 450
   font-stretch: 80%
   font-variant-ligatures: none
+  letter-spacing: normal
   word-spacing: -0.3ch
 @mixin font-berkeley-mono-block
   font-family: 'Berkeley Mono', monospace
   font-size: 1rem
   font-weight: 450
   font-stretch: 90%
-  line-height: normal
   font-variant-ligatures: none
+  letter-spacing: normal
+  line-height: normal
   word-spacing: normal
 
 @font-face
@@ -76,7 +81,7 @@
   size-adjust: 115%
   src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
 @mixin font-crimson-pro-regular
-  font-family: 'Crimson Pro', serif
+  font-family: 'Crimson Pro', Georgia, serif
   font-size: 1.1rem
   font-weight: 400
   line-height: 1.4
@@ -85,7 +90,7 @@ $page-border-radius: 20px
 $page-border-width: 2px
 $shadow-color: #a0a0a0
 
-$mobile-width: 580px
+$mobile-width: 650px
 
 $red: oklch(62% 0.18 24)
 $orange: oklch(80% 0.15 80)
@@ -132,13 +137,13 @@ html
   background-color: $bg-darker
   color: $text-normal
   @include font-crimson-pro-regular
-  padding: 1rem 1rem 3rem
+  padding: 1.5rem 2rem 3rem
   scroll-behavior: smooth
 
   --logo-padding: 12px
   --logo-size: 96px
   --header-height: 108px
-  --page-max-width: 960px
+  --page-max-width: 920px
   --page-padding: 1rem
   --paragraph-spacing: 0.7rem
 
@@ -595,23 +600,64 @@ l-music
     flex-wrap: wrap
 
 .hymns
+  --paragraph-spacing: 0.5rem
+
   display: grid
-  grid-template-columns: repeat(auto, 5)
+  grid-template-columns: repeat(3, 1fr)
+  column-gap: var(--page-padding)
   row-gap: var(--paragraph-spacing)
 
+  @media(max-width: 800px)
+    grid-template-columns: repeat(2, 1fr)
+
+.hymn
+  margin-bottom: calc(2 * var(--page-padding))
+
+  grid-row: span 4
+  display: grid
+  grid-template-rows: subgrid
+
+  font-size: 0.9em
+  font-weight: 450
+  letter-spacing: 0.02em
+  line-height: 1.2
+
+  &:target
+    background: linear-gradient(to bottom, $bg-highlight 0%, $bg-light 75%)
+
   .number
-    grid-column: 1
-    font-weight: 600
-  .tune
-    grid-column: 2
-  .type
-    grid-column: 3
-  .key
-    grid-column: 4
-  .links
+    font-size: 1.8em
+    font-weight: 550
+    letter-spacing: normal
+    line-height: 1
+    text-align: center
+
+  .firstline
+    font-style: italic
+    text-align: center
+    text-wrap: balance
+
+  .details
+    .tune
+      //font-variant-caps: small-caps
+    .key
+
+  .files
     display: flex
-    flex-direction: column
-    grid-column: 5
+    flex-wrap: wrap
+    gap: calc(var(--paragraph-spacing) / 2)
+
+    .file
+      flex-grow: 1
+
+      background: $bg-dark
+      border-radius: 0.5rem
+      padding: calc(var(--paragraph-spacing) / 2) 0.5rem
+
+      @include font-inter-small
+
+      .type
+        font-variant-caps: all-small-caps
 
 .icon
   display: inline-block

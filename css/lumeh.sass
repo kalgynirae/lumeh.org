@@ -1,5 +1,4 @@
 @import normalize.scss
-
 @font-face
   font-family: 'Inter'
   font-style: normal
@@ -80,17 +79,25 @@
   size-adjust: 115%
   src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
 @mixin font-crimson-pro-midsmall
-  font-family: 'Crimson Pro', Georgia, serif
+  font-family: 'Crimson Pro', 'Inter flat symbol only', Georgia, serif
   font-size: 0.88rem
   font-weight: 450
   letter-spacing: 0.02em
   line-height: 1.2
 @mixin font-crimson-pro-regular
-  font-family: 'Crimson Pro', Georgia, serif
+  font-family: 'Crimson Pro', 'Inter flat symbol only', Georgia, serif
   font-size: 1.1rem
   font-weight: 400
   letter-spacing: normal
   line-height: 1.4
+
+@font-face
+  font-family: 'Inter flat symbol only'
+  font-style: normal
+  font-weight: 100 900
+  font-display: swap
+  src: url('/font/InterVariable.woff2') format('woff2')
+  unicode-range: U+266D
 
 $page-border-radius: 20px
 $page-border-width: 2px

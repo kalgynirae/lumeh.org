@@ -42,7 +42,6 @@
 
 @font-face
   font-family: 'Berkeley Mono'
-  font-stretch: 60 100
   font-weight: 100 900
   font-style: oblique 0deg 16deg
   font-display: swap
@@ -80,10 +79,17 @@
   font-display: swap
   size-adjust: 115%
   src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
+@mixin font-crimson-pro-midsmall
+  font-family: 'Crimson Pro', Georgia, serif
+  font-size: 0.88rem
+  font-weight: 450
+  letter-spacing: 0.02em
+  line-height: 1.2
 @mixin font-crimson-pro-regular
   font-family: 'Crimson Pro', Georgia, serif
   font-size: 1.1rem
   font-weight: 400
+  letter-spacing: normal
   line-height: 1.4
 
 $page-border-radius: 20px
@@ -280,7 +286,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     line-height: 1
     text-align: right
     .label
-      font-variant: all-small-caps
+      font-variant-caps: all-small-caps
       white-space: nowrap
 
 .edit-this-page
@@ -617,18 +623,15 @@ l-music
   display: grid
   grid-template-rows: subgrid
 
-  font-size: 0.9em
-  font-weight: 450
-  letter-spacing: 0.02em
-  line-height: 1.2
+  @include font-crimson-pro-midsmall
 
   &:target
     background: linear-gradient(to bottom, $bg-highlight 0%, $bg-light 75%)
 
   .number
+    @include font-crimson-pro-regular
     font-size: 1.8em
     font-weight: 550
-    letter-spacing: normal
     line-height: 1
     text-align: center
 
@@ -639,27 +642,50 @@ l-music
 
   .details
     .tune
-      //font-variant-caps: small-caps
     .key
 
   .files
     display: flex
-    flex-wrap: wrap
+    flex-direction: column
     gap: calc(var(--paragraph-spacing) / 2)
 
     .file
-      flex-grow: 1
-
       background: $bg-dark
       border-radius: 0.5rem
       padding: calc(var(--paragraph-spacing) / 2) 0.5rem
 
       @include font-inter-small
 
-      .type
-        font-variant-caps: all-small-caps
+      .link
+        display: grid
+        grid-template-columns: 2rem 1fr
+
+        > l-icon:first-child .icon
+          width: 1.5rem
+          height: 2lh
+
+        .type
+          font-variant-caps: all-small-caps
+
+        .details
+          display: flex
+          column-gap: 0.5em
+          flex-wrap: wrap
+          justify-content: space-between
+
+        div
+          grid-column: 2
+
+l-icon
+  white-space: nowrap
+
+  > .icon:not(.right)
+    margin-right: 0.25ch
+  > .icon.right
+    margin-left: 0.25ch
 
 .icon
   display: inline-block
   vertical-align: -.125em
   width: 1em
+  height: 1em

@@ -4,6 +4,11 @@ title: Hymns
 
 # Hymns
 
+I’ve written organ arrangements of many hymns from the Christian Science Hymnal, as well as a few
+preludes and piano arrangements. These arrangements are free to use, but if you find them useful,
+please consider <a href="https://ko-fi.com/kalgynirae" target=_blank>supporting me on Ko-fi</a>. You
+can also commission arrangements or recordings of specific hymns there.
+
 ## Christian Science Hymnal
 
 <div class=hymns>
@@ -17,9 +22,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/1.pdf">1.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/1.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -33,9 +45,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F → G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/9.pdf">9.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/9.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F → G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -49,9 +68,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: C</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/10.pdf">10.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/10.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: C</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -65,9 +91,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/59.pdf">59.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/59.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -82,9 +115,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/72.pdf">72.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/72.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -98,9 +138,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Prelude</div>
-      <div class=key>Key: A♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/73_prelude.pdf">73_prelude.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/73_prelude.pdf">
+        <l-icon name=musicnote></l-icon>
+        <div>
+          <div class=type>Prelude</div>
+          <div class=details>
+            <div class=key>Key: A♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -114,14 +161,28 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/75.pdf">75.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/75.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/75-d.pdf">75-d.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/75-d.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -135,13 +196,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/139.pdf">139.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/139.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <span><a class=link href="https://youtu.be/jUcOvQeJVZ0">YouTube</a> (reharms: <a href="https://youtu.be/jUcOvQeJVZ0?t=82">1:22</a>, <a href="https://youtu.be/jUcOvQeJVZ0?t=123">2:03</a>)</span>
+      <a class=link href="https://youtu.be/jUcOvQeJVZ0">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/jUcOvQeJVZ0?t=82">1:22</a> melody in tenor, <a href="https://youtu.be/jUcOvQeJVZ0?t=123">2:03</a> reharm</div>
     </div>
   </div>
 </div>
@@ -155,9 +229,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-    <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/162.pdf">162.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/162.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -171,9 +252,39 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/200.pdf">200.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/200.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class=hymn id=csh-201>
+  <div class=number>201</div>
+  <div class=firstline>O do not bar your mind against the light of good</div>
+  <div class=details>
+    <div class=tune>Tune: ST. GEORGE</div>
+    <div class=key>Key: C</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="https://lychee.lumeh.org/hymns/201.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: B♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -187,9 +298,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Prelude</div>
-      <div class=key>Key: C → A</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/213_prelude.pdf">213_prelude.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/213_prelude.pdf">
+        <l-icon name=musicnote></l-icon>
+        <div>
+          <div class=type>Prelude</div>
+          <div class=details>
+            <div class=key>Key: C → A</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -203,9 +321,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/237.pdf">237.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/237.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -219,9 +344,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/263.pdf">263.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/263.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -235,9 +367,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: </div>
-      <a class=link href="https://lychee.lumeh.org/hymns/264.pdf"></a>
+      <a class=link href="https://lychee.lumeh.org/hymns/264.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -251,9 +390,40 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/267.pdf">267.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/267.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class=hymn id=csh-275>
+  <div class=number>275</div>
+  <div class=firstline>Praise now creative Mind</div>
+  <div class=details>
+    <div class=tune>Tune: CRUSADER’S HYMN</div>
+    <div class=key>Key: E</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="https://lychee.lumeh.org/hymns/275 last verse.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E → G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+      <div>Modulation happens mid-last-verse</div>
     </div>
   </div>
 </div>
@@ -267,9 +437,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: A♭ → B♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/293.pdf">293.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/293.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: A♭ → B♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -283,14 +460,28 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/299.pdf">299.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/299.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Hymn – Piano</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/299-piano.pdf">299-piano.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/299-piano.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=piano right>Piano</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -304,13 +495,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/342.pdf">342.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/342.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <span><a class=link href="https://youtu.be/OGyAp7Q_zSY">YouTube</a> (reharm: <a href="https://youtu.be/OGyAp7Q_zSY?t=126">2:06</a>)</span>
+      <a class=link href="https://youtu.be/OGyAp7Q_zSY">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/OGyAp7Q_zSY?t=126">2:06</a> reharm</div>
     </div>
   </div>
 </div>
@@ -324,9 +528,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/350.pdf">350.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/350.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -340,13 +551,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: B♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/374.pdf">374.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/374.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: B♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <span><a class=link href="https://youtu.be/8Gj5Cn6JbCk">YouTube</a> (reharm: <a href="https://youtu.be/8Gj5Cn6JbCk?t=118">1:58</a>)</span>
+      <a class=link href="https://youtu.be/8Gj5Cn6JbCk">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/8Gj5Cn6JbCk?t=118">1:58</a> reharm</div>
     </div>
   </div>
 </div>
@@ -360,9 +584,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Prelude</div>
-      <div class=key>Key: G → D♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/381-prelude.pdf">381-prelude.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/381-prelude.pdf">
+        <l-icon name=musicnote></l-icon>
+        <div>
+          <div class=type>Prelude</div>
+          <div class=details>
+            <div class=key>Key: G → D♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -376,9 +607,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/405.pdf">405.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/405.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -392,9 +630,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/408.pdf">408.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/408.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -408,9 +653,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/417.pdf">417.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/417.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -424,9 +676,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/460.pdf">460.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/460.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -440,9 +699,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: C</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/468.pdf">468.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/468.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: C</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -456,13 +722,27 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭ → G♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/478.pdf">478.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/478.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭ → G♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+      <div>Modulation happens mid-last-verse</div>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <span><a class=link href="https://youtu.be/3xyYV_axrno">YouTube</a> (reharm: <a href="https://youtu.be/3xyYV_axrno?t=166">2:46</a>)</span>
+      <a class=link href="https://youtu.be/3xyYV_axrno">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/3xyYV_axrno?t=166">2:46</a> reharm</div>
     </div>
   </div>
 </div>
@@ -476,9 +756,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn – Piano</div>
-      <div class=key>Key: b</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/480.pdf">480.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/480.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment – Piano</div>
+          <div class=details>
+            <div class=key>Key: b</div>
+            <div class=instrumentation><l-icon name=piano right>Piano</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -492,9 +779,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: E♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/499.pdf">499.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/499.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -508,9 +802,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/522.pdf">522.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/522.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -524,11 +825,17 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/533.pdf">533.pdf</a>
-      <div class=note>This arrangement is in 3/4 (hymnal has it in 4/4).</div>
-      <div>TODO: pdf for congregation</div>
+      <a class=link href="https://lychee.lumeh.org/hymns/533.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+      <div class=note>Arranged in 3/4 (versus hymnal’s 4/4)</div>
     </div>
   </div>
 </div>
@@ -542,13 +849,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: G → A♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/537.pdf">537.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/537.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G → A♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <span><a class=link href="https://youtu.be/EnwwUF5Sg5A">YouTube</a> (reharms: <a href="https://youtu.be/EnwwUF5Sg5A?t=110">1:50</a>, <a href="https://youtu.be/EnwwUF5Sg5A?t=142">2:24</a>)</span>
+      <a class=link href="https://youtu.be/EnwwUF5Sg5A">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/EnwwUF5Sg5A?t=110">1:50</a> reharm, <a href="https://youtu.be/EnwwUF5Sg5A?t=142">2:24</a> modulation & reharm</div>
     </div>
   </div>
 </div>
@@ -562,13 +882,25 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/540.pdf">540.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/540.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <a class=link href="https://youtu.be/R7wpy0d9wS4">YouTube</a>
+      <a class=link href="https://youtu.be/R7wpy0d9wS4">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -582,9 +914,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: c</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/547.pdf">547.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/547.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: c</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -598,9 +937,16 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/565.pdf">565.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/565.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -614,13 +960,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: D</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/573.pdf">573.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/573.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
     </div>
     <div class=file>
-      <div class=type>Recording</div>
-      <a class=link href="">TODO</a>
+      <a class=link href="https://youtu.be/QicHGWM4huY">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/QicHGWM4huY?t=77">1:17</a> reharm, <a href="https://youtu.be/QicHGWM4huY?t=115">1:55</a> reharm</div>
     </div>
   </div>
 </div>
@@ -634,9 +993,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: F → G</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/592.pdf">592.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/592.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: F → G</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/Wput5yurtKE">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/Wput5yurtKE?t=192">3:12</a> modulation & reharm</div>
     </div>
   </div>
 </div>
@@ -650,9 +1026,26 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: C</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/596.pdf">596.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/596.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: C</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/KqspK6n-cQM">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/KqspK6n-cQM?t=172">2:52</a> reharm</div>
     </div>
   </div>
 </div>
@@ -666,89 +1059,28 @@ title: Hymns
   </div>
   <div class=files>
     <div class=file>
-      <div class=type>Hymn</div>
-      <div class=key>Key: B♭</div>
-      <a class=link href="https://lychee.lumeh.org/hymns/600.pdf">600.pdf</a>
+      <a class=link href="https://lychee.lumeh.org/hymns/600.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: B♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/blq2J99R0l0">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+      <div><a href="https://youtu.be/blq2J99R0l0?t=120">2:00</a> reharm</div>
     </div>
   </div>
 </div>
 
 </div>
-
-
-<script>
-class PDFLink extends HTMLElement {
-  constructor() {
-    super();
-
-    var sources = [];
-    for (const ext of ['ogg', 'mp3', 'flac']) {
-      if (this.hasAttribute(`src-${ext}`)) {
-        sources.push(this.getAttribute(`src-${ext}`));
-      }
-    }
-
-    // Audio player
-    var audio = document.createElement('audio');
-    audio.setAttribute('controls', '');
-    audio.setAttribute('preload', 'none');
-    for (const source of sources) {
-      var sourcetag = document.createElement('source');
-      sourcetag.setAttribute('src', source);
-      audio.appendChild(sourcetag);
-    }
-    this.appendChild(audio);
-
-    var links = document.createElement('div');
-    links.classList.add('links');
-
-    // Video links
-    if (this.hasAttribute('youtube')) {
-      var video = document.createElement('span');
-      video.textContent = 'Video: '
-      var youtube = document.createElement('a');
-      youtube.setAttribute('href', this.getAttribute('youtube'))
-      youtube.setAttribute('rel', 'external');
-      youtube.textContent = 'YouTube'
-      video.appendChild(youtube);
-      links.appendChild(video);
-    }
-
-    // Download links
-    var downloads = document.createElement('span');
-    downloads.textContent = 'Download:';
-    for (const source of sources) {
-      var extension = source.split('.').pop();
-      var downloadlink = document.createElement('a');
-      downloadlink.setAttribute('href', source);
-      downloadlink.setAttribute('download', '');
-      downloadlink.textContent = `[${extension}]`;
-      downloads.appendChild(document.createTextNode(' '));
-      downloads.appendChild(downloadlink);
-    }
-    links.appendChild(downloads);
-
-    // License
-    var license = document.createElement('span');
-    license.textContent = 'License: ';
-    if (this.hasAttribute('license')) {
-      if (this.getAttribute('license') == 'none') {
-        license.textContent += 'All rights reserved';
-      } else {
-        license.textContent += 'unknown';
-      }
-    } else {
-      var licenselink = document.createElement('a');
-      licenselink.setAttribute('href', 'https://creativecommons.org/licenses/by-sa/4.0/');
-      licenselink.setAttribute('rel', 'external');
-      licenselink.setAttribute('target', '_blank');
-      licenselink.textContent = 'CC BY-SA 4.0';
-      license.appendChild(licenselink);
-    }
-    links.appendChild(license);
-
-    this.appendChild(links);
-  }
-}
-customElements.define('l-music', LumehMusic);
-</script>

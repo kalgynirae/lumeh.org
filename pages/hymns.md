@@ -22,7 +22,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/1.pdf">
+      <a class=link href="/files/hymns/001.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -68,7 +68,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/10.pdf">
+      <a class=link href="/files/hymns/010.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -91,7 +91,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/59.pdf">
+      <a class=link href="/files/hymns/059.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -161,7 +161,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/75.pdf">
+      <a class=link href="/files/hymns/075.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -196,7 +196,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/139.pdf">
+      <a class=link href="/files/hymns/139.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -229,7 +229,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/162.pdf">
+      <a class=link href="/files/hymns/162.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -252,7 +252,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/200.pdf">
+      <a class=link href="/files/hymns/200.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -344,7 +344,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/263.pdf">
+      <a class=link href="/files/hymns/263.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -437,7 +437,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/293.pdf">
+      <a class=link href="/files/hymns/293.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -460,7 +460,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/299.pdf">
+      <a class=link href="/files/hymns/299.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -472,7 +472,7 @@ can also commission arrangements or recordings of specific hymns there.
       </a>
     </div>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/299-piano.pdf">
+      <a class=link href="/files/hymns/299-piano.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -495,7 +495,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/342.pdf">
+      <a class=link href="/files/hymns/342.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -528,7 +528,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/350.pdf">
+      <a class=link href="/files/hymns/350.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -756,10 +756,10 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/480.pdf">
+      <a class=link href="/files/hymns/480.pdf">
         <l-icon name=journal></l-icon>
         <div>
-          <div class=type>Hymn Accompaniment – Piano</div>
+          <div class=type>Hymn Accompaniment</div>
           <div class=details>
             <div class=key>Key: b</div>
             <div class=instrumentation><l-icon name=piano right>Piano</l-icon></div>
@@ -779,7 +779,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/499.pdf">
+      <a class=link href="/files/hymns/499.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -882,7 +882,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/540.pdf">
+      <a class=link href="/files/hymns/540.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -914,7 +914,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/547.pdf">
+      <a class=link href="/files/hymns/547.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -937,7 +937,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/565.pdf">
+      <a class=link href="/files/hymns/565.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -993,7 +993,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/592.pdf">
+      <a class=link href="/files/hymns/592.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -1026,7 +1026,7 @@ can also commission arrangements or recordings of specific hymns there.
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/596.pdf">
+      <a class=link href="/files/hymns/596.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>

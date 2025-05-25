@@ -18,24 +18,24 @@
     open-digits: 1;
     disambiguation-except-zero: 4;
 @mixin font-inter-small
-  font-family: 'Inter', Verdana, Helvetica, sans-serif
+  font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 0.8rem
   font-variation-settings: "opsz" 14
   font-weight: 440
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
 @mixin font-inter-regular
-  font-family: 'Inter', Verdana, Helvetica, sans-serif
+  font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 0.95rem
   font-variation-settings: "opsz" 20
   font-weight: 400
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
 @mixin font-inter-menu
-  font-family: 'Inter', Verdana, Helvetica, sans-serif
+  font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 1.15rem
-  font-variation-settings: "opsz" 30
-  font-weight: 450
+  font-variation-settings: "opsz" 32
+  font-weight: 425
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
 
@@ -79,24 +79,21 @@
   size-adjust: 115%
   src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
 @mixin font-crimson-pro-midsmall
-  font-family: 'Crimson Pro', 'Inter flat symbol only', Georgia, serif
+  font-family: 'Crimson Pro', 'FreeSerif flat symbol only', Georgia, serif
   font-size: 0.88rem
   font-weight: 450
   letter-spacing: 0.02em
   line-height: 1.2
 @mixin font-crimson-pro-regular
-  font-family: 'Crimson Pro', 'Inter flat symbol only', Georgia, serif
+  font-family: 'Crimson Pro', 'FreeSerif flat symbol only', Georgia, serif
   font-size: 1.1rem
   font-weight: 400
   letter-spacing: normal
   line-height: 1.4
 
 @font-face
-  font-family: 'Inter flat symbol only'
-  font-style: normal
-  font-weight: 100 900
-  font-display: swap
-  src: url('/font/InterVariable.woff2') format('woff2')
+  font-family: 'FreeSerif flat symbol only'
+  src: url('/font/FreeSerif-U+266D-only.woff') format('woff')
   unicode-range: U+266D
 
 $page-border-radius: 20px
@@ -224,7 +221,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
 #site-menu
   background: linear-gradient(to bottom, #e0e0e0, #f4f4f4 100%)
   @include font-inter-menu
-  line-height: 1.5
+  line-height: 1.8rem
   overflow-x: auto
   padding: 0 calc(var(--page-padding) - 0.5rem)
   position: relative
@@ -250,6 +247,11 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
       &.active
         background-color: $bg-light
         text-decoration: none
+
+  @media (max-width: $mobile-width)
+    padding: 0 0.1rem
+    li a
+      padding: 0 0.4rem
 
   &.truncated ul::after
     background: linear-gradient(to right, rgba(white, 0), rgba(white, 1))

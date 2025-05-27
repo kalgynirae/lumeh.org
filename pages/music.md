@@ -2,10 +2,22 @@
 title: Music
 ---
 
-I play the pipe organ and the piano, occasionally sing, and even more occasionally compose video-game-style music!  My [YouTube channel] has recordings of arrangements I’ve written of many hymns (eventually I’ll have a separate page on this website for those).
+I play the pipe organ and the piano, occasionally sing, and even more occasionally compose!
 
-The rest of this page is dedicated to the video game music I produce under the alias
-<em>Synthmaster Lumpy</em>. I also have a [SoundCloud page], but I no longer update it.
+* Synthmaster Lumpy *(← you are here)* – video game music I’ve composed and produced
+* [hymns](/hymns/) – sheet music and recordings of hymn arrangements I’ve written
+
+<br>
+<br>
+
+# Synthmaster Lumpy
+
+I produce music under the alias <em>Synthmaster Lumpy</em>. “Video game music” seems the most apt
+description even though most of these tracks haven’t been used in any game (yet?).
+
+All tracks on this page are free to download, and *most* can be freely used and redistributed.
+Check each track for specific licensing information.
+
 
 ## Recommended listening
 
@@ -45,7 +57,7 @@ multi-story swimming pool, and I used the [Godot game engine] to build it.
 
 ### Plausible Geometry
 
-<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" youtube="https://www.youtube.com/watch?v=GcHz6Ycd61Y">
+<l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" spotify="https://open.spotify.com/track/7Hv5lsEM2zpfYnYl8kq8oC?si=804a7586b3aa4738" youtube="https://www.youtube.com/watch?v=GcHz6Ycd61Y">
 
 *December 2020:* I upgraded to the "All Plugins" edition of FL Studio during a
 recent sale, and made this track to try out some of the new plugins. I tried to
@@ -713,8 +725,6 @@ the gameboy notes. Contains me awesomely saying a made-up word, "Fwazhoom!"
 </l-music>
 
 
-[SoundCloud page]: http://soundcloud.com/synthmaster-lumpy
-[YouTube channel]: http://www.youtube.com/user/Kalgynirae
 [Good Stuff]: https://soundcloud.com/synthmaster-lumpy/sets/good-stuff
 [Minecraft Space Mountain video]: http://www.youtube.com/watch?v=aX-9yozuIQI
 [Mideast Sidearm Hideaway]: https://github.com/ufgmg/mideast-sidearm-hideaway
@@ -749,14 +759,27 @@ class LumehMusic extends HTMLElement {
     links.classList.add('links');
 
     // Video links
-    if (this.hasAttribute('youtube')) {
+    if (this.hasAttribute('youtube') || this.hasAttribute('spotify')) {
       var video = document.createElement('span');
-      video.textContent = 'Video: '
-      var youtube = document.createElement('a');
-      youtube.setAttribute('href', this.getAttribute('youtube'))
-      youtube.setAttribute('rel', 'external');
-      youtube.textContent = 'YouTube'
-      video.appendChild(youtube);
+      video.textContent = 'Listen on: '
+      if (this.hasAttribute('spotify')) {
+        var spotify = document.createElement('a');
+        spotify.setAttribute('href', this.getAttribute('spotify'))
+        spotify.setAttribute('rel', 'external');
+        spotify.setAttribute('target', '_blank');
+        spotify.textContent = '[Spotify]';
+        video.appendChild(spotify);
+        video.appendChild(document.createTextNode(' '));
+      }
+      if (this.hasAttribute('youtube')) {
+        var youtube = document.createElement('a');
+        youtube.setAttribute('href', this.getAttribute('youtube'))
+        youtube.setAttribute('rel', 'external');
+        youtube.setAttribute('target', '_blank');
+        youtube.textContent = '[YouTube]';
+        video.appendChild(youtube);
+        video.appendChild(document.createTextNode(' '));
+      }
       links.appendChild(video);
     }
 

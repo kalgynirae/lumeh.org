@@ -24,8 +24,9 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 
 ### Serious things
 
-*   [music I’ve written](/music/)
 *   [my GitHub profile](https://github.com/kalgynirae/)
+*   [music I’ve written](/music/)
+*   [hymn arrangements](/hymns/)
 *   [my preferred Google Docs styles](https://docs.google.com/document/d/1HnU8OpUeEzo_AIq4NqNBGNsGCAvGBrmvfOCYuv5SR5w/edit?usp=sharing)
 *   [my recipes](/recipes/)
 *   [my résumé (PDF)](/docs/resume-20241215.pdf)

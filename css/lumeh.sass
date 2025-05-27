@@ -116,7 +116,7 @@ $bg-darker: #c7c6ca
 $bg-highlight: oklch(94% 0.07 104)
 
 $text-faint: #a9a39e
-$text-subtle: #79736f
+$text-subtle: #65625e
 $text-normal: #201e1c
 $text-red: #9f4138
 $text-red-dim: #be8981
@@ -317,8 +317,10 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   @media (max-width: $mobile-width)
     padding: 1rem 0.5rem 0
   a
-    color: oklch(from $link calc(l - 0.12) calc(c - 0.03) h)
+    color: $text-subtle
     text-decoration: underline
+    &.kofi
+      color: oklch(from $link calc(l - 0.12) calc(c - 0.03) h)
   p
     margin-bottom: 0.25em
 

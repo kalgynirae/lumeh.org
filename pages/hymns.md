@@ -4,10 +4,18 @@ title: Hymns
 
 # Hymns
 
-I’ve written organ arrangements of many hymns from the Christian Science Hymnal, as well as a few
-preludes and piano arrangements. These arrangements are free to use, but if you find them useful,
-please consider <a href="https://ko-fi.com/kalgynirae" target=_blank>supporting me on Ko-fi</a>. You
-can also commission arrangements or recordings of specific hymns there.
+I’ve written organ arrangements of many hymns as well as a few preludes and piano arrangements.
+These arrangements are free to use, but if you find them useful, please consider <a
+href="https://ko-fi.com/kalgynirae" target=_blank>supporting me on Ko-fi</a>. You can also
+commission arrangements or recordings of specific hymns there.
+
+There are a few different reasons I like to write arrangements of hymns:
+
+* to more fully realize a tune’s potential (e.g. [#537](#csh-537), [#573](#csh-573))
+* to add variety when there are many verses (e.g. [#162](#csh-162), [#264](#csh-264))
+* to add joy, excitement, power when the text calls for it (e.g. [#342](#csh-342), [#478](#csh-478))
+* to make a hymn easier to play on the organ (e.g. [#600](#csh-600))
+
 
 ## Christian Science Hymnal
 
@@ -423,7 +431,7 @@ can also commission arrangements or recordings of specific hymns there.
           </div>
         </div>
       </a>
-      <div>Modulation happens mid-last-verse</div>
+      <div>⚠ Modulation happens mid-last-verse</div>
     </div>
   </div>
 </div>
@@ -732,7 +740,7 @@ can also commission arrangements or recordings of specific hymns there.
           </div>
         </div>
       </a>
-      <div>Modulation happens mid-last-verse</div>
+      <div>⚠ Modulation happens mid-last-verse</div>
     </div>
     <div class=file>
       <a class=link href="https://youtu.be/3xyYV_axrno">
@@ -742,7 +750,7 @@ can also commission arrangements or recordings of specific hymns there.
           <div>YouTube</div>
         </div>
       </a>
-      <div><a href="https://youtu.be/3xyYV_axrno?t=166">2:46</a> reharm</div>
+      <div><a href="https://youtu.be/3xyYV_axrno?t=166">2:46</a> reharm & modulation</div>
     </div>
   </div>
 </div>
@@ -835,7 +843,7 @@ can also commission arrangements or recordings of specific hymns there.
           </div>
         </div>
       </a>
-      <div class=note>Arranged in 3/4 (versus hymnal’s 4/4)</div>
+      <div class=note>⚠ Arranged in 3/4 (versus hymnal’s 4/4)</div>
     </div>
   </div>
 </div>
@@ -859,6 +867,7 @@ can also commission arrangements or recordings of specific hymns there.
           </div>
         </div>
       </a>
+      <div class=note>⚠ Brief interlude into verse 4</div>
     </div>
     <div class=file>
       <a class=link href="https://youtu.be/EnwwUF5Sg5A">
@@ -1084,3 +1093,8 @@ can also commission arrangements or recordings of specific hymns there.
 </div>
 
 </div>
+
+
+## Other hymnals
+
+(coming soon)

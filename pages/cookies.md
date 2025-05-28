@@ -4,9 +4,7 @@ title: Cookies
 
 # Cookies
 
-lumeh.org doesn’t use cookies.
-
-But, you can make your own cookies! We suggest either Colin’s [classic chocolate-chip
+**lumeh.org doesn’t use cookies**, but you can make your own! We suggest either Colin’s [classic chocolate-chip
 recipe](/recipes/cookies/) known for its use of maple flavoring or [Chonklate Chip
 Cookies](/recipes/chonklate-chip-cookies/) which imitate Levain Bakery’s famous cookies.
 

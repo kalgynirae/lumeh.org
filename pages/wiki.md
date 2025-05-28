@@ -24,10 +24,9 @@ A haphazard collection of information curated by me!
 
 ## Miscellaneous
 
-* [#thestruggle](thestruggle/)
+* [Characters](characters/)
 * [Dragée](dragee)
 * [Early Twenty-First Century](early-twenty-first-century/)
-* [Opposites](opposites/)
 * [The Caring Continuum](the-caring-continuum/)
 
 ## Meta

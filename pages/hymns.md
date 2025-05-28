@@ -9,12 +9,11 @@ These arrangements are free to use, but if you find them useful, please consider
 href="https://ko-fi.com/kalgynirae" target=_blank>supporting me on Ko-fi</a>. You can also
 commission arrangements or recordings of specific hymns there.
 
-There are a few different reasons I like to write arrangements of hymns:
+These are a few of my favorites:
 
-* to more fully realize a tune’s potential (e.g. [#537](#csh-537), [#573](#csh-573))
-* to add variety when there are many verses (e.g. [#162](#csh-162), [#264](#csh-264))
-* to add joy, excitement, power when the text calls for it (e.g. [#342](#csh-342), [#478](#csh-478))
-* to make a hymn easier to play on the organ (e.g. [#600](#csh-600))
+* [#573 *Shepherd, show me how to go*](#csh-573)
+* [#342 *This is the day the Lord hath made*](#csh-342)
+* [#537 *O church of God, built on a firm foundation*](#csh-537)
 
 
 ## Christian Science Hymnal

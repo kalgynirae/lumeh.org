@@ -43,6 +43,7 @@
     <header class=page-info>
       {% if page.path %}
       <nav class=breadcrumbs>
+        <span id=lumeh-org-crumb>lumeh.org</span>
         {% set ns = namespace(path="", prevname="") %}
         {% for component in page.path.split("/") if component and not component.endswith(".html") %}
         {% set ns.path = ns.path + component + "/" %}

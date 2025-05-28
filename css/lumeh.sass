@@ -298,6 +298,9 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
       font-variant-caps: all-small-caps
       white-space: nowrap
 
+#lumeh-org-crumb
+  display: none
+
 .edit-this-page
   @include font-inter-regular
   background-color: $bg-dark
@@ -568,8 +571,12 @@ span.path
 @media print
   #site-header,
   #site-menu,
-  .edit-this-page
+  .edit-this-page,
+  #support
     display: none
+
+  #lumeh-org-crumb
+    display: inline
 
   html
     background: none

@@ -80,8 +80,8 @@
   src: url('/font/CrimsonPro-Italic[wght].ttf') format('opentype')
 @mixin font-crimson-pro-midsmall
   font-family: 'Crimson Pro', 'FreeSerif flat symbol only', Georgia, serif
-  font-size: 0.88rem
-  font-weight: 450
+  font-size: 0.85rem
+  font-weight: 460
   letter-spacing: 0.02em
   line-height: 1.2
 @mixin font-crimson-pro-regular
@@ -549,21 +549,6 @@ ul
   padding: 0
   margin: 0 0 var(--paragraph-spacing) 2.5rem
 
-table
-  border-collapse: collapse
-  font-size: 0.9em
-  margin-bottom: 0.5rem
-  width: 100%
-
-  th, tr:nth-child(even)
-    background-color: $bg-dark
-
-  td,
-  th
-    border: solid 1px #e0e0e0
-    padding: 0.2rem
-    vertical-align: middle
-
 span.path
   font-weight: 500
   white-space: nowrap
@@ -754,3 +739,33 @@ l-icon
   color: inherit
   &:hover
     color: $green
+
+.recipe
+  margin-bottom: var(--paragraph-spacing)
+  width: 100%
+
+  border-collapse: collapse
+  border-right: solid 0.25pt
+  //border-spacing: 0.5em
+  font-size: 0.9em
+  font-weight: 450
+  line-height: 1.2
+
+  td
+    border-top: solid 0.25pt
+    border-bottom: solid 0.25pt
+    padding: 0.5em 0.25em
+    vertical-align: middle
+
+  td:first-child
+    padding-left: 0
+
+  td:not(:first-child)
+    border-left: solid 1.25pt
+
+  i
+    font-style: inherit
+    text-wrap-mode: nowrap
+
+.mixed-number
+  word-spacing: -0.25ch

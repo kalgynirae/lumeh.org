@@ -70,6 +70,10 @@ This is Colin’s personal collection of useful characters for easy copying & pa
 <div class=code>U+2026</div>
 <div class=name>HORIZONTAL ELLIPSIS</div>
 
+<div class=char>⁄</div>
+<div class=code>U+2044</div>
+<div class=name>FRACTION SLASH</div>
+
 <div class=char>␤</div>
 <div class=code>U+2424</div>
 <div class=name>SYMBOL FOR NEWLINE</div>

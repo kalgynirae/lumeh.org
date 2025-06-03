@@ -9,3 +9,9 @@ dependencies = [
     "python-slugify>=8.0.4",
     "pyyaml>=6.0.2",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.12",
+    "ty>=0.0.1a8",
+]

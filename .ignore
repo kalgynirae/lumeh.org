@@ -1,0 +1,2 @@
+# Currently preventing ty from checking Python files within projects
+/projects/

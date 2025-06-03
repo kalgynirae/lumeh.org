@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import argparse
 import asyncio
 import logging
-import os
 import shutil
+from abc import ABCMeta, abstractmethod
 from collections import Counter
-from dataclasses import asdict, dataclass, field
+from dataclasses import dataclass, field
 from datetime import datetime
 from html import escape
-from itertools import chain
 from pathlib import Path
 from shlex import quote
 from subprocess import PIPE
@@ -23,8 +21,6 @@ from typing import (
     List,
     Optional,
     Set,
-    Tuple,
-    Union,
     cast,
 )
 
@@ -118,12 +114,19 @@ def build(site: Site, *, dest: str) -> None:
     logger.info("%s SUCCESS / %s FAILURE", successes, failures)
 
 
-async def copy(dest: Path, source_producer: FileProducer, info: Info, merge_dirs: bool = False) -> None:
+async def copy(
+    dest: Path, source_producer: FileProducer, info: Info, merge_dirs: bool = False
+) -> None:
     source = await source_producer.run(info)
     if source.path.is_dir():
         logger.debug("Copying directory %s -> %s", source.path, dest)
         dest.parent.mkdir(exist_ok=True, parents=True)
-        shutil.copytree(source.path, dest, copy_function=shutil.copy, dirs_exist_ok=merge_dirs)
+        shutil.copytree(
+            source.path,
+            dest,
+            copy_function=shutil.copy,  # ty: ignore[invalid-argument-type]
+            dirs_exist_ok=merge_dirs,
+        )
     else:
         if info.path.endswith("/"):
             dest = dest / "index.html"
@@ -155,14 +158,14 @@ class TextResult(Result):
     pageinfo: Dict[str, Any]
 
 
-class FileProducer:
-    async def run(self, info: Info) -> FileResult:
-        ...
+class FileProducer(metaclass=ABCMeta):
+    @abstractmethod
+    async def run(self, info: Info) -> FileResult: ...
 
 
-class TextProducer:
-    async def run(self, info: Info) -> TextResult:
-        ...
+class TextProducer(metaclass=ABCMeta):
+    @abstractmethod
+    async def run(self, info: Info) -> TextResult: ...
 
 
 @dataclass(frozen=True)
@@ -238,7 +241,9 @@ async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
         "-c",
         f"cd {quote(str(file.parent))} && git ls-files --full-name {quote(str(file.name))}",
     ]
-    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)
+    proc = await asyncio.create_subprocess_exec(
+        *args, stdout=PIPE
+    )  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -247,7 +252,9 @@ async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
     repo_source_path = lines[0] if lines else None
 
     args = ["bash", "-c", f"cd {quote(str(file.parent))} && git remote -v"]
-    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)
+    proc = await asyncio.create_subprocess_exec(
+        *args, stdout=PIPE
+    )  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -265,7 +272,7 @@ async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
         if repo_url.startswith("git@github.com:"):
             repo_name = repo_url[len("git@github.com:") :]
             repo_url = f"https://github.com/{repo_name}"
-    if not repo_name:
+    if repo_url and not repo_name:
         repo_name = "/".join(repo_url.split("/")[-2:])
 
     args = [
@@ -273,7 +280,9 @@ async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
         "-c",
         f"cd {quote(str(file.parent))} && git log --format='%cI %ae %an' -- {quote(str(file.name))}",
     ]
-    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)
+    proc = await asyncio.create_subprocess_exec(
+        *args, stdout=PIPE
+    )  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -349,11 +358,15 @@ class string(TextProducer):
             repo_url=None,
             updated_date=datetime.now(),
         )
-        return TextResult(sourceinfo=sourceinfo, content=self.s, pageinfo=self.pageinfo or {})
+        return TextResult(
+            sourceinfo=sourceinfo, content=self.s, pageinfo=self.pageinfo or {}
+        )
 
 
 class jinja(FileProducer):
-    def __init__(self, source: TextProducer, template: str, title: str | None = None) -> None:
+    def __init__(
+        self, source: TextProducer, template: str, title: str | None = None
+    ) -> None:
         self.source = source
         self.template = jinjaenv.get_template(template)
         self.title = title
@@ -384,7 +397,9 @@ class sass(FileProducer):
         source = await self.source.run(info)
         dest = outfile()
         args = ["pysassc", "--style", "compressed", str(source.path), str(dest)]
-        proc = await asyncio.create_subprocess_exec(*args)
+        proc = await asyncio.create_subprocess_exec(
+            *args
+        )  # ty: ignore[missing-argument]
         exitcode = await proc.wait()
         if exitcode != 0:
             raise RuntimeError("pysassc failed")
@@ -417,12 +432,17 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
             identifier = self.ids.get_id(self.render_to_plain(token))
             return f'<a class=anchor href="#{identifier}"><h{level} id="{identifier}">{inner}</h{level}></a>'
         else:
-            return f'<h{level}>{inner}</h{level}>'
+            return f"<h{level}>{inner}</h{level}>"
 
 
 def index_page(paths: list[str], *, title: str) -> jinja:
-    items = [f'  <li><a href="{escape(path)}">{escape(path, quote=False)}</a></li>\n' for path in paths]
-    content = string(f"<ul class=index>\n{''.join(items)}</ul>", pageinfo={"title": title})
+    items = [
+        f'  <li><a href="{escape(path)}">{escape(path, quote=False)}</a></li>\n'
+        for path in paths
+    ]
+    content = string(
+        f"<ul class=index>\n{''.join(items)}</ul>", pageinfo={"title": title}
+    )
     return jinja(content, template="page.html")
 
 
@@ -439,6 +459,7 @@ def index(tree: Dict[str, FileProducer], *dirs: str) -> Dict[str, FileProducer]:
     return {
         **tree,
         **{
-            f"{dir}/index.html": index_page(paths, title=dir.capitalize()) for dir, paths in index_paths.items()
+            f"{dir}/index.html": index_page(paths, title=dir.capitalize())
+            for dir, paths in index_paths.items()
         },
     }

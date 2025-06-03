@@ -26,7 +26,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
     font-family: "Crimson Pro", "Georgia", serif;
     font-size: 3.5em;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin: calc(2 * var(--paragraph-spacing)) 0;
     width: 100%;
 }
 #krypto-table td {
@@ -42,6 +42,15 @@ Programmed by Colin <span id="hours">many</span> hours ago.
     font-weight: bold;
     padding: 1em;
     width: 100%;
+    margin-bottom: calc(2 * var(--paragraph-spacing));
+}
+@media (max-width: 650px) {
+  #krypto-table {
+    font-size: 3em;
+  }
+  #krypto-button {
+    font-size: 1.6em;
+  }
 }
 </style>
 

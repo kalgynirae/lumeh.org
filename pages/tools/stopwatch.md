@@ -19,11 +19,9 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
     <label><input id="direction-down" name="d" type="radio" value="down">down</label>
   </p>
 </fieldset>
+<div class="spacer"></div>
 
 <style>
-#time {
-  text-align: center;
-}
 #time {
   color: #000000;
   font-family: "Inter";
@@ -31,9 +29,12 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
   font-size: 12em;
   font-weight: bold;
   line-height: 1em;
+  text-align: center;
+  margin-top: calc(2 * var(--paragraph-spacing));
 }
 #controls, #options {
   align-items: baseline;
+  border: none;
   display: flex;
   justify-content: center;
 }
@@ -57,6 +58,32 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
 }
 #options input[type=radio] {
   margin-left: .5em;
+}
+.spacer {
+  margin-bottom: var(--paragraph-spacing);
+}
+@media (max-width: 900px) {
+  #time {
+    font-size: 9em;
+  }
+}
+@media (max-width: 800px) {
+  #time {
+    font-size: 8em;
+  }
+  #controls button {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 700px) {
+  #time {
+    font-size: 7em;
+  }
+}
+@media (max-width: 600px) {
+  #time {
+    font-size: 6em;
+  }
 }
 </style>
 

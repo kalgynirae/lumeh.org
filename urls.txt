@@ -1,0 +1,396 @@
+# websleydale URLs
+/
+/.websleydale_output_dir
+/andersonorgan
+/boxer
+/boxer.html
+/christmas-in-july-2020
+/christmas-in-july-2021
+/cookies
+/css/lumeh.css
+/docs/resume-20200720.pdf
+/docs/resume-20241215.pdf
+/error/404
+/files/hymns/001.pdf
+/files/hymns/010.pdf
+/files/hymns/059.pdf
+/files/hymns/075.pdf
+/files/hymns/139.pdf
+/files/hymns/162.pdf
+/files/hymns/200.pdf
+/files/hymns/263.pdf
+/files/hymns/293.pdf
+/files/hymns/299-piano.pdf
+/files/hymns/299.pdf
+/files/hymns/342.pdf
+/files/hymns/350.pdf
+/files/hymns/480.pdf
+/files/hymns/499.pdf
+/files/hymns/537.pdf
+/files/hymns/540.pdf
+/files/hymns/547.pdf
+/files/hymns/565.pdf
+/files/hymns/573.pdf
+/files/hymns/592.pdf
+/files/hymns/596.pdf
+/files/hymns/600.pdf
+/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3
+/files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg
+/files/music/Synthmaster Lumpy - Background Music for the Approach.mp3
+/files/music/Synthmaster Lumpy - Background Music for the Approach.ogg
+/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).flac
+/files/music/Synthmaster Lumpy - Battle in the Cathedral (Remastered).ogg
+/files/music/Synthmaster Lumpy - Battle in the Cathedral.flac
+/files/music/Synthmaster Lumpy - Battle in the Cathedral.ogg
+/files/music/Synthmaster Lumpy - Black Hole.mp3
+/files/music/Synthmaster Lumpy - Black Hole.ogg
+/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).mp3
+/files/music/Synthmaster Lumpy - Can't Hold Us (instrumental backing track).ogg
+/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).flac
+/files/music/Synthmaster Lumpy - Capes and Crepes (Instrumental).mp3
+/files/music/Synthmaster Lumpy - Chocobo Minor.mp3
+/files/music/Synthmaster Lumpy - Christmas In July.mp3
+/files/music/Synthmaster Lumpy - Christmas In July.ogg
+/files/music/Synthmaster Lumpy - Coat Hanger Stew.mp3
+/files/music/Synthmaster Lumpy - Coat Hanger Stew.ogg
+/files/music/Synthmaster Lumpy - Contest Entry.mp3
+/files/music/Synthmaster Lumpy - Contest Entry.ogg
+/files/music/Synthmaster Lumpy - Death Error.mp3
+/files/music/Synthmaster Lumpy - Death Error.ogg
+/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).mp3
+/files/music/Synthmaster Lumpy - Exploding Soda Machine (Notion 3).ogg
+/files/music/Synthmaster Lumpy - Exploding Soda Machine.mp3
+/files/music/Synthmaster Lumpy - Exploding Soda Machine.ogg
+/files/music/Synthmaster Lumpy - Find The Bass (Required).mp3
+/files/music/Synthmaster Lumpy - Find The Bass (Required).ogg
+/files/music/Synthmaster Lumpy - Food Cart.ogg
+/files/music/Synthmaster Lumpy - Glimmering Pavement.flac
+/files/music/Synthmaster Lumpy - Glimmering Pavement.ogg
+/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.mp3
+/files/music/Synthmaster Lumpy - God Rest Ye Merry, Gentlemen.ogg
+/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.mp3
+/files/music/Synthmaster Lumpy - God Stress Ye, Merry Mentlegen.ogg
+/files/music/Synthmaster Lumpy - Gravitational Conflict.ogg
+/files/music/Synthmaster Lumpy - It's from a Davideo Game.flac
+/files/music/Synthmaster Lumpy - It's from a Davideo Game.ogg
+/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).mp3
+/files/music/Synthmaster Lumpy - Latin Prepositions (instrumental mix).ogg
+/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).mp3
+/files/music/Synthmaster Lumpy - Latin Prepositions (vocoder mix).ogg
+/files/music/Synthmaster Lumpy - Latin Prepositions.mp3
+/files/music/Synthmaster Lumpy - Latin Prepositions.ogg
+/files/music/Synthmaster Lumpy - Les Miserables bows music loop.mp3
+/files/music/Synthmaster Lumpy - Les Miserables bows music loop.ogg
+/files/music/Synthmaster Lumpy - Let's Godot Swimming.flac
+/files/music/Synthmaster Lumpy - Let's Godot Swimming.ogg
+/files/music/Synthmaster Lumpy - Ligatures in Space.flac
+/files/music/Synthmaster Lumpy - Ligatures in Space.mp3
+/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).mp3
+/files/music/Synthmaster Lumpy - Lumpy's Theme (gameboy version).ogg
+/files/music/Synthmaster Lumpy - Lumpy's Theme.mp3
+/files/music/Synthmaster Lumpy - Lumpy's Theme.ogg
+/files/music/Synthmaster Lumpy - Mountains In Space.mp3
+/files/music/Synthmaster Lumpy - Mountains In Space.ogg
+/files/music/Synthmaster Lumpy - No Quest.mp3
+/files/music/Synthmaster Lumpy - No Quest.ogg
+/files/music/Synthmaster Lumpy - Norman's Theme.mp3
+/files/music/Synthmaster Lumpy - Norman's Theme.ogg
+/files/music/Synthmaster Lumpy - On The Clock (long version).mp3
+/files/music/Synthmaster Lumpy - On The Clock (long version).ogg
+/files/music/Synthmaster Lumpy - On The Clock.mp3
+/files/music/Synthmaster Lumpy - On The Clock.ogg
+/files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3
+/files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg
+/files/music/Synthmaster Lumpy - Plausible Geometry.flac
+/files/music/Synthmaster Lumpy - Plausible Geometry.ogg
+/files/music/Synthmaster Lumpy - Raid The Bass (Required).mp3
+/files/music/Synthmaster Lumpy - Raid The Bass (Required).ogg
+/files/music/Synthmaster Lumpy - RandyRacer.flac
+/files/music/Synthmaster Lumpy - RandyRacer.mp3
+/files/music/Synthmaster Lumpy - RandyRacer.ogg
+/files/music/Synthmaster Lumpy - Recycling Is Fun.mp3
+/files/music/Synthmaster Lumpy - Recycling Is Fun.ogg
+/files/music/Synthmaster Lumpy - Shearing the End.flac
+/files/music/Synthmaster Lumpy - Shearing the End.ogg
+/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.mp3
+/files/music/Synthmaster Lumpy - Sing We Now Of Christmas.ogg
+/files/music/Synthmaster Lumpy - Space.flac
+/files/music/Synthmaster Lumpy - Space.mp3
+/files/music/Synthmaster Lumpy - Space.ogg
+/files/music/Synthmaster Lumpy - Storm in the Valley.mp3
+/files/music/Synthmaster Lumpy - Storm in the Valley.ogg
+/files/music/Synthmaster Lumpy - Strange Music (loop).ogg
+/files/music/Synthmaster Lumpy - Surrogate Melon (extended version).mp3
+/files/music/Synthmaster Lumpy - Surrogate Melon.mp3
+/files/music/Synthmaster Lumpy - Surrogate Melon.ogg
+/files/music/Synthmaster Lumpy - Swimming in Circles.flac
+/files/music/Synthmaster Lumpy - Swimming in Circles.ogg
+/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.mp3
+/files/music/Synthmaster Lumpy - That Box of Cookie Crisp is Upside Down.ogg
+/files/music/Synthmaster Lumpy - The Birthday Song.mp3
+/files/music/Synthmaster Lumpy - The Birthday Song.ogg
+/files/music/Synthmaster Lumpy - The Game (chiptune version).mp3
+/files/music/Synthmaster Lumpy - The Game (chiptune version).ogg
+/files/music/Synthmaster Lumpy - The Game.mp3
+/files/music/Synthmaster Lumpy - The Game.ogg
+/files/music/Synthmaster Lumpy - The Shop.mp3
+/files/music/Synthmaster Lumpy - The Shop.ogg
+/files/music/Synthmaster Lumpy - The Village.mp3
+/files/music/Synthmaster Lumpy - The Village.ogg
+/files/music/Synthmaster Lumpy - Three Instruments.flac
+/files/music/Synthmaster Lumpy - Three Instruments.ogg
+/files/music/Synthmaster Lumpy - Tiny World.mp3
+/files/music/Synthmaster Lumpy - Tiny World.ogg
+/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).mp3
+/files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg
+/files/music/Synthmaster Lumpy - Track 7.mp3
+/files/music/Synthmaster Lumpy - Track 7.ogg
+/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3
+/files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg
+/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3
+/files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg
+/files/music/Synthmaster Lumpy - Windmills... in Space!.flac
+/files/music/Synthmaster Lumpy - Windmills... in Space!.ogg
+/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).flac
+/files/music/Synthmaster Lumpy - You're a Hero (Instrumental).mp3
+/files/music/Synthmaster Lumpy - another theme.mp3
+/files/music/Synthmaster Lumpy - another theme.ogg
+/files/music/Synthmaster Lumpy - battle music (rough draft).mp3
+/files/music/Synthmaster Lumpy - battle music (rough draft).ogg
+/files/music/Synthmaster Lumpy - cmbgmabb5.mp3
+/files/music/Synthmaster Lumpy - cmbgmabb5.ogg
+/files/music/Synthmaster Lumpy - experimental memphis.mp3
+/files/music/Synthmaster Lumpy - experimental memphis.ogg
+/files/music/Synthmaster Lumpy - theme.mp3
+/files/music/Synthmaster Lumpy - theme.ogg
+/files/public/ludumdare23/green_planet.png
+/files/public/ludumdare23/think_green_1.png
+/files/public/ludumdare23/think_green_2.png
+/files/public/semaphore.pdf
+/files/public/the_adclifppsssssttt.pdf
+/files/public/the_game.pdf
+/files/public/the_game_dashed_line.png
+/files/public/the_game_line.png
+/files/public/the_game_slur.png
+/files/public/think_green_gameplay.png
+/files/sheets/i_like_celery.pdf
+/files/sheets/spider_pig.pdf
+/files/sheets/the-game.pdf
+/files/stepmania/Do a Barrel Roll.7z
+/files/stepmania/Hum Stutter.7z
+/files/stepmania/Illusionary Summer, Ghostly Summer.7z
+/files/stepmania/Moskau.7z
+/files/stepmania/On The Clock.7z
+/files/stepmania/Thriller (VRC6 Cover).7z
+/font/Berkeley Mono Variable.woff2
+/font/CrimsonPro-Italic[wght].ttf
+/font/CrimsonPro[wght].ttf
+/font/FernVariable-Italic-VF-Testing.woff2
+/font/FernVariable-Roman-VF-Testing.woff2
+/font/FreeSerif-U+266D-only.woff
+/font/InterVariable-Italic.woff2
+/font/InterVariable.woff2
+/games/narchanso.html
+/guess
+/guess/README
+/guess/jquery.js
+/guess/main.js
+/guess/style.css
+/hymns
+/image/admin-email.png
+/image/cc-by-sa.png
+/image/construction.gif
+/image/logo-16.png
+/image/logo-192.png
+/image/logo-32.png
+/image/logo-96.png
+/image/logo.svg
+/image/lumpybox.png
+/image/menu-scroll-indicator.svg
+/image/tlw_banners/as_lumpy.png
+/image/tlw_banners/cm_cheezburger.jpg
+/image/tlw_banners/czm_tlwbanner.gif
+/image/tlw_banners/dd_TLW.png
+/image/tlw_banners/dd_TLWmonocle.jpg
+/image/tlw_banners/dd_TLWsparkle2.gif
+/image/tlw_banners/dd_cwn3d.png
+/image/tlw_banners/dd_etch-a-hermann.png
+/image/tlw_banners/dd_hermannFS.jpg
+/image/tlw_banners/dd_insert_slogan_here.gif
+/image/tlw_banners/dd_ninjabox.png
+/image/tlw_banners/dd_outofplace.png
+/image/tlw_banners/dd_ssblumpy.gif
+/image/tlw_banners/dd_starwarslumpybanner.gif
+/image/tlw_banners/dd_tlwtrippy.jpg
+/image/tlw_banners/dk_Charazard banner.png
+/image/tlw_banners/dk_Lumpybanner2.png
+/image/tlw_banners/dk_banner3.jpg
+/image/tlw_banners/ht_tlwbannermspaint2ps3.jpg
+/image/tlw_banners/kiyy_LUMPYBANNER.png
+/image/tlw_banners/kiyy_SMURFBANNER.jpg
+/image/tlw_banners/kiyy_lumpyon.jpg
+/image/tlw_banners/lumeh_cartoon_final_2.png
+/image/tlw_banners/md_cookiedeathwv9.png
+/image/tlw_banners/nat_Prism.jpg
+/image/tlw_banners/nat_ceilingcatbanner.jpg
+/image/tlw_banners/nat_tlwbanner.jpg
+/image/tlw_banners/nat_tlwbannerbeta3.jpg
+/image/tlw_banners/nb_lumpybanner2.png
+/image/tlw_banners/nooblet_penguins_banner.jpg
+/image/tlw_banners/pop_Lumpy Banner Fireworks.png
+/image/tlw_banners/pop_Lumpy bannar.png
+/image/tlw_banners/pop_The lumpeh rave.jpg
+/image/tlw_banners/pop_Thelumpy-comingtogether.png
+/image/tlw_banners/pop_bubbledots.png
+/image/tlw_banners/pop_lumpyvectori.png
+/image/tlw_banners/roasty_LW Banner 1-Trance Vision copy.gif
+/image/tlw_banners/roasty_LWB Flunked Up copy.gif
+/image/tlw_banners/roasty_LWB Super Lumpy World copy.png
+/image/tlw_banners/roasty_LWB Tweaky copy.png
+/image/tlw_banners/shisno_TLWshinn.png
+/image/tlw_banners/td_goobanna-1.png
+/image/tlw_banners/teh-lolrus_Lumpy-Banner.jpg
+/image/tlw_banners/tlw_a_new_banner.png
+/image/tlw_banners/tlw_glassy_green.jpg
+/image/tlw_banners/tlw_rock_paper_toaster.png
+/image/tlw_banners/tlw_ts_tlw banner copy.jpg
+/image/unicode-bronze-2BC2.png
+/jabberwockus.html
+/js/jquery-2.1.4.min.js
+/krypto.html
+/lumeh.html
+/media/boxer.swf
+/media/caring_continuum.png
+/media/christmas-in-july-2021.png
+/media/memes/SANCHEZLOL.gif
+/media/pchyme-demo/high.mp3
+/media/pchyme-demo/metal.mp3
+/media/pchyme-demo/rhodes.mp3
+/media/pchyme-demo/tiny.mp3
+/media/pchyme-demo/tuna.mp3
+/media/pchyme-demo/wood.mp3
+/media/polar graph paper 2.svg
+/media/polar graph paper.pdf
+/media/pulseaudio/monitor-of-discord-input.jpg
+/media/pulseaudio/pavucontrol-discord-input.png
+/media/pulseaudio/pavucontrol-long-name.png
+/media/pulseaudio/pavucontrol-loopback-playback.png
+/media/pulseaudio/pavucontrol-loopback-recording.png
+/media/pulseaudio/pavucontrol-monitor-of-discord-input.png
+/media/pulseaudio/pavucontrol-short-name.png
+/media/pulseaudio/pavucontrol-simultaneous-output.png
+/media/pulseaudio/pavucontrol.svg
+/media/sfago2024-home.png
+/media/theandrewandersonmemorialpipeorganahistory-wittine.pdf
+/music
+/music.html
+/papenago-just-add-feet-2025
+/poetry
+/poetry-yay.html
+/poetry/jabberwockus
+/poetry/lumeh-god-of-light-bulbs
+/poetry/poetry-yay
+/projects
+/projects/lumeh.org
+/projects/pchyme
+/projects/rockuefort
+/projects/sfago2024.org
+/projects/slideception
+/projects/thinking-green
+/projects/voidpop
+/projects/websleydale
+/recipes
+/recipes/almond-salad-dressing
+/recipes/almond_salad_dressing.html
+/recipes/apple-cider
+/recipes/apple-crisp
+/recipes/apple_cider.html
+/recipes/apple_crisp.html
+/recipes/asparagus-mushroom-soup
+/recipes/asparagus_mushroom_soup.html
+/recipes/banana-bread
+/recipes/banana_bread.html
+/recipes/bettys-chili
+/recipes/bettys_chili.html
+/recipes/calico-beans
+/recipes/calico_beans.html
+/recipes/chana-masala
+/recipes/chana-masala-with-spice-kit
+/recipes/chana_masala.html
+/recipes/chana_masala_with_spice_kit.html
+/recipes/chancakes
+/recipes/chancakes.html
+/recipes/chicken-curry
+/recipes/chicken-curry-v2
+/recipes/chicken_curry.html
+/recipes/chickpeas-pressure-cooker
+/recipes/chili
+/recipes/chili.html
+/recipes/chonklate-chip-cookies
+/recipes/christmas-anything
+/recipes/christmas_anything.html
+/recipes/cookies
+/recipes/cookies.html
+/recipes/cottage-pie
+/recipes/cottage_pie.html
+/recipes/creme-brulee-cheesecake
+/recipes/creme_brulee_cheesecake.html
+/recipes/curry-chicken-pot-pie
+/recipes/dal
+/recipes/dal.html
+/recipes/first-watch-seasoning
+/recipes/first_watch_seasoning.html
+/recipes/green-bean-bundles
+/recipes/green_bean_bundles.html
+/recipes/krishna-lunch-chili
+/recipes/lemonade
+/recipes/little-white-ball-cookies
+/recipes/mac-and-cheese
+/recipes/mac_and_cheese.html
+/recipes/mung_bean_dahl.html
+/recipes/popovers
+/recipes/popovers.html
+/recipes/pumpkin-bread
+/recipes/pumpkin_bread.html
+/recipes/quiche
+/recipes/quiche.html
+/recipes/salmon-pate
+/recipes/shortbread-cookies
+/recipes/sweet-potato-casserole
+/recipes/sweet_potato_casserole.html
+/recipes/thai-chicken-curry
+/recipes/thai_chicken_curry.html
+/redirects.caddy
+/robots.txt
+/tools
+/tools/krypto-generator
+/tools/stopwatch
+/tools/stopwatch.html
+/wiki
+/wiki/characters
+/wiki/dragee
+/wiki/dragee.html
+/wiki/early-twenty-first-century
+/wiki/early-twenty-first-century.html
+/wiki/games/capture-the-flag
+/wiki/games/capture-the-flag.html
+/wiki/games/narchanso-ball
+/wiki/games/narchanso-ball.html
+/wiki/games/the-base-game
+/wiki/games/the-base-game.html
+/wiki/games/trebuchennis
+/wiki/games/trebuchennis.html
+/wiki/git-building-blocks
+/wiki/git-thesaurus
+/wiki/linux/bash-configuration
+/wiki/linux/i3-firefox-context-menu-alignment-issue
+/wiki/linux/pulseaudio
+/wiki/linux/reboot-to-windows
+/wiki/meta/style-test
+/wiki/opposites
+/wiki/opposites.html
+/wiki/python/local-variable
+/wiki/the-caring-continuum
+/wiki/the-caring-continuum.html
+/wiki/thestruggle
+/wiki/thestruggle.html

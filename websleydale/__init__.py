@@ -32,6 +32,8 @@ from mistletoe import Document, HTMLRenderer
 from mistletoe.block_token import Heading
 from slugify import slugify
 
+from .urls import Urlfile, UrlfileEntry
+
 __version__ = "3.0-dev"
 
 logger = logging.getLogger(__name__)
@@ -97,6 +99,7 @@ def build(
     repo_name: str,
     repo_url: str,
     tree: Dict[str, FileProducer],
+    redirects: Dict[str, Redirect],
 ) -> None:
     global tempdir
 
@@ -151,6 +154,33 @@ def build(
             failures += 1
             logger.error("[%s] got unexpected result %r", path, result)
     logger.info("%s SUCCESS / %s FAILURE", successes, failures)
+
+    if failures:
+        logger.warning("Skipping URL coverage checks due to failures")
+        return
+
+    generated_urls: set[str] = set()
+    for dirpath, dirnames, filenames in destdir.walk():
+        for filename in filenames:
+            if filename == "index.html":
+                urlpath = f"{Path('/') / dirpath.relative_to(destdir)}"
+            else:
+                urlpath = f"/{(dirpath / filename).relative_to(destdir)}"
+            generated_urls.add(urlpath)
+    for redirect in redirects.keys():
+        if redirect in generated_urls:
+            logger.warning("Redirect covers existing page: %s", redirect)
+        generated_urls.add(redirect)
+
+    urlfile = Urlfile.read(Path())
+    missing = urlfile.urls() - generated_urls
+    for urlpath in missing:
+        logger.error("URL not generated: %s", urlpath)
+        if (entry := UrlfileEntry(urlpath)) in urlfile.entries:
+            urlfile.entries.remove(entry)
+        urlfile.entries.add(UrlfileEntry(urlpath, present=False))
+    urlfile.entries.update(UrlfileEntry(u) for u in generated_urls)
+    urlfile.write(Path())
 
 
 async def copy(

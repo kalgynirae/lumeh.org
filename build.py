@@ -196,4 +196,5 @@ build(
             "recipes",
         ),
     },
+    redirects=redirects,
 )

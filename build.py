@@ -2,8 +2,9 @@ import logging
 
 from websleydale import (
     Author,
-    Site,
+    Redirect,
     build,
+    caddy_redirects,
     dir,
     file,
     index,
@@ -19,7 +20,67 @@ def page(source, *, title: str | None = None):
     return jinja(markdown(source), template="page.html", title=title)
 
 
-site = Site(
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+perm = Redirect.permanent
+temp = Redirect.temporary
+
+redirects = {
+    "/andersonorgan": perm(
+        "/media/theandrewandersonmemorialpipeorganahistory-wittine.pdf"
+    ),
+    "/boxer.html": perm("/boxer/"),
+    "/games/narchanso.html": perm("/wiki/games/narchanso-ball/"),
+    "/jabberwockus.html": perm("/poetry/jabberwockus/"),
+    "/krypto.html": perm("/tools/krypto-generator/"),
+    "/lumeh.html": perm("/poetry/lumeh-god-of-light-bulbs/"),
+    "/music.html": perm("/music/"),
+    "/papenago-just-add-feet-2025": perm(
+        "https://docs.google.com/forms/d/e/1FAIpQLSdFVPWN3D_JJyHh1rnq00w0MpdP2FpN_ZpGveb1cCivSN5poQ/viewform?usp=sharing"
+    ),
+    "/poetry-yay.html": perm("/poetry/poetry-yay/"),
+    "/recipes/almond_salad_dressing.html": perm("/recipes/almond-salad-dressing/"),
+    "/recipes/apple_cider.html": perm("/recipes/apple-cider/"),
+    "/recipes/apple_crisp.html": perm("/recipes/apple-crisp/"),
+    "/recipes/asparagus_mushroom_soup.html": perm("/recipes/asparagus-mushroom-soup/"),
+    "/recipes/banana_bread.html": perm("/recipes/banana-bread/"),
+    "/recipes/bettys_chili.html": perm("/recipes/bettys-chili/"),
+    "/recipes/calico_beans.html": perm("/recipes/calico-beans/"),
+    "/recipes/chana_masala.html": perm("/recipes/chana-masala/"),
+    "/recipes/chana_masala_with_spice_kit.html": perm(
+        "/recipes/chana-masala-with-spice-kit/"
+    ),
+    "/recipes/chancakes.html": perm("/recipes/chancakes/"),
+    "/recipes/chicken_curry.html": perm("/recipes/chicken-curry/"),
+    "/recipes/chili.html": perm("/recipes/chili/"),
+    "/recipes/christmas_anything.html": perm("/recipes/christmas-anything/"),
+    "/recipes/cookies.html": perm("/recipes/cookies/"),
+    "/recipes/cottage_pie.html": perm("/recipes/cottage-pie/"),
+    "/recipes/creme_brulee_cheesecake.html": perm("/recipes/creme-brulee-cheesecake/"),
+    "/recipes/dal.html": perm("/recipes/dal/"),
+    "/recipes/first_watch_seasoning.html": perm("/recipes/first-watch-seasoning/"),
+    "/recipes/green_bean_bundles.html": perm("/recipes/green-bean-bundles/"),
+    "/recipes/mac_and_cheese.html": perm("/recipes/mac-and-cheese/"),
+    "/recipes/mung_bean_dahl.html": perm("/recipes/dal/"),
+    "/recipes/popovers.html": perm("/recipes/popovers/"),
+    "/recipes/pumpkin_bread.html": perm("/recipes/pumpkin-bread/"),
+    "/recipes/quiche.html": perm("/recipes/quiche/"),
+    "/recipes/sweet_potato_casserole.html": perm("/recipes/sweet-potato-casserole/"),
+    "/recipes/thai_chicken_curry.html": perm("/recipes/thai-chicken-curry/"),
+    "/tools/stopwatch.html": perm("/tools/stopwatch/"),
+    "/wiki/dragee.html": perm("/wiki/dragee/"),
+    "/wiki/early-twenty-first-century.html": perm("/wiki/early-twenty-first-century/"),
+    "/wiki/games/capture-the-flag.html": perm("/wiki/games/capture-the-flag/"),
+    "/wiki/games/narchanso-ball.html": perm("/wiki/games/narchanso-ball/"),
+    "/wiki/games/the-base-game.html": perm("/wiki/games/the-base-game/"),
+    "/wiki/games/trebuchennis.html": perm("/wiki/games/trebuchennis/"),
+    "/wiki/opposites.html": perm("/wiki/opposites/"),
+    "/wiki/the-caring-continuum.html": perm("/wiki/the-caring-continuum/"),
+    "/wiki/thestruggle.html": perm("/wiki/thestruggle/"),
+}
+
+build(
+    dest="out",
     known_authors={
         Author(
             display_name="Colin",
@@ -49,8 +110,7 @@ site = Site(
         "image": dir(root / "image"),
         "js": dir(root / "js"),
         "media": dir(root / "media"),
-        "redirects.conf": file(root / "redirects.conf"),
-        "redirects.caddy": file(root / "redirects.caddy"),
+        "redirects.caddy": caddy_redirects(redirects),
         "robots.txt": file(root / "robots.txt"),
         **index(
             {
@@ -137,6 +197,3 @@ site = Site(
         ),
     },
 )
-
-logging.basicConfig(level=logging.INFO, format="%(message)s")
-build(site, dest="out")

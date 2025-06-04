@@ -21,6 +21,7 @@ from typing import (
     Iterable,
     List,
     Optional,
+    Self,
     Set,
     cast,
 )
@@ -59,12 +60,11 @@ def outfile() -> Path:
 
 
 @dataclass
-class Site:
+class SiteMetadata:
     known_authors: Set[Author]
     name: str
     repo_name: str
     repo_url: str
-    tree: Dict[str, FileProducer]
     generator: str = "websleydale"
     time: datetime = datetime.now()
 
@@ -72,28 +72,59 @@ class Site:
 @dataclass
 class Info:
     path: str
-    site: Site
+    sitemeta: SiteMetadata
 
 
-def build(site: Site, *, dest: str) -> None:
+@dataclass
+class Redirect:
+    code: int
+    dest: str
+
+    @classmethod
+    def temporary(cls, dest: str) -> Self:
+        return cls(307, dest)
+
+    @classmethod
+    def permanent(cls, dest: str) -> Self:
+        return cls(308, dest)
+
+
+def build(
+    *,
+    dest: str,
+    known_authors: Set[Author],
+    name: str,
+    repo_name: str,
+    repo_url: str,
+    tree: Dict[str, FileProducer],
+) -> None:
     global tempdir
 
     destdir = Path(dest)
-    match is_output_dir(destdir):
-        case (True, _):
-            logger.debug("Removing existing output directory %s", destdir)
-            shutil.rmtree(destdir)
-        case (False, reason):
-            raise RuntimeError(f"Refusing to remove existing dest dir ({reason})")
-
+    if destdir.exists():
+        match is_output_dir(destdir):
+            case (True, _):
+                logger.debug("Removing existing output directory %s", destdir)
+                shutil.rmtree(destdir)
+            case (False, reason):
+                raise RuntimeError(f"Refusing to remove existing dest dir ({reason})")
     create_output_dir(destdir)
+
+    sitemeta = SiteMetadata(
+        known_authors=known_authors,
+        name=name,
+        repo_name=repo_name,
+        repo_url=repo_url,
+        generator="websleydale",
+        time=datetime.now(),
+    )
 
     tempdir = Path(mkdtemp(prefix="websleydale-"))
     logger.debug("Using tempdir %s", tempdir)
 
     awaitables = []
     paths = []
-    for pathstr, producer in site.tree.items():
+    for pathstr, producer in tree.items():
         if pathstr.startswith("/"):
             raise ValueError(f"Invalid path {pathstr!r} (starts with '/')")
         if not isinstance(producer, FileProducer):
@@ -101,9 +132,9 @@ def build(site: Site, *, dest: str) -> None:
                 f"item for path {pathstr!r} has invalid type {type(producer)}"
             )
         destpath = destdir / pathstr
-        info = Info(path=pathstr, site=site)
+        info = Info(path=pathstr, sitemeta=sitemeta)
         awaitables.append(copy(destpath, producer, info))
-        paths.append(pathstr)
+        paths.append(f"{destdir.name}/{pathstr}")
 
     results = asyncio.run(gather(awaitables))
     successes = 0
@@ -210,7 +241,7 @@ class file(FileProducer):
 
     async def run(self, info: Info) -> FileResult:
         logger.debug("[%s] Loading Git info", self.path)
-        gitinfo = await _git_file_info(self.path, info.site)
+        gitinfo = await _git_file_info(self.path, info.sitemeta)
         sourceinfo = SourceInfo(
             authors=gitinfo.authors,
             is_committed=gitinfo.updated_date is not None,
@@ -243,7 +274,7 @@ class merge(FileProducer):
         return FileResult(sourceinfo=None, path=dest)
 
 
-async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
+async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
     args = [
         "bash",
         "-c",
@@ -301,7 +332,7 @@ async def _git_file_info(file: Path, site: Site) -> GitFileInfo:
         datestr, email, name = line.split(maxsplit=2)
         if date is None:
             date = datetime.fromisoformat(datestr)
-        author = next((a for a in site.known_authors if email in a.emails), None)
+        author = next((a for a in sitemeta.known_authors if email in a.emails), None)
         if author is None:
             author = Author(display_name=name, emails={email}, url=None)
         authors[author] += 1
@@ -390,7 +421,7 @@ class jinja(FileProducer):
         if self.title is not None:
             pageinfo["title"] = self.title
         rendered = self.template.render(
-            page=pageinfo, site=info.site, source=source.sourceinfo
+            page=pageinfo, site=info.sitemeta, source=source.sourceinfo
         )
         dest.write_text(rendered)
 
@@ -412,6 +443,37 @@ class sass(FileProducer):
         if exitcode != 0:
             raise RuntimeError("pysassc failed")
         return FileResult(sourceinfo=source.sourceinfo, path=dest)
+
+
+class caddy_redirects(FileProducer):
+    def __init__(self, redirects: dict[str, Redirect]) -> None:
+        self.redirects = redirects
+
+    async def run(self, info: Info) -> FileResult:
+        lines = [
+            f"redir {self.quote_url(path)} {self.quote_url(redir.dest)} {redir.code}\n"
+            for path, redir in self.redirects.items()
+        ]
+        lines.sort()
+        dest = outfile()
+        dest.write_text("".join(lines))
+        return FileResult(sourceinfo=None, path=dest)
+
+    @staticmethod
+    def quote_url(url: str) -> str:
+        """Quote url for use as an argument in a Caddyfile.
+
+        The [docs] are vague, so the correctness of this logic is uncertain.
+
+        [docs]: https://caddyserver.com/docs/caddyfile/concepts#tokens-and-quotes
+        """
+        for c in '"\\':
+            if c in url:
+                raise ValueError(f"{c!r} is not allowed (does the URL need escaping?)")
+        if any(c.isspace() for c in url):
+            return f'"{url}"'
+        else:
+            return url
 
 
 class IdGenerator:

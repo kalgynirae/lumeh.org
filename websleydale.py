@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import os
 import shutil
 from abc import ABCMeta, abstractmethod
 from collections import Counter
@@ -51,8 +52,10 @@ def outdir() -> Path:
 
 def outfile() -> Path:
     if tempdir is None:
-        raise RuntimeError("outdir called while tempdir is None")
-    return Path(mkstemp(dir=tempdir)[1])
+        raise RuntimeError("outfile called while tempdir is None")
+    handle, path = mkstemp(dir=tempdir)
+    os.close(handle)
+    return Path(path)
 
 
 @dataclass

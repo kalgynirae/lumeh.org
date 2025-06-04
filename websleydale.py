@@ -79,9 +79,14 @@ def build(site: Site, *, dest: str) -> None:
     global tempdir
 
     destdir = Path(dest)
-    if destdir.exists():
-        logger.debug("Removing dest directory %s", destdir)
-        shutil.rmtree(destdir)
+    match is_output_dir(destdir):
+        case (True, _):
+            logger.debug("Removing existing output directory %s", destdir)
+            shutil.rmtree(destdir)
+        case (False, reason):
+            raise RuntimeError(f"Refusing to remove existing dest dir ({reason})")
+
+    create_output_dir(destdir)
 
     tempdir = Path(mkdtemp(prefix="websleydale-"))
     logger.debug("Using tempdir %s", tempdir)
@@ -466,3 +471,16 @@ def index(tree: Dict[str, FileProducer], *dirs: str) -> Dict[str, FileProducer]:
             for dir, paths in index_paths.items()
         },
     }
+
+
+def create_output_dir(path: Path) -> None:
+    path.mkdir()
+    (path / ".websleydale_output_dir").touch()
+
+
+def is_output_dir(dir: Path) -> tuple[bool, str]:
+    if not dir.is_dir():
+        return (False, "not a directory")
+    if not (dir / ".websleydale_output_dir").exists():
+        return (False, "doesn't contain file '.websleydale_output_dir'")
+    return (True, "")

@@ -284,13 +284,22 @@ class file(FileProducer):
 
 
 class dir(FileProducer):
-    def __init__(self, path: Path) -> None:
-        self.path = path
-        if not path.is_dir():
-            raise ValueError("not a dir: %s", path)
+    def __init__(self, path: Path, allow_missing: bool = False) -> None:
+        self.path: Path | None
+        if path.is_dir():
+            self.path = path
+        else:
+            if allow_missing:
+                self.path = None
+            else:
+                raise ValueError("not a dir: %s", path)
 
     async def run(self, info: Info) -> FileResult:
-        return FileResult(sourceinfo=None, path=self.path)
+        if self.path:
+            return FileResult(sourceinfo=None, path=self.path)
+        else:
+            empty_dir = outdir()
+            return FileResult(sourceinfo=None, path=empty_dir)
 
 
 class merge(FileProducer):

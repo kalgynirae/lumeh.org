@@ -104,8 +104,10 @@ build(
     tree={
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
         "docs": dir(root / "docs"),
-        "files": dir(root / "assets/files"),
-        "font": merge(dir(root / "font"), dir(root / "assets/font")),
+        "files": dir(root / "assets/files", allow_missing=True),
+        "font": merge(
+            dir(root / "font"), dir(root / "assets/font", allow_missing=True)
+        ),
         "guess": dir(root / "guess"),
         "image": dir(root / "image"),
         "js": dir(root / "js"),

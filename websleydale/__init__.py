@@ -541,7 +541,7 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
         inner = self.render_inner(token)
         if level > 1:
             identifier = self.ids.get_id(self.render_to_plain(token))
-            return f'<a class=anchor href="#{identifier}"><h{level} id="{identifier}">{inner}</h{level}></a>'
+            return f'<div id="{identifier}" class=anchor><a class=anchor-button href="#{identifier}"><l-icon name=anchor right></l-icon></a><h{level}>{inner}</h{level}></div>'
         else:
             return f"<h{level}>{inner}</h{level}>"
 

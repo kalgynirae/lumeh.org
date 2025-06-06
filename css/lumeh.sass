@@ -155,6 +155,7 @@ html
   --header-height: 108px
   --page-max-width: 920px
   --page-padding: 1rem
+  --page-gutter-width: 1.5rem
   --paragraph-spacing: 0.7rem
 
   @media (max-width: $mobile-width)
@@ -163,7 +164,8 @@ html
     --header-height: 80px
     --logo-padding: 8px
     --logo-size: 72px
-    --page-padding: 0.5rem
+    --page-padding: 1rem
+    --page-gutter-width: 0.4rem
 
 .page
   background-color: $bg-light
@@ -342,7 +344,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     background-color: $bg-dark
 
 .main-content
-  padding: calc(var(--paragraph-spacing) * 2) var(--page-padding) 1rem
+  padding: var(--page-padding)
+  padding-top: calc(var(--paragraph-spacing) * 2)
 
 p
   margin-bottom: var(--paragraph-spacing)
@@ -397,24 +400,42 @@ a
     &:active
       color: green !important
 
-a.anchor
-  color: inherit
-  text-decoration: none
+.anchor
+  margin-left: calc(-1 * var(--page-padding) - var(--page-gutter-width))
+
+  display: grid
+  align-items: first baseline
+  grid-template-columns: var(--page-gutter-width) 1fr
+  column-gap: var(--page-padding)
+
+  .anchor-button
+    grid-column: 1
+    display: none
+
+    border-top: 1px solid $text-faint
+    border-left: 1px solid $text-faint
+    border-bottom: 1px solid $bg-dark
+    border-right: 1px solid $text-faint
+    box-shadow: inset -1px -1px 0 $text-faint, inset 1px 1px 0 $bg-dark
+
+    color: $text-subtle
+    font-size: 1.2rem
+    text-decoration: none
 
   h1, h2, h3, h4, h5
+    grid-column: 2
+
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-    margin-left: calc(-1 * var(--page-padding))
-    margin-right: calc(-1 * var(--page-padding))
-    padding: 0 var(--page-padding)
 
-    &:hover
-      background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
-      border-top: 1px solid $blue
-      border-bottom: 1px solid $blue
-      box-shadow: 0 0 10px -4px $blue
-    &:target
-      background: oklch(from $blue calc(l + 0.24) calc(c - 0.08) h)
+  &:hover .anchor-button
+    display: block
+  &:target .anchor-button, .anchor-button:active
+    display: block
+    border-right: 1px solid oklch(from $link calc(l + 0.1) calc(c - 0.02) h)
+    box-shadow: inset 0 0 2px $link
+    background: oklch(from $link calc(l + 0.20) calc(c - 0.02) h)
+    color: $link
 
 img.inline
   display: inline-block

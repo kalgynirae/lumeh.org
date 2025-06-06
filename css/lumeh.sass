@@ -164,8 +164,7 @@ html
     --header-height: 80px
     --logo-padding: 8px
     --logo-size: 72px
-    --page-padding: 0.75rem
-    --page-gutter-width: 0.5rem
+    --page-padding: 0.5rem
 
 .page
   background-color: $bg-light
@@ -403,8 +402,16 @@ a
   grid-template-columns: var(--page-gutter-width) 1fr
   column-gap: var(--page-padding)
 
+  @media(max-width: $mobile-width)
+    margin-left: 0
+    grid-template-columns: 1fr var(--page-gutter-width)
+    column-gap: 0
+    grid-auto-flow: dense
+
   .anchor-button
     grid-column: 1
+    @media(max-width: $mobile-width)
+      grid-column: 2
     display: none
 
     border-top: 1px solid $text-faint
@@ -417,8 +424,13 @@ a
     font-size: 1.2rem
     text-decoration: none
 
+    @media(max-width: $mobile-width)
+      border: none
+
   h1, h2, h3, h4, h5
     grid-column: 2
+    @media(max-width: $mobile-width)
+      grid-column: 1
 
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent

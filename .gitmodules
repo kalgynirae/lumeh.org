@@ -4,9 +4,6 @@
 [submodule "projects/thinking-green"]
 	path = projects/thinking-green
 	url = https://github.com/kalgynirae/thinking-green.git
-[submodule "projects/websleydale"]
-	path = projects/websleydale
-	url = https://github.com/kalgynirae/websleydale.git
 [submodule "projects/slideception"]
 	path = projects/slideception
 	url = https://github.com/kalgynirae/slideception.git

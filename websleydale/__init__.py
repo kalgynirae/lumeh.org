@@ -30,6 +30,7 @@ import jinja2
 import yaml
 from mistletoe import Document, HTMLRenderer
 from mistletoe.block_token import Heading
+from mistletoe.span_token import InlineCode
 from slugify import slugify
 
 from .urls import Urlfile, UrlfileEntry
@@ -544,6 +545,13 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
             return f'<div id="{identifier}" class=anchor><a class=anchor-button href="#{identifier}"><l-icon name=anchor right></l-icon></a><h{level}>{inner}</h{level}></div>'
         else:
             return f"<h{level}>{inner}</h{level}>"
+
+    def render_inline_code(self, token: InlineCode) -> str:
+        template = "<code><span class=code-delimiter>`</span>{}<span class=code-delimiter>`</span></code>"
+        inner = self.escape_html_text(
+            token.children[0].content  # ty: ignore[non-subscriptable]
+        )
+        return template.format(inner)
 
 
 def index_page(paths: list[str], *, title: str) -> jinja:

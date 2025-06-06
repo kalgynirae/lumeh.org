@@ -67,6 +67,7 @@ class SiteMetadata:
     name: str
     repo_name: str
     repo_url: str
+    tree: Dict[str, FileProducer]
     generator: str = "websleydale"
     time: datetime = datetime.now()
 
@@ -118,6 +119,7 @@ def build(
         name=name,
         repo_name=repo_name,
         repo_url=repo_url,
+        tree=tree,
         generator="websleydale",
         time=datetime.now(),
     )

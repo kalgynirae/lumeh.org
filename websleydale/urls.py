@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from contextlib import ExitStack
 from dataclasses import dataclass
 from pathlib import Path
@@ -7,14 +9,14 @@ from typing import ClassVar, Self
 @dataclass(frozen=True, order=True)
 class UrlfileEntry:
     path: str
-    present: bool = True
+    present: bool
 
     @classmethod
     def parse(cls, s: str) -> Self:
         if (path := s.removeprefix("MISSING: ")) != s:
             return cls(path, present=False)
         else:
-            return cls(s)
+            return cls(s, present=True)
 
     def __post_init__(self) -> None:
         if not self.path.startswith("/"):
@@ -27,7 +29,7 @@ class UrlfileEntry:
             return f"MISSING: {self.path}"
 
 
-@dataclass(frozen=True)
+@dataclass
 class Urlfile:
     entries: set[UrlfileEntry]
 
@@ -55,8 +57,14 @@ class Urlfile:
                 entries.add(entry)
         return cls(entries)
 
-    def urls(self) -> set[str]:
-        return set(e.path for e in self.entries)
+    def update(self, generated_urls: set[str]) -> UrlUpdateResult:
+        file_urls = {entry.path for entry in self.entries}
+        missing = file_urls - generated_urls
+        self.entries = {
+            *(UrlfileEntry(path, present=True) for path in generated_urls),
+            *(UrlfileEntry(path, present=False) for path in missing),
+        }
+        return UrlUpdateResult(missing)
 
     def write(self, basedir: Path) -> None:
         dest = self.path(basedir)
@@ -70,3 +78,8 @@ class Urlfile:
         with dest.open("w") as f:
             f.write(self.FILE_HEADER)
             f.writelines(f"{e}\n" for e in sorted(self.entries))
+
+
+@dataclass(frozen=True)
+class UrlUpdateResult:
+    missing: set[str]

@@ -33,7 +33,7 @@ from mistletoe.block_token import Heading
 from mistletoe.span_token import InlineCode
 from slugify import slugify
 
-from .urls import Urlfile, UrlfileEntry
+from .urls import Urlfile
 
 __version__ = "3.0-dev"
 
@@ -176,13 +176,9 @@ def build(
         generated_urls.add(redirect)
 
     urlfile = Urlfile.read(Path())
-    missing = urlfile.urls() - generated_urls
-    for urlpath in missing:
+    result = urlfile.update(generated_urls)
+    for urlpath in result.missing:
         logger.error("URL not generated: %s", urlpath)
-        if (entry := UrlfileEntry(urlpath)) in urlfile.entries:
-            urlfile.entries.remove(entry)
-        urlfile.entries.add(UrlfileEntry(urlpath, present=False))
-    urlfile.entries.update(UrlfileEntry(u) for u in generated_urls)
     urlfile.write(Path())
 
 

@@ -109,7 +109,9 @@
           event.preventDefault();
           // Note: back and forward is needed to update :target selectors,
           // see https://stackoverflow.com/a/59013961
+          const oldOnpopstate = window.onpopstate;
           window.onpopstate = () => {
+            window.onpopstate = oldOnpopstate;
             history.forward();
           };
           history.back();

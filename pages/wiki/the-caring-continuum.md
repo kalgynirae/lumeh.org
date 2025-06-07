@@ -5,7 +5,7 @@ title: The Caring Continuum
 # The Caring Continuum
 
 The Caring Continuum is an illustration that explains the usage of the phrase
-"I couldn’t care less".
+“I couldn’t care less.”
 
 ## Illustration
 

@@ -17,8 +17,8 @@ retrieve the full contents of every tracked file as it was when the commit was
 made.
 
 This can be surprising because we often think of commits as *diffs*. For
-example, we might talk about changing one file in the repo and then "committing
-the change." Really, we are committing the new state of *all tracked files* --
+example, we might talk about changing one file in the repo and then “committing
+the change.” Really, we are committing the new state of *all tracked files* --
 it just so happens that all files but one are in the same state as they were in
 the previous commit.
 
@@ -49,7 +49,7 @@ is that a branch only points to a single commit, and that commit has a parent
 commit, which itself has a parent commit, and so on.
 
 Many Git commands appear to treat a branch as if it contains many commits.  For
-example, `git rebase` appears to move "the whole branch" to another base. Under
+example, `git rebase` appears to move “the whole branch” to another base. Under
 the hood, Git is computing on-the-fly the set of commits that are reachable from
 the branch but not from the branch’s configured upstream, and then rebasing
 the computed set of commits. The branch does not actually *contain* that set of
@@ -57,7 +57,7 @@ commits, but we often think of it that way when performing operations.
 
 Understanding that branches and tags are nothing more than pointers to specific
 commits can be very powerful for resolving problems. For example, many problems
-turn out to be some variant of "I want this branch to be over here." Well, since
+turn out to be some variant of “I want this branch to be over here.” Well, since
 the branch is just a pointer to a commit, you can just *change which commit it
 points to*, either with a command that specifically does that (e.g., `git branch
 -f <name> <hash>`) or by simply deleting the branch and creating a new one with
@@ -72,7 +72,7 @@ When you make a new commit, Git automatically moves the current branch to point
 to the new commit.
 
 If you `git checkout <hash>` to move to a specific commit, Git warns you that
-you are in "detached HEAD" state. This simply means that you have no current
+you are in “detached HEAD” state. This simply means that you have no current
 branch. If you commit in this state, no branch will be moved to point to the new
 commit, so you risk losing track of the new commit unless you remember to create
 a tag or branch there before you move somewhere else. However, this is really

@@ -59,7 +59,7 @@ multi-story swimming pool, and I used the [Godot game engine] to build it.
 
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Plausible Geometry.ogg" src-flac="/files/music/Synthmaster Lumpy - Plausible Geometry.flac" spotify="https://open.spotify.com/track/7Hv5lsEM2zpfYnYl8kq8oC?si=804a7586b3aa4738" youtube="https://www.youtube.com/watch?v=GcHz6Ycd61Y">
 
-*December 2020:* I upgraded to the "All Plugins" edition of FL Studio during a
+*December 2020:* I upgraded to the “All Plugins” edition of FL Studio during a
 recent sale, and made this track to try out some of the new plugins. I tried to
 make more use of syncopation to get a better groove, and I think it worked!
 

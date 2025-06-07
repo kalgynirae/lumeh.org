@@ -383,6 +383,7 @@
 /wiki/git-building-blocks
 /wiki/git-thesaurus
 /wiki/linux/bash-configuration
+/wiki/linux/colorize
 /wiki/linux/i3-firefox-context-menu-alignment-issue
 /wiki/linux/pulseaudio
 /wiki/linux/reboot-to-windows

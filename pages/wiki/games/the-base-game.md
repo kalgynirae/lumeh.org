@@ -9,4 +9,4 @@ title: The Base Game
 and Narciso families in the [early twenty-first century].
 
 [early twenty-first century]: /wiki/early-twenty-first-century/
-[“Homefree variant” of Manhunt]: https://en.wikipedia.org/wiki/Manhunt_(urban_game)#Homefree_variant
+[“Homefree variant” of Manhunt]: https://en.wikipedia.org/w/index.php?title=Manhunt_(urban_game)&oldid=844773182#Homefree_variant

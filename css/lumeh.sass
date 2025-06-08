@@ -99,6 +99,7 @@
 $page-border-radius: 20px
 $page-border-width: 2px
 $shadow-color: #a0a0a0
+$page-shadow-color: oklch(0 0 0 / 40%)
 
 $mobile-width: 650px
 
@@ -155,7 +156,6 @@ html
   --header-height: 108px
   --page-max-width: 920px
   --page-padding: 1rem
-  --page-gutter-width: 1.5rem
   --paragraph-spacing: 0.7rem
 
   @media (max-width: $mobile-width)
@@ -169,7 +169,7 @@ html
 .page
   background-color: $bg-light
   border-radius: $page-border-radius
-  box-shadow: 0 0 7px $shadow-color
+  box-shadow: 0 0 8px -1px $page-shadow-color
   margin: 0 auto
   max-width: var(--page-max-width)
 
@@ -395,37 +395,51 @@ a
     text-decoration: underline
 
 .anchor
-  margin-left: calc(-1 * var(--page-padding) - var(--page-gutter-width))
-
+  --anchor-button-width: 1.75rem
   display: grid
   align-items: first baseline
-  grid-template-columns: var(--page-gutter-width) 1fr
+  grid-auto-flow: dense
+
+  margin-left: calc(-1 * var(--page-padding) - var(--anchor-button-width))
+  grid-template-columns: var(--anchor-button-width) 1fr
   column-gap: var(--page-padding)
 
   @media(max-width: $mobile-width)
     margin-left: 0
-    grid-template-columns: 1fr var(--page-gutter-width)
+    grid-template-columns: 1fr var(--anchor-button-width)
     column-gap: 0
-    grid-auto-flow: dense
 
   .anchor-button
+    display: none
+
     grid-column: 1
     @media(max-width: $mobile-width)
       grid-column: 2
-    display: none
-
-    border-top: 1px solid $text-faint
-    border-left: 1px solid $text-faint
-    border-bottom: 1px solid $bg-dark
-    border-right: 1px solid $text-faint
-    box-shadow: inset -1px -1px 0 $text-faint, inset 1px 1px 0 $bg-dark
 
     color: $text-subtle
     font-size: 1.2rem
+    text-align: center
     text-decoration: none
 
-    @media(max-width: $mobile-width)
-      border: none
+    @media(min-width: $mobile-width + 1)
+      --anchor-button-highlight: oklch(from #{$bg-darker} calc(l + 0.1) c h)
+      --anchor-button-shadow: oklch(from #{$bg-darker} calc(l - 0.15) c h)
+      background-color: $bg-darker
+      border-top: 1px solid var(--anchor-button-shadow)
+      border-left: 1px solid var(--anchor-button-shadow)
+      border-bottom: 1px solid var(--anchor-button-highlight)
+      box-shadow: inset 0 -1px 0 0 var(--anchor-button-shadow), inset 1px 1px 0 0 var(--anchor-button-highlight)
+
+      // Fake the page shadow covering the button
+      position: relative
+      &::after
+        content: " "
+        position: absolute
+        left: -1px
+        right: 0
+        top: -1px
+        bottom: -1px
+        box-shadow: inset -7px 0 7px -7px $page-shadow-color
 
   h1, h2, h3, h4, h5
     grid-column: 2
@@ -439,8 +453,7 @@ a
     display: block
   &:target .anchor-button, .anchor-button:active
     display: block
-    border-right: 1px solid oklch(from $link calc(l + 0.1) calc(c - 0.02) h)
-    box-shadow: inset 0 0 2px $link
+    box-shadow: inset 0 0 2px 0 $link
     background: oklch(from $link calc(l + 0.20) calc(c - 0.02) h)
     color: $link
 
@@ -730,7 +743,7 @@ l-music
 l-icon
   white-space: nowrap
 
-  > .icon:not(.right)
+  > .icon:not(.right, .standalone)
     margin-right: 0.25ch
   > .icon.right
     margin-left: 0.25ch

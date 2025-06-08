@@ -95,6 +95,9 @@
           icon.classList.add("right");
           this.appendChild(icon);
         } else {
+          if (this.hasAttribute("standalone")) {
+            icon.classList.add("standalone");
+          }
           this.insertBefore(icon, this.firstChild);
         }
       }

@@ -17,14 +17,20 @@ you’re reading it there, I hope the explanation is useful!
 ## Building the site
 
 1. **Clone the repo.**
-2. **Init submodules** with `git submodule update --init`. Note that
-   this will fail to clone the *assets* repo (because it is private).
-3. **Build** with `uv run -s build.py`. Note that this will report many
-   missing files due to the absence of the *assets* repo.
+2. **Init submodules** with `git submodule update --init`. (Note that
+   this will fail to clone the private *assets* repo.)
+3. **Build** with `uv run -s build.py`.
 
 To view the result, run `./test.sh` and visit the displayed address in
-your browser. Note that this preview will use the wrong monospace font
-(since the correct one is only available via the *assets* repo).
+your browser.
+
+<aside class=important>
+
+**Note:** Because certain files are kept in a separate *assets* repo
+(which is private), some files are expected to be missing, and the test
+site will display with an incorrect monospaced font.
+
+</aside>
 
 ## Contributing
 

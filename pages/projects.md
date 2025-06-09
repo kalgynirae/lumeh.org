@@ -2,12 +2,15 @@
 title: Projects
 ---
 
-### Websites
+<div class=compact-headings>
+<h1 class=hidden>Projects</h1>
+
+## Websites
 
 * [lumeh.org](lumeh.org) – Colin Chan’s personal website
 * [sfago2024.org](sfago2024.org) – 2024 National Convention of the <a href=https://www.agohq.org/ rel=external target=_blank>American Guild of Organists</a>
 
-### Python libraries
+## Python libraries
 
 * [pchyme](pchyme) – hash text into short audio jingles
 * [Rockuefort](rockuefort) – plaintext syntax for music playlists
@@ -15,7 +18,7 @@ title: Projects
 * [Voidpop](voidpop) – dummy POP3 server live at *pop.voidpop.org*
 * [Websleydale](websleydale) – lumeh.org’s custom static site generator
 
-### Games
+## Games
 
 * [Thinking Green](thinking-green) – recycle to survive (Ludum Dare 23)
 * <a href=https://ldjam.com/events/ludum-dare/38/somethings-fishy rel=external target=_blank>Something’s Fishy</a>
@@ -36,3 +39,5 @@ title: Projects
 * <a href=https://ldjam.com/events/ludum-dare/57/speed-dating rel=external target=_blank>Speed Dating</a>
   (<a href=https://www.lumeh.org/games/speed-dating target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld57 rel=external target=_blank>repo</a>)
   – speedrun the underground dating scene (Ludum Dare 57)
+
+</div>

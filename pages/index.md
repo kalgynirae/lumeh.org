@@ -2,6 +2,9 @@
 title: Index
 ---
 
+<div class=compact-headings>
+<h1 class=hidden>lumeh.org</h1>
+
 **lumeh.org** is Colin Chan’s personal website.  It is ~~currently~~ *always*
 under <span id=construction>construction</span>. If you find anything that seems
 broken or wrong, you can
@@ -43,3 +46,5 @@ document.getElementById("construction").addEventListener("click", increaseConstr
 *   [Lumeh, God of Light Bulbs](/poetry/lumeh-god-of-light-bulbs/)
 *   [Jabberwockus](/poetry/jabberwockus/)
 *   [Poetry Yay](/poetry/poetry-yay/)
+
+</div>

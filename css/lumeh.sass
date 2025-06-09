@@ -455,6 +455,28 @@ a
         bottom: -1px
         box-shadow: inset -7px 0 7px -7px $page-shadow-color
 
+    @media(max-width: $mobile-width)
+      border-radius: 0.25rem
+      &:hover
+        color: $link
+
+  &:target .anchor-button, .anchor-button:active
+    background: oklch(from $link calc(l + 0.20) calc(c - 0.02) h)
+    box-shadow: inset 0 0 2px 0 $link
+    color: $link
+    display: block
+
+    @media(max-width: $mobile-width)
+      border-top: 1px solid $link
+      border-left: 1px solid $link
+      border-bottom: 1px solid oklch(from $link calc(l + 0.1) calc(c - 0.05) h)
+      border-right: 1px solid oklch(from $link calc(l + 0.1) calc(c - 0.05) h)
+      box-shadow: none
+      box-shadow: inset 1px 1px 0 0 oklch(from $link calc(l - 0.1) calc(c - 0.05) h)
+
+  &:hover .anchor-button
+    display: block
+
   h1, h2, h3, h4, h5
     grid-column: 2
     @media(max-width: $mobile-width)
@@ -462,14 +484,6 @@ a
 
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-
-  &:hover .anchor-button
-    display: block
-  &:target .anchor-button, .anchor-button:active
-    display: block
-    box-shadow: inset 0 0 2px 0 $link
-    background: oklch(from $link calc(l + 0.20) calc(c - 0.02) h)
-    color: $link
 
 img.inline
   display: inline-block

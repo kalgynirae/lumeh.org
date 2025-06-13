@@ -374,7 +374,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/264.pdf">
+      <a class=link href="/files/hymns/264.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>

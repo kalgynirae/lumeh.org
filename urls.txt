@@ -19,6 +19,7 @@
 /files/hymns/162.pdf
 /files/hymns/200.pdf
 /files/hymns/263.pdf
+/files/hymns/264.pdf
 /files/hymns/293.pdf
 /files/hymns/299-piano.pdf
 /files/hymns/299.pdf

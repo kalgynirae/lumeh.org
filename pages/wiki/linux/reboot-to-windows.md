@@ -52,8 +52,7 @@ variable. For example, if I want my machine to boot into Windows next, I can run
 
 <pre><samp><span class=prompt>$</span> <kbd>sudo efibootmgr --bootnext 0002</kbd>
 BootNext: 0002
-BootCurrent: 0000
-<span class=abridged>[…remaining output same as before]</span>
+<span class=abridged>[…]</span>
 </samp></pre>
 
 ## reboot-to-windows script
@@ -63,21 +62,19 @@ hard-code this ID (since it could change if I re-install in the future), so I wr
 it and reboot the machine.
 
 <figure class=fullwidth>
-<figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
-  <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"/>
-</svg>/home/colin/bin/reboot-to-windows</figcaption>
+<figcaption><l-icon name=file>/home/colin/bin/reboot-to-windows</l-icon></figcaption>
 <pre><code><span class=shebang>#!/bin/bash</span>
-<br>if output=$(<span class=command>efibootmgr | grep Windows</span>) && [[ $output =~ Boot([[:xdigit:]]{4}) ]]; then
+<br>if output=$(<em>efibootmgr | grep Windows</em>) && [[ $output =~ Boot([[:xdigit:]]{4}) ]]; then
   windows_id=${BASH_REMATCH[1]}
 else
   echo &gt;&2 "No EFI boot entry found matching 'Windows'"
   exit 1
 fi
-<br>if ! <span class=command>sudo efibootmgr --bootnext "$windows_id"</span>; then
+<br>if ! <em>sudo efibootmgr --bootnext "$windows_id"</em>; then
   echo &gt;&2 "Failed to set next boot; aborting"
   exit 1
 fi
-<br><span class=command>systemctl --quiet --no-block reboot</span>
+<br><em>systemctl --quiet --no-block reboot</em>
 </code></pre>
 </figure>
 
@@ -87,9 +84,7 @@ fi
 for a password, I added the following to <span class=path>/etc/sudoers</span>.
 
 <figure class=fullwidth>
-<figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-minus-fill" viewBox="0 0 16 16">
-  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6 8.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1"/>
-</svg>/etc/sudoers <span class=excerpt>(excerpt)</span></figcaption>
+<figcaption><l-icon name=file-partial>/etc/sudoers</l-icon> <span class=excerpt>(excerpt)</span></figcaption>
 <pre><code>%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/efibootmgr ^--bootnext [[:xdigit:]]+$
 </code></pre>
 </figure>
@@ -107,9 +102,7 @@ I use [greetd] as my login manager, but this should work for any login manager t
 [greetd]: https://wiki.archlinux.org/title/Greetd
 
 <figure class=fullwidth>
-<figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
-  <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"/>
-</svg>/usr/share/wayland-sessions/reboot-to-windows.desktop</figcaption>
+<figcaption><l-icon name=file>/usr/share/wayland-sessions/reboot-to-windows.desktop</l-icon></figcaption>
 <pre><code>[Desktop Entry]
 Name=Reboot to Windows
 Exec=/home/colin/bin/reboot-to-windows
@@ -122,9 +115,7 @@ Type=Application
 I achieve this with a systemd service and timer.
 
 <figure class=fullwidth>
-<figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
-  <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"/>
-</svg>/etc/systemd/system/reboot-to-windows.service</figcaption>
+<figcaption><l-icon name=file>/etc/systemd/system/reboot-to-windows.service</l-icon></figcaption>
 <pre><code>[Service]
 Type=oneshot
 ExecCondition=bash -c "! loginctl list-sessions --json=short | jq -e '.[]|select(.seat != null && .user != \"greeter\")'"
@@ -143,9 +134,7 @@ found (meaning the reboot should not proceed).
 The corresponding timer triggers this service to start two minutes after the machine boots. 
 
 <figure class=fullwidth>
-<figcaption><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
-  <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"/>
-</svg>/etc/systemd/system/reboot-to-windows.timer</figcaption>
+<figcaption><l-icon name=file>/etc/systemd/system/reboot-to-windows.timer</l-icon></figcaption>
 <pre><code>[Timer]
 OnActiveSec=2m
 <br>[Install]

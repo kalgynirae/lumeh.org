@@ -602,6 +602,15 @@ These are a few of my favorites:
         </div>
       </a>
     </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/QvoWOgUNj4c">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 

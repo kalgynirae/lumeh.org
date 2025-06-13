@@ -591,7 +591,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/381-prelude.pdf">
+      <a class=link href="/files/hymns/381-prelude.pdf">
         <l-icon name=musicnote></l-icon>
         <div>
           <div class=type>Prelude</div>

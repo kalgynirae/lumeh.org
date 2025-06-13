@@ -543,7 +543,7 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
             return f"<h{level}>{inner}</h{level}>"
 
     def render_inline_code(self, token: InlineCode) -> str:
-        template = "<code><span class=code-delimiter>`</span>{}<span class=code-delimiter>`</span></code>"
+        template = "<code>{}</code>"
         inner = self.escape_html_text(
             token.children[0].content  # ty: ignore[non-subscriptable]
         )

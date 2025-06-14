@@ -388,6 +388,7 @@
 /wiki/linux/i3-firefox-context-menu-alignment-issue
 /wiki/linux/pulseaudio
 /wiki/linux/reboot-to-windows
+/wiki/linux/systemd/type-notify
 /wiki/meta/style-test
 /wiki/opposites
 /wiki/opposites.html

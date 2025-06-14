@@ -544,6 +544,12 @@ pre
     white-space: pre
     width: min-content
 
+    b
+      font-weight: 650
+      color: $text-cyan
+    i
+      font-style: inherit
+      color: $text-yellow
     em
       font-weight: 650
       font-style: inherit
@@ -560,27 +566,30 @@ pre
       font-style: oblique
       > em
         font-style: normal
+    span.placeholder
+      color: $text-orange
+      font-style: italic
     span.prompt
       color: $text-green
       font-weight: 650
     span.shebang
       color: $text-subtle
       font-style: oblique
-    span.fg-red
+    .fg-red
       color: $text-red
-    span.fg-orange
+    .fg-orange
       color: $text-orange
-    span.fg-yellow
+    .fg-yellow
       color: $text-yellow
-    span.fg-green
+    .fg-green
       color: $text-green
-    span.fg-cyan
+    .fg-cyan
       color: $text-cyan
-    span.fg-blue
+    .fg-blue
       color: $text-blue
-    span.fg-violet
+    .fg-violet
       color: $text-violet
-    span.fg-magenta
+    .fg-magenta
       color: $text-magenta
 
 aside, figure:not(.fullwidth)
@@ -590,7 +599,7 @@ aside, figure:not(.fullwidth)
   margin: 1rem 2rem
   padding: 0.5rem var(--page-padding) 0
 
-  &:has(pre:first-child)
+  &:has(>pre:first-child)
     padding-top: 0
   & > pre:first-child
     border-top: 0

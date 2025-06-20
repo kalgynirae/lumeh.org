@@ -118,7 +118,6 @@ These are a few of my favorites:
   <div class=details>
     <div class=tune>Tune: BENEVENTO</div>
     <div class=key>Key: E♭</div>
-    <div class=alternate>Consider instead: <a href="#csh-405">405</a></div>
   </div>
   <div class=files>
     <div class=file>

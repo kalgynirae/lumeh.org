@@ -420,6 +420,29 @@ These are a few of my favorites:
   </div>
 </div>
 
+<div class=hymn id=csh-270>
+  <div class=number>270</div>
+  <div class=firstline>Our God is Love, unchanging Love</div>
+  <div class=details>
+    <div class=tune>Tune: KINGSFOLD</div>
+    <div class=key>Key: e</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/270.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: e</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class=hymn id=csh-275>
   <div class=number>275</div>
   <div class=firstline>Praise now creative Mind</div>

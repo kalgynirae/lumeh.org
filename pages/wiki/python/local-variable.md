@@ -1,5 +1,6 @@
 ---
 title: Local Variable
+show_authors: true
 ---
 
 # Local Variable

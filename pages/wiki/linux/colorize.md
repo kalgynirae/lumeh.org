@@ -1,5 +1,6 @@
 ---
 title: Colorize
+show_authors: true
 ---
 
 # Colorize

@@ -1,5 +1,6 @@
 ---
 title: Capture the Flag
+show_authors: true
 ---
 
 ```

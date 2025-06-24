@@ -239,6 +239,7 @@ class TextProducer(metaclass=ABCMeta):
 @dataclass(frozen=True)
 class Author:
     display_name: str
+    full_name: str
     emails: Set[str] = field(hash=False)
     url: Optional[str]
 
@@ -372,7 +373,9 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
             date = datetime.fromisoformat(datestr)
         author = next((a for a in sitemeta.known_authors if email in a.emails), None)
         if author is None:
-            author = Author(display_name=name, emails={email}, url=None)
+            author = Author(
+                display_name=name, full_name=email, emails={email}, url=None
+            )
         authors[author] += 1
 
     return GitFileInfo(

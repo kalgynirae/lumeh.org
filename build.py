@@ -84,16 +84,19 @@ build(
     known_authors={
         Author(
             display_name="Colin",
+            full_name="Colin Chan",
             emails={"colinchan@lumeh.org", "colin+git@lumeh.org"},
             url="https://github.com/kalgynirae",
         ),
         Author(
             display_name="Benjamin",
+            full_name="Benjamin Woodruff",
             emails={"github@benjam.info"},
             url="https://github.com/bgw",
         ),
         Author(
             display_name="Tyler",
+            full_name="Tyler Laprade",
             emails={"pinkmonkeyblue@gmail.com"},
             url="https://github.com/tylerlaprade",
         ),

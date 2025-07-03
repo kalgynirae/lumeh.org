@@ -40,6 +40,15 @@ These are a few of my favorites:
         </div>
       </a>
     </div>
+    <div class=file>
+      <a class=link href="https://drive.google.com/file/d/1Xu1L-sR7gB3GYG45H1PaI0hpyxK6ayJe/view?usp=drive_link">
+        <l-icon name=filetype-mp3></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>Google Drive</div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -52,7 +61,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/9.pdf">
+      <a class=link href="/files/hymns/009.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -121,7 +130,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/72.pdf">
+      <a class=link href="/files/hymns/072.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -173,18 +182,6 @@ These are a few of my favorites:
           <div class=type>Hymn Accompaniment</div>
           <div class=details>
             <div class=key>Key: E♭</div>
-            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/75-d.pdf">
-        <l-icon name=journal></l-icon>
-        <div>
-          <div class=type>Hymn Accompaniment</div>
-          <div class=details>
-            <div class=key>Key: D</div>
             <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
           </div>
         </div>
@@ -281,7 +278,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/201.pdf">
+      <a class=link href="/files/hymns/201.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -655,7 +652,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/405.pdf">
+      <a class=link href="/files/hymns/405.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -678,7 +675,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/408.pdf">
+      <a class=link href="/files/hymns/408.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -701,7 +698,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/417.pdf">
+      <a class=link href="/files/hymns/417.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -724,7 +721,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/460.pdf">
+      <a class=link href="/files/hymns/460.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -747,7 +744,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/468.pdf">
+      <a class=link href="/files/hymns/468.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -755,6 +752,15 @@ These are a few of my favorites:
             <div class=key>Key: C</div>
             <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
           </div>
+        </div>
+      </a>
+    </div>
+    <div class=file>
+      <a class=link href="https://drive.google.com/file/d/1Yh5uacu-UfEGKskKJ3K0Um5ncuhyeW2i/view?usp=drive_link">
+        <l-icon name=filetype-mp3></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>Google Drive</div>
         </div>
       </a>
     </div>
@@ -1029,6 +1035,16 @@ These are a few of my favorites:
         </div>
       </a>
       <div><a href="https://youtu.be/QicHGWM4huY?t=77">1:17</a> reharm, <a href="https://youtu.be/QicHGWM4huY?t=115">1:55</a> reharm</div>
+    </div>
+    <div class=file>
+      <a class=link href="https://drive.google.com/file/d/1ihU0Gy0clUBdLaXbsARyTjz50b_TaNKU/view?usp=drive_link">
+        <l-icon name=filetype-mp3></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>Google Drive</div>
+        </div>
+      </a>
+      <div>Mixed for louder playback (quieter voice)</div>
     </div>
   </div>
 </div>

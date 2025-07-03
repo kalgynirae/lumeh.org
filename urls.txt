@@ -359,6 +359,7 @@
 /recipes/quiche.html
 /recipes/salmon-pate
 /recipes/shortbread-cookies
+/recipes/spiced-spinach
 /recipes/sweet-potato-casserole
 /recipes/sweet_potato_casserole.html
 /recipes/thai-chicken-curry

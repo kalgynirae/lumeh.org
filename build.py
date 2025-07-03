@@ -181,6 +181,7 @@ build(
                     "quiche",
                     "salmon_pate",
                     "shortbread_cookies",
+                    "spiced_spinach",
                     "sweet_potato_casserole",
                     "thai_chicken_curry",
                 ]

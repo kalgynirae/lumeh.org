@@ -12,12 +12,15 @@
 /docs/resume-20241215.pdf
 /error/404
 /files/hymns/001.pdf
+/files/hymns/009.pdf
 /files/hymns/010.pdf
 /files/hymns/059.pdf
+/files/hymns/072.pdf
 /files/hymns/075.pdf
 /files/hymns/139.pdf
 /files/hymns/162.pdf
 /files/hymns/200.pdf
+/files/hymns/201.pdf
 /files/hymns/263.pdf
 /files/hymns/264.pdf
 /files/hymns/270.pdf
@@ -27,6 +30,11 @@
 /files/hymns/342.pdf
 /files/hymns/350.pdf
 /files/hymns/381-prelude.pdf
+/files/hymns/405.pdf
+/files/hymns/408.pdf
+/files/hymns/417.pdf
+/files/hymns/460.pdf
+/files/hymns/468.pdf
 /files/hymns/480.pdf
 /files/hymns/499.pdf
 /files/hymns/537.pdf

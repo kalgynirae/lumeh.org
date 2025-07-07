@@ -136,6 +136,28 @@
         }
       });
     })
+
+    // Browsers on iOS don't handle the FRACTION SLASH character correctly,
+    // so we have to replace those with explicitly-styled fractions.
+    function replaceFractions(element) {
+      for (let node of element.childNodes) {
+        switch (node.nodeType) {
+          case Node.TEXT_NODE:
+            if (node.textContent.includes("\u2044")) {
+              let span = document.createElement("span");
+              span.innerHTML = node.textContent.replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll(/(\d+)\u2044(\d+)/g, "<span class=replaced-fraction><span class=numerator>$1</span><span class=slash>\u2044</span><span class=denominator>$2</span></span>");
+              node.replaceWith(span);
+            }
+            break;
+          case Node.ELEMENT_NODE:
+            replaceFractions(node);
+            break;
+        }
+      }
+    }
+    if (/^(ipad|iphone|ipod|mac)/i.test(navigator.platform)) {
+      replaceFractions(document.body);
+    }
   </script>
 </body>
 </html>

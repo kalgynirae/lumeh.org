@@ -19,7 +19,7 @@ you’re reading it there, I hope the explanation is useful!
 1. **Clone the repo.**
 2. **Init submodules** with `git submodule update --init`. (Note that
    this will fail to clone the private *assets* repo.)
-3. **Build** with `uv run -s build.py`.
+3. **Build** with `./build.sh`.
 
 To view the result, run `./test.sh` and visit the displayed address in
 your browser.

@@ -4,7 +4,18 @@ author: Colin Chan
 date: 2009-10-19
 ---
 
-# Lumeh, God of Light Bulbs
+<style>
+.lumeh-name {
+  font-variant-caps: small-caps;
+  font-weight: 520;
+  letter-spacing: 0.10em;
+  &>span {
+    font-weight: 400;
+  }
+}
+</style>
+
+# <span class=lumeh-name><span>L</span>umeh</span>, God of Light Bulbs
 
 > Thomas Edward was quite smart,\
 > But money had he none.\
@@ -61,7 +72,7 @@ date: 2009-10-19
 > But mighty Zeus just stood and laughed\
 > At his imminent downfall.
 >
-> Then Lumeh, God of Light Bulbs,\
+> Then <span class=lumeh-name><span>L</span>umeh</span>, God of Light Bulbs,\
 > In a blinding flash of light\
 > Appeared and said to Thomas,\
 > “Now lemme make things right.”
@@ -72,12 +83,12 @@ date: 2009-10-19
 > He began to brightly glow.
 >
 > Zeus’s eyes were blinded.\
-> Lumeh was alight;\
+> <span class=lumeh-name><span>L</span>umeh</span> was alight;\
 > He suddenly exploded,\
 > But Thomas was alright.
 >
 > Thomas looked with wonder,\
-> For though Lumeh was defunct,\
+> For though <span class=lumeh-name><span>L</span>umeh</span> was defunct,\
 > To Thomas Edward’s light bulb\
 > A bright glowing was adjunct.
 >

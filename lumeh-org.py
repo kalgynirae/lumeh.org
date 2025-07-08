@@ -124,7 +124,7 @@ build(
                     if path.name == "index.md"
                     else f"{path.relative_to(root / 'pages').with_suffix('')}/"
                 ): page(path)
-                for path in root.glob("pages/**/*.md")
+                for path in sorted(root.glob("pages/**/*.md"))
             },
             "poetry",
             "tools",

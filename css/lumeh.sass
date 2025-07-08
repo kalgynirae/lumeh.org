@@ -506,8 +506,15 @@ p > img:not(.inline)
 strong
   font-weight: 600
 
-code, kbd, samp
+code, kbd
   @include font-berkeley-mono-inline
+  hyphens: manual
+  white-space: pre-wrap
+  padding: 0 0.05em
+  background-color: $bg-dark
+
+samp
+  font-family: inherit
   hyphens: manual
   white-space: pre-wrap
   padding: 0 0.05em
@@ -878,3 +885,9 @@ l-icon
     font-variant-position: super
   .denominator
     font-variant-position: sub
+
+p.footnote
+  @include font-crimson-pro-midsmall
+
+  &:target
+    background-color: $bg-highlight

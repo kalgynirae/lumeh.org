@@ -24,6 +24,10 @@ A haphazard collection of information curated by me!
 
 * [Local Variable](python/local-variable/)
 
+## Web
+
+* [Fractions](web/fractions/)
+
 ## Games
 
 * [Capture the Flag](games/capture-the-flag/)

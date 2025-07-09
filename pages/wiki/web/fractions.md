@@ -5,9 +5,10 @@ show_authors: true
 
 # Fractions
 
-<samp>1⁄4 cup vegetable oil</samp>… or maybe <samp>1/2 cup slivered almonds</samp>. Perhaps
-<samp>0.75 cups water</samp>. Which fraction format do you prefer? I publish many [recipes] on this
-site, and I want the measurements to look *good*. This turned out to be complicated.
+<samp>1⁄4 cup vegetable oil</samp>, <samp>1/2 cup slivered almonds</samp>,
+<samp>0.75 cups water</samp>… Which fraction format do you prefer? For me, the first one is the
+winner. I publish many [recipes] on this site, and I want the measurements to look good. But like
+many things web, this turned out to be more complicated than expected.
 
 [recipes]: /recipes/
 
@@ -15,7 +16,7 @@ site, and I want the measurements to look *good*. This turned out to be complica
 
 Common fractions have their own Unicode codepoints. At time of writing, the full set is:
 ¼ ½ ¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ↉. But these have a few problems. They’re limited—no
-5⁄16 for you—and worse, many of them just *look wrong*. That’s because this font (<a
+1⁄16, for example—and many of them just look *wrong*. That’s because this font (<a
 href=https://fonts.google.com/specimen/Crimson+Pro rel=external target=_blank>Crimson Pro</a>) only
 supplies glyphs for the first three of these fractions; the rest, if you can see them at all, are
 coming from fallback fonts chosen by your browser or OS.
@@ -42,6 +43,7 @@ coming from fallback fonts chosen by your browser or OS.
   <div class="fraction-images bleed">
     <span>my PC (Linux):</span><img src=unicode-fractions-linux.png>
     <span>my phone (Android):</span><img src=unicode-fractions-android.png>
+    <span>my iPad (iPadOS):</span><img src=unicode-fractions-ios.png>
   </div>
   <figcaption>Common fractions as displayed by various devices</figcaption>
 </figure>
@@ -61,13 +63,13 @@ From my brief testing, fractions written with the fraction slash render correctl
 
 But they don’t render correctly in:
 
-* Safari on iOS
-* Chrome on iOS
+* Safari on iPadOS
+* Chrome on iPadOS
 
 These lists are obviously incomplete, but the takeaway for me was that I needed to do something
-different for iOS browsers.
+different for iPadOS devices (and, I’m assuming, other Apple devices).
 
-## Fixing fractions for iOS browsers
+## Fixing fractions for Apple devices
 
 Goal: Surround each fraction on the page with HTML spans that can be styled with CSS, and, ideally,
 only do this when it’s actually needed.
@@ -123,20 +125,8 @@ the text to HTML by replacing each `&` with `&amp;`, and so on. You can think of
 the text into something that the HTML parser will *decode* back into the original text. Once I have
 HTML instead of text, I can replace each bare fraction with its HTML version.
 
-The final piece of the puzzle is to figure out how to do this processing only for the browsers that
-need it. Ideally, I would be able to detect whether the browser supports fraction slash rendering,
-but as far as I can tell this isn’t possible. I settled for attempting to detect iOS itself based on
-the value of *navigator.platform*. A Stack Overflow answer<a href=#ref2><sup>[2]</sup></a> suggested
-some potential values to check for, but I had to add *mac* to the list to get this to trigger on
-my iPad.
-
-<pre><code><span class=kw>if</span> (<span class=fg-red>/^(ipad|iphone|ipod|mac)/i</span>.test(navigator.platform)) {
-  replaceFractions(document.body);
-}
-</code></pre>
-
-Oh, and here’s the CSS I’m using to style these fractions. Note that using *font-variant-position*
-for superscript and subscript styles won’t look good unless the font specifically supports it.
+Here’s the CSS I’m using to style these fractions. Note that using *font-variant-position* for
+superscript and subscript styles won’t look good unless the font specifically supports it.
 
 <pre><code>.replaced-fraction {
   .numerator {
@@ -148,10 +138,60 @@ for superscript and subscript styles won’t look good unless the font specifica
 }
 </code></pre>
 
+The final piece of the puzzle is to actually run this code over the whole page, but only on
+devices that need it. Ideally, I would be able to detect whether the browser supports fraction
+slash rendering, but as far as I can tell this isn’t possible. I settled instead for a simple test
+of *navigator.platform*. A Stack Overflow answer<a href=#ref2><sup>[2]</sup></a> suggested some
+potential values to check for, but I had to add *mac* to the list to get this to trigger on my iPad.
+
+<pre><code><span class=kw>if</span> (<span class=fg-red>/^(ipad|iphone|ipod|mac)/i</span>.test(navigator.platform)) {
+  replaceFractions(document.body);
+}
+</code></pre>
+
 ## Did I succeed?
 
-If ¼ (single character) and 1⁄4 (fraction slash) look notably different on your device, please
-<a href="https://github.com/kalgynirae/lumeh.org/issues/new?title=Fraction+disaster&body=%3CPlease+upload+a+screenshot+showing+the+difference+and+mention+your+OS+and+browser+version%3E" rel=external target=_blank>let me know</a>!
+How do these look on your device?
+
+<figure>
+  <div class=fraction-comparison>
+    <div><strong>¼</strong><span>single character</span></div>
+    <div><strong class=skip-fraction-replacement>1⁄4</strong><span>fraction slash without fix</span></div>
+    <div><strong><span class=hide-if-replaced>–</span><span class=frac>1⁄4</span></strong><span>fraction slash with fix</span></div>
+  </div>
+</figure>
+<style>
+.fraction-comparison {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: var(--paragraph-spacing);
+  > div {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5rem;
+    text-wrap: balance;
+    text-align: center;
+    strong {
+      font-size: 1.5em;
+    }
+  }
+}
+.hide-if-replaced {
+  &:has(+ .frac .replaced-fraction) {
+    display: none;
+  }
+  + .frac {
+    display: none;
+  }
+  + .frac:has(.replaced-fraction) {
+    display: inline;
+  }
+}
+</style>
+
+A dash in the final column indicates that my fix wasn’t applied on your device. If the left and
+center don’t match and the fix wasn’t applied, or if the fixed version doesn’t match, please
+<a href="https://github.com/kalgynirae/lumeh.org/issues/new?title=Fraction+disaster&body=%3CPlease+include+a+screenshot+showing+the+difference+and+mention+your+OS+and+browser+version%3E" rel=external target=_blank>let me know</a>!
 
 ## References
 

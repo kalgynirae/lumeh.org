@@ -143,7 +143,9 @@
       for (let node of element.childNodes) {
         switch (node.nodeType) {
           case Node.ELEMENT_NODE:
-            replaceFractions(node);
+            if (!node.classList.contains("skip-fraction-replacement")) {
+              replaceFractions(node);
+            }
             break;
           case Node.TEXT_NODE:
             if (node.textContent.includes("\u2044")) {

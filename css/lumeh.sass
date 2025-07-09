@@ -151,6 +151,8 @@ html
   padding: 1.5rem 2rem 3rem
   scroll-behavior: smooth
 
+  --color-bg-dark: #{$bg-dark}
+
   --logo-padding: 12px
   --logo-size: 96px
   --header-height: 108px
@@ -577,6 +579,9 @@ pre
       font-style: oblique
       > em
         font-style: normal
+    span.kw
+      color: $text-subtle
+      font-weight: 750
     span.placeholder
       color: $text-orange
       font-style: italic
@@ -627,6 +632,18 @@ aside, figure:not(.fullwidth)
 
   &.update
     border-color: $purple
+
+figure:not(.fullwidth)
+  > .bleed
+    margin: -0.5rem calc(-1 * var(--page-padding)) 0
+    padding: 0.5rem var(--page-padding) 0.5rem
+
+  > figcaption
+    font-style: italic
+    text-align: center
+
+    &:last-child
+      padding-bottom: 0.25rem
 
 figure.fullwidth
   margin: 0
@@ -891,3 +908,6 @@ p.footnote
 
   &:target
     background-color: $bg-highlight
+
+span.ref
+  font-variant-numeric: tabular-nums

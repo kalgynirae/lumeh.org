@@ -1,26 +1,58 @@
 ---
 title: Fractions
+show_authors: true
 ---
 
 # Fractions
 
-I often write recipes, and I think <samp>1⁄2 cup</samp> looks a lot better than <samp>1/2 cup</samp>
-or <samp>0.5 cup</samp>. This page documents the complications I ran into while achieving this.
+<samp>1⁄4 cup vegetable oil</samp>… or maybe <samp>1/2 cup slivered almonds</samp>. Perhaps
+<samp>0.75 cups water</samp>. Which fraction format do you prefer? I publish many [recipes] on this
+site, and I want the measurements to look *good*. This turned out to be complicated.
 
-## Predefined fraction characters
+[recipes]: /recipes/
 
-Unicode defines codepoints for commonly-used fractions. At time of writing, the full set is: ¼ ½
-¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ↉. But these have a few problems. For my use case, the main issue
-is that most of these fractions *look wrong*. That’s because the font I’m using (Crimson Pro)
-only supplies glyphs for the first three of these fractions; the rest end up being rendered using
-fallback fonts chosen by the OS or browser.
+## Common fractions
+
+Common fractions have their own Unicode codepoints. At time of writing, the full set is:
+¼ ½ ¾ ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ↉. But these have a few problems. They’re limited—no
+5⁄16 for you—and worse, many of them just *look wrong*. That’s because this font (<a
+href=https://fonts.google.com/specimen/Crimson+Pro rel=external target=_blank>Crimson Pro</a>) only
+supplies glyphs for the first three of these fractions; the rest, if you can see them at all, are
+coming from fallback fonts chosen by your browser or OS.
+
+<style>
+.fraction-images {
+  background-color: var(--color-bg-dark);
+  padding-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 2fr;
+  column-gap: 0.5rem;
+  align-items: center;
+  span {
+    grid-column: 1;
+    text-align: right;
+  }
+  img {
+    grid-column: 2;
+    max-width: 26em;
+  }
+}
+</style>
+<figure>
+  <div class="fraction-images bleed">
+    <span>my PC (Linux):</span><img src=unicode-fractions-linux.png>
+    <span>my phone (Android):</span><img src=unicode-fractions-android.png>
+  </div>
+  <figcaption>Common fractions as displayed by various devices</figcaption>
+</figure>
 
 ## The fraction slash
 
 It’s possible to write arbitrary fractions using the character <span class=codepoint>U+2044 FRACTION
-SLASH</span> with one or more ordinary decimal digits on each side. The Unicode spec says that fractions written this way should be “displayed as a unit.”<a href=#ref1><sup>[1]</sup></a> For
-example, the sequence of characters `3` `7` `⁄` `4` `2` should be displayed as 37⁄42. However, this
-only happens if the font and the font rendering system both support this.
+SLASH</span> together with ordinary decimal digits. The Unicode spec says that fractions written
+this way should be “displayed as a unit.”<a href=#ref1><sup>[1]</sup></a> For example, the sequence
+of characters `3` `7` `⁄` `4` `2` should be displayed as 37⁄42. However, this only happens if the
+font and the font rendering system both support this.
 
 From my brief testing, fractions written with the fraction slash render correctly in:
 
@@ -37,57 +69,74 @@ different for iOS browsers.
 
 ## Fixing fractions for iOS browsers
 
-Ideally, I would be able to detect whether the browser supports rendering fraction slashes
-correctly, but this isn’t currently possible (as far as I can tell). The next best option is to
-detect whether the browser is running on iOS. It’s not possible to do this 100% reliably, but
-based on a <a href=https://stackoverflow.com/a/19883965 rel=external target=_blank>StackOverflow
-answer</a> I came up with the following test:
+Goal: Surround each fraction on the page with HTML spans that can be styled with CSS, and, ideally,
+only do this when it’s actually needed.
 
-<pre><code>if (<span class=fg-magenta>/^(ipad|iphone|ipod|mac)/i</span>.test(navigator.<em>platform</em>)) {
-  replaceFractions(document.body);
-}
-</code></pre>
+I didn’t like the idea of explicitly marking fractions with special syntax when authoring, so
+instead I decided to scan for them later. I used the regular expression `(\d+)\u2044(\d+)` which
+matches a sequence of digits, the fraction slash, and another sequence of digits.
 
-This correctly triggers in Safari on an iPad Pro (the only iOS device I have access to).
+To scan each page for fractions, I had two options: I could scan when generating the pages (in my
+site generator code) or at page-load time using JavaScript. I opted for the latter because it seemed
+easier to implement, but I might revisit this decision.
 
-The next step is to process the whole document and add structure around fractions so that I can
-style them with CSS. I did this by looking for relevant text nodes (those whose text contains a
-fraction slash) and replacing them with new span elements. Because I’m adding HTML tags to the
-existing text and then using it as the new span’s `innerHTML`, I first need to escape characters in
-the existing text that could have special meaning to the HTML parser.
+Here’s the code that replaces the fractions within a particular element. It calls itself recursively
+for each child element. When it reaches a text node, if the node’s *textContent* contains a fraction
+slash, it replaces the text node with a new *span* element and replaces each contained fraction with
+its span-ified version.
 
-<pre><code>function replaceFractions(element) {
-  for (let <span class=fg-cyan>child</span> of element.childNodes) {
-    switch (<span class=fg-cyan>child</span>.nodeType) {
-      case Node.ELEMENT_NODE:
+<pre><code><span class=kw>function</span> replaceFractions(element) {
+  <span class=kw>for</span> (<span class=kw>let</span> <span class=fg-cyan>child</span> <span class=kw>of</span> element.childNodes) {
+    <span class=kw>switch</span> (<span class=fg-cyan>child</span>.nodeType) {
+      <span class=kw>case</span> Node.ELEMENT_NODE:
         replaceFractions(<span class=fg-cyan>child</span>);
-        break;
-      case Node.TEXT_NODE:
-        if (<span class=fg-cyan>child</span>.<em>textContent</em>.includes("\u2044")) {
-          let <span class=fg-violet>span</span> = document.createElement(<span class=fg-green>"span"</span>);
+        <span class=kw>break</span>;
+      <span class=kw>case</span> Node.TEXT_NODE:
+        <span class=kw>if</span> (<span class=fg-cyan>child</span>.textContent.includes("\u2044")) {
+          <span class=kw>let</span> <span class=fg-violet>span</span> = document.createElement("span");
           <span class=fg-violet>span</span>.<em>innerHTML</em> = <span class=fg-cyan>child</span>.<em>textContent</em>
             <span class=comment>// Encode the existing text as HTML</span>
             .replaceAll("&amp;", <span class=fg-green>"&amp;amp;"</span>)
             .replaceAll("&lt;", <span class=fg-green>"&amp;lt;"</span>)
             .replaceAll("&gt;", <span class=fg-green>"&amp;gt;"</span>)
-            <span class=comment>// Surround fraction slash occurrences with spans</span>
+            <span class=comment>// Surround fractions with spans</span>
             .replaceAll(
-              <span class=fg-magenta>/(\d+)\u2044(\d+)/g</span>,
+              <span class=fg-red>/(\d+)\u2044(\d+)/g</span>,
               <span class=fg-green>"&lt;span class=replaced-fraction&gt;"</span> +
                 <span class=fg-green>"&lt;span class=numerator&gt;<span class=fg-orange>$1</span>&lt;/span&gt;"</span> +
-                <span class=fg-green>"&lt;span class=slash&gt;\u2044&lt;/span&gt;"</span> +
+                <span class=fg-green>"&lt;span class=slash&gt;<span class=fg-yellow>\u2044</span>&lt;/span&gt;"</span> +
                 <span class=fg-green>"&lt;span class=denominator&gt;<span class=fg-orange>$2</span>&lt;/span&gt;"</span> +
               <span class=fg-green>"&lt;/span&gt;"</span>
             );
           <span class=fg-cyan>child</span>.replaceWith(<span class=fg-violet>span</span>);
         }
-        break;
+        <span class=kw>break</span>;
     }
   }
 }
 </code></pre>
 
-And here’s the CSS:
+Note that it would be **wrong** to take the text node’s *textContent* and directly assign it to the
+new span’s *innerHTML*. The *textContent* is text, not HTML. It might contain characters like “&lt;”
+which would gain undesired meaning if the text were parsed as HTML. So, it’s necessary to convert
+the text to HTML by replacing each `&` with `&amp;`, and so on. You can think of this as *encoding*
+the text into something that the HTML parser will *decode* back into the original text. Once I have
+HTML instead of text, I can replace each bare fraction with its HTML version.
+
+The final piece of the puzzle is to figure out how to do this processing only for the browsers that
+need it. Ideally, I would be able to detect whether the browser supports fraction slash rendering,
+but as far as I can tell this isn’t possible. I settled for attempting to detect iOS itself based on
+the value of *navigator.platform*. A Stack Overflow answer<a href=#ref2><sup>[2]</sup></a> suggested
+some potential values to check for, but I had to add *mac* to the list to get this to trigger on
+my iPad.
+
+<pre><code><span class=kw>if</span> (<span class=fg-red>/^(ipad|iphone|ipod|mac)/i</span>.test(navigator.platform)) {
+  replaceFractions(document.body);
+}
+</code></pre>
+
+Oh, and here’s the CSS I’m using to style these fractions. Note that using *font-variant-position*
+for superscript and subscript styles won’t look good unless the font specifically supports it.
 
 <pre><code>.replaced-fraction {
   .numerator {
@@ -99,6 +148,12 @@ And here’s the CSS:
 }
 </code></pre>
 
+## Did I succeed?
+
+If ¼ (single character) and 1⁄4 (fraction slash) look notably different on your device, please
+<a href="https://github.com/kalgynirae/lumeh.org/issues/new?title=Fraction+disaster&body=%3CPlease+upload+a+screenshot+showing+the+difference+and+mention+your+OS+and+browser+version%3E" rel=external target=_blank>let me know</a>!
+
 ## References
 
-<p id=ref1 class=footnote>[1] <a href=https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G2001 rel=external target=_blank>Unicode 16.0.0 Core Spec, 6.2.9 <em>Other Punctuation</em></a></p>
+<p id=ref1 class=footnote><span class=ref>[1]</span> <a href=https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G2001 rel=external target=_blank>Unicode 16.0.0 Core Spec, 6.2.9 <em>Other Punctuation</em></a></p>
+<p id=ref2 class=footnote><span class=ref>[2]</span> <a href=https://stackoverflow.com/a/19883965 rel=external target=_blank>“What is the list of possible values for navigator.platform as of today?” on Stack Overflow</a></p>

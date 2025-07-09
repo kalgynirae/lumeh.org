@@ -409,3 +409,5 @@
 /wiki/thestruggle
 /wiki/thestruggle.html
 /wiki/web/fractions
+/wiki/web/fractions/unicode-fractions-android.png
+/wiki/web/fractions/unicode-fractions-linux.png

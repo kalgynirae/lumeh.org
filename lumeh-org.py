@@ -118,14 +118,22 @@ build(
         "redirects.caddy": caddy_redirects(redirects),
         "robots.txt": file(root / "robots.txt"),
         **index(
-            {
+            dict(
+                # .md files get processed with page()
                 (
-                    f"{path.relative_to(root / 'pages').with_suffix('.html')}"
-                    if path.name == "index.md"
-                    else f"{path.relative_to(root / 'pages').with_suffix('')}/"
-                ): page(path)
-                for path in sorted(root.glob("pages/**/*.md"))
-            },
+                    (
+                        str(path.relative_to(root / "pages").with_suffix(".html"))
+                        if path.name == "index.md"
+                        else f"{path.relative_to(root / 'pages').with_suffix('')}/"
+                    ),
+                    page(path),
+                )
+                if path.suffix == ".md"
+                # other extensions get processed with file()
+                else (str(path.relative_to(root / "pages")), file(path))
+                for path in sorted(root.glob("pages/**"))
+                if path.is_file()
+            ),
             "poetry",
             "tools",
         ),

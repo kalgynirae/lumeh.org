@@ -30,6 +30,8 @@ redirects = {
         "/media/theandrewandersonmemorialpipeorganahistory-wittine.pdf"
     ),
     "/boxer.html": perm("/boxer/"),
+    "/docs/resume-20200720.pdf": perm("/files/resume-20200720.pdf"),
+    "/docs/resume-20241215.pdf": perm("/files/resume-20241215.pdf"),
     "/games/narchanso.html": perm("/wiki/games/narchanso-ball/"),
     "/jabberwockus.html": perm("/poetry/jabberwockus/"),
     "/krypto.html": perm("/tools/krypto-generator/"),
@@ -106,7 +108,6 @@ build(
     repo_url="https://github.com/kalgynirae/lumeh.org",
     tree={
         "css/lumeh.css": sass(root / "css/lumeh.sass"),
-        "docs": dir(root / "docs"),
         "files": dir(root / "assets/files", allow_missing=True),
         "font": merge(
             dir(root / "font"), dir(root / "assets/font", allow_missing=True)

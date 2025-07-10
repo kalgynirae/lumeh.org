@@ -12,6 +12,7 @@
 /docs/resume-20200720.pdf
 /docs/resume-20241215.pdf
 /error/404
+/files/Colin Chan resume 2025-06.pdf
 /files/hymns/001.pdf
 /files/hymns/009.pdf
 /files/hymns/010.pdf
@@ -185,6 +186,8 @@
 /files/public/the_game_line.png
 /files/public/the_game_slur.png
 /files/public/think_green_gameplay.png
+/files/resume-20200720.pdf
+/files/resume-20241215.pdf
 /files/sheets/i_like_celery.pdf
 /files/sheets/spider_pig.pdf
 /files/sheets/the-game.pdf

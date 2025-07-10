@@ -153,7 +153,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/73_prelude.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn73_prelude.pdf">
         <l-icon name=musicnote></l-icon>
         <div>
           <div class=type>Prelude</div>
@@ -301,7 +301,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/213_prelude.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn213_prelude.pdf">
         <l-icon name=musicnote></l-icon>
         <div>
           <div class=type>Prelude</div>
@@ -324,7 +324,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/237.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn237.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -403,7 +403,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/267.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn267.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -449,7 +449,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/275 last verse.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn275 last verse.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -587,7 +587,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/374.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn374.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -776,7 +776,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/478.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn478.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -856,7 +856,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/522.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn522.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>
@@ -879,7 +879,7 @@ These are a few of my favorites:
   </div>
   <div class=files>
     <div class=file>
-      <a class=link href="https://lychee.lumeh.org/hymns/533.pdf">
+      <a class=link href="https://lychee.lumeh.org/hymns/hymn533.pdf">
         <l-icon name=journal></l-icon>
         <div>
           <div class=type>Hymn Accompaniment</div>

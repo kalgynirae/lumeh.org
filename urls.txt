@@ -6,6 +6,7 @@
 /boxer.html
 /christmas-in-july-2020
 /christmas-in-july-2021
+/christmas-in-july-2025
 /cookies
 /css/lumeh.css
 /docs/resume-20200720.pdf

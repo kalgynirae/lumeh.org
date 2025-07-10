@@ -5,12 +5,56 @@ show_authors: true
 
 # Fractions
 
-<samp>1⁄4 cup vegetable oil</samp>, <samp>1/2 cup slivered almonds</samp>,
-<samp>0.75 cups water</samp>… Which fraction format do you prefer? For me, the first one is the
-winner. I publish many [recipes] on this site, and I want the measurements to look good. But like
-many things web, this turned out to be more complicated than expected.
+I’m on a quest to have nice-looking fractions for my [recipes]. How do these look on your device?
 
 [recipes]: /recipes/
+
+<figure>
+  <div class=fraction-comparison>
+    <div><strong>¼</strong><span>single character</span><tt>[U+00BC]</tt></div>
+    <div><strong class=skip-fraction-replacement>1⁄4</strong><span>fraction slash</span><tt>[U+0031, U+2044, U+0034]</tt></div>
+    <div><strong><span class=hide-if-replaced>–</span><span class=frac>1⁄4</span></strong><span>fixed fraction slash</span><span>(HTML + CSS)</span></div>
+  </div>
+</figure>
+<style>
+.fraction-comparison {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: var(--paragraph-spacing);
+  > div {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0.5rem;
+    row-gap: 0.5em;
+    text-wrap: balance;
+    text-align: center;
+    strong {
+      font-size: 1.5em;
+    }
+    *:not(:first-child) {
+      line-height: 1;
+    }
+    *:nth-child(3) {
+      font-size: 0.8em;
+    }
+  }
+}
+.hide-if-replaced {
+  &:has(+ .frac .replaced-fraction) {
+    display: none;
+  }
+  + .frac {
+    display: none;
+  }
+  + .frac:has(.replaced-fraction) {
+    display: inline;
+  }
+}
+</style>
+
+A dash in the rightmost column means that my fix didn’t activate on your device. If anything is
+wrong (if the fix is needed but didn’t activate, or if the fix produced weird results), please
+<a href="https://github.com/kalgynirae/lumeh.org/issues/new?title=Fraction+disaster&body=%3CPlease+include+a+screenshot+showing+the+difference+and+mention+your+OS+and+browser+version%3E" rel=external target=_blank>let me know</a>!
 
 ## Common fractions
 
@@ -149,49 +193,9 @@ potential values to check for, but I had to add *mac* to the list to get this to
 }
 </code></pre>
 
-## Did I succeed?
-
-How do these look on your device?
-
-<figure>
-  <div class=fraction-comparison>
-    <div><strong>¼</strong><span>single character</span></div>
-    <div><strong class=skip-fraction-replacement>1⁄4</strong><span>fraction slash without fix</span></div>
-    <div><strong><span class=hide-if-replaced>–</span><span class=frac>1⁄4</span></strong><span>fraction slash with fix</span></div>
-  </div>
-</figure>
-<style>
-.fraction-comparison {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: var(--paragraph-spacing);
-  > div {
-    display: flex;
-    flex-direction: column;
-    column-gap: 0.5rem;
-    text-wrap: balance;
-    text-align: center;
-    strong {
-      font-size: 1.5em;
-    }
-  }
-}
-.hide-if-replaced {
-  &:has(+ .frac .replaced-fraction) {
-    display: none;
-  }
-  + .frac {
-    display: none;
-  }
-  + .frac:has(.replaced-fraction) {
-    display: inline;
-  }
-}
-</style>
-
-A dash in the final column indicates that my fix wasn’t applied on your device. If the left and
-center don’t match and the fix wasn’t applied, or if the fixed version doesn’t match, please
-<a href="https://github.com/kalgynirae/lumeh.org/issues/new?title=Fraction+disaster&body=%3CPlease+include+a+screenshot+showing+the+difference+and+mention+your+OS+and+browser+version%3E" rel=external target=_blank>let me know</a>!
+I expect there to be other devices that need the fix but aren’t covered by this check, but I’ll just
+have to wait until people report them to me. I suppose it might be possible to write some code to
+measure the width of a rendered fraction and decide based on that… but I’ll save that for later.
 
 ## References
 

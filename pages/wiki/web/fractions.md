@@ -31,10 +31,10 @@ I’m on a quest to have nice-looking fractions for my [recipes]. How do these l
     strong {
       font-size: 1.5em;
     }
-    *:not(:first-child) {
+    > *:not(:first-child) {
       line-height: 1;
     }
-    *:nth-child(3) {
+    > *:nth-child(3) {
       font-size: 0.8em;
     }
   }

@@ -891,6 +891,15 @@ These are a few of my favorites:
       </a>
       <div class=note>⚠ Arranged in 3/4 (versus hymnal’s 4/4)</div>
     </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/5AseVTiglGw">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 

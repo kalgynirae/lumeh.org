@@ -39,6 +39,7 @@
 /files/hymns/468.pdf
 /files/hymns/480.pdf
 /files/hymns/499.pdf
+/files/hymns/533.pdf
 /files/hymns/537.pdf
 /files/hymns/540.pdf
 /files/hymns/547.pdf

@@ -884,7 +884,7 @@ These are a few of my favorites:
         <div>
           <div class=type>Hymn Accompaniment</div>
           <div class=details>
-            <div class=key>Key: F</div>
+            <div class=key>Key: F → G</div>
             <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
           </div>
         </div>

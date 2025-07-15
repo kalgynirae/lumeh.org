@@ -24,6 +24,13 @@
   font-weight: 440
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
+@mixin font-inter-midsmall
+  font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
+  font-size: 0.85rem
+  font-variation-settings: "opsz" 16
+  font-weight: 430
+  font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
+  letter-spacing: normal
 @mixin font-inter-regular
   font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 0.95rem
@@ -306,7 +313,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   display: none
 
 .edit-this-page
-  @include font-inter-regular
+  @include font-inter-midsmall
   background-color: $bg-dark
   border-top: dashed 2px #e0e0e0
   display: block

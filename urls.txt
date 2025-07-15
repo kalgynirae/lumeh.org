@@ -31,6 +31,7 @@
 /files/hymns/299.pdf
 /files/hymns/342.pdf
 /files/hymns/350.pdf
+/files/hymns/374.pdf
 /files/hymns/381-prelude.pdf
 /files/hymns/405.pdf
 /files/hymns/408.pdf

@@ -190,6 +190,39 @@ These are a few of my favorites:
   </div>
 </div>
 
+<div class=hymn id=csh-136>
+  <div class=number>136</div>
+  <div class=firstline>I love Thy way of freedom, Lord</div>
+  <div class=details>
+    <div class=tune>Tune: HEAVENWARD</div>
+    <div class=key>Key: F</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/136-prelude-sanden.pdf">
+        <l-icon name=musicnote></l-icon>
+        <div>
+          <div class=type>Prelude</div>
+          <div class=arranger>arr. Katherine Bellafiore Sanden</div>
+          <div class=details>
+            <div class=key>Key: A♭</div>
+            <div class=instrumentation><l-icon name=piano right>Piano</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class=file>
+      <a class=link href="https://youtu.be/UUGVYUefW88">
+        <l-icon name=youtube></l-icon>
+        <div>
+          <div class=type>Recording</div>
+          <div>YouTube</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class=hymn id=csh-139>
   <div class=number>139</div>
   <div class=firstline>I walk with Love along the way</div>

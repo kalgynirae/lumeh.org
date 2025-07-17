@@ -19,6 +19,7 @@
 /files/hymns/059.pdf
 /files/hymns/072.pdf
 /files/hymns/075.pdf
+/files/hymns/136-prelude-sanden.pdf
 /files/hymns/139.pdf
 /files/hymns/162.pdf
 /files/hymns/200.pdf

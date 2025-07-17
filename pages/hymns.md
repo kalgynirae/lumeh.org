@@ -1195,4 +1195,28 @@ These are a few of my favorites:
 
 ## Other hymnals
 
-(coming soon)
+<div class=hymns>
+
+<div class=hymn id=cantai-ao-senhor>
+  <div class=details>
+    <div class=tune>Tune: CANTAI AO SENHOR</div>
+    <div class=key>Key: e</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/cantai-ao-senhor.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: e</div>
+            <div class=verses>Verses: 4</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>

@@ -62,16 +62,14 @@ document.getElementById("construction").addEventListener("click", toggleConstruc
 
 ### Serious things
 
-*   [my GitHub profile](https://github.com/kalgynirae/)
-*   [music I’ve written](/music/)
 *   [hymn arrangements](/hymns/)
-*   [my preferred Google Docs styles](https://docs.google.com/document/d/1HnU8OpUeEzo_AIq4NqNBGNsGCAvGBrmvfOCYuv5SR5w/edit?usp=sharing)
-*   [my recipes](/recipes/)
-*   [my résumé (PDF)](/files/Colin%20Chan%20resume%202025-06.pdf)
+*   [recipes](/recipes/)
+*   [<l-icon name=document right>my résumé</l-icon>](/files/Colin%20Chan%20resume%202025-07.pdf)
+*   [my GitHub profile](https://github.com/kalgynirae/)
+*   [my preferred Google Docs stylesheet](https://docs.google.com/document/d/1HnU8OpUeEzo_AIq4NqNBGNsGCAvGBrmvfOCYuv5SR5w/edit?usp=sharing)
 
 ### Semi-Serious things
 
-*   [NarChanSo Ball](/wiki/games/narchanso-ball/)
 *   [Krypto generator](/tools/krypto-generator/)
 *   [stopwatch](/tools/stopwatch/)
 *   [polar graph paper](/media/polar%20graph%20paper.pdf)

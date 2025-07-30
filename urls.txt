@@ -13,6 +13,7 @@
 /docs/resume-20241215.pdf
 /error/404
 /files/Colin Chan resume 2025-06.pdf
+/files/Colin Chan resume 2025-07.pdf
 /files/hymns/001.pdf
 /files/hymns/009.pdf
 /files/hymns/010.pdf
@@ -51,6 +52,7 @@
 /files/hymns/592.pdf
 /files/hymns/596.pdf
 /files/hymns/600.pdf
+/files/hymns/cantai-ao-senhor.pdf
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg
 /files/music/Synthmaster Lumpy - Background Music for the Approach.mp3

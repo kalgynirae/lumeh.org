@@ -19,3 +19,4 @@
 [submodule "assets"]
 	path = assets
 	url = git@github.com:kalgynirae/lumeh.org-assets.git
+	branch = main

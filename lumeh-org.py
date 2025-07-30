@@ -30,6 +30,7 @@ redirects = {
         "/media/theandrewandersonmemorialpipeorganahistory-wittine.pdf"
     ),
     "/boxer.html": perm("/boxer/"),
+    "/cookies": temp("/projects/lumeh.org/#cookies"),
     "/docs/resume-20200720.pdf": perm("/files/resume-20200720.pdf"),
     "/docs/resume-20241215.pdf": perm("/files/resume-20241215.pdf"),
     "/games/narchanso.html": perm("/wiki/games/narchanso-ball/"),
@@ -69,6 +70,7 @@ redirects = {
     "/recipes/quiche.html": perm("/recipes/quiche/"),
     "/recipes/sweet_potato_casserole.html": perm("/recipes/sweet-potato-casserole/"),
     "/recipes/thai_chicken_curry.html": perm("/recipes/thai-chicken-curry/"),
+    "/report-a-problem": temp("/projects/lumeh.org/#reporting-problems"),
     "/tools/stopwatch.html": perm("/tools/stopwatch/"),
     "/wiki/dragee.html": perm("/wiki/dragee/"),
     "/wiki/early-twenty-first-century.html": perm("/wiki/early-twenty-first-century/"),

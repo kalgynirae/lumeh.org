@@ -383,6 +383,7 @@
 /recipes/thai-chicken-curry
 /recipes/thai_chicken_curry.html
 /redirects.caddy
+/report-a-problem
 /robots.txt
 /tools
 /tools/krypto-generator

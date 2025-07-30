@@ -247,6 +247,7 @@ class Author:
 @dataclass
 class GitFileInfo:
     authors: List[Author]
+    repo_branch: Optional[str]
     repo_name: Optional[str]
     repo_source_path: Optional[str]
     repo_url: Optional[str]
@@ -257,6 +258,7 @@ class GitFileInfo:
 class SourceInfo:
     authors: List[Author]
     is_committed: bool
+    repo_branch: Optional[str]
     repo_name: Optional[str]
     repo_source_path: Optional[str]
     repo_url: Optional[str]
@@ -275,6 +277,7 @@ class file(FileProducer):
         sourceinfo = SourceInfo(
             authors=gitinfo.authors,
             is_committed=gitinfo.updated_date is not None,
+            repo_branch=gitinfo.repo_branch,
             repo_name=gitinfo.repo_name,
             repo_source_path=gitinfo.repo_source_path,
             repo_url=gitinfo.repo_url,
@@ -353,6 +356,25 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
     if repo_url and not repo_name:
         repo_name = "/".join(repo_url.split("/")[-2:])
 
+    repo_branch = None
+    if repo_url is not None:
+        args = [
+            "bash",
+            "-c",
+            f"cd {quote(str(file.parent))} && git symbolic-ref --short HEAD",
+        ]
+        proc = await asyncio.create_subprocess_exec(
+            *args, stdout=PIPE
+        )  # ty: ignore[missing-argument]
+        stdout, _ = await proc.communicate()
+        if proc.returncode != 0:
+            raise RuntimeError("'git symbolic-ref' failed")
+
+        try:
+            (repo_branch,) = stdout.decode(errors="replace").splitlines()
+        except ValueError:
+            raise RuntimeError("'git symbolic-ref' printed too many lines") from None
+
     args = [
         "bash",
         "-c",
@@ -380,6 +402,7 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
 
     return GitFileInfo(
         authors=[a for a, _ in authors.most_common()],
+        repo_branch=repo_branch,
         repo_name=repo_name,
         repo_source_path=repo_source_path,
         repo_url=repo_url,
@@ -416,6 +439,7 @@ class fake(TextProducer):
         sourceinfo = SourceInfo(
             authors=[],
             is_committed=False,
+            repo_branch=None,
             repo_name=None,
             repo_source_path="",
             repo_url=None,
@@ -433,6 +457,7 @@ class string(TextProducer):
         sourceinfo = SourceInfo(
             authors=[],
             is_committed=False,
+            repo_branch=None,
             repo_name=None,
             repo_source_path=None,
             repo_url=None,

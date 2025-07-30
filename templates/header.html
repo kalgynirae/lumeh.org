@@ -57,13 +57,13 @@
       {% if source.repo_url %}
         <span class=source-info>
           <span class=label>Source repo</span>
-          <a href="{{ source.repo_url }}/blob/master/{{ source.repo_source_path }}">{{ source.repo_name.removeprefix("kalgynirae/") }}</a>
+          <a href="{{ source.repo_url }}/blob/{{ source.repo_branch }}/{{ source.repo_source_path }}">{{ source.repo_name.removeprefix("kalgynirae/") }}</a>
         </span>
         <span class=source-info>
           <span class=label>Last modified</span>
           <span>
           {% if source.is_committed %}
-          <a href="{{ source.repo_url }}/commits/master/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
+          <a href="{{ source.repo_url }}/commits/{{ source.repo_branch }}/{{ source.repo_source_path }}">{{ source.updated_date.strftime("%Y-%m-%d") }}</a>
           {% else %}
           (uncommitted)
           {% endif %}

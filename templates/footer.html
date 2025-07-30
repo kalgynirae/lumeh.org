@@ -1,6 +1,6 @@
     </article>
     {% if source.repo_url and source.is_committed %}
-    <a class=edit-this-page href="{{ source.repo_url }}/edit/master/{{ source.repo_source_path }}" target=_blank>Edit this page</a>
+    <a class=edit-this-page href="{{ source.repo_url }}/edit/{{ source.repo_branch }}/{{ source.repo_source_path }}" target=_blank>Edit this page</a>
     {% endif %}
   </div>
   <footer id=footer>

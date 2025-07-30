@@ -8,6 +8,7 @@
 /christmas-in-july-2021
 /christmas-in-july-2025
 /cookies
+/cookies/
 /css/lumeh.css
 /docs/resume-20200720.pdf
 /docs/resume-20241215.pdf
@@ -384,6 +385,7 @@
 /recipes/thai_chicken_curry.html
 /redirects.caddy
 /report-a-problem
+/report-a-problem/
 /robots.txt
 /tools
 /tools/krypto-generator

@@ -11,3 +11,5 @@ rsync \
     --exclude /games \
     out/ \
     lemon.lumeh.org:/srv/http/lumeh.org/
+echo >&2 "Reloading Caddy..."
+ssh lemon.lumeh.org 'systemctl reload caddy'

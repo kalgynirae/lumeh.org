@@ -48,6 +48,10 @@ document.getElementById("construction").addEventListener("click", toggleConstruc
 }
 </style>
 <div class=recent-updates>
+  <a href=/wiki/audio/stop-adjusting-my-microphone/>
+    <strong>Stop adjusting my microphone!</strong>
+    <span>Put Chrome and Discord in their place</span>
+  </a>
   <a href=/wiki/web/fractions/>
     <strong>Fractions</strong>
     <span>Become 3⁄2 as familiar with U+2044</span>

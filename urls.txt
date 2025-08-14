@@ -392,6 +392,7 @@
 /tools/stopwatch
 /tools/stopwatch.html
 /wiki
+/wiki/audio/stop-adjusting-my-microphone
 /wiki/characters
 /wiki/dragee
 /wiki/dragee.html

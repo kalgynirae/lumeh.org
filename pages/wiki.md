@@ -7,6 +7,10 @@ title: Wiki
 
 A haphazard collection of information curated by me!
 
+## Audio
+
+* [Stop adjusting my microphone!](audio/stop-adjusting-my-microphone/)
+
 ## Linux
 
 ### Bash

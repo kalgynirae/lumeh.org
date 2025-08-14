@@ -8,10 +8,10 @@
     <p id=support>
       <a href=/cookies>Cookies?</a>
       •
-      <a class=kofi href=https://ko-fi.com/kalgynirae target=_blank>
+      <a class=kofi href=https://ko-fi.com/kalgynirae rel=external target=_blank>
         Buy me a <l-icon name=coffee right>coffee</l-icon></a>
       •
-      <a href=/report-a-problem>Report a problem</a>
+      <a id=report-a-problem-link href=https://airtable.com/appopNVjvtXgt5gQQ/pagwo1PQB92bHio2c/form rel=external target=_blank>Report a problem</a>
     </p>
     <p id=license>Unless otherwise specified, content on lumeh.org may be reused under the <a rel=license href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">CC BY-NC-SA 4.0 license</a>.</p>
   </footer>
@@ -175,6 +175,13 @@
     }
     if (/^(ipad|iphone|ipod|mac)/i.test(navigator.platform)) {
       replaceFractions(document.body);
+    }
+
+    // Prefill URL in the "Report a problem" link
+    const reportProblem = document.querySelector("#report-a-problem-link");
+    if (reportProblem.href.endsWith("/form")) {
+      const encodedUrl = encodeURI(document.location);
+      reportProblem.href += `?prefill_URL=${encodedUrl}`;
     }
   </script>
 </body>

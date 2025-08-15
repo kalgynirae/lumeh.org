@@ -177,11 +177,18 @@
       replaceFractions(document.body);
     }
 
-    // Prefill URL in the "Report a problem" link
+    // Prefill current URL in the "Report a problem" link
     const reportProblem = document.querySelector("#report-a-problem-link");
     if (reportProblem.href.endsWith("/form")) {
-      const encodedUrl = encodeURI(document.location);
-      reportProblem.href += `?prefill_URL=${encodedUrl}`;
+      // Note: encodeURIComponent() doesn't encode some of the characters
+      // that should be encoded per RFC 3986, so do those additionally.
+      const encodedURL = encodeURIComponent(document.location)
+        .replace("!", "%21")
+        .replace("'", "%27")
+        .replace("(", "%28")
+        .replace(")", "%29")
+        .replace("*", "%2A");
+      reportProblem.href += `?prefill_URL=${encodedURL}`;
     }
   </script>
 </body>

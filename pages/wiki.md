@@ -16,7 +16,6 @@ A haphazard collection of information curated by me!
 ### Bash
 
 * [Bash Configuration](linux/bash-configuration/)
-* [Colorize](linux/colorize/)
 
 ### Other
 

@@ -48,6 +48,10 @@ document.getElementById("construction").addEventListener("click", toggleConstruc
 }
 </style>
 <div class=recent-updates>
+  <a href=/projects/colorby/>
+    <strong>Colorby</strong>
+    <span>CLI for coloring interleaved logs (now on PyPI!)</span>
+  </a>
   <a href=/wiki/audio/stop-adjusting-my-microphone/>
     <strong>Stop adjusting my microphone!</strong>
     <span>Put Chrome and Discord in their place</span>
@@ -55,10 +59,6 @@ document.getElementById("construction").addEventListener("click", toggleConstruc
   <a href=/wiki/web/fractions/>
     <strong>Fractions</strong>
     <span>Become 3⁄2 as familiar with U+2044</span>
-  </a>
-  <a href=/wiki/linux/colorize/>
-    <strong>Colorize</strong>
-    <span>On-the-fly coloring for interleaved logs</span>
   </a>
 </div>
 

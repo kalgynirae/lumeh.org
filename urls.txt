@@ -313,6 +313,7 @@
 /poetry/lumeh-god-of-light-bulbs
 /poetry/poetry-yay
 /projects
+/projects/colorby
 /projects/lumeh.org
 /projects/pchyme
 /projects/rockuefort
@@ -410,6 +411,7 @@
 /wiki/git-thesaurus
 /wiki/linux/bash-configuration
 /wiki/linux/colorize
+/wiki/linux/colorize/
 /wiki/linux/i3-firefox-context-menu-alignment-issue
 /wiki/linux/pulseaudio
 /wiki/linux/reboot-to-windows

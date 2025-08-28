@@ -20,3 +20,6 @@
 	path = assets
 	url = git@github.com:kalgynirae/lumeh.org-assets.git
 	branch = main
+[submodule "projects/colorby"]
+	path = projects/colorby
+	url = git@github.com:kalgynirae/colorby.git

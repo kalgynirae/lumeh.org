@@ -80,6 +80,8 @@ redirects = {
     "/wiki/games/narchanso-ball.html": perm("/wiki/games/narchanso-ball/"),
     "/wiki/games/the-base-game.html": perm("/wiki/games/the-base-game/"),
     "/wiki/games/trebuchennis.html": perm("/wiki/games/trebuchennis/"),
+    "/wiki/linux/colorize": perm("/projects/colorby/"),
+    "/wiki/linux/colorize/": perm("/projects/colorby/"),
     "/wiki/opposites.html": perm("/wiki/opposites/"),
     "/wiki/the-caring-continuum.html": perm("/wiki/the-caring-continuum/"),
     "/wiki/thestruggle.html": perm("/wiki/thestruggle/"),
@@ -142,6 +144,7 @@ build(
             "poetry",
             "tools",
         ),
+        "projects/colorby/": page(root / "projects/colorby/README.md", title="Colorby"),
         "projects/lumeh.org/": page(root / "README.md", title="lumeh.org"),
         "projects/pchyme/": page(root / "projects/pchyme/README.md", title="pchyme"),
         "projects/rockuefort/": page(

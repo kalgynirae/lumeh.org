@@ -10,6 +10,10 @@ title: Projects
 * [lumeh.org](lumeh.org) – Colin Chan’s personal website
 * [sfago2024.org](sfago2024.org) – 2024 National Convention of the <a href=https://www.agohq.org/ rel=external target=_blank>American Guild of Organists</a>
 
+## Tools
+
+* [Colorby](colorby) – color interleaved log lines based on a key
+
 ## Python libraries
 
 * [pchyme](pchyme) – hash text into short audio jingles

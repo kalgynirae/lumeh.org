@@ -555,6 +555,29 @@ These are a few of my favorites:
   </div>
 </div>
 
+<div class=hymn id=csh-324>
+  <div class=number>324</div>
+  <div class=firstline>Take my life, and let it be consecrated, Lord, to Thee</div>
+  <div class=details>
+    <div class=tune>Tune: THEODORA</div>
+    <div class=key>Key: E♭</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/324.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: D♭ → E♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class=hymn id=csh-342>
   <div class=number>342</div>
   <div class=firstline>This is the day the Lord hath made</div>

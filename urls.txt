@@ -32,6 +32,7 @@
 /files/hymns/293.pdf
 /files/hymns/299-piano.pdf
 /files/hymns/299.pdf
+/files/hymns/324.pdf
 /files/hymns/342.pdf
 /files/hymns/350.pdf
 /files/hymns/374.pdf

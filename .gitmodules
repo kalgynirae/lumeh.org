@@ -23,3 +23,6 @@
 [submodule "projects/colorby"]
 	path = projects/colorby
 	url = git@github.com:kalgynirae/colorby.git
+[submodule "pymex"]
+	path = pymex
+	url = git@github.com:kalgynirae/pymex.git

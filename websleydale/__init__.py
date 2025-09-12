@@ -54,10 +54,11 @@ def outdir() -> Path:
     return Path(mkdtemp(dir=tempdir))
 
 
-def outfile() -> Path:
+def outfile(extension: str | None) -> Path:
     if tempdir is None:
         raise RuntimeError("outfile called while tempdir is None")
-    handle, path = mkstemp(dir=tempdir)
+    suffix_arg = {"suffix": extension} if extension is not None else {}
+    handle, path = mkstemp(dir=tempdir, **suffix_arg)
     os.close(handle)
     return Path(path)
 
@@ -480,7 +481,7 @@ class jinja(FileProducer):
         source = await self.source.run(info)
         content = source.content
         pageinfo = source.pageinfo
-        dest = outfile()
+        dest = outfile(".html")
 
         pageinfo["content"] = content
         pageinfo["path"] = info.path
@@ -500,7 +501,7 @@ class sass(FileProducer):
 
     async def run(self, info: Info) -> FileResult:
         source = await self.source.run(info)
-        dest = outfile()
+        dest = outfile(".css")
         args = ["pysassc", "--style", "compressed", str(source.path), str(dest)]
         proc = await asyncio.create_subprocess_exec(
             *args
@@ -521,7 +522,7 @@ class caddy_redirects(FileProducer):
             for path, redir in self.redirects.items()
         ]
         lines.sort()
-        dest = outfile()
+        dest = outfile(".caddy")
         dest.write_text("".join(lines))
         return FileResult(sourceinfo=None, path=dest)
 

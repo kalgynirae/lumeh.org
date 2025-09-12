@@ -31,7 +31,7 @@ import jinja2
 import yaml
 from mistletoe import Document, HTMLRenderer
 from mistletoe.block_token import Heading
-from mistletoe.span_token import InlineCode, LineBreak
+from mistletoe.span_token import InlineCode, LineBreak, Image
 from slugify import slugify
 
 from .urls import Urlfile
@@ -613,6 +613,14 @@ class WebsleydaleHTMLRenderer(HTMLRenderer):
     @staticmethod
     def render_line_break(token: LineBreak) -> str:
         return "\n" if token.soft else "<br>\n"
+
+    def render_image(self, token: Image) -> str:
+        template = '<img src="{}" alt="{}"{}>'
+        if token.title:
+            title = ' title="{}"'.format(escape(token.title))
+        else:
+            title = ""
+        return template.format(token.src, self.render_to_plain(token), title)
 
 
 def index_page(paths: list[str], *, title: str) -> jinja:

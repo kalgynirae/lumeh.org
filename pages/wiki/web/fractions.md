@@ -11,8 +11,8 @@ I’m on a quest to have nice-looking fractions for my [recipes]. How do these l
 
 <figure>
   <div class=fraction-comparison>
-    <div><strong>¼</strong><span>single character</span><tt>[U+00BC]</tt></div>
-    <div><strong class=skip-fraction-replacement>1⁄4</strong><span>fraction slash</span><tt>[U+0031, U+2044, U+0034]</tt></div>
+    <div><strong>¼</strong><span>single character</span><code class=nobg>[U+00BC]</code></div>
+    <div><strong class=skip-fraction-replacement>1⁄4</strong><span>fraction slash</span><code class=nobg>[U+0031, U+2044, U+0034]</code></div>
     <div><strong><span class=hide-if-replaced>–</span><span class=frac>1⁄4</span></strong><span>fixed fraction slash</span><span>(HTML + CSS)</span></div>
   </div>
 </figure>

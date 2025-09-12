@@ -5,6 +5,7 @@ import asyncio
 import logging
 import os
 import shutil
+import sys
 from abc import ABCMeta, abstractmethod
 from collections import Counter
 from dataclasses import dataclass, field
@@ -492,6 +493,37 @@ class jinja(FileProducer):
         )
         dest.write_text(rendered)
 
+        return FileResult(sourceinfo=source.sourceinfo, path=dest)
+
+
+class formathtml(FileProducer):
+    def __init__(self, source: FileProducer) -> None:
+        self.source = source
+
+    async def run(self, info: Info) -> FileResult:
+        source = await self.source.run(info)
+        dest = outfile(".html")
+        args = [
+            "bash",
+            "-c",
+            'superhtml fmt --no-strict-tags --stdin <"$1" >"$2"',
+            "bash-superhtml",
+            str(source.path),
+            str(dest),
+        ]
+        proc = await asyncio.create_subprocess_exec(
+            args[0],
+            *args[1:],
+            stderr=PIPE,
+        )
+        (_, stderr) = await proc.communicate()
+        if stderr:
+            for line in stderr.split(b"\n"):
+                sys.stderr.buffer.write(f"formatting {source.path}: ".encode())
+                sys.stderr.buffer.write(line + b"\n")
+                sys.stderr.buffer.flush()
+        if proc.returncode != 0:
+            raise RuntimeError("superhtml failed")
         return FileResult(sourceinfo=source.sourceinfo, path=dest)
 
 

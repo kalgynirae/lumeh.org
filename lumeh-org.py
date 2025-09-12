@@ -7,6 +7,7 @@ from websleydale import (
     caddy_redirects,
     dir,
     file,
+    formathtml,
     index,
     jinja,
     markdown,
@@ -17,7 +18,7 @@ from websleydale import (
 
 
 def page(source, *, title: str | None = None):
-    return jinja(markdown(source), template="page.html", title=title)
+    return formathtml(jinja(markdown(source), template="page.html", title=title))
 
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")

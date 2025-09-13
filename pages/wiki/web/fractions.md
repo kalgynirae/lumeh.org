@@ -85,9 +85,9 @@ coming from fallback fonts chosen by your browser or OS.
 </style>
 <figure>
   <div class="fraction-images bleed">
-    <span>my PC (Linux):</span><img src=unicode-fractions-linux.png>
-    <span>my phone (Android):</span><img src=unicode-fractions-android.png>
-    <span>my iPad (iPadOS):</span><img src=unicode-fractions-ios.png>
+    <span>my PC (Linux):</span><img src=unicode-fractions-linux.png alt="screenshot of the common fraction characters as rendered by Linux">
+    <span>my phone (Android):</span><img src=unicode-fractions-android.png alt="screenshot of the common fraction characters as rendered by Android">
+    <span>my iPad (iPadOS):</span><img src=unicode-fractions-ios.png alt="screenshot of the common fraction characters as rendered by iPadOS">
   </div>
   <figcaption>Common fractions as displayed by various devices</figcaption>
 </figure>

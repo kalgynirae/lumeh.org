@@ -20,7 +20,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
 </table>
 <button id="krypto-button" onclick="generateKryptoNumbers()">Generate</button>
 
-<style type="text/css">
+<style>
 #krypto-table {
     background-color: #efefef;
     font-family: "Crimson Pro", "Georgia", serif;
@@ -54,7 +54,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
 }
 </style>
 
-<script type="text/javascript">
+<script>
 (function () {
   var cards;
 

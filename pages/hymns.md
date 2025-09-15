@@ -256,6 +256,29 @@ These are a few of my favorites:
   </div>
 </div>
 
+<div class=hymn id=csh-148>
+  <div class=number>148</div>
+  <div class=firstline>In heavenly Love abiding</div>
+  <div class=details>
+    <div class=tune>Tune: EWING</div>
+    <div class=key>Key: D♭</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/148.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: C → D♭</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class=hymn id=csh-162>
   <div class=number>162</div>
   <div class=firstline>It matters not what be thy lot</div>

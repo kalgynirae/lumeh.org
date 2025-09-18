@@ -31,8 +31,10 @@ import jinja2
 import yaml
 from mistletoe import Document, HTMLRenderer
 from mistletoe.block_token import Heading
-from mistletoe.span_token import InlineCode, LineBreak, Image
+from mistletoe.span_token import Image, InlineCode, LineBreak
 from slugify import slugify
+
+import textmex as textmex_mod
 
 from .urls import Urlfile
 
@@ -324,9 +326,7 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
         "-c",
         f"cd {quote(str(file.parent))} && git ls-files --full-name {quote(str(file.name))}",
     ]
-    proc = await asyncio.create_subprocess_exec(
-        *args, stdout=PIPE
-    )  # ty: ignore[missing-argument]
+    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -335,9 +335,7 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
     repo_source_path = lines[0] if lines else None
 
     args = ["bash", "-c", f"cd {quote(str(file.parent))} && git remote -v"]
-    proc = await asyncio.create_subprocess_exec(
-        *args, stdout=PIPE
-    )  # ty: ignore[missing-argument]
+    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -365,9 +363,7 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
             "-c",
             f"cd {quote(str(file.parent))} && git symbolic-ref --short HEAD",
         ]
-        proc = await asyncio.create_subprocess_exec(
-            *args, stdout=PIPE
-        )  # ty: ignore[missing-argument]
+        proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)  # ty: ignore[missing-argument]
         stdout, _ = await proc.communicate()
         if proc.returncode != 0:
             raise RuntimeError("'git symbolic-ref' failed")
@@ -382,9 +378,7 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
         "-c",
         f"cd {quote(str(file.parent))} && git log --format='%cI %ae %an' -- {quote(str(file.name))}",
     ]
-    proc = await asyncio.create_subprocess_exec(
-        *args, stdout=PIPE
-    )  # ty: ignore[missing-argument]
+    proc = await asyncio.create_subprocess_exec(*args, stdout=PIPE)  # ty: ignore[missing-argument]
     stdout, _ = await proc.communicate()
     if proc.returncode != 0:
         raise RuntimeError("git failed")
@@ -410,6 +404,28 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
         repo_url=repo_url,
         updated_date=date,
     )
+
+
+class textmex(TextProducer):
+    def __init__(self, path: Path, config: textmex_mod.RendererConfig) -> None:
+        self.source = file(path)
+        self.config = config
+
+    async def run(self, info: Info) -> TextResult:
+        source = await self.source.run(info)
+        content = source.path.read_text()
+
+        pageinfo: Dict[str, Any] = {}
+        if content.startswith("---\n"):
+            yamltext, content = content[4:].split("---\n", maxsplit=1)
+            pageinfo.update(yaml.safe_load(yamltext))
+
+        nodes = textmex_mod.parse(input)
+        rendered = textmex_mod.render(nodes, self.config)
+
+        return TextResult(
+            sourceinfo=source.sourceinfo, content=rendered, pageinfo=pageinfo
+        )
 
 
 class markdown(TextProducer):
@@ -535,9 +551,7 @@ class sass(FileProducer):
         source = await self.source.run(info)
         dest = outfile(".css")
         args = ["pysassc", "--style", "compressed", str(source.path), str(dest)]
-        proc = await asyncio.create_subprocess_exec(
-            *args
-        )  # ty: ignore[missing-argument]
+        proc = await asyncio.create_subprocess_exec(*args)  # ty: ignore[missing-argument]
         exitcode = await proc.wait()
         if exitcode != 0:
             raise RuntimeError("pysassc failed")

@@ -1,28 +1,25 @@
 [submodule "projects/rockuefort"]
-	path = projects/rockuefort
+	path = src/projects/rockuefort
 	url = https://github.com/kalgynirae/rockuefort.git
 [submodule "projects/thinking-green"]
-	path = projects/thinking-green
+	path = src/projects/thinking-green
 	url = https://github.com/kalgynirae/thinking-green.git
 [submodule "projects/slideception"]
-	path = projects/slideception
+	path = src/projects/slideception
 	url = https://github.com/kalgynirae/slideception.git
 [submodule "projects/voidpop"]
-	path = projects/voidpop
+	path = src/projects/voidpop
 	url = https://github.com/kalgynirae/voidpop.git
 [submodule "projects/pchyme"]
-	path = projects/pchyme
+	path = src/projects/pchyme
 	url = https://github.com/kalgynirae/pchyme.git
 [submodule "projects/recipes"]
-	path = projects/recipes
+	path = src/projects/recipes
 	url = https://github.com/kalgynirae/recipes.git
 [submodule "assets"]
 	path = assets
 	url = git@github.com:kalgynirae/lumeh.org-assets.git
 	branch = main
 [submodule "projects/colorby"]
-	path = projects/colorby
+	path = src/projects/colorby
 	url = git@github.com:kalgynirae/colorby.git
-[submodule "pymex"]
-	path = textmex
-	url = git@github.com:kalgynirae/pymex.git

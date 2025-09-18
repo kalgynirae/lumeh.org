@@ -1,6 +1,6 @@
 NOTE: This license applies only to the code used to build lumeh.org
-(namely build.py and the websleydale directory). Other media contained
-in this repository (music, images, documents, etc.) are available under
+(namely build.sh and the lib/ directory). Other media contained in
+this repository (music, images, documents, etc.) are available under
 separate licenses; these licenses are indicated on lumeh.org wherever
 the media are published.
 

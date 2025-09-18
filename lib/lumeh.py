@@ -14,7 +14,15 @@ from websleydale import (
     merge,
     root,
     sass,
+    textmex,
 )
+from lumeh_renderer import renderer_config
+
+
+def textmex_page(source, *, title: str | None = None):
+    return formathtml(
+        jinja(textmex(source, renderer_config), template="page.html", title=title)
+    )
 
 
 def page(source, *, title: str | None = None):

@@ -1,2 +1,2 @@
 #!/bin/bash
-uv run -s lumeh-org.py
+uv run build

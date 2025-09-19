@@ -1,7 +1,8 @@
 import sys
 
+from htmlgen import Html
+
 from .html_renderer import HtmlRenderer, RendererConfig
-from .htmlgen import Html
 from .parser import Node, Parser, UnexpectedToken
 from .tokenizer import Tag, Token, Tokenizer
 

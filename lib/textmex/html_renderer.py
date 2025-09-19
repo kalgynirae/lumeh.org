@@ -5,7 +5,8 @@ from dataclasses import dataclass, field
 from types import FunctionType
 from typing import Any, Callable, TypeVar, cast
 
-from .htmlgen import Html, htmlstr
+from htmlgen import Html, htmlstr
+
 from .parser import Node
 
 type RendererFunc = Callable[..., Html]
@@ -19,13 +20,6 @@ logger = logging.getLogger(__name__)
 @dataclass
 class RendererConfig:
     renderers: dict[str, RendererFunc] = field(default_factory=dict)
-
-
-class HtmlRenderer:
-    renderers: dict[str, RendererFunc]
-
-    def __init__(self, renderers: dict[str, RendererFunc]) -> None:
-        self.renderers = renderers
 
     def register(self, node_name: str) -> Callable[[Tfunc], Tfunc]:
         def _register_renderer(func: Tfunc) -> Tfunc:
@@ -80,6 +74,13 @@ class HtmlRenderer:
             return func
 
         return _register_renderer
+
+
+class HtmlRenderer:
+    renderers: dict[str, RendererFunc]
+
+    def __init__(self, renderers: dict[str, RendererFunc]) -> None:
+        self.renderers = renderers
 
     def render(self, nodes: list[Node]) -> Html:
         htmls = []

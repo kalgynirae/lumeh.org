@@ -1,6 +1,10 @@
 [project]
-name = "lumeh-org"
-version = "0.1.0"
+name = "lumeh"
+description = "The code for building lumeh.org"
+version = "0.6.0"
+authors = [
+  {name = "Colin Chan", email = "colin+git@lumeh.org"},
+]
 requires-python = ">=3.14"
 dependencies = [
     "jinja2>=3.1.6",
@@ -10,8 +14,23 @@ dependencies = [
     "pyyaml>=6.0.2",
 ]
 
+[project.scripts]
+build = "lumeh:build"
+
 [dependency-groups]
 dev = [
     "ruff>=0.11.12",
     "ty>=0.0.1a8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "lib/htmlgen.py",
+    "lib/lumeh",
+    "lib/textmex",
+    "lib/websleydale",
 ]

@@ -48,7 +48,6 @@ jinjaenv = jinja2.Environment(
     autoescape=True,
 )
 tempdir: Optional[Path] = None
-root = Path(".")
 
 
 def outdir() -> Path:
@@ -273,7 +272,7 @@ class file(FileProducer):
     def __init__(self, path: Path) -> None:
         self.path = path
         if not path.is_file():
-            raise ValueError("not a file: %s", path)
+            raise ValueError(f"not a file: {path}")
 
     async def run(self, info: Info) -> FileResult:
         logger.debug("[%s] Loading Git info", self.path)
@@ -299,7 +298,7 @@ class dir(FileProducer):
             if allow_missing:
                 self.path = None
             else:
-                raise ValueError("not a dir: %s", path)
+                raise ValueError(f"not a dir: {path}")
 
     async def run(self, info: Info) -> FileResult:
         if self.path:

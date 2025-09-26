@@ -66,7 +66,7 @@ def wrap_render_func(func: BaseRenderFunc) -> RenderFunc:
             if "contents" in kwargs:
                 raise RuntimeError("key 'contents' already present in kwargs")
             if isinstance(node.data, str):
-                contents = htmlstr(node.data)
+                contents = [htmlstr(node.data)]
             else:
                 contents = renderer_render(node.data)
             kwargs["contents"] = contents
@@ -76,16 +76,18 @@ def wrap_render_func(func: BaseRenderFunc) -> RenderFunc:
 
 
 @wrap_render_func
-def render_default(node: Node, contents: Html) -> Html:
+def render_default(node: Node, contents: list[Html]) -> Html:
     attrs = {}
     if node.name:
         attrs["class"] = node.name
     if node.name in VOID_ELEMENTS:
-        if str(contents) != "":
+        if str(Html.join(*contents)) != "":
             raise TypeError(
                 f"Node name is a void element ({node.name}) but node has contents ({contents})"
             )
         return html(t"<{node.name}>")
+    elif node.name in BLOCK_ELEMENTS:
+        return html(t"<{node.name}>{contents}</{node.name}>")
     elif node.name in NONVOID_ELEMENTS:
         return html(t"<{node.name}>{contents}</{node.name}>")
     else:
@@ -96,11 +98,11 @@ def render_default(node: Node, contents: Html) -> Html:
                 if attrs:
                     return html(t"<span{attrs}>{contents}</span>")
                 else:
-                    return html(t"<span>{contents}</span>")
+                    return Html.join(*contents)
             case Scope.toplevel:
-                return html(t"<p{attrs}>{contents}</p>")
+                return html(t"<p{attrs}>{Html.join(*contents)}</p>")
             case Scope.block:
-                return html(t"<div{attrs}>{contents}</div>")
+                return html(t"<div{attrs}>{Html.joinlines(*contents)}</div>")
             case _:
                 raise TypeError(f"unhandled node.scope value: {node.scope!r}")
 
@@ -123,7 +125,7 @@ class HtmlRenderer:
     def __init__(self, render_funcs: dict[str, RenderFunc]) -> None:
         self.render_funcs = render_funcs
 
-    def render(self, nodes: list[Node]) -> Html:
+    def render(self, nodes: list[Node]) -> list[Html]:
         htmls = []
         for node in nodes:
             try:
@@ -131,7 +133,7 @@ class HtmlRenderer:
             except KeyError:
                 render_func = self.render_funcs[""]
             htmls.append(render_func(node, self.render))
-        return Html.join(*htmls)
+        return htmls
 
 
 VOID_ELEMENTS = {
@@ -150,6 +152,17 @@ VOID_ELEMENTS = {
     "wbr",
 }
 
+BLOCK_ELEMENTS = {
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "ol",
+    "p",
+    "ul",
+}
 NONVOID_ELEMENTS = {
     "a",
     "abbr",

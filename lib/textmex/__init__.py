@@ -56,4 +56,4 @@ def process(nodes: list[Node], config: ProcessConfig) -> list[Node]:
 
 def render(nodes: list[Node], config: RenderConfig) -> Html:
     renderer = HtmlRenderer(config.render_funcs)
-    return renderer.render(nodes)
+    return Html.joinlines(*renderer.render(nodes))

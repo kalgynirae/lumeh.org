@@ -1,6 +1,4 @@
-import re
-
-from htmlgen import Html, html
+from htmlgen import Html, html, htmlstr
 from textmex import Node, ProcessConfig, RenderConfig, Scope, SurroundWithConfig
 
 process_config = ProcessConfig(
@@ -15,24 +13,20 @@ process_config = ProcessConfig(
 render_config = RenderConfig()
 
 
-rc = render_config
+register = render_config.register
 
 
-FRACTION_RE = re.compile(r"\d+(?: \d+)?/\d+")
-NUMBER_RE = re.compile(r"\d+(?:\.\d+)?")
-
-
-@rc.register("amount")
+@register("amount")
 def amount(data: str) -> Html:
     data = data.replace("/", "\N{FRACTION SLASH}")
-    return html(t"<span class=amount>{data}</span>")
+    return htmlstr(data)
 
 
-@rc.register("ingredient")
-def ingredient(node: Node, contents: Html) -> Html:
-    return html(t"<li>{contents}</li>")
+@register("ingredient")
+def ingredient(node: Node, contents: list[Html]) -> Html:
+    return html(t"<li>{Html.join(*contents)}</li>")
 
 
-@rc.register("ingredient-list")
-def ingredient_list(node: Node, contents: Html) -> Html:
-    return html(t"<ul class=ingredients>{contents}</ul>")
+@register("ingredient-list")
+def ingredient_list(node: Node, contents: list[Html]) -> Html:
+    return html(t"<ul class=ingredients>\n{Html.joinlines(*contents)}\n</ul>")

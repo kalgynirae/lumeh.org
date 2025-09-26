@@ -46,6 +46,10 @@ class Html:
     def join(cls, *htmls: Self) -> Self:
         return cls("".join(h.text for h in htmls))
 
+    @classmethod
+    def joinlines(cls, *htmls: Self) -> Self:
+        return cls("\n".join(h.text for h in htmls))
+
 
 _lonely_empty_placeholder_pattern = re.compile(r"\s*!E\s*")
 

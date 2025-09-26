@@ -16,6 +16,16 @@ render_config = RenderConfig()
 register = render_config.register
 
 
+@register("time")
+def time(data: str) -> Html:
+    return html(t"<p>Time: {data}</p>")
+
+
+@register("serves")
+def serves(data: str) -> Html:
+    return html(t"<p>Serves: {data}</p>")
+
+
 @register("amount")
 def amount(data: str) -> Html:
     data = data.replace("/", "\N{FRACTION SLASH}")

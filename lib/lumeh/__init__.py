@@ -34,7 +34,7 @@ def textmex_page(source, *, title: str | None = None):
 
 
 def page(source, *, title: str | None = None):
-    return formathtml(jinja(markdown(source), template="page.html", title=title))
+    return jinja(markdown(source), template="page.html", title=title)
 
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")

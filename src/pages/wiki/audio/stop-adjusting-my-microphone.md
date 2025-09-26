@@ -44,7 +44,7 @@ looking at the list of clients, and examining clients with
 <code>wpctl inspect <span class=placeholder>ID</span> | less</code>.
 You can also match on <strong>application.name</strong> or (presumably) other properties that
 the inspect command shows. Based on brief testing, it seems that a rule will be applied if <em>any</em>
-<code>{ … }</code> section within **matches** is a match for the client, and I’m guessing that
+<code>{ … }</code> section within <strong>matches</strong> is a match for the client, and I’m guessing that
 writing multiple conditions within one <code>{ … }</code> section means that <em>all</em> of the
 conditions need to match. But this is all conjecture; I haven’t found any documentation about how
 the matching works. If you are aware of any documentation, please

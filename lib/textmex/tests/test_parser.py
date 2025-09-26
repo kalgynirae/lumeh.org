@@ -191,6 +191,7 @@ def test_raw(caplog):
     assert isinstance(code.data, list)
     reconstructed_string = ""
     for node in code.data:
+        assert isinstance(node.data, str)
         reconstructed_string += node.data
     assert reconstructed_string == "a\n\n  *b*\nc"
 

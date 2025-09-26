@@ -36,7 +36,8 @@ and (occasionally) WSL.
 1. **Clone the repo** and `cd` into it.
 2. **Init submodules** with `git submodule update --init`. (Note that the *assets* repo will fail to
    clone because it is private.)
-3. **Build** with `./build.sh`.
+3. **Check out submodule branches** with `git submodule foreach 'if ! git symbolic-ref -q HEAD >/dev/null; then git checkout main || git checkout master; fi'`.
+4. **Build** with `./build.sh`.
 
 To view the result, run `./test.sh` and visit the displayed address in
 your browser.

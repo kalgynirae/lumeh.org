@@ -1,10 +1,10 @@
 import logging
+from os.path import splitext
 from pathlib import Path
 
 from websleydale import (
     Author,
     Redirect,
-    build as websleydale_build,
     caddy_redirects,
     dir,
     file,
@@ -16,12 +16,20 @@ from websleydale import (
     sass,
     textmex,
 )
-from .renderer import renderer_config
+from websleydale import (
+    build as websleydale_build,
+)
+
+from .renderer import process_config, render_config
 
 
 def textmex_page(source, *, title: str | None = None):
     return formathtml(
-        jinja(textmex(source, renderer_config), template="page.html", title=title)
+        jinja(
+            textmex(source, process_config, render_config),
+            template="page.html",
+            title=title,
+        )
     )
 
 
@@ -178,45 +186,47 @@ def build():
             "projects/websleydale/": page(src / "projects/websleydale.md"),
             **index(
                 {
-                    f"recipes/{name.replace('_', '-')}/": page(
-                        src / f"projects/recipes/{name}.md"
+                    f"recipes/{splitext(name)[0].replace('_', '-')}/": page(
+                        src / f"projects/recipes/{name}"
                     )
+                    if name.endswith(".md")
+                    else textmex_page(src / f"projects/recipes/{name}")
                     for name in [
-                        "almond_salad_dressing",
-                        "apple_cider",
-                        "apple_crisp",
-                        "asparagus_mushroom_soup",
-                        "banana_bread",
-                        "bettys_chili",
-                        "calico_beans",
-                        "chana_masala",
-                        "chana_masala_with_spice_kit",
-                        "chancakes",
-                        "chicken_curry",
-                        "chicken_curry_v2",
-                        "chickpeas_pressure_cooker",
-                        "chili",
-                        "chonklate_chip_cookies",
-                        "christmas_anything",
-                        "cookies",
-                        "cottage_pie",
-                        "creme_brulee_cheesecake",
-                        "curry_chicken_pot_pie",
-                        "dal",
-                        "first_watch_seasoning",
-                        "green_bean_bundles",
-                        "krishna_lunch_chili",
-                        "lemonade",
-                        "little_white_ball_cookies",
-                        "mac_and_cheese",
-                        "popovers",
-                        "pumpkin_bread",
-                        "quiche",
-                        "salmon_pate",
-                        "shortbread_cookies",
-                        "spiced_spinach",
-                        "sweet_potato_casserole",
-                        "thai_chicken_curry",
+                        "almond_salad_dressing.md",
+                        "apple_cider.md",
+                        "apple_crisp.md",
+                        "asparagus_mushroom_soup.md",
+                        "banana_bread.md",
+                        "bettys_chili.md",
+                        "calico_beans.md",
+                        "chana_masala.md",
+                        "chana_masala_with_spice_kit.md",
+                        "chancakes.md",
+                        "chicken_curry.md",
+                        "chicken_curry_v2.md",
+                        "chickpeas_pressure_cooker.md",
+                        "chili.md",
+                        "chonklate_chip_cookies.md",
+                        "christmas_anything.md",
+                        "cookies.md",
+                        "cottage_pie.md",
+                        "creme_brulee_cheesecake.md",
+                        "curry_chicken_pot_pie.md",
+                        "dal.mex",
+                        "first_watch_seasoning.md",
+                        "green_bean_bundles.md",
+                        "krishna_lunch_chili.md",
+                        "lemonade.md",
+                        "little_white_ball_cookies.md",
+                        "mac_and_cheese.md",
+                        "popovers.md",
+                        "pumpkin_bread.md",
+                        "quiche.md",
+                        "salmon_pate.md",
+                        "shortbread_cookies.md",
+                        "spiced_spinach.md",
+                        "sweet_potato_casserole.md",
+                        "thai_chicken_curry.md",
                     ]
                 },
                 "recipes",

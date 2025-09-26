@@ -1,12 +1,16 @@
+import logging
 import sys
 
 from htmlgen import Html
 
-from .html_renderer import HtmlRenderer, RendererConfig
-from .parser import Node, Parser, UnexpectedToken
+from .html_renderer import HtmlRenderer, RenderConfig
+from .parser import Node, Parser, Scope, UnexpectedToken
+from .processor import ProcessConfig, SurroundWithConfig, process_children
 from .tokenizer import Tag, Token, Tokenizer
 
-__all__ = [Node, RendererConfig, "parse", "render", "tokenize"]
+__all__ = [Node, RenderConfig, Scope, SurroundWithConfig, "parse", "render", "tokenize"]
+
+logger = logging.getLogger(__name__)
 
 
 def tokenize(buffer: str) -> list[Token]:
@@ -24,13 +28,19 @@ def tokenize(buffer: str) -> list[Token]:
 def parse(
     buffer: str,
     *,
+    line_number_start: int = 1,
     recursion_limit: int | None = None,
     iteration_limit: int | None = None,
 ) -> list[Node]:
     if recursion_limit is not None:
         sys.setrecursionlimit(recursion_limit)
     tokens = tokenize(buffer)
-    parser = Parser(buffer, tokens, iteration_limit=iteration_limit)
+    parser = Parser(
+        buffer,
+        tokens,
+        iteration_limit=iteration_limit,
+        line_number_start=line_number_start,
+    )
     try:
         return parser.parse_document()
     except UnexpectedToken as e:
@@ -40,6 +50,10 @@ def parse(
         raise
 
 
-def render(nodes: list[Node], config: RendererConfig) -> Html:
-    renderer = HtmlRenderer(config.renderers)
+def process(nodes: list[Node], config: ProcessConfig) -> list[Node]:
+    return process_children(None, nodes, config)
+
+
+def render(nodes: list[Node], config: RenderConfig) -> Html:
+    renderer = HtmlRenderer(config.render_funcs)
     return renderer.render(nodes)

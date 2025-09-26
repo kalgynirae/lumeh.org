@@ -406,24 +406,33 @@ async def _git_file_info(file: Path, sitemeta: SiteMetadata) -> GitFileInfo:
 
 
 class textmex(TextProducer):
-    def __init__(self, path: Path, config: textmex_mod.RendererConfig) -> None:
+    def __init__(
+        self,
+        path: Path,
+        process_config: textmex_mod.ProcessConfig,
+        render_config: textmex_mod.RenderConfig,
+    ) -> None:
         self.source = file(path)
-        self.config = config
+        self.process_config = process_config
+        self.render_config = render_config
 
     async def run(self, info: Info) -> TextResult:
         source = await self.source.run(info)
         content = source.path.read_text()
 
         pageinfo: Dict[str, Any] = {}
-        if content.startswith("---\n"):
-            yamltext, content = content[4:].split("---\n", maxsplit=1)
-            pageinfo.update(yaml.safe_load(yamltext))
+        yamltext, content = content.split("---\n", maxsplit=1)
+        pageinfo.update(yaml.safe_load(yamltext))
+        yaml_line_count = 1 + yamltext.count("\n")
 
-        nodes = textmex_mod.parse(input)
-        rendered = textmex_mod.render(nodes, self.config)
+        nodes = textmex_mod.parse(content, line_number_start=yaml_line_count + 1)
+        logging.getLogger().setLevel(logging.DEBUG)
+        nodes = textmex_mod.process(nodes, self.process_config)
+        logging.getLogger().setLevel(logging.INFO)
+        rendered = textmex_mod.render(nodes, self.render_config)
 
         return TextResult(
-            sourceinfo=source.sourceinfo, content=rendered, pageinfo=pageinfo
+            sourceinfo=source.sourceinfo, content=str(rendered), pageinfo=pageinfo
         )
 
 

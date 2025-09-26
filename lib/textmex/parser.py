@@ -31,7 +31,7 @@ def log_enter_exit(func: T) -> T:
         self.log_enter("%s", func.__name__)
         try:
             result = func(self, *args, **kwargs)
-        except UnexpectedToken as e:
+        except Exception as e:
             self.log_exit("%s: %s", type(e).__name__, e)
             raise
         else:
@@ -94,15 +94,22 @@ class Parser:
     index: int
     depth: int
     iteration_limit: int | None
+    line_number_start: int
 
     def __init__(
-        self, buffer: str, tokens: list[Token], *, iteration_limit: int | None = None
+        self,
+        buffer: str,
+        tokens: list[Token],
+        *,
+        iteration_limit: int | None = None,
+        line_number_start: int = 1,
     ) -> None:
         self.buffer = buffer
         self.tokens = tokens
         self.index = 0
         self.depth = 0
         self.iteration_limit = iteration_limit
+        self.line_number_start = line_number_start
 
     def log(self, template: str, *args) -> None:
         prefix = "| " * self.depth
@@ -121,7 +128,7 @@ class Parser:
         self.log("> " + template, *args)
 
     def find_position(self, pos: int) -> LineCol:
-        line = self.buffer.count("\n", 0, pos) + 1
+        line = self.line_number_start + self.buffer.count("\n", 0, pos)
         col = pos - self.buffer.rfind("\n", 0, pos)
         return LineCol(line, col)
 

@@ -530,7 +530,7 @@ class formathtml(FileProducer):
         args = [
             "bash",
             "-c",
-            'superhtml fmt --no-strict-tags --stdin <"$1" >"$2"',
+            'superhtml fmt --syntax-only --stdin <"$1" >"$2"',
             "bash-superhtml",
             str(source.path),
             str(dest),

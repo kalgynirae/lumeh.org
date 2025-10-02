@@ -58,8 +58,9 @@ instead of being redirected.
 I **despise** cookie banners; therefore lumeh.org avoids using any cookies.
 
 I like cookies, though, and I highly recommend making your own! I recommend either my [classic
-chocolate-chip recipe](/recipes/cookies/) known for its use of maple flavoring or [Chonklate Chip
-Cookies](/recipes/chonklate-chip-cookies/) which imitate Levain Bakery’s famous cookies.
+chocolate-chip recipe](https://www.lumeh.org/recipes/cookies/) known for its use of maple flavoring
+or [Chonklate Chip Cookies](https://www.lumeh.org/recipes/chonklate-chip-cookies/) which imitate
+Levain Bakery’s famous cookies.
 
 ### Site usage
 

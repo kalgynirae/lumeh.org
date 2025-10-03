@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "strict": true,
+    "noEmitOnError": true,
+  },
+  "include": ["src/ts/**/*"],
+}

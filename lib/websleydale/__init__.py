@@ -78,6 +78,7 @@ class SiteMetadata:
 
 @dataclass
 class Info:
+    globals: dict[str, str]
     path: str
     sitemeta: SiteMetadata
 
@@ -103,6 +104,7 @@ def build(
     name: str,
     repo_name: str,
     repo_url: str,
+    globals: Dict[str, TextProducer],
     tree: Dict[str, FileProducer],
     redirects: Dict[str, Redirect],
 ) -> None:
@@ -131,6 +133,18 @@ def build(
     tempdir = Path(mkdtemp(prefix="websleydale-"))
     logger.debug("Using tempdir %s", tempdir)
 
+    processed_globals = {}
+    for key, producer in globals.items():
+        if not isinstance(producer, TextProducer):
+            raise TypeError(f"global item {key!r} has invalid type {type(producer)}")
+        try:
+            processed_globals[key] = asyncio.run(
+                producer.run(Info(globals={}, path=f"global:{key}", sitemeta=sitemeta))
+            ).content
+        except Exception as e:
+            e.add_note(f"while processing global item {key!r}")
+            raise
+
     awaitables = []
     paths = []
     for pathstr, producer in tree.items():
@@ -141,7 +155,7 @@ def build(
                 f"item for path {pathstr!r} has invalid type {type(producer)}"
             )
         destpath = destdir / pathstr
-        info = Info(path=pathstr, sitemeta=sitemeta)
+        info = Info(globals=processed_globals, path=pathstr, sitemeta=sitemeta)
         awaitables.append(copy(destpath, producer, info))
         paths.append(f"{destdir.name}/{pathstr}")
 
@@ -494,6 +508,16 @@ class string(TextProducer):
         )
 
 
+class readfile(TextProducer):
+    def __init__(self, source: FileProducer) -> None:
+        self.source = source
+
+    async def run(self, info: Info) -> TextResult:
+        source = await self.source.run(info)
+        text = source.path.read_text()
+        return TextResult(sourceinfo=None, content=text, pageinfo={})
+
+
 class jinja(FileProducer):
     def __init__(
         self, source: TextProducer, template: str, title: str | None = None
@@ -513,7 +537,10 @@ class jinja(FileProducer):
         if self.title is not None:
             pageinfo["title"] = self.title
         rendered = self.template.render(
-            page=pageinfo, site=info.sitemeta, source=source.sourceinfo
+            page=pageinfo,
+            globals=info.globals,
+            site=info.sitemeta,
+            source=source.sourceinfo,
         )
         dest.write_text(rendered)
 
@@ -564,6 +591,17 @@ class sass(FileProducer):
         if exitcode != 0:
             raise RuntimeError("pysassc failed")
         return FileResult(sourceinfo=source.sourceinfo, path=dest)
+
+
+class typescript(FileProducer):
+    async def run(self, info: Info) -> FileResult:
+        dest = outfile(".js")
+        args = ["tsc", "--outFile", str(dest)]
+        proc = await asyncio.create_subprocess_exec(*args)  # ty: ignore[missing-argument]
+        exitcode = await proc.wait()
+        if exitcode != 0:
+            raise RuntimeError("tsc failed")
+        return FileResult(sourceinfo=None, path=dest)
 
 
 class caddy_redirects(FileProducer):

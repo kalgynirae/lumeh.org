@@ -13,8 +13,10 @@ from websleydale import (
     jinja,
     markdown,
     merge,
+    readfile,
     sass,
     textmex,
+    typescript,
 )
 from websleydale import (
     build as websleydale_build,
@@ -133,6 +135,9 @@ def build():
         name="lumeh.org",
         repo_name="kalgynirae/lumeh.org",
         repo_url="https://github.com/kalgynirae/lumeh.org",
+        globals={
+            "footer_js": readfile(typescript()),
+        },
         tree={
             "css/lumeh.css": sass(src / "css/lumeh.sass"),
             "files": dir(root / "assets/files", allow_missing=True),

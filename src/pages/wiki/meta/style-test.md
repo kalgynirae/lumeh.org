@@ -12,8 +12,48 @@ horizontal rules, etc.
 
 ## H2 one
 
-It can be interesting to compare the visual appearance of normal text with that
-of heading text of various sizes.
+This is **placeholder text** that is long enough to form a lengthy paragraph.
+I wrote it myself, but it doesn’t contain anything interesting, so there’s
+basically no point in reading it. It exists purely for the purpose of providing
+several lines of text that will wrap several times when displayed on the page,
+which allows the viewer to get a sense for how long bits of text will look in
+general. Sometimes, paragraphs might include occasional *formatted* words, so
+this text includes some of those. Words or phrases in a monospaced font are
+occasionally also used, like this: `eggplant tomato`. That’s not a real command
+on any system I’m aware of, by the way, so you shouldn’t try to run it.
+
+The following was used to experimentally figure out good values for the
+`size-adjust`, `ascent-override`, and `descent-override` CSS properties
+when making the monospaced font match the serif font.
+
+<p id=line-height-test>
+<span style="background-color: lightgreen;">A normal words<br></span>
+<span style="background-color: lightgreen;">A <em>italic words</em><br></span>
+<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
+<span style="background-color: lightgreen;">A normal words<br></span>
+<span style="background-color: lightgreen;">A <code>monospaced</code> words<br></span>
+<span style="background-color: lightgreen;">A normal words<br></span>
+<span style="background-color: lightgreen;">A <em>italic words</em><br></span>
+<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
+<span style="background-color: lightgreen;">A normal words<br></span>
+<span style="background-color: lightgreen;">A <code>monospaced</code> words<br></span>
+<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
+<span style="background-color: lightgreen;">end<br></span>
+</p>
+<script>
+window.addEventListener("load", () => {
+const test = document.querySelector("#line-height-test");
+let prevChild = null;
+for (const child of test.childNodes) {
+    if (child.tagName != "SPAN") continue;
+    if (prevChild != null) {
+        const height = child.getBoundingClientRect().y - prevChild.getBoundingClientRect().y;
+        prevChild.innerHTML = `(height=${height.toFixed(2)}) ` + prevChild.innerHTML;
+    }
+    prevChild = child;
+}
+});
+</script>
 
 ## H2 two
 

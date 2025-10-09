@@ -1,29 +1,52 @@
 from htmlgen import Html, html, htmlstr
-from textmex import Node, ProcessConfig, RenderConfig, Scope, SurroundWithConfig
+from textmex import Node, ProcessConfig, RenderConfig, Scope
 
 process_config = ProcessConfig(
     rename={
         "*": "ingredient",
         "backtick": "amount",
     },
-    surround_with={
-        "ingredient": SurroundWithConfig(name="ingredient-list", scope=Scope.toplevel),
-    },
 )
+process_config.surround(
+    ["ingredient"],
+    "ingredient-list",
+    scope=Scope.toplevel,
+)
+process_config.surround(
+    ["author", "time", "yield"],
+    "metadata",
+    scope=Scope.toplevel,
+)
+
 render_config = RenderConfig()
-
-
 register = render_config.register
+
+
+@register("metadata")
+def metadata(contents: list[Html]) -> Html:
+    inner = Html.join(*contents, sep=html(t"<br>"))
+    return html(t"<p class=recipe-metadata>{inner}</p>")
+
+
+@register("author")
+def author(data: str) -> Html:
+    return html(
+        t"<span><span>Author<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+    )
 
 
 @register("time")
 def time(data: str) -> Html:
-    return html(t"<p>Time: {data}</p>")
+    return html(
+        t"<span><span>Time<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+    )
 
 
-@register("serves")
+@register("yield")
 def serves(data: str) -> Html:
-    return html(t"<p>Serves: {data}</p>")
+    return html(
+        t"<span><span>Yield<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+    )
 
 
 @register("amount")

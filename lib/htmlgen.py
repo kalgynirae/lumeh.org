@@ -43,7 +43,14 @@ class Html:
         return self.text
 
     @classmethod
-    def join(cls, *htmls: Self) -> Self:
+    def join(cls, *htmls: Self, sep: Self | None = None) -> Self:
+        if sep is not None:
+            separated_htmls = []
+            for html in htmls:
+                separated_htmls.append(html)
+                separated_htmls.append(sep)
+            separated_htmls.pop()  # remove last separator
+            return cls("".join(h.text for h in separated_htmls))
         return cls("".join(h.text for h in htmls))
 
     @classmethod

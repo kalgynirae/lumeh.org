@@ -13,11 +13,11 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
   <button id="reset">Reset</button>
 </fieldset>
 <fieldset id="options">
-  <p>Start at <input id="start-minutes" size=1 value="0">:<input id="start-seconds" maxlength=2 size=2 value="00"></p>
-  <p>Count
+  <span>Start at <span class=timefont><input id="start-minutes" type=text size=1 value="0">:<input id="start-seconds" type=text maxlength=2 size=2 value="00"></span></span>
+  <span>Count
     <label><input id="direction-up" name="d" type="radio" value="up" checked>up</label>
     <label><input id="direction-down" name="d" type="radio" value="down">down</label>
-  </p>
+  </span>
 </fieldset>
 <div class="spacer"></div>
 
@@ -32,7 +32,7 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
   text-align: center;
   margin-top: calc(2 * var(--paragraph-spacing));
 }
-#controls, #options {
+#controls {
   align-items: baseline;
   border: none;
   display: flex;
@@ -53,11 +53,25 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
 #reset {
   color: #75237d;
 }
-#options p {
-  margin: 0.5rem;
+#options {
+  align-items: baseline;
+  border: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5em;
+}
+#options input[type=text] {
+  line-height: 1.5;
 }
 #options input[type=radio] {
   margin-left: .5em;
+  margin-right: 0.25em;
+}
+.timefont, .timefont input {
+  font-family: "Inter";
+  font-feature-settings: "tnum";
+  font-weight: 550;
+  line-height: 1.5;
 }
 .spacer {
   margin-bottom: var(--paragraph-spacing);

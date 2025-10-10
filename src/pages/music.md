@@ -8,7 +8,6 @@ I play the pipe organ and the piano, occasionally sing, and even more occasional
 * [hymns](/hymns/) – sheet music and recordings of hymn arrangements I’ve written
 
 <br>
-<br>
 
 # Synthmaster Lumpy
 

@@ -2,8 +2,6 @@
 title: Christmas in July 2025
 ---
 
-<div class=compact-headings>
-
 # Christmas in July 2025
 
 A triumphant on-schedule return after a multi-year absence!
@@ -64,6 +62,4 @@ probably the most useful.
   <div class=snowflake>❆</div>
   <div class=snowflake>❅</div>
   <div class=snowflake>❆</div>
-</div>
-
 </div>

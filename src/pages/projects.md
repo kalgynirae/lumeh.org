@@ -2,7 +2,6 @@
 title: Projects
 ---
 
-<div class=compact-headings>
 <h1 class=hidden>Projects</h1>
 
 ## Websites
@@ -43,5 +42,3 @@ title: Projects
 * <a href=https://ldjam.com/events/ludum-dare/57/speed-dating rel=external target=_blank>Speed Dating</a>
   (<a href=https://www.lumeh.org/games/speed-dating target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld57 rel=external target=_blank>repo</a>)
   – speedrun the underground dating scene (Ludum Dare 57)
-
-</div>

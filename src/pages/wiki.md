@@ -2,7 +2,6 @@
 title: Wiki
 ---
 
-<div class=compact-headings>
 <h1 class=hidden>Wiki</h1>
 
 A haphazard collection of information curated by me!
@@ -48,5 +47,3 @@ A haphazard collection of information curated by me!
 ## Meta
 
 * [Style Test](meta/style-test/)
-
-</div>

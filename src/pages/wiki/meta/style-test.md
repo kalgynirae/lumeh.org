@@ -79,8 +79,6 @@ And a little bit more.
 
 #### H4: The Sub-Sub-Heading
 
-##### H5: Hardly even a heading any more
-
 <blockquote cite="https://en.wikisource.org/wiki/The_Ethics_of_Belief">
 
 A shipowner was about to send to sea an emigrant-ship. He knew that she was

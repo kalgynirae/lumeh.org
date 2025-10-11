@@ -1,5 +1,6 @@
 import logging
 import sys
+from typing import Any
 
 from htmlgen import Html
 
@@ -54,6 +55,6 @@ def process(nodes: list[Node], config: ProcessConfig) -> list[Node]:
     return process_children(None, nodes, config)
 
 
-def render(nodes: list[Node], config: RenderConfig) -> Html:
+def render(nodes: list[Node], metadata: dict[str, Any], config: RenderConfig) -> Html:
     renderer = HtmlRenderer(config.render_funcs)
-    return Html.joinlines(*renderer.render(nodes))
+    return Html.joinlines(*renderer.render(nodes, metadata))

@@ -1,49 +1,62 @@
----
 title: Wiki
+links:
+  "Stop adjusting my microphone!": audio/stop-adjusting-my-microphone/
+  "Bash Configuration": linux/bash-configuration/
+  "i3 + Firefox Context Menu Alignment Issue": linux/i3-firefox-context-menu-alignment-issue/
+  "PulseAudio": linux/pulseaudio/
+  "Reboot to Windows": linux/reboot-to-windows/
+  "Local Variable": python/local-variable/
+  "Fractions": web/fractions/
+  "Capture the Flag": games/capture-the-flag/
+  "NarChanSo Ball": games/narchanso-ball/
+  "The Base Game": games/the-base-game/
+  "Trebuchennis": games/trebuchennis/
+  "Characters": characters/
+  "Dragée": dragee/
+  "Early Twenty-First Century": early-twenty-first-century/
+  "The Caring Continuum": the-caring-continuum/
+  "Style Test": meta/style-test/
 ---
 
-<h1 class=hidden>Wiki</h1>
+..h1(class=hidden) Wiki
 
 A haphazard collection of information curated by me!
 
-## Audio
-
-* [Stop adjusting my microphone!](audio/stop-adjusting-my-microphone/)
-
-## Linux
-
-### Bash
-
-* [Bash Configuration](linux/bash-configuration/)
-
-### Other
-
-* [i3 + Firefox Context Menu Alignment Issue](linux/i3-firefox-context-menu-alignment-issue/)
-* [PulseAudio](linux/pulseaudio/)
-* [Reboot to Windows](linux/reboot-to-windows/)
-
-## Python
-
-* [Local Variable](python/local-variable/)
-
-## Web
-
-* [Fractions](web/fractions/)
-
-## Games
-
-* [Capture the Flag](games/capture-the-flag/)
-* [NarChanSo Ball](games/narchanso-ball/)
-* [The Base Game](games/the-base-game/)
-* [Trebuchennis](games/trebuchennis/)
-
-## Miscellaneous
-
-* [Characters](characters/)
-* [Dragée](dragee)
-* [Early Twenty-First Century](early-twenty-first-century/)
-* [The Caring Continuum](the-caring-continuum/)
-
-## Meta
-
-* [Style Test](meta/style-test/)
+::ul(class=wiki-tree)
+    ::li
+        ..span Audio
+        ::ul
+            ..li |Stop adjusting my microphone!|
+    ::li
+        ..span Linux
+        ::ul
+            ..li |Bash Configuration|
+            ..li |i3 + Firefox Context Menu Alignment Issue|
+            ..li |PulseAudio|
+            ..li |Reboot to Windows|
+    ::li
+        ..span Python
+        ::ul
+            ..li |Local Variable|
+    ::li
+        ..span Web
+        ::ul
+            ..li |Fractions|
+    ::li
+        ..span Games
+        ::ul
+            ..li |Capture the Flag|
+            ..li |NarChanSo Ball|
+            ..li |The Base Game|
+            ..li |Trebuchennis|
+    ::li
+        ..span Miscellaneous
+        ::ul
+            ..li |Characters|
+            ..li |Dragée|
+            ..li |Early Twenty-First Century|
+            ..li |The Caring Continuum|
+    ::li
+        ..span Meta
+        ::ul
+            ..li |Style Test|

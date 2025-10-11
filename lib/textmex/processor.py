@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass, field, replace
 
-from .parser import Node, Scope
+from .parser import Node, Scope, Parameters
 
 logger = logging.getLogger(__name__)
 
@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 class ProcessConfig:
     rename: dict[str, str] = field(default_factory=dict)
     surround_with: dict[str, SurroundWithConfig] = field(default_factory=dict)
+    wrap: dict[str, str] = field(default_factory=dict)
 
     def surround(self, names: list[str], new_parent_name: str, *, scope: Scope) -> None:
         swc = SurroundWithConfig(frozenset(names), new_parent_name, scope)
@@ -42,6 +43,20 @@ def process_node(node: Node, config: ProcessConfig) -> Node:
 
 def process_children(parent: Node | None, nodes: list[Node], config: ProcessConfig):
     nodes = [process_node(n, config) for n in nodes]
+    if parent is not None and (wrap_name := config.wrap.get(parent.name)) is not None:
+        nodes = [
+            (
+                node
+                if node.name == wrap_name
+                else Node(
+                    name=wrap_name,
+                    scope=node.scope,
+                    params=Parameters.empty(),
+                    data=[node],
+                )
+            )
+            for node in nodes
+        ]
     out = []
     i = 0
     while i < len(nodes):

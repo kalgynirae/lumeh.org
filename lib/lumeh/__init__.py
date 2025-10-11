@@ -151,22 +151,23 @@ def build():
             "redirects.caddy": caddy_redirects(redirects),
             "robots.txt": file(src / "robots.txt"),
             **index(
-                dict(
-                    # .md files get processed with page()
+                {
                     (
                         (
                             str(path.relative_to(src / "pages").with_suffix(".html"))
-                            if path.name == "index.md"
+                            if path.stem == "index"
                             else f"{path.relative_to(src / 'pages').with_suffix('')}/"
-                        ),
-                        page(path),
+                        )
+                        if path.suffix in [".md", ".mex"]
+                        else str(path.relative_to(src / "pages"))
+                    ): (
+                        (page(path) if path.suffix == ".md" else textmex_page(path))
+                        if path.suffix in [".md", ".mex"]
+                        else file(path)
                     )
-                    if path.suffix == ".md"
-                    # other extensions get processed with file()
-                    else (str(path.relative_to(src / "pages")), file(path))
                     for path in sorted(src.glob("pages/**"))
                     if path.is_file()
-                ),
+                },
                 "poetry",
                 "tools",
             ),
@@ -191,11 +192,11 @@ def build():
             "projects/websleydale/": page(src / "projects/websleydale.md"),
             **index(
                 {
-                    f"recipes/{splitext(name)[0].replace('_', '-')}/": page(
-                        src / f"projects/recipes/{name}"
+                    f"recipes/{splitext(name)[0].replace('_', '-')}/": (
+                        (page if name.endswith(".md") else textmex_page)(
+                            src / f"projects/recipes/{name}"
+                        )
                     )
-                    if name.endswith(".md")
-                    else textmex_page(src / f"projects/recipes/{name}")
                     for name in [
                         "almond_salad_dressing.md",
                         "apple_cider.md",

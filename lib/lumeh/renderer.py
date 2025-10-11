@@ -1,15 +1,23 @@
+from typing import Any
+
 from htmlgen import Html, html, htmlstr
 from textmex import Node, ProcessConfig, RenderConfig, Scope
 
 process_config = ProcessConfig(
     rename={
         "*": "ingredient",
+        "#": "step",
         "backtick": "amount",
     },
 )
 process_config.surround(
     ["ingredient"],
     "ingredient-list",
+    scope=Scope.toplevel,
+)
+process_config.surround(
+    ["step"],
+    "step-list",
     scope=Scope.toplevel,
 )
 process_config.surround(
@@ -20,6 +28,12 @@ process_config.surround(
 
 render_config = RenderConfig()
 register = render_config.register
+
+
+@register("bar")
+def link(data: str, contents: list[Html], metadata: dict[str, Any]) -> Html:
+    url = metadata["links"][data]
+    return html(t"<a href={url}>{contents}</a>")
 
 
 @register("metadata")
@@ -49,10 +63,30 @@ def serves(data: str) -> Html:
     )
 
 
+@register("part")
+def part(data: str) -> Html:
+    return html(t"<h2>{data}</h2>")
+
+
 @register("amount")
 def amount(data: str) -> Html:
     data = data.replace("/", "\N{FRACTION SLASH}")
     return htmlstr(data)
+
+
+@register("recipe")
+def recipe(contents: list[Html]) -> Html:
+    return html(t"<div class=hyperchef-recipe>\n{Html.joinlines(*contents)}\n</div>")
+
+
+@register("tip")
+def tip(data: str) -> Html:
+    return html(t"<span class=hyperchef-tip>{data}</span>")
+
+
+@register("ingredient-list")
+def ingredient_list(node: Node, contents: list[Html]) -> Html:
+    return html(t"<ul class=ingredient-list>\n{Html.joinlines(*contents)}\n</ul>")
 
 
 @register("ingredient")
@@ -60,6 +94,14 @@ def ingredient(node: Node, contents: list[Html]) -> Html:
     return html(t"<li>{Html.join(*contents)}</li>")
 
 
-@register("ingredient-list")
-def ingredient_list(node: Node, contents: list[Html]) -> Html:
-    return html(t"<ul class=ingredients>\n{Html.joinlines(*contents)}\n</ul>")
+@register("step-list")
+def step_list(node: Node, contents: list[Html], *, start: str | None = None) -> Html:
+    attrs = {}
+    if start:
+        attrs["start"] = start
+    return html(t"<ol class=step-list{attrs}>\n{Html.joinlines(*contents)}\n</ol>")
+
+
+@register("step")
+def step(node: Node, contents: list[Html], *, start: str | None = None) -> Html:
+    return html(t"<li>{Html.join(*contents)}</li>")

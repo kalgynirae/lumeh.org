@@ -443,7 +443,7 @@ class textmex(TextProducer):
         logging.getLogger().setLevel(logging.DEBUG)
         nodes = textmex_mod.process(nodes, self.process_config)
         logging.getLogger().setLevel(logging.INFO)
-        rendered = textmex_mod.render(nodes, self.render_config)
+        rendered = textmex_mod.render(nodes, pageinfo, self.render_config)
 
         return TextResult(
             sourceinfo=source.sourceinfo, content=str(rendered), pageinfo=pageinfo

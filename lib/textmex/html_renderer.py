@@ -29,6 +29,7 @@ def wrap_render_func(func: BaseRenderFunc) -> RenderFunc:
     pass_node = False
     pass_data = False
     pass_contents = False
+    pass_metadata = False
     required_data_type = None
     for param in sig.parameters.values():
         if param.name == "node":
@@ -45,9 +46,13 @@ def wrap_render_func(func: BaseRenderFunc) -> RenderFunc:
                 )
         elif param.name == "contents":
             pass_contents = True
+        elif param.name == "metadata":
+            pass_metadata = True
 
     @functools.wraps(func)
-    def _render_wrapper(node: Node, renderer_render: Callable) -> Html:
+    def _render_wrapper(
+        node: Node, metadata: dict[str, Any], renderer_render: Callable
+    ) -> Html:
         if required_data_type is not None:
             if not isinstance(node.data, required_data_type):
                 raise TypeError(
@@ -68,28 +73,28 @@ def wrap_render_func(func: BaseRenderFunc) -> RenderFunc:
             if isinstance(node.data, str):
                 contents = [htmlstr(node.data)]
             else:
-                contents = renderer_render(node.data)
+                contents = renderer_render(node.data, metadata)
             kwargs["contents"] = contents
+        if pass_metadata:
+            kwargs["metadata"] = metadata
         return func(*node.params.args, **kwargs)
 
     return _render_wrapper
 
 
 @wrap_render_func
-def render_default(node: Node, contents: list[Html]) -> Html:
-    attrs = {}
-    if node.name:
+def render_default(node: Node, contents: list[Html], **kwargs: str) -> Html:
+    attrs = {**kwargs}
+    if node.name and "class" not in attrs and node.name not in ALL_ELEMENTS:
         attrs["class"] = node.name
     if node.name in VOID_ELEMENTS:
         if str(Html.join(*contents)) != "":
             raise TypeError(
                 f"Node name is a void element ({node.name}) but node has contents ({contents})"
             )
-        return html(t"<{node.name}>")
-    elif node.name in BLOCK_ELEMENTS:
-        return html(t"<{node.name}>{contents}</{node.name}>")
+        return html(t"<{node.name}{attrs}>")
     elif node.name in NONVOID_ELEMENTS:
-        return html(t"<{node.name}>{contents}</{node.name}>")
+        return html(t"<{node.name}{attrs}>{contents}</{node.name}>")
     else:
         if node.name != "":
             logger.warning("No renderer defined for non-element name %r", node.name)
@@ -125,14 +130,14 @@ class HtmlRenderer:
     def __init__(self, render_funcs: dict[str, RenderFunc]) -> None:
         self.render_funcs = render_funcs
 
-    def render(self, nodes: list[Node]) -> list[Html]:
+    def render(self, nodes: list[Node], metadata: dict[str, Any]) -> list[Html]:
         htmls = []
         for node in nodes:
             try:
                 render_func = self.render_funcs.get(node.name, render_default)
             except KeyError:
                 render_func = self.render_funcs[""]
-            htmls.append(render_func(node, self.render))
+            htmls.append(render_func(node, metadata, self.render))
         return htmls
 
 
@@ -152,17 +157,6 @@ VOID_ELEMENTS = {
     "wbr",
 }
 
-BLOCK_ELEMENTS = {
-    "h1",
-    "h2",
-    "h3",
-    "h4",
-    "h5",
-    "h6",
-    "ol",
-    "p",
-    "ul",
-}
 NONVOID_ELEMENTS = {
     "a",
     "abbr",
@@ -253,3 +247,5 @@ NONVOID_ELEMENTS = {
     "video",
     "wbr",
 }
+
+ALL_ELEMENTS = VOID_ELEMENTS | NONVOID_ELEMENTS

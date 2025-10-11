@@ -38,40 +38,39 @@ def link(data: str, contents: list[Html], metadata: dict[str, Any]) -> Html:
 
 @register("metadata")
 def metadata(contents: list[Html]) -> Html:
-    inner = Html.join(*contents, sep=html(t"<br>"))
-    return html(t"<p class=recipe-metadata>{inner}</p>")
+    return html(t"<div class=recipe-metadata>{Html.joinlines(*contents)}</div>")
 
 
 @register("author")
 def author(data: str) -> Html:
     return html(
-        t"<span><span>Author<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+        t"<p><span>Author<span class=hidden-text>:</span></span> <span>{data}</span></p>"
     )
 
 
 @register("time")
 def time(data: str) -> Html:
     return html(
-        t"<span><span>Time<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+        t"<p><span>Time<span class=hidden-text>:</span></span> <span>{data}</span></p>"
     )
 
 
 @register("yield")
 def serves(data: str) -> Html:
     return html(
-        t"<span><span>Yield<span class=hidden-text>:</span></span> <span>{data}</span></span>"
+        t"<p><span>Yield<span class=hidden-text>:</span></span> <span>{data}</span></p>"
     )
 
 
-@register("part")
+@register("recipe-part")
 def part(data: str) -> Html:
-    return html(t"<h2>{data}</h2>")
+    return html(t"<h2 class=recipe-part>{data}</h2>")
 
 
 @register("amount")
 def amount(data: str) -> Html:
     data = data.replace("/", "\N{FRACTION SLASH}")
-    return htmlstr(data)
+    return html(t"<span class=amount>{data}</span>")
 
 
 @register("recipe")
@@ -79,9 +78,11 @@ def recipe(contents: list[Html]) -> Html:
     return html(t"<div class=hyperchef-recipe>\n{Html.joinlines(*contents)}\n</div>")
 
 
-@register("tip")
-def tip(data: str) -> Html:
-    return html(t"<span class=hyperchef-tip>{data}</span>")
+@register("inline-tip")
+def inline_tip(data: str) -> Html:
+    return html(
+        t"<details class=inline-tip><summary><l-icon name=info></l-icon></summary><p>{data}</p></details>"
+    )
 
 
 @register("ingredient-list")

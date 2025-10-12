@@ -2,17 +2,10 @@
 title: Music
 ---
 
-I play the pipe organ and the piano, occasionally sing, and even more occasionally compose!
-
-* Synthmaster Lumpy *(← you are here)* – video game music I’ve composed and produced
-* [hymns](/hymns/) – sheet music and recordings of hymn arrangements I’ve written
-
-<br>
-
-# Synthmaster Lumpy
+# Music
 
 I produce music under the alias <em>Synthmaster Lumpy</em>. “Video game music” seems the most apt
-description even though most of these tracks haven’t been used in any game (yet?).
+description even though most of these tracks haven’t been used in any game (yet!).
 
 All tracks on this page are free to download, and *most* can be freely used and redistributed.
 Check each track for specific licensing information.

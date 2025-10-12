@@ -4,26 +4,113 @@ title: Index
 
 <h1 class=hidden>lumeh.org</h1>
 
-**lumeh.org** is Colin Chan’s personal website.  It is <del>currently</del>
-<ins style="font-style: italic; text-decoration: none">always</ins>
-under <span id=construction>construction</span>. If you find anything that seems
-broken or wrong, you can
-<a href="https://github.com/kalgynirae/lumeh.org/issues/new" target=_blank>file an
-issue on GitHub</a> or <a href="mailto:admin@lumeh.org">email me</a>.
+**lumeh.org** is Colin Chan’s personal website. Can I interest you in some…
+<button id=dice-button>
+  <l-icon id=dice-1 name=dice-1 right></l-icon>
+  <l-icon id=dice-2 name=dice-2 right></l-icon>
+  <l-icon id=dice-3 name=dice-3 right></l-icon>
+  <l-icon id=dice-4 name=dice-4 right></l-icon>
+  <l-icon id=dice-5 name=dice-5 right></l-icon>
+  <l-icon id=dice-6 name=dice-6 right></l-icon>
+  <l-icon id=dice-1-fill name=dice-1-fill right></l-icon>
+  <l-icon id=dice-2-fill name=dice-2-fill right></l-icon>
+  <l-icon id=dice-3-fill name=dice-3-fill right></l-icon>
+  <l-icon id=dice-4-fill name=dice-4-fill right></l-icon>
+  <l-icon id=dice-5-fill name=dice-5-fill right></l-icon>
+  <l-icon id=dice-6-fill name=dice-6-fill right></l-icon>
+</button>
+<a id=randomized-link href=/recipes/>tasty recipes</a>?
 
 <style>
-#construction:hover {text-decoration: underline; cursor: pointer}
-</style>
-<script>
-function toggleConstruction() {
-  const construction = document.getElementById("construction");
-  if (construction.innerHTML == "construction") {
-    construction.innerHTML = '<img alt="construction" src="/image/construction.gif">';
-  } else {
-    construction.innerHTML = "construction";
+#dice-button {
+  border: none;
+  background: none;
+  padding: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-green);
+  }
+
+  l-icon {
+    display: none;
+  }
+
+  #dice-1 {
+    display: inline-block;
   }
 }
-document.getElementById("construction").addEventListener("click", toggleConstruction);
+
+#randomized-link {
+  display: inline-block;
+  transition: transform 0.1s ease-out;
+  transform-origin: center center;
+}
+</style>
+
+<script>
+const diceButton = document.querySelector("#dice-button");
+const diceLink = document.querySelector("#randomized-link");
+const diceIcons = [
+  document.querySelector("#dice-1"),
+  document.querySelector("#dice-2"),
+  document.querySelector("#dice-3"),
+  document.querySelector("#dice-4"),
+  document.querySelector("#dice-5"),
+  document.querySelector("#dice-6"),
+  document.querySelector("#dice-1-fill"),
+  document.querySelector("#dice-2-fill"),
+  document.querySelector("#dice-3-fill"),
+  document.querySelector("#dice-4-fill"),
+  document.querySelector("#dice-5-fill"),
+  document.querySelector("#dice-6-fill"),
+];
+const diceLinks = [
+  {href: "/recipes/", text: "tasty recipes"},
+  {href: "/projects/", text: "software projects"},
+  {href: "/hymns/", text: "hymn arrangements"},
+  {href: "/tools/", text: "useful tools"},
+  {href: "/wiki/", text: "intriguing information"},
+  {href: "/music/", text: "groovy music"},
+];
+const diceNext = {0: 2, 2: 3, 3: 5, 5: 1, 1: 4, 4: 0};
+let diceCurrentLink = 0;
+let diceCurrentlyRolling = false;
+let diceCurrentIndex = 0;
+function swapDice(newIndex) {
+  diceIcons[diceCurrentIndex].style.display = "none";
+  diceCurrentIndex = newIndex;
+  diceIcons[diceCurrentIndex].style.display = "inline-block";
+}
+async function diceRoll() {
+  let nextNumber = null;
+  for (let i = 0; i < 15; i++) {
+    const currentNumber = diceCurrentIndex % 6;
+    nextNumber = currentNumber;
+    while (nextNumber == currentNumber) {
+      nextNumber = Math.floor(Math.random() * 6);
+    }
+    swapDice(nextNumber + 6);
+    await new Promise(r => setTimeout(r, 100));
+  }
+  swapDice(diceNext[diceCurrentLink] + 6);
+  await new Promise(r => setTimeout(r, 500));
+  swapDice(diceNext[diceCurrentLink]);
+}
+async function shuffleLinks() {
+  if (diceCurrentlyRolling) return;
+  diceCurrentlyRolling = true;
+  diceLink.style.transform = "scaleY(0%)";
+  await diceRoll();
+  diceCurrentLink = diceCurrentIndex % 6;
+  const link = diceLinks[diceCurrentLink];
+  diceLink.href = link.href;
+  diceLink.textContent = link.text;
+  diceLink.style.transform = "none";
+  diceCurrentlyRolling = false;
+}
+diceButton.addEventListener("click", shuffleLinks);
 </script>
 
 ## Recent updates

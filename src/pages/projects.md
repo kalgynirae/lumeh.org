@@ -42,3 +42,6 @@ title: Projects
 * <a href=https://ldjam.com/events/ludum-dare/57/speed-dating rel=external target=_blank>Speed Dating</a>
   (<a href=https://www.lumeh.org/games/speed-dating target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld57 rel=external target=_blank>repo</a>)
   – speedrun the underground dating scene (Ludum Dare 57)
+* <a href=https://ldjam.com/events/ludum-dare/58/this-game-is-trash rel=external target=_blank>This Game Is Trash</a>
+  (<a href=https://www.lumeh.org/games/trash/ target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld58 rel=external target=_blank>repo</a>)
+  – relax and collect some trash (Ludum Dare 58)

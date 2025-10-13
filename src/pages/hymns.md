@@ -11,9 +11,10 @@ commission arrangements or recordings of specific hymns there.
 
 These are a few of my favorites:
 
-* [#573 *Shepherd, show me how to go*](#csh-573)
+* [#148 *In heavenly Love abiding*](#csh-148)
 * [#342 *This is the day the Lord hath made*](#csh-342)
 * [#537 *O church of God, built on a firm foundation*](#csh-537)
+* [#573 *Shepherd, show me how to go*](#csh-573)
 
 
 ## Christian Science Hymnal

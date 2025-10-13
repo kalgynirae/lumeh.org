@@ -28,6 +28,28 @@ This is a short list of the tracks that I think are the best.
 1. [Battle in the Cathedral (Remastered)](#battle-in-the-cathedral-remastered)
 
 
+## 2025
+
+
+### Trash Collector
+
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Trash Collector.mp3" src-flac="/files/music/Synthmaster Lumpy - Trash Collector.flac">
+
+*October 2025:* Soundtrack for
+[This Game Is Trash](https://ldjam.com/events/ludum-dare/58/this-game-is-trash).
+
+</l-music>
+
+### Orbital Aspirations
+
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Orbital Aspirations.mp3" src-flac="/files/music/Synthmaster Lumpy - Orbital Aspirations.flac">
+
+*October 2025:* Soundtrack for
+[This Game Is Trash](https://ldjam.com/events/ludum-dare/58/this-game-is-trash).
+
+</l-music>
+
+
 ## 2021
 
 

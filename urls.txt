@@ -121,6 +121,8 @@
 /files/music/Synthmaster Lumpy - On The Clock (long version).ogg
 /files/music/Synthmaster Lumpy - On The Clock.mp3
 /files/music/Synthmaster Lumpy - On The Clock.ogg
+/files/music/Synthmaster Lumpy - Orbital Aspirations.flac
+/files/music/Synthmaster Lumpy - Orbital Aspirations.mp3
 /files/music/Synthmaster Lumpy - Over The Purple Rainbow.mp3
 /files/music/Synthmaster Lumpy - Over The Purple Rainbow.ogg
 /files/music/Synthmaster Lumpy - Plausible Geometry.flac
@@ -167,6 +169,8 @@
 /files/music/Synthmaster Lumpy - Town Theme (orchestrated, draft).ogg
 /files/music/Synthmaster Lumpy - Track 7.mp3
 /files/music/Synthmaster Lumpy - Track 7.ogg
+/files/music/Synthmaster Lumpy - Trash Collector.flac
+/files/music/Synthmaster Lumpy - Trash Collector.mp3
 /files/music/Synthmaster Lumpy - Ultimate Banana Landscape.mp3
 /files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg
 /files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3

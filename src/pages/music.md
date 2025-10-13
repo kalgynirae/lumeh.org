@@ -5,28 +5,23 @@ title: Music
 # Music
 
 I produce music under the alias <em>Synthmaster Lumpy</em>. “Video game music” seems the most apt
-description even though most of these tracks haven’t been used in any game (yet!).
+description even though many of these tracks weren’t written for a game. All tracks on
+this page are free to download, and *most* can be freely used and redistributed. Check each track
+for specific licensing information.
 
-All tracks on this page are free to download, and *most* can be freely used and redistributed.
-Check each track for specific licensing information.
-
-
-## Recommended listening
-
-This is a short list of the tracks that I think are the best.
+Here’s a short list of the tracks I like best:
 
 1. [Windmills… in Space!](#windmills-in-space)
 1. [Recycling is Fun](#recycling-is-fun)
 1. [Glimmering Pavement](#glimmering-pavement)
+1. [Trash Collector](#trash-collector)
 1. [Plausible Geometry](#plausible-geometry)
-1. [Let’s Godot Swimming](#lets-godot-swimming)
 1. [Storm in the Valley](#storm-in-the-valley)
 1. [Gravitational Conflict](#gravitational-conflict)
 1. [Ligatures In Space](#ligatures-in-space)
-1. [Walkin’ Lucas (He’s a Fish)](#walkin-lucas-hes-a-fish)
-1. [Mountains In Space](#mountains-in-space)
-1. [Battle in the Cathedral (Remastered)](#battle-in-the-cathedral-remastered)
+1. [Let’s Godot Swimming](#lets-godot-swimming)
 
+<br>
 
 ## 2025
 

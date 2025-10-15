@@ -117,9 +117,14 @@ diceButton.addEventListener("click", shuffleLinks);
 
 <style>
 .recent-updates {
+  margin-bottom: var(--lh);
+
   display: flex;
   gap: 0.5rem;
+
   > a {
+    flex: 1;
+
     background: var(--color-bg-dark);
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -148,12 +153,13 @@ diceButton.addEventListener("click", shuffleLinks);
   </a>
 </div>
 
-## Highlights
+## Miscellaneous
+
+Most of this website’s content can be reached via the navigation bar above. The things below
+are here either for ease of access or because they don’t have a proper home yet.
 
 ### Serious things
 
-*   [hymn arrangements](/hymns/)
-*   [recipes](/recipes/)
 *   [<l-icon name=document right>my résumé</l-icon>](/files/Colin%20Chan%20resume%202025-07.pdf)
 *   [my GitHub profile](https://github.com/kalgynirae/)
 *   [my preferred Google Docs stylesheet](https://docs.google.com/document/d/1HnU8OpUeEzo_AIq4NqNBGNsGCAvGBrmvfOCYuv5SR5w/edit?usp=sharing)

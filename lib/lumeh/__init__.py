@@ -198,7 +198,7 @@ def build():
                         )
                     )
                     for name in [
-                        "almond_salad_dressing.md",
+                        "almond_salad_dressing.mex",
                         "apple_cider.md",
                         "apple_crisp.md",
                         "asparagus_mushroom_soup.md",

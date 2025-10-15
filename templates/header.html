@@ -9,6 +9,9 @@
   {% if page.description %}
   <meta name=description content="{{ page.description }}">
   {% endif %}
+  {% if page.keywords %}
+  <meta name=keywords content="{{ page.keywords|join(',') }}">
+  {% endif %}
   <meta name=generator content="{{ site.generator }}">
   <meta name=color-scheme content="only light">
   <meta name=theme-color content="oklch(82% 0.20 127)">

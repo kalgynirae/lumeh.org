@@ -843,6 +843,11 @@ l-icon
   > .icon.right
     margin-left: 0.25ch
 
+  &.mini
+    .icon
+      width: 0.7em
+      height: 0.7em
+
 .icon
   display: inline-block
   vertical-align: -.125em
@@ -924,7 +929,7 @@ l-icon
     text-wrap-mode: nowrap
 
 .mixed-number
-  word-spacing: -0.25ch
+  word-spacing: -0.2ch
 
 .replaced-fraction
   .numerator
@@ -1011,7 +1016,7 @@ span.ref
     .step-list
       grid-column: 1
 
-.inline-tip
+.inline-tip, .substitutions
   display: inline
 
   summary
@@ -1020,15 +1025,26 @@ span.ref
 
   > *:not(summary)
     display: inline-block
-    margin-block: 0
+    margin-block: 0.25em 0
+    margin-inline: 0.5em
 
-    background-color: #a0d0ff
+    background-color: var(--color)
     border-radius: 0.5em
-    box-shadow: 0.25em 0.25em #358
+    box-shadow: 0.25em 0.25em oklch(from var(--color) calc(l - 0.4) c h)
     padding: 0.5em
 
     @include font-crimson-pro-small
 
+.inline-tip
+  --color: oklch(from #{$blue} calc(l + 0.20) calc(c - 0.05) h)
+
+.substitutions
+  --color: oklch(from #{$orange} calc(l + 0.08) calc(c - 0.08) h)
+
 .wiki-tree
   ul
     margin-bottom: 0
+
+.ingredient
+  .alternates
+    @include font-crimson-pro-small

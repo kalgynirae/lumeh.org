@@ -377,6 +377,18 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   padding: var(--page-padding)
   padding-top: 1.5rem
 
+  > details
+    margin-bottom: var(--lh)
+
+    summary
+      cursor: pointer
+
+    & details
+      margin-bottom: var(--lh)
+
+    &[open]
+      margin-bottom: 0
+
 p
   margin-bottom: var(--lh)
   margin-top: 0
@@ -384,6 +396,7 @@ p
 h1
   margin-top: 0
   margin-bottom: var(--lh)
+  line-height: 1.15
   font-size: 2.0em
   font-weight: 250
   &.title
@@ -1048,3 +1061,6 @@ span.ref
 .ingredient
   .alternates
     @include font-crimson-pro-small
+
+.smaller
+  @include font-crimson-pro-midsmall

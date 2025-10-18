@@ -51,6 +51,7 @@
         {% set ns.path = ns.path + component + "/" %}
         {%- if ns.path in site.tree or ns.path + "index.html" in site.tree -%}
         <span>/</span><a href="/{{ ns.path }}">{{ ns.prevname + component }}</a>
+        {%- set ns.prevname = "" -%}
         {%- else %}
         {% set ns.prevname = component + "/" %}
         {% endif %}

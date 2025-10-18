@@ -30,3 +30,6 @@
 	path = src/projects/colorby
 	url = git@github.com:kalgynirae/colorby.git
 	branch = main
+[submodule "src/pages/talks/context-managers"]
+	path = src/pages/talks/context-managers
+	url = git@github.com:kalgynirae/context-managers-pybay-2025.git

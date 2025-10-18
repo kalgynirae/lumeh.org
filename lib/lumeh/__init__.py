@@ -25,18 +25,17 @@ from websleydale import (
 from .renderer import process_config, render_config
 
 
-def textmex_page(source, *, title: str | None = None):
-    return formathtml(
-        jinja(
-            textmex(source, process_config, render_config),
-            template="page.html",
-            title=title,
+def page(source: Path, *, title: str | None = None):
+    if source.suffix == ".md":
+        return jinja(markdown(source), template="page.html", title=title)
+    elif source.suffix == ".mex":
+        return formathtml(
+            jinja(
+                textmex(source, process_config, render_config),
+                template="page.html",
+                title=title,
+            )
         )
-    )
-
-
-def page(source, *, title: str | None = None):
-    return jinja(markdown(source), template="page.html", title=title)
 
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -160,11 +159,7 @@ def build():
                         )
                         if path.suffix in [".md", ".mex"]
                         else str(path.relative_to(src / "pages"))
-                    ): (
-                        (page(path) if path.suffix == ".md" else textmex_page(path))
-                        if path.suffix in [".md", ".mex"]
-                        else file(path)
-                    )
+                    ): (page(path) if path.suffix in [".md", ".mex"] else file(path))
                     for path in sorted(src.glob("pages/**"))
                     if path.is_file()
                 },
@@ -193,9 +188,7 @@ def build():
             **index(
                 {
                     f"recipes/{splitext(name)[0].replace('_', '-')}/": (
-                        (page if name.endswith(".md") else textmex_page)(
-                            src / f"projects/recipes/{name}"
-                        )
+                        page(src / f"projects/recipes/{name}")
                     )
                     for name in [
                         "almond_salad_dressing.mex",

@@ -157,6 +157,11 @@ def build():
             "projects/": page(src / "projects.md"),
             "redirects.caddy": caddy_redirects(redirects),
             "robots.txt": file(src / "robots.txt"),
+            "poetry": index(
+                {
+                    # TODO
+                },
+            ),
             **index(
                 {
                     (

@@ -97,6 +97,9 @@ class Redirect:
         return cls(308, dest)
 
 
+type Tree = Dict[str, FileProducer | Tree]
+
+
 def build(
     *,
     dest: str,
@@ -105,7 +108,7 @@ def build(
     repo_name: str,
     repo_url: str,
     globals: Dict[str, TextProducer],
-    tree: Dict[str, FileProducer],
+    tree: Tree,
     redirects: Dict[str, Redirect],
 ) -> None:
     global tempdir
@@ -120,12 +123,15 @@ def build(
                 raise RuntimeError(f"Refusing to remove existing dest dir ({reason})")
     create_output_dir(destdir)
 
+    flat_tree = flatten(tree)
+    del tree
+
     sitemeta = SiteMetadata(
         known_authors=known_authors,
         name=name,
         repo_name=repo_name,
         repo_url=repo_url,
-        tree=tree,
+        tree=flat_tree,
         generator="websleydale",
         time=datetime.now(),
     )
@@ -147,7 +153,7 @@ def build(
 
     awaitables = []
     paths = []
-    for pathstr, producer in tree.items():
+    for pathstr, producer in flat_tree.items():
         if pathstr.startswith("/"):
             raise ValueError(f"Invalid path {pathstr!r} (starts with '/')")
         if not isinstance(producer, FileProducer):
@@ -724,3 +730,14 @@ def is_output_dir(dir: Path) -> tuple[bool, str]:
     if not (dir / ".websleydale_output_dir").exists():
         return (False, "doesn't contain file '.websleydale_output_dir'")
     return (True, "")
+
+
+def flatten(tree: Tree, prefix: str = "") -> Dict[str, FileProducer]:
+    out: Dict[str, FileProducer] = {}
+    for k, v in tree.items():
+        key = f"{prefix}{k}" if k == "/" else f"{prefix}/{k}"
+        if isinstance(v, FileProducer):
+            out[prefix + k] = v
+        else:
+            out[key] = flatten(v)
+    return out

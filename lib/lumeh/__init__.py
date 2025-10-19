@@ -138,15 +138,23 @@ def build():
             "footer_js": readfile(typescript()),
         },
         tree={
+            "boxer/": page(src / "boxer.md"),
+            "christmas-in-july-2020/": page(src / "christmas-in-july-2020.md"),
+            "christmas-in-july-2021/": page(src / "christmas-in-july-2021.md"),
+            "christmas-in-july-2025/": page(src / "christmas-in-july-2025.md"),
             "css/lumeh.css": sass(src / "css/lumeh.sass"),
+            "error/404/": page(src / "error/404.md"),
             "files": dir(root / "assets/files", allow_missing=True),
             "font": merge(
                 dir(src / "font"), dir(root / "assets/font", allow_missing=True)
             ),
             "guess": dir(src / "guess"),
+            "hymns/": page(src / "hymns.md"),
             "image": dir(src / "image"),
             "js": dir(src / "js"),
             "media": dir(src / "media"),
+            "music/": page(src / "music.md"),
+            "projects/": page(src / "projects.md"),
             "redirects.caddy": caddy_redirects(redirects),
             "robots.txt": file(src / "robots.txt"),
             **index(
@@ -230,6 +238,7 @@ def build():
                 },
                 "recipes",
             ),
+            "wiki/": page(src / "wiki.mex"),
         },
         redirects=redirects,
     )

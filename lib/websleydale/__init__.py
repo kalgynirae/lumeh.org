@@ -700,22 +700,10 @@ def index_page(paths: list[str], *, title: str) -> jinja:
     return jinja(content, template="page.html")
 
 
-def index(tree: Dict[str, FileProducer], *dirs: str) -> Dict[str, FileProducer]:
-    index_paths = {dir: [] for dir in dirs}
-    for dest, source in tree.items():
-        for dir, paths in index_paths.items():
-            try:
-                relpath = Path(dest).relative_to(dir)
-            except ValueError:
-                pass
-            else:
-                paths.append(str(relpath))
+def index(title: str, tree: Dict[str, FileProducer]) -> Dict[str, FileProducer]:
     return {
+        "/": index_page(list(tree.keys()), title=title),
         **tree,
-        **{
-            f"{dir}/index.html": index_page(paths, title=dir.capitalize())
-            for dir, paths in index_paths.items()
-        },
     }
 
 
@@ -735,9 +723,9 @@ def is_output_dir(dir: Path) -> tuple[bool, str]:
 def flatten(tree: Tree, prefix: str = "") -> Dict[str, FileProducer]:
     out: Dict[str, FileProducer] = {}
     for k, v in tree.items():
-        key = f"{prefix}{k}" if k == "/" else f"{prefix}/{k}"
+        key = f"{prefix}{k}" if k == "/" or prefix == "" else f"{prefix}/{k}"
         if isinstance(v, FileProducer):
-            out[prefix + k] = v
+            out[key] = v
         else:
-            out[key] = flatten(v)
+            out.update(flatten(v, prefix=key))
     return out

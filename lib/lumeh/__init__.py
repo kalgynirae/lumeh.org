@@ -138,6 +138,7 @@ def build():
             "footer_js": readfile(typescript()),
         },
         tree={
+            "index.html": page(src / "index.md"),
             "boxer/": page(src / "boxer.md"),
             "christmas-in-july-2020/": page(src / "christmas-in-july-2020.md"),
             "christmas-in-july-2021/": page(src / "christmas-in-july-2021.md"),
@@ -158,27 +159,45 @@ def build():
             "redirects.caddy": caddy_redirects(redirects),
             "robots.txt": file(src / "robots.txt"),
             "poetry": index(
+                "Poetry",
                 {
-                    # TODO
+                    f"{path.relative_to(src / 'poetry').with_suffix('')}/": page(path)
+                    for path in sorted((src / "poetry").iterdir())
                 },
             ),
-            **index(
+            "tools": index(
+                "Tools",
                 {
+                    f"{path.relative_to(src / 'tools').with_suffix('')}/": page(path)
+                    for path in sorted((src / "tools").iterdir())
+                },
+            ),
+            "talks": {
+                (
                     (
-                        (
-                            str(path.relative_to(src / "pages").with_suffix(".html"))
-                            if path.stem == "index"
-                            else f"{path.relative_to(src / 'pages').with_suffix('')}/"
-                        )
-                        if path.suffix in [".md", ".mex"]
-                        else str(path.relative_to(src / "pages"))
-                    ): (page(path) if path.suffix in [".md", ".mex"] else file(path))
-                    for path in sorted(src.glob("pages/**"))
-                    if path.is_file()
-                },
-                "poetry",
-                "tools",
-            ),
+                        str(path.relative_to(src / "talks").with_suffix(".html"))
+                        if path.stem == "index"
+                        else f"{path.relative_to(src / 'talks').with_suffix('')}/"
+                    )
+                    if path.suffix in [".md", ".mex"]
+                    else str(path.relative_to(src / "talks"))
+                ): (page(path) if path.suffix in [".md", ".mex"] else file(path))
+                for path in sorted(src.glob("talks/**"))
+                if path.is_file() and not path.name.startswith(".")
+            },
+            "wiki": {
+                (
+                    (
+                        str(path.relative_to(src / "wiki").with_suffix(".html"))
+                        if path.stem == "index"
+                        else f"{path.relative_to(src / 'wiki').with_suffix('')}/"
+                    )
+                    if path.suffix in [".md", ".mex"]
+                    else str(path.relative_to(src / "wiki"))
+                ): (page(path) if path.suffix in [".md", ".mex"] else file(path))
+                for path in sorted(src.glob("wiki/**"))
+                if path.is_file()
+            },
             "projects/colorby/": page(
                 src / "projects/colorby/README.md", title="Colorby"
             ),
@@ -198,9 +217,10 @@ def build():
                 src / "projects/voidpop/README.md", title="Voidpop"
             ),
             "projects/websleydale/": page(src / "projects/websleydale.md"),
-            **index(
+            "recipes": index(
+                "Recipes",
                 {
-                    f"recipes/{splitext(name)[0].replace('_', '-')}/": (
+                    f"{splitext(name)[0].replace('_', '-')}/": (
                         page(src / f"projects/recipes/{name}")
                     )
                     for name in [
@@ -241,7 +261,6 @@ def build():
                         "thai_chicken_curry.md",
                     ]
                 },
-                "recipes",
             ),
             "wiki/": page(src / "wiki.mex"),
         },

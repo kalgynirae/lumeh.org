@@ -395,7 +395,6 @@
 /report-a-problem/
 /robots.txt
 /talks/context-managers
-/talks/context-managers/.git
 /talks/context-managers/01-2025-word-cloud
 /talks/context-managers/02-max-open-files
 /talks/context-managers/03-with

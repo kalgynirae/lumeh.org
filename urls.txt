@@ -351,6 +351,7 @@
 /recipes/chancakes.html
 /recipes/chicken-curry
 /recipes/chicken-curry-v2
+/recipes/chicken-curry-v2/
 /recipes/chicken_curry.html
 /recipes/chickpeas-pressure-cooker
 /recipes/chili

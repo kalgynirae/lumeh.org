@@ -37,6 +37,11 @@ def link(data: str, contents: list[Html], metadata: dict[str, Any]) -> Html:
     return html(t"<a href={url}>{contents}</a>")
 
 
+@register("starstar")
+def strong(contents: list[Html]) -> Html:
+    return html(t"<strong>{contents}</strong>")
+
+
 @register("metadata")
 def metadata(contents: list[Html]) -> Html:
     return html(t"<div class=recipe-metadata>{Html.joinlines(*contents)}</div>")

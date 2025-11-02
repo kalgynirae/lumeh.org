@@ -39,6 +39,7 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
   justify-content: center;
 }
 #controls button {
+  font-family: inherit;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 2em;
@@ -69,6 +70,7 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
 }
 .timefont, .timefont input {
   font-family: "Inter";
+  font-size: inherit;
   font-feature-settings: "tnum";
   font-weight: 550;
   line-height: 1.5;

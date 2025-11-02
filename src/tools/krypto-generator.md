@@ -38,6 +38,7 @@ Programmed by Colin <span id="hours">many</span> hours ago.
     width: 20%;
 }
 #krypto-button {
+    font-family: inherit;
     font-size: 2em;
     font-weight: bold;
     padding: 1em;

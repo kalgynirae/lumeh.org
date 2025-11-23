@@ -193,6 +193,7 @@
 /files/public/ludumdare23/think_green_1.png
 /files/public/ludumdare23/think_green_2.png
 /files/public/semaphore.pdf
+/files/public/staff-paper.pdf
 /files/public/the_adclifppsssssttt.pdf
 /files/public/the_game.pdf
 /files/public/the_game_dashed_line.png

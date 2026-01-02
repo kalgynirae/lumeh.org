@@ -56,6 +56,7 @@
 /files/hymns/592.pdf
 /files/hymns/596.pdf
 /files/hymns/600.pdf
+/files/hymns/amazing-grace.pdf
 /files/hymns/cantai-ao-senhor.pdf
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg
@@ -203,7 +204,6 @@
 /files/public/think_green_gameplay.png
 /files/resume-20200720.pdf
 /files/resume-20241215.pdf
-/files/sheets/amazing-grace.pdf
 /files/sheets/i_like_celery.pdf
 /files/sheets/spider_pig.pdf
 /files/sheets/the-game.pdf

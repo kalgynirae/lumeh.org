@@ -1309,3 +1309,8 @@ These are a few of my favorites:
 </div>
 
 </div>
+
+
+## Solos
+
+* <a href="/files/hymns/amazing-grace.pdf">Amazing Grace (for tenor voice and organ)</a>

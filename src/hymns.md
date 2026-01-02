@@ -857,6 +857,29 @@ These are a few of my favorites:
   </div>
 </div>
 
+<div class=hymn id=csh-472>
+  <div class=number>472</div>
+  <div class=firstline>Father, You are very near us</div>
+  <div class=details>
+    <div class=tune>Tune: BENJAMIN</div>
+    <div class=key>Key: C</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/472.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: C → D</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class=hymn id=csh-478>
   <div class=number>478</div>
   <div class=firstline>From these Your children gathered in Your name</div>

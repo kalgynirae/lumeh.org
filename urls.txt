@@ -43,6 +43,7 @@
 /files/hymns/417.pdf
 /files/hymns/460.pdf
 /files/hymns/468.pdf
+/files/hymns/472.pdf
 /files/hymns/478.pdf
 /files/hymns/480.pdf
 /files/hymns/499.pdf
@@ -202,6 +203,7 @@
 /files/public/think_green_gameplay.png
 /files/resume-20200720.pdf
 /files/resume-20241215.pdf
+/files/sheets/amazing-grace.pdf
 /files/sheets/i_like_celery.pdf
 /files/sheets/spider_pig.pdf
 /files/sheets/the-game.pdf

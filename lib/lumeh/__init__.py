@@ -93,7 +93,6 @@ redirects = {
     "/recipes/thai_chicken_curry.html": perm("/recipes/thai-chicken-curry/"),
     "/report-a-problem": temp("/projects/lumeh.org/#reporting-problems"),
     "/report-a-problem/": temp("/projects/lumeh.org/#reporting-problems"),
-    "/t/boba": temp("https://en.wikipedia.org/wiki/Bubble_tea"),
     "/tools/stopwatch.html": perm("/tools/stopwatch/"),
     "/wiki/dragee.html": perm("/wiki/dragee/"),
     "/wiki/early-twenty-first-century.html": perm("/wiki/early-twenty-first-century/"),

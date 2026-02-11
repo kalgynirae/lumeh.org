@@ -60,10 +60,10 @@
   font-family: 'Berkeley Mono', monospace
   font-size: 1em
   font-weight: 440
-  font-stretch: 84%
+  font-stretch: 86%
   font-variant-ligatures: none
   letter-spacing: normal
-  word-spacing: -0.25ch
+  word-spacing: -0.15ch
 @mixin font-berkeley-mono-block
   font-family: 'Berkeley Mono', monospace
   font-size: 1rem
@@ -548,8 +548,14 @@ code, kbd
   @include font-berkeley-mono-inline
   hyphens: manual
   white-space: nowrap
-  padding: 0 0.05em
-  background-color: $bg-dark
+
+  &:not(pre *)
+    padding: 0 0.15em
+    background-color: $bg-dark
+    box-shadow: inset 0 0 0 0.05em $bg-darker
+    border-radius: 0.1em
+    text-wrap-mode: wrap
+    white-space-collapse: break-spaces
 
   &.nobg
     background: none
@@ -565,8 +571,7 @@ samp
   font-size: 0
 
 kbd > kbd
-  border: solid 1px
-  box-shadow: 1px 1px
+  box-shadow: inset -0.025em -0.025em 0 0.075em black
 
 iframe
   display: block
@@ -656,7 +661,7 @@ aside, figure:not(.fullwidth)
   overflow: hidden
   margin-block: var(--lh)
   margin-inline: 2rem
-  padding: 0.5rem var(--page-padding) 0
+  padding: 0.5rem var(--page-padding) 0.5rem
 
   &:has(>pre:first-child)
     padding-top: 0
@@ -666,6 +671,9 @@ aside, figure:not(.fullwidth)
 
     > code
       margin-top: 0
+
+  & > p:last-child
+    margin-bottom: 0
 
   &.tip
     border-color: $green

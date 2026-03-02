@@ -248,7 +248,7 @@ def build():
                         "dal.mex",
                         "first_watch_seasoning.md",
                         "green_bean_bundles.md",
-                        "krishna_lunch_chili.md",
+                        "krishna_lunch_chili.mex",
                         "lemonade.md",
                         "little_white_ball_cookies.md",
                         "mac_and_cheese.md",

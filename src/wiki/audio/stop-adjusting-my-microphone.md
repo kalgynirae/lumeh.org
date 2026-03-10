@@ -43,13 +43,8 @@ You can find the relevant binary name by running <code>wpctl status | less</code
 looking at the list of clients, and examining clients with
 <code>wpctl inspect <span class=placeholder>ID</span> | less</code>.
 You can also match on <strong>application.name</strong> or (presumably) other properties that
-the inspect command shows. Based on brief testing, it seems that a rule will be applied if <em>any</em>
-<code>{ … }</code> section within <strong>matches</strong> is a match for the client, and I’m guessing that
-writing multiple conditions within one <code>{ … }</code> section means that <em>all</em> of the
-conditions need to match. But this is all conjecture; I haven’t found any documentation about how
-the matching works. If you are aware of any documentation, please
-<a href="https://airtable.com/appopNVjvtXgt5gQQ/pagwo1PQB92bHio2c/form?prefill_URL=https%3A%2F%2Fwww.lumeh.org%2Fwiki%2Faudio%2Fstop-adjusting-my-microphone%2F&prefill_Description=Documentation+about+matching+in+WirePlumber+exists+here%3A%20&hide_Attachments=true" rel=external target=_blank
->let me know</a>.
+the inspect command shows. For more information about the syntax and meaning of these rules,
+see <a href=https://pipewire.pages.freedesktop.org/wireplumber/daemon/configuration/modifying_configuration.html#working-with-rules rel=external>Working with rules (WirePlumber docs)</a>.
 </p>
 
 ## Application-specific solutions

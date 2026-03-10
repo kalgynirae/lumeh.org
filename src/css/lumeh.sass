@@ -393,6 +393,10 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     &[open]
       margin-bottom: 0
 
+  p
+    hyphens: auto
+    text-align: justify
+
 p
   margin-bottom: var(--lh)
   margin-top: 0
@@ -552,8 +556,8 @@ code, kbd
   &:not(pre *)
     padding: 0 0.15em
     background-color: $bg-dark
-    box-shadow: inset 0 0 0 0.05em $bg-darker
-    border-radius: 0.1em
+    box-shadow: inset 0 0 0 1px #e0e0e0
+    border-radius: 0.2em
     text-wrap-mode: wrap
     white-space-collapse: break-spaces
 

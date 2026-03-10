@@ -51,10 +51,12 @@ good resources at [/r/FirefoxCSS].
 
 ### Drawbacks
 
-Since *userChrome.css* relies on the internal names of browser components
-(`#contentAreaContextMenu` in this case), it’s fairly likely to stop working in
+<p>
+Since <em>userChrome.css</em> relies on the internal names of browser components
+(<code>#content<wbr>Area<wbr>Context<wbr>Menu</code> in this case), it’s fairly likely to stop working in
 future Firefox versions. If that happens, it shouldn’t be too hard to find the
 new name of the component used for the context menu.
+</p>
 
 [i3 window manager]: https://i3wm.org/
 [current *userChrome.css*]: https://github.com/kalgynirae/dotfiles/blob/f190d01903fd3dd3b647dc1dbb41a5b104f3b0da/userChrome.css.jinja

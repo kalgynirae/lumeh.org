@@ -58,6 +58,7 @@
 /files/hymns/600.pdf
 /files/hymns/amazing-grace.pdf
 /files/hymns/cantai-ao-senhor.pdf
+/files/hymns/elw-654-the-churchs-one-foundation.pdf
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.mp3
 /files/music/Synthmaster Lumpy - Anthony Narciso, You Should Vote.ogg
 /files/music/Synthmaster Lumpy - Background Music for the Approach.mp3

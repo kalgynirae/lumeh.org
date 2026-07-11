@@ -137,7 +137,7 @@ def build():
         repo_name="kalgynirae/lumeh.org",
         repo_url="https://github.com/kalgynirae/lumeh.org",
         globals={
-            "footer_js": readfile(typescript()),
+            "footer_js": readfile(typescript(src / "ts")),
         },
         tree={
             "index.html": page(src / "index.md"),

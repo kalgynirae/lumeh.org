@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import os
 import shutil
@@ -600,13 +601,45 @@ class sass(FileProducer):
 
 
 class typescript(FileProducer):
+    def __init__(self, dir: Path) -> None:
+        self.sources = [file(p) for p in dir.glob("**/*.ts")]
+
     async def run(self, info: Info) -> FileResult:
+        sources = await asyncio.gather(*[s.run(info) for s in self.sources])
         dest = outfile(".js")
-        args = ["tsc", "--outFile", str(dest)]
+        # Typecheck
+        args = [
+            "tsc",
+            "--noEmit",
+            "--strict",
+            "--target",
+            "ES2023",
+            "--lib",
+            "ES2023,DOM",
+            "--skipLibCheck",
+            *[str(s.path) for s in sources],
+        ]
         proc = await asyncio.create_subprocess_exec(*args)  # ty: ignore[missing-argument]
         exitcode = await proc.wait()
         if exitcode != 0:
             raise RuntimeError("tsc failed")
+        # Bundle
+        # TODO: write temp file with import statements
+        temp = outfile(".ts")
+        temp.write_text(
+            "".join(f"import {json.dumps(str(s.path.resolve()))}\n" for s in sources)
+        )
+        args = [
+            "esbuild",
+            str(temp),
+            "--bundle",
+            "--log-level=warning",
+            f"--outfile={dest}",
+        ]
+        proc = await asyncio.create_subprocess_exec(*args)  # ty: ignore[missing-argument]
+        exitcode = await proc.wait()
+        if exitcode != 0:
+            raise RuntimeError("esbuild failed")
         return FileResult(sourceinfo=None, path=dest)
 
 

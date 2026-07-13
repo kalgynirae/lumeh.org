@@ -260,6 +260,7 @@ def build():
                         "spiced_spinach.md",
                         "sweet_potato_casserole.md",
                         "thai_chicken_curry.md",
+                        "vegan_chili.mex",
                     ]
                 },
             ),

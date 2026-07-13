@@ -395,6 +395,7 @@
 /recipes/sweet_potato_casserole.html
 /recipes/thai-chicken-curry
 /recipes/thai_chicken_curry.html
+/recipes/vegan-chili
 /redirects.caddy
 /report-a-problem
 /report-a-problem/

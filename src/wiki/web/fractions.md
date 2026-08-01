@@ -199,5 +199,7 @@ measure the width of a rendered fraction and decide based on that… but I’ll 
 
 ## References
 
-<p id=ref1 class=footnote><span class=ref>[1]</span> <a href=https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G2001 rel=external target=_blank>Unicode 16.0.0 Core Spec, 6.2.9 <em>Other Punctuation</em></a></p>
-<p id=ref2 class=footnote><span class=ref>[2]</span> <a href=https://stackoverflow.com/a/19883965 rel=external target=_blank>“What is the list of possible values for navigator.platform as of today?” on Stack Overflow</a></p>
+<p class=footnote>
+  <span id=ref1 class=ref>[1] <a href=https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G2001 rel=external target=_blank>Unicode 16.0.0 Core Spec, 6.2.9 <em>Other Punctuation</em></a></span><br>
+  <span id=ref2 class=ref>[2] <a href=https://stackoverflow.com/a/19883965 rel=external target=_blank>“What is the list of possible values for navigator.platform as of today?” on Stack Overflow</a></span>
+</p>

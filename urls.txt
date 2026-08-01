@@ -468,3 +468,5 @@
 /wiki/web/fractions/unicode-fractions-android.png
 /wiki/web/fractions/unicode-fractions-ios.png
 /wiki/web/fractions/unicode-fractions-linux.png
+/wiki/web/google-workspace-ads
+/wiki/web/google-workspace-ads/gmail-upgrade-button.png

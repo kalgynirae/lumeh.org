@@ -7,6 +7,7 @@ links:
   "Reboot to Windows": linux/reboot-to-windows/
   "Local Variable": python/local-variable/
   "Fractions": web/fractions/
+  "Google Workspace Ads": web/google-workspace-ads/
   "Capture the Flag": games/capture-the-flag/
   "NarChanSo Ball": games/narchanso-ball/
   "The Base Game": games/the-base-game/
@@ -42,6 +43,7 @@ A haphazard collection of information curated by me!
         ..span Web
         ::ul
             ..li |Fractions|
+            ..li |Google Workspace Ads|
     ::li
         ..span Games
         ::ul

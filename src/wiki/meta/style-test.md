@@ -27,17 +27,14 @@ The following was used to experimentally figure out good values for the
 when making the monospaced font match the serif font.
 
 <p id=line-height-test>
-<span style="background-color: lightgreen;">A normal words<br></span>
-<span style="background-color: lightgreen;">A <em>italic words</em><br></span>
-<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
-<span style="background-color: lightgreen;">A normal words<br></span>
-<span style="background-color: lightgreen;">A <code>monospaced</code> words<br></span>
-<span style="background-color: lightgreen;">A normal words<br></span>
-<span style="background-color: lightgreen;">A <em>italic words</em><br></span>
-<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
-<span style="background-color: lightgreen;">A normal words<br></span>
-<span style="background-color: lightgreen;">A <code>monospaced</code> words<br></span>
-<span style="background-color: lightgreen;">A <strong>bold words</strong><br></span>
+<span style="background-color: lightgreen;">Normal words<br></span>
+<span style="background-color: lightgreen;"><em>Italic words</em><br></span>
+<span style="background-color: lightgreen;"><strong>Bold words</strong><br></span>
+<span style="background-color: lightgreen;"><code>Monospaced</code> words<br></span>
+<span style="background-color: lightgreen;">Words with a <sup>[superscript123]</sup><br></span>
+<span style="background-color: lightgreen;"><strong>Bold words with a 1⁄3 fraction</strong><br></span>
+<span style="background-color: lightgreen;">Words with a <sub>[subscript123]</sub><br></span>
+<span style="background-color: lightgreen;">Finishing normal words<br></span>
 <span style="background-color: lightgreen;">end<br></span>
 </p>
 <script>

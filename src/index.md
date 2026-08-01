@@ -139,6 +139,10 @@ diceButton.addEventListener("click", shuffleLinks);
 }
 </style>
 <div class=recent-updates>
+  <a href=/wiki/web/google-workspace-ads/>
+    <strong>Google Workspace Ads</strong>
+    <span>Find out how to disable them</span>
+  </a>
   <a href=/projects/colorby/>
     <strong>Colorby</strong>
     <span>CLI for coloring interleaved logs (now on PyPI!)</span>
@@ -146,10 +150,6 @@ diceButton.addEventListener("click", shuffleLinks);
   <a href=/wiki/audio/stop-adjusting-my-microphone/>
     <strong>Stop adjusting my microphone!</strong>
     <span>Put Chrome and Discord in their place</span>
-  </a>
-  <a href=/wiki/web/fractions/>
-    <strong>Fractions</strong>
-    <span>Become 3⁄2 as familiar with U+2044</span>
   </a>
 </div>
 

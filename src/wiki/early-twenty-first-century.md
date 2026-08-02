@@ -1,5 +1,6 @@
 ---
 title: Early Twenty-First Century
+narrow: true
 ---
 
 # Early Twenty-First Century

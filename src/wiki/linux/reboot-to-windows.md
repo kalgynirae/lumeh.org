@@ -1,6 +1,7 @@
 ---
 title: Reboot to Windows
 show_authors: true
+narrow: true
 ---
 
 # Reboot to Windows

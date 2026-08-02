@@ -1,6 +1,7 @@
 ---
 title: Stop adjusting my microphone!
 show_authors: true
+narrow: true
 ---
 
 # Stop adjusting my microphone!

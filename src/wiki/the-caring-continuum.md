@@ -1,5 +1,6 @@
 ---
 title: The Caring Continuum
+narrow: true
 ---
 
 # The Caring Continuum

@@ -1,6 +1,7 @@
 ---
 title: NarChanSo Ball
 show_authors: true
+narrow: true
 ---
 
 # NarChanSo Ball

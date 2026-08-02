@@ -17,6 +17,7 @@ links:
   "Early Twenty-First Century": early-twenty-first-century/
   "The Caring Continuum": the-caring-continuum/
   "Style Test": meta/style-test/
+narrow: true
 ---
 
 ..h1(class=hidden) Wiki

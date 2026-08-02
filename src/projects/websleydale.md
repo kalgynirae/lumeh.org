@@ -1,5 +1,6 @@
 ---
 title: Websleydale
+narrow: true
 ---
 
 **Websleydale** is the static site generator used to build **lumeh.org**. For more information,

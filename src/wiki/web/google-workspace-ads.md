@@ -1,5 +1,7 @@
 ---
 title: Google Workspace Ads
+show_authors: true
+narrow: true
 ---
 
 # Google Workspace Ads

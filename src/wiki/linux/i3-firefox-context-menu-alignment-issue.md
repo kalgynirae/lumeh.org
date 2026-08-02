@@ -1,6 +1,7 @@
 ---
 title: i3 + Firefox Context Menu Alignment Issue
 show_authors: true
+narrow: true
 ---
 
 # i3 + Firefox Content Menu Alignment Issue

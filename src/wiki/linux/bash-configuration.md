@@ -1,6 +1,7 @@
 ---
 title: Bash Configuration
 show_authors: true
+narrow: true
 ---
 
 # Bash Configuration

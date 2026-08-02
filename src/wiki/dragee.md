@@ -1,5 +1,6 @@
 ---
 title: Dragée
+narrow: true
 ---
 
 # Dragée

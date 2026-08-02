@@ -1,3 +1,8 @@
+---
+title: lumeh.org
+narrow: true
+---
+
 # lumeh.org
 
 [**lumeh.org**] is Colin Chan’s personal website. It is built using

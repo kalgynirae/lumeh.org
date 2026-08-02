@@ -1,5 +1,6 @@
 ---
 title: The Base Game
+narrow: true
 ---
 
 # The Base Game

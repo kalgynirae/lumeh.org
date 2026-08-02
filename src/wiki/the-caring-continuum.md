@@ -24,8 +24,7 @@ In September of 2008, **Roasty** replied:
 > Since I say "I could care less" as opposed to "I couldn't care less" I have a
 > completely different meaning formula.
 >
-> y=the topic
->
+> y=the topic  
 > x=how much I care
 >
 > "I couldn't care less" = y&lt;x = How much I care is greater

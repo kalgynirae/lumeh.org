@@ -55,10 +55,10 @@
   font-family: 'Berkeley Mono'
   font-weight: 100 900
   font-style: oblique 0deg 16deg
-  font-display: swap
-  size-adjust: 92%
-  ascent-override: 112%
-  descent-override: 27%
+  font-display: block
+  size-adjust: 90%
+  ascent-override: 114.5%
+  descent-override: 28%
   src: url('/font/Berkeley Mono Variable.woff2') format('woff2')
 @mixin font-berkeley-mono-inline
   font-family: 'Berkeley Mono', monospace
@@ -82,14 +82,14 @@
   font-family: 'Crimson Pro'
   font-style: normal
   font-weight: 200 900
-  font-display: swap
+  font-display: block
   size-adjust: 115%
   src: url('/font/CrimsonPro%5Bwght%5D.ttf') format('opentype')
 @font-face
   font-family: 'Crimson Pro'
   font-style: italic
   font-weight: 200 900
-  font-display: swap
+  font-display: block
   size-adjust: 115%
   src: url('/font/CrimsonPro-Italic%5Bwght%5D.ttf') format('opentype')
 @mixin font-crimson-pro-small
@@ -99,6 +99,7 @@
   letter-spacing: 0.03em
   word-spacing: 0.08ch
   line-height: 1.2
+  font-synthesis-position: none
   --font-weight-bold: 700
   --font-weight-extrabold: 850
 @mixin font-crimson-pro-midsmall
@@ -108,6 +109,7 @@
   letter-spacing: 0.02em
   word-spacing: 0.04ch
   line-height: 1.2
+  font-synthesis-position: none
   --font-weight-bold: 650
   --font-weight-extrabold: 800
 @mixin font-crimson-pro-regular
@@ -117,6 +119,7 @@
   letter-spacing: normal
   word-spacing: 0.03ch
   line-height: 1.5
+  font-synthesis-position: none
   --font-weight-bold: 600
   --font-weight-extrabold: 750
   --lh: calc(1rem * 1.5)
@@ -591,14 +594,14 @@ kbd > kbd
   box-shadow: inset -0.025em -0.025em 0 0.075em black
 
 sup
-  font-size: inherit
-  font-variant-position: super
-  vertical-align: inherit
+  @include font-crimson-pro-small
+  line-height: 1
+  vertical-align: super
 
 sub
-  font-size: inherit
-  font-variant-position: sub
-  vertical-align: inherit
+  @include font-crimson-pro-small
+  line-height: 1
+  vertical-align: sub
 
 iframe
   display: block

@@ -1,6 +1,8 @@
 # websleydale URLs
 /
 /.websleydale_output_dir
+/about
+/about/
 /andersonorgan
 /boxer
 /boxer.html

@@ -44,6 +44,8 @@ perm = Redirect.permanent
 temp = Redirect.temporary
 
 redirects = {
+    "/about": temp("/projects/lumeh.org/"),
+    "/about/": temp("/projects/lumeh.org/"),
     "/andersonorgan": perm(
         "/media/theandrewandersonmemorialpipeorganahistory-wittine.pdf"
     ),

@@ -5,15 +5,14 @@ narrow: true
 
 # lumeh.org
 
-[**lumeh.org**] is Colin Chan’s personal website. It is built using
-**Websleydale**, a custom static site generator designed specifically
-for this website.
+[**lumeh.org**] is Colin Chan’s personal website. It is built using a custom static site generator
+called *Websleydale*. It uses neither [cookies](#cookies) nor [LLMs](#no-llms).
 
 [**lumeh.org**]: https://www.lumeh.org/
 
 The text you’re reading right now comes from [README.md in the lumeh.org
 Git repo]. If you’re reading this on GitHub, this explanation probably
-seems inane. But this file also appears as a [page on lumeh.org], so if
+seems silly. But this file also appears as a [page on lumeh.org], so if
 you’re reading it there, I hope the explanation is helpful!
 
 [README.md in the lumeh.org Git repo]: https://github.com/kalgynirae/lumeh.org/blob/main/README.md
@@ -23,49 +22,47 @@ you’re reading it there, I hope the explanation is helpful!
 
 There are two ways to report a problem with lumeh.org:
 
-* <a href=https://github.com/kalgynirae/lumeh.org/issues/new rel=external target=_blank>File an issue on GitHub</a> (preferred, requires a GitHub account)
-* <a href=https://airtable.com/appopNVjvtXgt5gQQ/pagwo1PQB92bHio2c/form rel=external target=_blank>Complete a form on Airtable</a> (no account needed)
+* <a href=https://airtable.com/appopNVjvtXgt5gQQ/pagwo1PQB92bHio2c/form rel=external target=_blank>Complete a form</a> (easier, no account needed)
+* <a href=https://github.com/kalgynirae/lumeh.org/issues/new rel=external target=_blank>File an issue on GitHub</a> (requires a GitHub account)
 
 ## Contributing
 
 You’re very welcome to suggest changes and edits to the site, but since it is my personal website,
 there’s no guarantee that I will accept or use your suggestions. Feel free to open an issue for
-discussion before spending time making a pull request that might not be accepted.
+discussion if you are unsure.
 
 ### Building the site
 
 The build process requires <a href=https://docs.astral.sh/uv/ rel=external target=_blank>uv</a>
-(Python package manager) and Bash. Theoretically it could work in macOS, but I only test it in Linux
-and (occasionally) WSL.
+(Python package manager) and Bash. I only test the process in Linux, but in theory it should work
+elsewhere.
 
 1. **Clone the repo** and `cd` into it.
 2. **Init submodules** with `./checkout-submodules.sh`. (Note that the *assets* repo will fail to
    clone because it is private.)
-3. **Check out submodule branches** with `git submodule foreach 'if ! git symbolic-ref -q HEAD >/dev/null; then git checkout main || git checkout master; fi'`.
-4. **Build** with `./build.sh`.
+3. **Build** with `./build.sh`.
+4. **Serve** with `./test.sh` and visit the displayed address in your browser.
 
-To view the result, run `./test.sh` and visit the displayed address in
-your browser.
+Note that the test site has some limitations: First, because the *assets* repo is private, many
+files will be missing in your copy (notably including the web font for [Berkeley Mono]). Second, the test server
+doesn’t handle redirects, so a few links will lead to 404s.
 
-<aside class=important>
+[Berkeley Mono]: https://usgraphics.com/products/berkeley-mono
 
-**Note:** The test site has a few limitations. First, because certain files are kept in a separate
-*assets* repo (which is private), some files are expected to be missing, including the file that
-provides the monospaced font. Second, the test server doesn’t handle redirects—you’ll get 404 errors
-instead of being redirected.
+### No LLMs
 
-</aside>
+All parts of lumeh.org—code, prose, audio, graphics, etc.—were created by humans without assistance from LLMs. Some of these humans (notably Colin) have a preexisting fondness for em dashes and will continue to use them despite their recent stigma.
 
 ## Data & privacy
 
 ### Cookies
 
-I **despise** cookie banners; therefore lumeh.org avoids using any cookies.
+lumeh.org does not use cookies.
 
-I like cookies, though, and I highly recommend making your own! I recommend either my [classic
-chocolate-chip recipe](https://www.lumeh.org/recipes/cookies/) known for its use of maple flavoring
-or [Chonklate Chip Cookies](https://www.lumeh.org/recipes/chonklate-chip-cookies/) which imitate
-Levain Bakery’s famous cookies.
+If you *like* cookies, you can make some at home! I recommend either my
+[classic chocolate-chip cookies](https://www.lumeh.org/recipes/cookies/) known for their use of maple
+flavoring or [Chonklate Chip Cookies](https://www.lumeh.org/recipes/chonklate-chip-cookies/) which
+imitate Levain Bakery’s famous cookies.
 
 ### Site usage
 

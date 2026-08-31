@@ -7,4 +7,8 @@ pane=$(tmux split-window -t "$pane" -v -l 25% -P -F '#{pane_id}') || exit 1
 tmux send-keys -t "$pane" -l $'./test.sh\n'
 
 tmux select-pane -t "$TMUX_PANE"
-xdg-open http://localhost:4000/
+if command -v app-open &>/dev/null; then
+  app-open http://localhost:4000/
+else
+  xdg-open http://localhost:4000/
+fi

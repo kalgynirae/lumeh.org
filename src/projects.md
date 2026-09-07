@@ -24,24 +24,26 @@ title: Projects
 ## Games
 
 * [Thinking Green](thinking-green) – recycle to survive (Ludum Dare 23)
-* <a href=https://ldjam.com/events/ludum-dare/38/somethings-fishy rel=external target=_blank>Something’s Fishy</a>
+* <a href=https://ldj.am/38/somethings-fishy rel=external target=_blank>Something’s Fishy</a>
   (<a href=https://github.com/kalgynirae/somethings-fishy rel=external target=_blank>repo</a>)
   – investigate mysteriously-colored rectangles in a fish tank (Ludum Dare 38)
-* <a href=https://ldjam.com/events/ludum-dare/48/pool-trouble rel=external target=_blank>Pool Trouble</a>
+* <a href=https://ldj.am/48/pool-trouble rel=external target=_blank>Pool Trouble</a>
   (<a href=https://www.lumeh.org/games/pool-trouble target=_blank>play</a>, <a href=https://github.com/kalgynirae/pool-trouble rel=external target=_blank>repo</a>)
   – navigate a multi-level community swimming pool (Ludum Dare 48)
-* <a href=https://ldjam.com/events/ludum-dare/49/glsl-jam rel=external target=_blank>GLSL Jam</a>
+* <a href=https://ldj.am/49/glsl-jam rel=external target=_blank>GLSL Jam</a>
   (<a href=https://github.com/kalgynirae/glsl-jam rel=external target=_blank>repo</a>)
   – not actually a game (Ludum Dare 49)
-* <a href=https://ldjam.com/events/ludum-dare/51/timefred rel=external target=_blank>Timefred</a>
+* <a href=https://ldj.am/51/timefred rel=external target=_blank>Timefred</a>
   (<a href=https://www.lumeh.org/games/timefred target=_blank>play</a>, <a href=https://github.com/kalgynirae/timeline rel=external target=_blank>repo</a>)
   – schedule your actions (Ludum Dare 51)
-* <a href=https://ldjam.com/events/ludum-dare/53/deli-very rel=external target=_blank>Deli-Very!</a>
+* <a href=https://ldj.am/53/deli-very rel=external target=_blank>Deli-Very!</a>
   (<a href=https://www.lumeh.org/games/deli-very target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld53 rel=external target=_blank>repo</a>)
   – showcase your sandwich-making skills (Ludum Dare 53)
-* <a href=https://ldjam.com/events/ludum-dare/57/speed-dating rel=external target=_blank>Speed Dating</a>
+* <a href=https://ldj.am/57/speed-dating rel=external target=_blank>Speed Dating</a>
   (<a href=https://www.lumeh.org/games/speed-dating target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld57 rel=external target=_blank>repo</a>)
   – speedrun the underground dating scene (Ludum Dare 57)
-* <a href=https://ldjam.com/events/ludum-dare/58/this-game-is-trash rel=external target=_blank>This Game Is Trash</a>
+* <a href=https://ldj.am/58/this-game-is-trash rel=external target=_blank>This Game Is Trash</a>
   (<a href=https://www.lumeh.org/games/trash/ target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld58 rel=external target=_blank>repo</a>)
   – relax and collect some trash (Ludum Dare 58)
+* <a href=https://ldj.am/59/sensible-mr-snake-goes-for-a-stroll rel=external target=_blank>Sensible Mr. Snake Goes for a Stroll</a> (<a href=https://www.lumeh.org/games/snake/ target=_blank>play</a>, <a href=https://github.com/kalgynirae/ld59 rel=external target=_blank>repo</a>)
+  – make shapes to broadcast signals (Ludum Dare 59)

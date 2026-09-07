@@ -169,6 +169,7 @@ def build():
                     for path in sorted((src / "poetry").iterdir())
                 },
             ),
+            "poetry/": page(src / "poetry.mex"),
             "tools": index(
                 "Tools",
                 {
@@ -176,6 +177,7 @@ def build():
                     for path in sorted((src / "tools").iterdir())
                 },
             ),
+            "tools/": page(src / "tools.mex"),
             "talks": {
                 (
                     (
@@ -202,6 +204,7 @@ def build():
                 for path in sorted(src.glob("wiki/**"))
                 if path.is_file()
             },
+            "wiki/": page(src / "wiki.mex"),
             "projects/colorby/": page(
                 src / "projects/colorby/README.md", title="Colorby"
             ),
@@ -266,7 +269,6 @@ def build():
                     ]
                 },
             ),
-            "wiki/": page(src / "wiki.mex"),
         },
         redirects=redirects,
     )

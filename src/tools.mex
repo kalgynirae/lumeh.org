@@ -1,0 +1,11 @@
+title: Tools
+links:
+  "Krypto Generator": krypto-generator/
+  "Stopwatch": stopwatch/
+---
+
+..h1(class=hidden) Tools
+
+::ul
+    ..li |Krypto Generator|
+    ..li |Stopwatch|

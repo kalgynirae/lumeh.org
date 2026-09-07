@@ -1,0 +1,13 @@
+title: Poetry
+links:
+  "Lumeh, God of Light Bulbs": lumeh-god-of-light-bulbs/
+  "Jabberwockus": jabberwockus/
+  "Poetry Yay": poetry-yay/
+---
+
+..h1(class=hidden) Poetry
+
+::ul
+    ..li |Lumeh, God of Light Bulbs|
+    ..li |Jabberwockus|
+    ..li |Poetry Yay|

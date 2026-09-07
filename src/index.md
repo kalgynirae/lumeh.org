@@ -126,6 +126,7 @@ diceButton.addEventListener("click", shuffleLinks);
     flex: 1;
 
     background: var(--color-bg-dark);
+    text-decoration: none;
     border-radius: 0.5rem;
     padding: 0.5rem;
 
@@ -134,6 +135,7 @@ diceButton.addEventListener("click", shuffleLinks);
       font-size: inherit;
       font-weight: 650;
       margin-bottom: 0;
+      text-decoration: underline;
     }
   }
 }

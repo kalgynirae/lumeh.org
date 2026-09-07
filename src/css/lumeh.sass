@@ -184,6 +184,7 @@ html
   padding: 1.5rem var(--html-padding) 3rem
   scroll-behavior: smooth
 
+  --color-bg-light: #{$bg-light}
   --color-bg-dark: #{$bg-dark}
   --color-link: #{$link}
   --color-green: #{$text-green-bright}
@@ -320,6 +321,9 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   column-gap: 0.5rem
   flex-wrap: nowrap
 
+  a
+    text-decoration: none
+
   .breadcrumbs
     flex-grow: 1
 
@@ -349,11 +353,12 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   display: none
 
 .edit-this-page
-  @include font-inter-midsmall
+  @include font-inter-small
   background-color: $bg-dark
   border-top: dashed 2px #e0e0e0
   display: block
-  padding: 0.25rem var(--page-padding) 0.5rem
+  padding: 0.25rem var(--page-padding) 0.25rem
+  text-decoration: none
   &:hover
     background-color: $bg-light
 
@@ -464,7 +469,7 @@ h4
 
 a
   color: $link
-  text-decoration: none
+  text-decoration: underline
   &:hover,
   &:active
     text-decoration: underline
@@ -887,12 +892,15 @@ l-music
         display: grid
         grid-template-columns: 2rem 1fr
 
+        text-decoration: none
+
         > l-icon:first-child .icon
           width: 1.5rem
           height: 2lh
 
         .type
           font-variant-caps: all-small-caps
+          text-decoration: underline
 
         .details
           display: flex

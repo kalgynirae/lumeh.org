@@ -4,17 +4,18 @@ title: Hymns
 
 # Hymns
 
-I’ve written organ arrangements of many hymns as well as a few preludes and piano arrangements.
-These arrangements are free to use, but if you find them useful, please consider <a
-href="https://ko-fi.com/kalgynirae" target=_blank>supporting me on Ko-fi</a>. You can also
-commission arrangements or recordings of specific hymns there.
+My arrangements are mostly for accompanying congregational singing on organ,
+but you’ll also find a few preludes and piano arrangements. All are free
+to use, but if you’d like you can <a href="https://ko-fi.com/kalgynirae"
+target=_blank>support me on Ko-fi</a>. (You can also commission arrangements or
+recordings of specific hymns!)
 
 These are a few of my favorites:
 
-* [#148 *In heavenly Love abiding*](#csh-148)
-* [#342 *This is the day the Lord hath made*](#csh-342)
 * [#537 *O church of God, built on a firm foundation*](#csh-537)
+* [#342 *This is the day the Lord hath made*](#csh-342)
 * [#573 *Shepherd, show me how to go*](#csh-573)
+* [#148 *In heavenly Love abiding*](#csh-148)
 
 
 ## Christian Science Hymnal
@@ -26,7 +27,6 @@ These are a few of my favorites:
   <div class=firstline>Be Thou, O God, exalted high</div>
   <div class=details>
     <div class=tune>Tune: OLD HUNDREDTH</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -58,7 +58,6 @@ These are a few of my favorites:
   <div class=firstline>All glory be to God most high</div>
   <div class=details>
     <div class=tune>Tune: CAROL (CORNER)</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -81,7 +80,6 @@ These are a few of my favorites:
   <div class=firstline>All power is given unto our Lord</div>
   <div class=details>
     <div class=tune>Tune: EIN’ FESTE BURG</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -104,7 +102,6 @@ These are a few of my favorites:
   <div class=firstline>Fight the good fight with all thy might</div>
   <div class=details>
     <div class=tune>Tune: PARK STREET</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -127,7 +124,6 @@ These are a few of my favorites:
   <div class=firstline>Glory be to God on high</div>
   <div class=details>
     <div class=tune>Tune: BENEVENTO</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -150,7 +146,6 @@ These are a few of my favorites:
   <div class=firstline>Glory, honor, praise and pure oblations</div>
   <div class=details>
     <div class=tune>Tune: GRATITUDE</div>
-    <div class=key>Key: A♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -173,7 +168,6 @@ These are a few of my favorites:
   <div class=firstline>God comes, with succor speedy</div>
   <div class=details>
     <div class=tune>Tune: AURELIA</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -196,7 +190,6 @@ These are a few of my favorites:
   <div class=firstline>I love Thy way of freedom, Lord</div>
   <div class=details>
     <div class=tune>Tune: HEAVENWARD</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -229,7 +222,6 @@ These are a few of my favorites:
   <div class=firstline>I walk with Love along the way</div>
   <div class=details>
     <div class=tune>Tune: SURREY</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -262,7 +254,6 @@ These are a few of my favorites:
   <div class=firstline>In heavenly Love abiding</div>
   <div class=details>
     <div class=tune>Tune: EWING</div>
-    <div class=key>Key: D♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -295,7 +286,6 @@ These are a few of my favorites:
   <div class=firstline>It matters not what be thy lot</div>
   <div class=details>
     <div class=tune>Tune: SATIS</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -318,7 +308,6 @@ These are a few of my favorites:
   <div class=firstline>O daughter of Zion, awake from thy sadness</div>
   <div class=details>
     <div class=tune>Tune: SWANAGE</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -341,7 +330,6 @@ These are a few of my favorites:
   <div class=firstline>O do not bar your mind against the light of good</div>
   <div class=details>
     <div class=tune>Tune: ST. GEORGE</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -364,7 +352,6 @@ These are a few of my favorites:
   <div class=firstline>O God, our help in ages past</div>
   <div class=details>
     <div class=tune>Tune: ST. ANNE</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -387,7 +374,6 @@ These are a few of my favorites:
   <div class=firstline>O may we be still and seek him</div>
   <div class=details>
     <div class=tune>Tune: CAROL MELODY</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -410,7 +396,6 @@ These are a few of my favorites:
   <div class=firstline>Only God can bring us gladness</div>
   <div class=details>
     <div class=tune>Tune: GLADNESS</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -433,7 +418,6 @@ These are a few of my favorites:
   <div class=firstline>Onward, Christian soldiers</div>
   <div class=details>
     <div class=tune>Tune: ST. GERTRUDE</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -466,7 +450,6 @@ These are a few of my favorites:
   <div class=firstline>Our God is All in all</div>
   <div class=details>
     <div class=tune>Tune: MOSELEY</div>
-    <div class=key>Key: E</div>
   </div>
   <div class=files>
     <div class=file>
@@ -489,7 +472,6 @@ These are a few of my favorites:
   <div class=firstline>Our God is Love, unchanging Love</div>
   <div class=details>
     <div class=tune>Tune: KINGSFOLD</div>
-    <div class=key>Key: e</div>
   </div>
   <div class=files>
     <div class=file>
@@ -512,7 +494,6 @@ These are a few of my favorites:
   <div class=firstline>Praise now creative Mind</div>
   <div class=details>
     <div class=tune>Tune: CRUSADER’S HYMN</div>
-    <div class=key>Key: E</div>
   </div>
   <div class=files>
     <div class=file>
@@ -536,7 +517,6 @@ These are a few of my favorites:
   <div class=firstline>Rock of Ages, Truth divine</div>
   <div class=details>
     <div class=tune>Tune: TOPLADY</div>
-    <div class=key>Key: B♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -559,7 +539,6 @@ These are a few of my favorites:
   <div class=firstline>Saw ye my Saviour? Heard ye the glad sound?</div>
   <div class=details>
     <div class=tune>Tune: SAVIOUR</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -594,7 +573,6 @@ These are a few of my favorites:
   <div class=firstline>Take my life, and let it be consecrated, Lord, to Thee</div>
   <div class=details>
     <div class=tune>Tune: THEODORA</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -617,7 +595,6 @@ These are a few of my favorites:
   <div class=firstline>This is the day the Lord hath made</div>
   <div class=details>
     <div class=tune>Tune: ANGELS’ SONG</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -650,7 +627,6 @@ These are a few of my favorites:
   <div class=firstline>Through the love of God our Saviour</div>
   <div class=details>
     <div class=tune>Tune: AR HYD Y NOS</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -673,7 +649,6 @@ These are a few of my favorites:
   <div class=firstline>We thank Thee and we bless Thee</div>
   <div class=details>
     <div class=tune>Tune: ALL SAINTS NEW</div>
-    <div class=key>Key: B♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -706,7 +681,6 @@ These are a few of my favorites:
   <div class=firstline>What brightness dawned in resurrection</div>
   <div class=details>
     <div class=tune>Tune: ST. CLEMENT</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -738,7 +712,6 @@ These are a few of my favorites:
   <div class=firstline>Glory be to God on high</div>
   <div class=details>
     <div class=tune>Tune: BENEVENTO</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -761,7 +734,6 @@ These are a few of my favorites:
   <div class=firstline>Prayer with our waking thought ascends</div>
   <div class=details>
     <div class=tune>Tune: GERONTIUS</div>
-    <div class=key>Key: A♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -784,7 +756,6 @@ These are a few of my favorites:
   <div class=firstline>Joy to the world, the Lord is come</div>
   <div class=details>
     <div class=tune>Tune: ANTIOCH</div>
-    <div class=key>Key: D</div>
   </div>
   <div class=files>
     <div class=file>
@@ -807,7 +778,6 @@ These are a few of my favorites:
   <div class=firstline>Come, O fount of every blessing</div>
   <div class=details>
     <div class=tune>Tune: NETTLETON</div>
-    <div class=key>Key: D</div>
   </div>
   <div class=files>
     <div class=file>
@@ -830,7 +800,6 @@ These are a few of my favorites:
   <div class=firstline>Eternal Mind the Potter is</div>
   <div class=details>
     <div class=tune>Tune: CONSCIOUSNESS</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -862,7 +831,6 @@ These are a few of my favorites:
   <div class=firstline>Father, You are very near us</div>
   <div class=details>
     <div class=tune>Tune: BENJAMIN</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -885,7 +853,6 @@ These are a few of my favorites:
   <div class=firstline>From these Your children gathered in Your name</div>
   <div class=details>
     <div class=tune>Tune: OXTED</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -919,7 +886,6 @@ These are a few of my favorites:
   <div class=firstline>Glory be to God on high</div>
   <div class=details>
     <div class=tune>Tune: </div>
-    <div class=key>Key: b</div>
   </div>
   <div class=files>
     <div class=file>
@@ -951,7 +917,6 @@ These are a few of my favorites:
   <div class=firstline>I am the Lord, there is none else</div>
   <div class=details>
     <div class=tune>Tune: I AM THE LORD</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -974,7 +939,6 @@ These are a few of my favorites:
   <div class=firstline>Lift up the door, the mighty gates</div>
   <div class=details>
     <div class=tune>Tune: MACHT HOCH DIE TÜR</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -997,7 +961,6 @@ These are a few of my favorites:
   <div class=firstline>My life flows on in endless song</div>
   <div class=details>
     <div class=tune>Tune: ENDLESS SONG</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1030,7 +993,6 @@ These are a few of my favorites:
   <div class=firstline>O church of God, built on a firm foundation</div>
   <div class=details>
     <div class=tune>Tune: MORA PROCTOR</div>
-    <div class=key>Key: G</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1064,7 +1026,6 @@ These are a few of my favorites:
   <div class=firstline>O gentle presence, peace and joy and power</div>
   <div class=details>
     <div class=tune>Tune: HALMONI</div>
-    <div class=key>Key: D</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1096,7 +1057,6 @@ These are a few of my favorites:
   <div class=firstline>O, sometimes gleams upon our sight</div>
   <div class=details>
     <div class=tune>Tune: SHERWOOD</div>
-    <div class=key>Key: c</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1119,7 +1079,6 @@ These are a few of my favorites:
   <div class=firstline>Rise up and walk, take up your bed</div>
   <div class=details>
     <div class=tune>Tune: RISE UP</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1142,7 +1101,6 @@ These are a few of my favorites:
   <div class=firstline>Shepherd, show me how to go</div>
   <div class=details>
     <div class=tune>Tune: JOSEPHINE</div>
-    <div class=key>Key: D</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1185,7 +1143,6 @@ These are a few of my favorites:
   <div class=firstline>We are walking in the light of God</div>
   <div class=details>
     <div class=tune>Tune: SIYAHAMBA</div>
-    <div class=key>Key: F</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1218,7 +1175,6 @@ These are a few of my favorites:
   <div class=firstline>When peace, like a river... (It is well with my soul)</div>
   <div class=details>
     <div class=tune>Tune: VILLE DU HAVRE</div>
-    <div class=key>Key: C</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1251,7 +1207,6 @@ These are a few of my favorites:
   <div class=firstline>Who was that man in Galilee</div>
   <div class=details>
     <div class=tune>Tune: LIGHT</div>
-    <div class=key>Key: B♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1291,7 +1246,6 @@ These are a few of my favorites:
   <div class=firstline>The church’s one foundation is Jesus Christ, her Lord</div>
   <div class=details>
     <div class=tune>Tune: AURELIA</div>
-    <div class=key>Key: E♭</div>
   </div>
   <div class=files>
     <div class=file>
@@ -1314,7 +1268,6 @@ These are a few of my favorites:
   <div class=firstline>Oh, sing to the Lord</div>
   <div class=details>
     <div class=tune>Tune: CANTAD AL SEÑOR</div>
-    <div class=key>Key: e</div>
   </div>
   <div class=files>
     <div class=file>

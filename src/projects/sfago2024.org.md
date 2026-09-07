@@ -1,8 +1,3 @@
----
-title: sfago2024.org
-narrow: true
----
-
 # sfago2024.org
 
 <a href="https://www.sfago2024.org/" target="_blank">sfago2024.org</a> is the website for the

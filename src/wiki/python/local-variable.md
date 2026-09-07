@@ -1,7 +1,6 @@
 ---
 title: Local Variable
 show_authors: true
-narrow: true
 ---
 
 # Local Variable

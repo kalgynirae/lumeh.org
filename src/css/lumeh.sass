@@ -181,7 +181,7 @@ html
   background-color: $bg-darker
   color: $text-normal
   @include font-crimson-pro-regular
-  padding: 1.5rem var(--html-padding) 3rem
+  padding: 1.5rem 2rem 3rem
   scroll-behavior: smooth
 
   --color-bg-light: #{$bg-light}
@@ -194,11 +194,7 @@ html
   --logo-size: 96px
   --header-height: 108px
   --page-max-width: 920px
-  --narrow-max-width: 640px
-  --html-padding: 2rem
-  --default-page-padding: 1rem
-  --page-padding: var(--default-page-padding)
-  --interior-block-padding: var(--default-page-padding)
+  --page-padding: 1rem
 
   @media (max-width: $mobile-width)
     padding: 0 0 3rem
@@ -207,7 +203,6 @@ html
     --logo-padding: 8px
     --logo-size: 72px
     --page-padding: 0.5rem
-    --interior-block-padding: 0.5rem
 
 body
   margin: 0
@@ -397,11 +392,8 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     background-color: $bg-dark
 
 .main-content
-  padding: 1.5rem var(--page-padding)
-
-  &.narrow
-    --page-padding: max(calc((min(var(--page-max-width), 100vw - 2 * var(--html-padding)) - var(--narrow-max-width)) / 2), var(--default-page-padding))
-    margin: auto
+  padding: var(--page-padding)
+  padding-top: 1.5rem
 
   > details
     margin-bottom: var(--lh)
@@ -703,7 +695,7 @@ aside, figure:not(.fullwidth)
   overflow: hidden
   margin-block: var(--lh)
   margin-inline: 2rem
-  padding: 0.5rem var(--interior-block-padding) 0.5rem
+  padding: 0.5rem var(--page-padding) 0.5rem
 
   &:has(>pre:first-child)
     padding-top: 0

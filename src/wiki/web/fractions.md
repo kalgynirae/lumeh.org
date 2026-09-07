@@ -1,7 +1,6 @@
 ---
 title: Fractions
 show_authors: true
-narrow: true
 ---
 
 # Fractions

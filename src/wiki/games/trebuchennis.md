@@ -1,6 +1,5 @@
 ---
 title: Trebuchennis
-narrow: true
 ---
 
 # Trebuchennis

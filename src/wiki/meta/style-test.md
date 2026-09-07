@@ -1,6 +1,5 @@
 ---
 title: Style Test
-narrow: true
 ---
 
 # Style Test

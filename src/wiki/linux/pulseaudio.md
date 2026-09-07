@@ -1,7 +1,6 @@
 ---
 title: PulseAudio
 show_authors: true
-narrow: true
 ---
 
 # PulseAudio

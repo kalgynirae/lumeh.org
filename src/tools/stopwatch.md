@@ -4,7 +4,7 @@ title: Stopwatch
 
 # The Stopwatch
 
-Programmed by Colin <span id="programmed-hours">many</span> hours ago.
+Programmed by Colin <a class=secret id=hours href="https://www.wolframalpha.com/input?i=HOURS+hours+ago" rel=external><span>many</span> hours ago</a>.
 
 <p id="time">0:00.0</p>
 <fieldset id="controls">
@@ -204,9 +204,11 @@ Programmed by Colin <span id="programmed-hours">many</span> hours ago.
   };
 
   function updateHours() {
-    const programmedDate = 1213655000000;
-    const timeSince = Math.round((Date.now() - programmedDate) / 3600000);
-    document.getElementById('programmed-hours').innerHTML = timeSince;
+    const programmedDate = 1213655000_000;
+    const hoursSince = Math.round((Date.now() - programmedDate) / 3600_000);
+    const hoursElement = document.querySelector('#hours');
+    hoursElement.search = hoursElement.search.replace('HOURS', `${hoursSince}`);
+    hoursElement.querySelector('span').innerHTML = hoursSince.toLocaleString();
   }
 
   document.addEventListener('DOMContentLoaded', stopwatchInitialize);

@@ -4,7 +4,7 @@ title: Krypto Generator
 
 # Krypto Generator
 
-Programmed by Colin <span id="hours">many</span> hours ago.
+Programmed by Colin <a class=secret id=hours href="https://www.wolframalpha.com/input?i=HOURS+hours+ago" rel=external><span>many</span> hours ago</a>.
 
 <table id="krypto-table">
   <tr id="goal">
@@ -60,9 +60,11 @@ Programmed by Colin <span id="hours">many</span> hours ago.
   var cards;
 
   function updateHours() {
-    var programmedDate = 1275489000000;
-    var timeSince = Math.round((Date.now() - programmedDate) / 3600000);
-    document.getElementById('hours').innerHTML = timeSince;
+    const programmedDate = 1275489000_000;
+    const hoursSince = Math.round((Date.now() - programmedDate) / 3600_000);
+    const hoursElement = document.querySelector('#hours');
+    hoursElement.search = hoursElement.search.replace('HOURS', `${hoursSince}`);
+    hoursElement.querySelector('span').innerHTML = hoursSince.toLocaleString();
   }
   document.addEventListener('DOMContentLoaded', updateHours);
 

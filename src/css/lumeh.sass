@@ -26,6 +26,9 @@
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
   word-spacing: normal
+  text-decoration-thickness: 5%
+  text-underline-offset: -4%
+  text-underline-position: from-font
 @mixin font-inter-midsmall
   font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 0.85rem
@@ -34,6 +37,9 @@
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
   word-spacing: normal
+  text-decoration-thickness: 5%
+  text-underline-offset: -4%
+  text-underline-position: from-font
 @mixin font-inter-regular
   font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 0.95rem
@@ -42,6 +48,9 @@
   font-variant-alternates: styleset(disambiguation-except-zero, open-digits)
   letter-spacing: normal
   word-spacing: normal
+  text-decoration-thickness: 5%
+  text-underline-offset: -4%
+  text-underline-position: from-font
 @mixin font-inter-menu
   font-family: 'Inter', 'FreeSerif flat symbol only', Verdana, Helvetica, sans-serif
   font-size: 1.15rem
@@ -100,6 +109,9 @@
   word-spacing: 0.08ch
   line-height: 1.2
   font-synthesis-position: none
+  text-decoration-thickness: 5%
+  text-underline-offset: 0%
+  text-underline-position: from-font
   --font-weight-bold: 700
   --font-weight-extrabold: 850
 @mixin font-crimson-pro-midsmall
@@ -110,6 +122,9 @@
   word-spacing: 0.04ch
   line-height: 1.2
   font-synthesis-position: none
+  text-decoration-thickness: 5%
+  text-underline-offset: 0%
+  text-underline-position: from-font
   --font-weight-bold: 650
   --font-weight-extrabold: 800
 @mixin font-crimson-pro-regular
@@ -120,6 +135,9 @@
   word-spacing: 0.03ch
   line-height: 1.5
   font-synthesis-position: none
+  text-decoration-thickness: 5%
+  text-underline-offset: 0%
+  text-underline-position: from-font
   --font-weight-bold: 600
   --font-weight-extrabold: 750
   --lh: calc(1rem * 1.5)
@@ -176,6 +194,9 @@ $text-violet-bright: #7d69c4
 $text-magenta: #894780
 $text-magenta-dim: #b08ba7
 $text-magenta-bright: #a8589e
+
+*
+  text-decoration-thickness: inherit
 
 html
   background-color: $bg-darker
@@ -282,13 +303,13 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
       color: inherit
       display: block
       text-align: center
-      text-decoration: none
+      text-decoration-line: none
       padding: 0 0.5rem
       &:hover,
       &:active,
       &.active
         background-color: $bg-light
-        text-decoration: none
+        text-decoration-line: none
 
   @media (max-width: $mobile-width)
     padding: 0 0.1rem
@@ -317,7 +338,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   flex-wrap: nowrap
 
   a
-    text-decoration: none
+    text-decoration-line: none
 
   .breadcrumbs
     flex-grow: 1
@@ -353,7 +374,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
   border-top: dashed 2px #e0e0e0
   display: block
   padding: 0.25rem var(--page-padding) 0.25rem
-  text-decoration: none
+  text-decoration-line: none
   &:hover
     background-color: $bg-light
 
@@ -368,7 +389,7 @@ $header-gradient: linear-gradient(to bottom, #f4f4f4, $bg-light)
     padding: 1rem 0.5rem 0
   a
     color: $text-subtle
-    text-decoration: underline
+    text-decoration-line: underline
     &.kofi
       color: oklch(from $link calc(l - 0.12) calc(c - 0.03) h)
   p
@@ -464,10 +485,10 @@ h4
 
 a
   color: $link
-  text-decoration: underline
+  text-decoration-line: underline
   &:hover,
   &:active
-    text-decoration: underline
+    text-decoration-line: underline
 
   &.secret
     &:not(:hover)
@@ -498,7 +519,7 @@ a
     color: $text-subtle
     font-size: 1.2rem
     text-align: center
-    text-decoration: none
+    text-decoration-line: none
 
     @media(min-width: $mobile-width + 1)
       --anchor-button-highlight: oklch(from #{$bg-darker} calc(l + 0.1) c h)
@@ -890,7 +911,7 @@ l-music
         display: grid
         grid-template-columns: 2rem 1fr
 
-        text-decoration: none
+        text-decoration-line: none
 
         > l-icon:first-child .icon
           width: 1.5rem
@@ -898,7 +919,7 @@ l-music
 
         .type
           font-variant-caps: all-small-caps
-          text-decoration: underline
+          text-decoration-line: underline
 
         .details
           display: flex

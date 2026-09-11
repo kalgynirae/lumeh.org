@@ -1239,10 +1239,12 @@ These are a few of my favorites:
 
 ## Other hymnals
 
+### ELW
+
 <div class=hymns>
 
 <div class=hymn id=elw-654>
-  <div class=number>ELW 654</div>
+  <div class=number>654</div>
   <div class=firstline>The church’s one foundation is Jesus Christ, her Lord</div>
   <div class=details>
     <div class=tune>Tune: AURELIA</div>
@@ -1264,7 +1266,7 @@ These are a few of my favorites:
 </div>
 
 <div class=hymn id=elw-822>
-  <div class=number>ELW 822</div>
+  <div class=number>822</div>
   <div class=firstline>Oh, sing to the Lord</div>
   <div class=details>
     <div class=tune>Tune: CANTAD AL SEÑOR</div>
@@ -1278,6 +1280,34 @@ These are a few of my favorites:
           <div class=details>
             <div class=key>Key: e</div>
             <div class=verses>Verses: 4</div>
+            <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+### The Hymnal 1982
+
+<div class=hymns>
+
+<div class=hymn id=eh1982-24>
+  <div class=number>24</div>
+  <div class=firstline>The day thou gavest, Lord, is ended</div>
+  <div class=details>
+    <div class=tune>Tune: ST. CLEMENT</div>
+  </div>
+  <div class=files>
+    <div class=file>
+      <a class=link href="/files/hymns/eh1982-24-the-day-thou-gavest.pdf">
+        <l-icon name=journal></l-icon>
+        <div>
+          <div class=type>Hymn Accompaniment</div>
+          <div class=details>
+            <div class=key>Key: G → A♭</div>
             <div class=instrumentation><l-icon name=organ right>Organ</l-icon></div>
           </div>
         </div>

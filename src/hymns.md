@@ -799,6 +799,22 @@ Sort by: <a>hymn number</a> &nbsp; <span>tune name</span> &nbsp; <span>type</spa
   </dd>
 </dl>
 
+<dl class=hymn id=csh-573-piano>
+  <dt class=tune>Tune</dt><dd class=tune>JOSEPHINE</dd>
+  <dt class=instance>Instance</dt><dd class=instance>
+    <span class=hymnal>CSH</span>
+    <span class=number>573</span>
+  </dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>Shepherd, show me how to go</dd>
+  <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
+  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=key>Key</dt><dd class=key>D</dd>
+  <dt class=files>Files</dt>
+  <dd class=file>
+    <a href="/files/hymns/573-piano.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+  </dd>
+</dl>
+
 <dl class=hymn id=csh-592>
   <dt class=tune>Tune</dt><dd class=tune>SIYAHAMBA</dd>
   <dt class=instance>Instance</dt><dd class=instance>

@@ -54,6 +54,7 @@
 /files/hymns/540.pdf
 /files/hymns/547.pdf
 /files/hymns/565.pdf
+/files/hymns/573-piano.pdf
 /files/hymns/573.pdf
 /files/hymns/592.pdf
 /files/hymns/596.pdf

@@ -18,6 +18,70 @@ These are a few of my favorites:
 * [#148 *In heavenly Love abiding*](#csh-148)
 
 
+## Hymns
+
+Filter by hymnal: <a>all</a> &nbsp; <span>Christian Science Hymnal</span> &nbsp; <span>Hymnal 1982</span> &nbsp; <span>ELW</span><br>
+Sort by: <a>hymn number</a> &nbsp; <span>tune name</span> &nbsp; <span>type</span>
+
+<div class=hymns-new>
+
+<dl class=file id=csh-1>
+  <dt class=instrument>Instrument</dt><dd><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=type>Type</dt><dd class=type>Last Verse</dd>
+  <dt class=instance>Instance</dt><dd class=instance>
+    <span class=hymnal>CSH</span>
+    <span class=number>1</span>
+  </dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>Be Thou, O God, exalted high</dd>
+  <dt class=tune>Tune</dt><dd class=tune>OLD HUNDREDTH</dd>
+  <dt class=key>Key</dt><dd class=key>G</dd>
+  <dt class=difficulty>Difficulty</dt><dd class=difficulty>2</dd>
+  <dt class=files>Files</dt>
+  <dd class=files>
+    <a class=link href="/files/hymns/001.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+  </dd>
+  <dd class=files>
+    <a class=link href="https://drive.google.com/file/d/1Xu1L-sR7gB3GYG45H1PaI0hpyxK6ayJe/view?usp=drive_link"><l-icon name=filetype-mp3>Recording</l-icon></a>
+  </dd>
+</dl>
+
+<dl class=file id=csh-299>
+  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
+  <dt class=instance>Instance</dt><dd class=instance>
+    <span class=hymnal>CSH</span>
+    <span class=number>299</span>
+  </dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>Saw ye my Saviour? Heard ye the glad sound?</dd>
+  <dt class=tune>Tune</dt><dd class=tune>SAVIOUR</dd>
+  <dt class=key>Key</dt><dd class=key>G</dd>
+  <dt class=difficulty>Difficulty</dt><dd class=difficulty>2</dd>
+  <dt class=files>Files</dt>
+  <dd class=files>
+    <a class=link href="/files/hymns/299.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+  </dd>
+</dl>
+
+<dl class=file id=csh-299-piano>
+  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=type>Type</dt><dd class=type>Last Verse</dd>
+  <dt class=instance>Instance</dt><dd class=instance>
+    <span class=hymnal>CSH</span>
+    <span class=number>299</span>
+  </dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>Saw ye my Saviour? Heard ye the glad sound?</dd>
+  <dt class=tune>Tune</dt><dd class=tune>SAVIOUR</dd>
+  <dt class=key>Key</dt><dd class=key>G</dd>
+  <dt class=difficulty>Difficulty</dt><dd class=difficulty>2</dd>
+  <dt class=files>Files</dt>
+  <dd class=files>
+    <a class=link href="/files/hymns/299-piano.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+  </dd>
+</dl>
+
+</div>
+
+
 ## Christian Science Hymnal
 
 <div class=hymns>

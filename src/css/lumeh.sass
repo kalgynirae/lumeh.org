@@ -132,7 +132,7 @@
   text-transform: uppercase
   font-size: 0.63rem
   font-weight: 580
-  letter-spacing: 0.02em
+  letter-spacing: 0.03em
   word-spacing: 0.04ch
   --font-weight-bold: 650
   --font-weight-extrabold: 800
@@ -863,93 +863,22 @@ l-music
     flex-wrap: wrap
 
 .hymns
-  --lh: 0.5rem
-
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  column-gap: var(--page-padding)
-  row-gap: var(--lh)
-
-  @media(max-width: 800px)
-    grid-template-columns: repeat(2, 1fr)
-
-  @media(max-width: 450px)
-    grid-template-columns: repeat(1, 1fr)
+  max-width: 30rem
+  margin: auto
 
   .hymn
-    margin-bottom: calc(2 * var(--page-padding))
-    scroll-margin-top: calc(2 * var(--page-padding))
-
-    grid-row: span 4
-    display: grid
-    grid-template-rows: subgrid
-
-    @include font-crimson-pro-midsmall
-
-    &:target
-      background: linear-gradient(to bottom, $bg-highlight 0%, $bg-light 75%)
-
-    .number
-      @include font-crimson-pro-regular
-      font-size: 1.8em
-      font-weight: 550
-      line-height: 1
-      text-align: center
-
-    .firstline
-      font-style: italic
-      text-align: center
-      text-wrap: balance
-
-    .details
-      .tune
-      .key
-
-    .files
-      display: flex
-      flex-direction: column
-      gap: calc(var(--lh) / 2)
-
-      .file
-        background: $bg-dark
-        border-radius: 0.5rem
-        padding: calc(var(--lh) / 2) 0.5rem
-
-        @include font-inter-small
-
-        .link
-          display: grid
-          grid-template-columns: 2rem 1fr
-
-          text-decoration-line: none
-
-          > l-icon:first-child .icon
-            width: 1.5rem
-            height: 2lh
-
-          .type
-            font-variant-caps: all-small-caps
-            text-decoration-line: underline
-
-          .details
-            display: flex
-            column-gap: 0.5em
-            flex-wrap: wrap
-            justify-content: space-between
-
-          div
-            grid-column: 2
-
-.hymns-new
-  .file
-    margin-bottom: var(--lh)
+    margin-bottom: calc(var(--lh) * 1.5)
+    scroll-margin-top: calc(var(--lh) * 1.5)
 
     @include font-crimson-pro-midsmall
 
     display: grid
-    grid-template-columns: max-content minmax(max-content, 1fr) minmax(auto, 50%)
+    grid-template-columns: max-content minmax(min-content, 1fr) fit-content(50%)
     align-items: baseline
     column-gap: 0.5ch
+
+    &:target
+      background: $bg-highlight
 
     dt
       grid-column: 1
@@ -967,9 +896,7 @@ l-music
       grid-column: 1 / span 2
 
       @include font-crimson-pro-regular
-      font-size: 1.4em
-      font-weight: 620
-      line-height: 1
+      font-weight: var(--font-weight-bold)
 
     dt.instance
       display: none
@@ -981,21 +908,29 @@ l-music
 
       .hymnal
         @include font-crimson-pro-midsmall-smallcaps
+        padding-right: 0.25ch
 
       .number
         @include font-crimson-pro-regular
-        font-size: 1.4em
-        font-weight: 620
+        font-size: 1.4rem
+        font-weight: var(--font-weight-bold)
         line-height: 1
 
     dt.firstline
       display: none
     dd.firstline
-      grid-row: 2 / span 5
+      grid-row: 2 / span 10
       grid-column: 3
       font-style: italic
       text-align: right
       text-wrap: balance
+
+    dd.arranger
+      //letter-spacing: 0
+
+    dd.file
+      a:not(:first-child)
+        @include font-crimson-pro-small
 
 l-icon
   white-space: nowrap

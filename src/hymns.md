@@ -10,19 +10,38 @@ to use, but if you’d like you can <a href="https://ko-fi.com/kalgynirae"
 target=_blank>support me on Ko-fi</a>. (You can also commission arrangements or
 recordings of specific hymns!)
 
-These are a few of my favorites:
-
-* [#537 *O church of God, built on a firm foundation*](#csh-537)
-* [#342 *This is the day the Lord hath made*](#csh-342)
-* [#573 *Shepherd, show me how to go*](#csh-573)
-* [#148 *In heavenly Love abiding*](#csh-148)
-
----
-
-<!--
-Filter by hymnal: <a>all</a> &nbsp; <span>Christian Science Hymnal</span> &nbsp; <span>Hymnal 1982</span> &nbsp; <span>ELW</span><br>
-Sort by: <a>hymn number</a> &nbsp; <span>tune name</span> &nbsp; <span>type</span>
--->
+<details class=hymn-controls open>
+  <summary>Filter & Sort</summary>
+  <form>
+    <dl class=grid>
+      <dt>Hymnal</dt>
+      <dd class=radio-row>
+        <label><input type=radio name=filter-hymnal value=all checked>All</label>
+        <label><input type=radio name=filter-hymnal value=csh>CSH</label>
+        <label><input type=radio name=filter-hymnal value="hymnal 1982">Hymnal 1982</label>
+        <label><input type=radio name=filter-hymnal value=elw>ELW</label>
+      </dd>
+      <dt>Type</dt>
+      <dd class=radio-row>
+        <label><input type=radio name=filter-type value=all checked>All</label>
+        <label><input type=radio name=filter-type value="full accompaniment">Full Accompaniment</label>
+        <label><input type=radio name=filter-type value="last verse">Last Verse</label>
+        <label><input type=radio name=filter-type value=other>Other</label>
+      </dd>
+      <dt>Instrument</dt>
+      <dd class=radio-row>
+        <label><input type=radio name=filter-instrument value=all checked>All</label>
+        <label><input type=radio name=filter-instrument value=organ>Organ</label>
+        <label><input type=radio name=filter-instrument value=piano>Piano</label>
+      </dd>
+      <dt>Sort by</dt>
+      <dd class=radio-row>
+        <label><input type=radio name=sort value=number checked>Hymn Number</label>
+        <label><input type=radio name=sort value=tune>Tune Name</label>
+      </dd>
+    </dl>
+  </form>
+</details>
 
 <div class=hymns>
 
@@ -33,7 +52,7 @@ Sort by: <a>hymn number</a> &nbsp; <span>tune name</span> &nbsp; <span>type</spa
     <span class=number>1</span>
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Be Thou, O God, exalted high</dd>
-  <dt class=type>Type</dt><dd class=type>Last Verse</dd>
+  <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
   <dt class=instrument>Instrument</dt><dd><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
@@ -929,3 +948,67 @@ Sort by: <a>hymn number</a> &nbsp; <span>tune name</span> &nbsp; <span>type</spa
 ## Solos
 
 * <a href="/files/hymns/amazing-grace.pdf">Amazing Grace (for tenor voice and organ)</a>
+
+
+<script>
+function hymnNumber(e) {
+  return parseInt(e.querySelector("span.number").textContent);
+}
+function hymnTune(e) {
+  return e.querySelector("dd.tune").textContent;
+}
+
+function updateHymns() {
+  const form = document.querySelector(".hymn-controls form");
+  var hymns = Array.from(document.querySelectorAll(".hymn").values());
+
+  var keyFunc;
+  switch (form.elements["sort"].value) {
+    case "number":
+      keyFunc = hymnNumber;
+      break;
+    case "tune":
+      keyFunc = hymnTune;
+      break;
+  }
+  hymns.sort((a, b) => {
+    const aKey = keyFunc(a);
+    const bKey = keyFunc(b);
+    if (aKey < bKey) return -1;
+    if (aKey == bKey) return 0;
+    return 1;
+  });
+  var i = 0;
+  hymns.forEach((e) => e.style.order = ++i);
+
+  hymns.forEach((e) => e.classList.add("hidden"));
+
+  const filterHymnal = form.elements["filter-hymnal"].value;
+  if (filterHymnal != "all") {
+    hymns = hymns.filter((e) => e.querySelectorAll(".hymnal").values().some((h) => h.textContent.toLowerCase() == filterHymnal));
+  }
+
+  const filterType = form.elements["filter-type"].value;
+  if (filterType == "all") {
+  } else if (filterType == "other") {
+    hymns = hymns.filter((e) => e.querySelectorAll(".type").values().every((h) => !["full accompaniment", "last verse"].includes(h.textContent.toLowerCase())));
+  } else {
+    hymns = hymns.filter((e) => e.querySelectorAll(".type").values().some((h) => h.textContent.toLowerCase() == filterType));
+  }
+  
+  const filterInstrument = form.elements["filter-instrument"].value;
+  if (filterInstrument != "all") {
+    hymns = hymns.filter((e) => e.querySelectorAll(".instrument").values().some((h) => h.textContent.trim().toLowerCase() == filterInstrument));
+  }
+  
+  hymns.forEach((e) => e.classList.remove("hidden"));
+}
+document.addEventListener("DOMContentLoaded", updateHymns);
+
+function initControls() {
+  document.querySelectorAll(".hymn-controls input").forEach(
+    (e) => e.addEventListener("change", updateHymns)
+  );
+}
+document.addEventListener("DOMContentLoaded", initControls);
+</script>

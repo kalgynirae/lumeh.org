@@ -18,8 +18,8 @@ recordings of specific hymns!)
       <dd class=radio-row>
         <label><input type=radio name=filter-hymnal value=all checked>All</label>
         <label><input type=radio name=filter-hymnal value=csh>CSH</label>
-        <label><input type=radio name=filter-hymnal value="hymnal 1982">Hymnal 1982</label>
         <label><input type=radio name=filter-hymnal value=elw>ELW</label>
+        <label><input type=radio name=filter-hymnal value="hymnal 1982">Hymnal 1982</label>
       </dd>
       <dt>Type</dt>
       <dd class=radio-row>
@@ -651,7 +651,7 @@ recordings of specific hymns!)
 </dl>
 
 <dl class=hymn id=csh-480>
-  <dt class=tune>Tune</dt><dd class=tune>-</dd>
+  <dt class=tune>Tune</dt><dd class="tune none">[no tune name]</dd>
   <dt class=instance>Instance</dt><dd class=instance>
     <span class=hymnal>CSH</span>
     <span class=number>480</span>

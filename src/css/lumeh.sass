@@ -134,8 +134,8 @@
   font-weight: 580
   letter-spacing: 0.03em
   word-spacing: 0.04ch
-  --font-weight-bold: 650
-  --font-weight-extrabold: 800
+  --font-weight-bold: 750
+  --font-weight-extrabold: 900
 @mixin font-crimson-pro-regular
   font-family: 'Crimson Pro', 'FreeSerif flat symbol only', Georgia, serif
   font-size: 1.1rem
@@ -157,8 +157,8 @@
   font-weight: 500
   letter-spacing: 0.01em
   word-spacing: 0.05ch
-  --font-weight-bold: 650
-  --font-weight-extrabold: 800
+  --font-weight-bold: 700
+  --font-weight-extrabold: 850
 
 @font-face
   font-family: 'FreeSerif flat symbol only'
@@ -913,6 +913,11 @@ l-music
 
       @include font-crimson-pro-regular
       font-weight: var(--font-weight-bold)
+
+      &.none
+        font-style: italic
+        @include font-crimson-pro-regular-smallcaps
+        font-weight: var(--font-weight-bold)
 
     dt.instance
       display: none

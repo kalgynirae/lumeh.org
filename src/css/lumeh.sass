@@ -150,6 +150,15 @@
   --font-weight-bold: 600
   --font-weight-extrabold: 750
   --lh: calc(1rem * 1.5)
+@mixin font-crimson-pro-regular-smallcaps
+  @include font-crimson-pro-regular
+  text-transform: uppercase
+  font-size: 0.78rem
+  font-weight: 500
+  letter-spacing: 0.01em
+  word-spacing: 0.05ch
+  --font-weight-bold: 650
+  --font-weight-extrabold: 800
 
 @font-face
   font-family: 'FreeSerif flat symbol only'
@@ -1191,3 +1200,11 @@ span.ref
       input
         margin: 0
         margin-right: 0.5ch
+
+.recent-updates
+  p
+    margin-bottom: 0
+
+  time
+    @include font-crimson-pro-regular-smallcaps
+    font-variant-numeric: tabular-nums

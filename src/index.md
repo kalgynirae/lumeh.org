@@ -115,44 +115,23 @@ diceButton.addEventListener("click", shuffleLinks);
 
 ## Recent updates
 
-<style>
-.recent-updates {
-  margin-bottom: var(--lh);
-
-  display: flex;
-  gap: 0.5rem;
-
-  > a {
-    flex: 1;
-
-    background: var(--color-bg-dark);
-    text-decoration-line: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-
-    strong {
-      display: block;
-      font-size: inherit;
-      font-weight: 650;
-      margin-bottom: 0;
-      text-decoration-line: underline;
-    }
-  }
-}
-</style>
 <div class=recent-updates>
-  <a href=/wiki/web/google-workspace-ads/>
-    <strong>Google Workspace Ads</strong>
-    <span>Find out how to disable them</span>
-  </a>
-  <a href=/projects/colorby/>
-    <strong>Colorby</strong>
-    <span>CLI for coloring interleaved logs (now on PyPI!)</span>
-  </a>
-  <a href=/wiki/audio/stop-adjusting-my-microphone/>
-    <strong>Stop adjusting my microphone!</strong>
-    <span>Put Chrome and Discord in their place</span>
-  </a>
+
+<p><time datetime=2026-09-13>2026-09-13</time></p>
+
+* [Recent updates](/#recent-updates) has been completely redesigned.
+  [Let us know](https://airtable.com/appopNVjvtXgt5gQQ/pagZqMmjT3MfIjFi3/form) what you think!
+* [Hymns](/hymns/) has been completely redesigned. The hymns can now be sorted and filtered.
+
+<p><time datetime=2026-09-08>2026-09-08</time></p>
+
+* Underline offset and thickness have been adjusted. Underlines now have a more consistent appearance across browsers.
+
+<p><time datetime=2026-09-06>2026-09-06</time></p>
+
+* Underlines have been added to most links so they are no longer distinguished by color alone.
+* [Poetry](/poetry/) has been moved to the navigation bar.
+
 </div>
 
 ## Miscellaneous

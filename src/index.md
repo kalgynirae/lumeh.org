@@ -119,18 +119,22 @@ diceButton.addEventListener("click", shuffleLinks);
 
 <p><time datetime=2026-09-13>2026-09-13</time></p>
 
-* [Recent updates](/#recent-updates) has been completely redesigned.
+* [Recent updates](/#recent-updates) was completely redesigned.
   [Let us know](https://airtable.com/appopNVjvtXgt5gQQ/pagZqMmjT3MfIjFi3/form) what you think!
-* [Hymns](/hymns/) has been completely redesigned. The hymns can now be sorted and filtered.
+* [Hymns](/hymns/) was completely redesigned. The hymns can now be sorted and filtered.
 
 <p><time datetime=2026-09-08>2026-09-08</time></p>
 
-* Underline offset and thickness have been adjusted. Underlines now have a more consistent appearance across browsers.
+* Underline offset and thickness were adjusted. Underlines now have a more consistent appearance across browsers.
 
 <p><time datetime=2026-09-06>2026-09-06</time></p>
 
-* Underlines have been added to most links so they are no longer distinguished by color alone.
-* [Poetry](/poetry/) has been moved to the navigation bar.
+* Underlines were added to most links so they are no longer distinguished by color alone.
+* [Poetry](/poetry/) was moved to the navigation bar.
+
+<p><time datetime=2026-08-23>2026-08-23</time></p>
+
+* [lumeh.org](/projects/lumeh.org/) was given a [new section](https://www.lumeh.org/projects/lumeh.org/#no-llms) clarifying that all parts of the site were created without assistance from LLMs.
 
 </div>
 

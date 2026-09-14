@@ -31,7 +31,7 @@ Here’s a short list of the tracks I like best:
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Trash Collector.mp3" src-flac="/files/music/Synthmaster Lumpy - Trash Collector.flac">
 
 *October 2025:* Soundtrack for
-[This Game Is Trash](https://ldjam.com/events/ludum-dare/58/this-game-is-trash).
+[This Game Is Trash](https://ldj.am/58/this-game-is-trash).
 
 </l-music>
 
@@ -40,7 +40,7 @@ Here’s a short list of the tracks I like best:
 <l-music src-mp3="/files/music/Synthmaster Lumpy - Orbital Aspirations.mp3" src-flac="/files/music/Synthmaster Lumpy - Orbital Aspirations.flac">
 
 *October 2025:* Soundtrack for
-[This Game Is Trash](https://ldjam.com/events/ludum-dare/58/this-game-is-trash).
+[This Game Is Trash](https://ldj.am/58/this-game-is-trash).
 
 </l-music>
 
@@ -53,7 +53,7 @@ Here’s a short list of the tracks I like best:
 <l-music src-ogg="/files/music/Synthmaster Lumpy - Let's Godot Swimming.ogg" src-flac="/files/music/Synthmaster Lumpy - Let's Godot Swimming.flac">
 
 *April 2021:* The soundtrack for
-[Pool Trouble](https://ldjam.com/events/ludum-dare/48/pool-trouble), a game I
+[Pool Trouble](https://ldj.am/48/pool-trouble), a game I
 made for Ludum Dare 48. The game is about getting to the deep end of a
 multi-story swimming pool, and I used the [Godot game engine] to build it.
 

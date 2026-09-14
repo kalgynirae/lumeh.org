@@ -17,9 +17,9 @@ recordings of specific hymns!)
       <dt>Hymnal</dt>
       <dd class=radio-row>
         <label><input type=radio name=filter-hymnal value=all checked>All</label>
-        <label><input type=radio name=filter-hymnal value=csh>CSH</label>
-        <label><input type=radio name=filter-hymnal value=elw>ELW</label>
-        <label><input type=radio name=filter-hymnal value="hymnal 1982">Hymnal 1982</label>
+        <label><input type=radio name=filter-hymnal value=csh>Christian Science Hymnal</label>
+        <label><input type=radio name=filter-hymnal value=elw>Evangelical Lutheran Worship</label>
+        <label><input type=radio name=filter-hymnal value="hymnal 1982">The Hymnal 1982</label>
       </dd>
       <dt>Type</dt>
       <dd class=radio-row>

@@ -814,7 +814,7 @@ recordings of specific hymns!)
     <a href="https://youtu.be/QicHGWM4huY?t=115"><l-icon name=fast-forward>1:55</l-icon></a>
   </dd>
   <dd class=file>
-    <a href="https://drive.google.com/file/d/1ihU0Gy0clUBdLaXbsARyTjz50b_TaNKU/view?usp=drive_link"><l-icon name=filetype-mp3>Recording (quieter voice)</l-icon></a>
+    <a href="https://drive.google.com/file/d/1ihU0Gy0clUBdLaXbsARyTjz50b_TaNKU/view?usp=drive_link"><l-icon name=filetype-mp3>Recording</l-icon> (quieter voice)</a>
   </dd>
 </dl>
 

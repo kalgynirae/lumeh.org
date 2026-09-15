@@ -873,14 +873,18 @@ l-music
 
 .hymns
   max-width: 30rem
-  margin: auto
-  margin-top: calc(var(--lh) * 1.5)
+  margin-block: var(--lh)
+  margin-inline: auto
 
   display: flex
   flex-direction: column
+  row-gap: var(--lh)
+
+  @media print
+    row-gap: calc(var(--lh) / 2)
 
   .hymn
-    margin-bottom: calc(var(--lh) * 1.5)
+    margin: 0
     scroll-margin-top: calc(var(--lh) * 1.5)
 
     @include font-crimson-pro-midsmall
@@ -952,6 +956,12 @@ l-music
     dd.file
       a:not(:first-child)
         @include font-crimson-pro-small
+
+    @media print
+      dt.files
+        display: none
+      dd.file
+        display: none
 
 l-icon
   white-space: nowrap
@@ -1173,6 +1183,11 @@ span.ref
   @include font-crimson-pro-midsmall
 
 .hymn-controls
+  display: none
+
+  @media print
+    display: none !important
+
   @include font-inter-regular
 
   background: $bg-dark

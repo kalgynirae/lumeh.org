@@ -4,11 +4,13 @@ title: Hymns
 
 # Hymns
 
-My arrangements are mostly for accompanying congregational singing on organ,
-but you’ll also find a few preludes and piano arrangements. All are free
-to use, but if you’d like you can <a href="https://ko-fi.com/kalgynirae"
-target=_blank>support me on Ko-fi</a>. (You can also commission arrangements or
-recordings of specific hymns!)
+Singing hymns should be fun and engaging, and most of my arrangements serve
+that purpose. The vast majority are written for organ, but I’m gradually adding
+piano versions.
+
+Everything on this page is **free to use**, but if you’d like you can
+<a href="https://ko-fi.com/kalgynirae" target=_blank>support me on Ko-fi</a>.
+You can also commission arrangements or recordings of specific hymns.
 
 <details class=hymn-controls open>
   <summary>Filter & Sort</summary>
@@ -36,8 +38,8 @@ recordings of specific hymns!)
       </dd>
       <dt>Sort by</dt>
       <dd class=radio-row>
-        <label><input type=radio name=sort value=number checked>Hymn Number</label>
-        <label><input type=radio name=sort value=tune>Tune Name</label>
+        <label><input type=radio name=sort value=tune checked>Tune Name</label>
+        <label><input type=radio name=sort value=number>Hymn Number</label>
       </dd>
     </dl>
   </form>
@@ -53,7 +55,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Be Thou, O God, exalted high</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -72,7 +74,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>All glory be to God most high</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F → G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -88,7 +90,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>All power is given unto our Lord</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -104,7 +106,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Fight the good fight with all thy might</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -120,7 +122,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Glory be to God on high</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -136,7 +138,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Glory, honor, praise and pure oblations</dd>
   <dt class=type>Type</dt><dd class=type>Prelude</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>A♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -152,7 +154,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>God comes, with succor speedy</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -168,8 +170,8 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>I love Thy way of freedom, Lord</dd>
   <dt class=type>Type</dt><dd class=type>Prelude</dd>
-  <dt class=arranger>Arranger</dt><dd class=arranger>Katherine Bellafiore Sanden</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=arranger>Arr.</dt><dd class=arranger>Katherine Bellafiore Sanden</dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>A♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -188,7 +190,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>I walk with Love along the way</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -209,7 +211,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>In heavenly Love abiding</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C → D♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -229,7 +231,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>It matters not what be thy lot</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -245,7 +247,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O daughter of Zion, awake from thy sadness</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -261,7 +263,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O do not bar your mind against the light of good</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>B♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -277,7 +279,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O God, our help in ages past</dd>
   <dt class=type>Type</dt><dd class=type>Prelude</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C → A</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -293,13 +295,14 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O may we be still and seek him</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
     <a href="https://lychee.lumeh.org/hymns/hymn237.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
   </dd>
-  <dt class=notes>Notes</dt><dd class=notes>Draft copy—needs to be re-typed</dd>
+  <dt class=note>Note</dt>
+  <dd class=note>Draft copy—needs to be re-typed</dd>
 </dl>
 
 <dl class=hymn id=csh-263>
@@ -310,7 +313,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Only God can bring us gladness</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -326,7 +329,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Onward, Christian soldiers</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -347,13 +350,14 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Our God is All in all</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
     <a href="https://lychee.lumeh.org/hymns/hymn267.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
   </dd>
-  <dt class=notes>Notes</dt><dd class=notes>Draft copy—needs to be re-typed</dd>
+  <dt class=note>Note</dt>
+  <dd class=note>Draft copy—needs to be re-typed</dd>
 </dl>
 
 <dl class=hymn id=csh-270>
@@ -364,7 +368,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Our God is Love, unchanging Love</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>e</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -380,15 +384,15 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Praise now creative Mind</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E → G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
     <a href="https://lychee.lumeh.org/hymns/hymn275 last verse.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
   </dd>
-  <dt class=notes>Notes</dt>
-  <dd class=notes><l-icon name=caution></l-icon>Modulates mid-verse</dd>
-  <dd class=notes>Draft copy—needs to be re-typed</dd>
+  <dt class=note>Note</dt>
+  <dd class=note><l-icon name=caution></l-icon>Modulates mid-verse</dd>
+  <dd class=note>Draft copy—needs to be re-typed</dd>
 </dl>
 
 <dl class=hymn id=csh-293>
@@ -399,7 +403,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Rock of Ages, Truth divine</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>A♭ → B♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -415,7 +419,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Saw ye my Saviour? Heard ye the glad sound?</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -431,7 +435,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Saw ye my Saviour? Heard ye the glad sound?</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -447,7 +451,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Take my life, and let it be consecrated, Lord, to Thee</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D♭ → E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -463,7 +467,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>This is the day the Lord hath made</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -483,7 +487,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Through the love of God our Saviour</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -499,7 +503,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>We thank Thee and we bless Thee</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>B♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -519,7 +523,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>What brightness dawned in resurrection</dd>
   <dt class=type>Type</dt><dd class=type>Prelude</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=files>Files</dt>
   <dd class=file>
     <a href="/files/hymns/381-prelude.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
@@ -537,7 +541,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Glory be to God on high</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -553,7 +557,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Prayer with our waking thought ascends</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -569,7 +573,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Joy to the world, the Lord is come</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -585,7 +589,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Come, O fount of every blessing</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -601,7 +605,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Eternal Mind the Potter is</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -620,7 +624,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Father, You are very near us</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C → D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -636,7 +640,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>From these Your children gathered in Your name</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭ → G♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -646,8 +650,8 @@ recordings of specific hymns!)
     <a href="https://youtu.be/3xyYV_axrno"><l-icon name=youtube>Recording</l-icon></a>
     <a href="https://youtu.be/3xyYV_axrno?t=166"><l-icon name=fast-forward>2:46</l-icon></a>
   </dd>
-  <dt class=notes>Notes</dt>
-  <dd class=notes><l-icon name=caution></l-icon>Modulates mid-verse</dd>
+  <dt class=note>Note</dt>
+  <dd class=note><l-icon name=caution></l-icon>Modulates mid-verse</dd>
 </dl>
 
 <dl class=hymn id=csh-480>
@@ -658,7 +662,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Glory be to God on high</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>b</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -677,7 +681,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>I am the Lord, there is none else</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -693,13 +697,14 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Lift up the door, the mighty gates</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
     <a href="https://lychee.lumeh.org/hymns/hymn522.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
   </dd>
-  <dt class=notes>Notes</dt><dd class=notes>Draft copy—needs to be re-typed</dd>
+  <dt class=note>Note</dt>
+  <dd class=note>Draft copy—needs to be re-typed</dd>
 </dl>
 
 <dl class=hymn id=csh-533>
@@ -710,7 +715,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>My life flows on in endless song</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F → G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -719,7 +724,8 @@ recordings of specific hymns!)
   <dd class=file>
     <a href="https://youtu.be/5AseVTiglGw"><l-icon name=youtube>Recording</l-icon></a>
   </dd>
-  <dd class=notes><l-icon name=caution></l-icon>Arranged in 3/4 (hymnal has 4/4)</dd>
+  <dt class=note>Note</dt>
+  <dd class=note>Arranged in 3/4 (hymnal has 4/4)</dd>
 </dl>
 
 <dl class=hymn id=csh-537>
@@ -730,7 +736,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O church of God, built on a firm foundation</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G → A♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -751,7 +757,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O gentle presence, peace and joy and power</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -770,7 +776,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>O, sometimes gleams upon our sight</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>c</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -786,7 +792,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Rise up and walk, take up your bed</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -802,7 +808,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Shepherd, show me how to go</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -826,7 +832,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Shepherd, show me how to go</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>D</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -842,7 +848,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>We are walking in the light of God</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F → G</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -862,7 +868,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>When peace, like a river... (It is well with my soul)</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -882,7 +888,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Who was that man in Galilee</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>B♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -902,7 +908,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>The church’s one foundation is Jesus Christ, her Lord</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>E♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -918,7 +924,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>Oh, sing to the Lord</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>e</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -934,7 +940,7 @@ recordings of specific hymns!)
   </dd>
   <dt class=firstline>First Line</dt><dd class=firstline>The day thou gavest, Lord, is ended</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
-  <dt class=instrument>Instrument</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>G → A♭</dd>
   <dt class=files>Files</dt>
   <dd class=file>
@@ -1009,6 +1015,7 @@ function initControls() {
   document.querySelectorAll(".hymn-controls input").forEach(
     (e) => e.addEventListener("change", updateHymns)
   );
+  document.querySelector(".hymn-controls").style.display = "block";
 }
 document.addEventListener("DOMContentLoaded", initControls);
 </script>

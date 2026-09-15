@@ -120,7 +120,7 @@ diceButton.addEventListener("click", shuffleLinks);
 <p><time datetime=2026-09-13>2026-09-13</time></p>
 
 * [Recent updates](/#recent-updates) was completely redesigned.
-  [Let us know](https://airtable.com/appopNVjvtXgt5gQQ/pagZqMmjT3MfIjFi3/form) what you think!
+  [Let me know](https://airtable.com/appopNVjvtXgt5gQQ/pagZqMmjT3MfIjFi3/form) what you think!
 * [Hymns](/hymns/) was completely redesigned. The hymns can now be sorted and filtered.
 
 <p><time datetime=2026-09-08>2026-09-08</time></p>

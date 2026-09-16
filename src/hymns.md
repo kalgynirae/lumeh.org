@@ -342,6 +342,22 @@ You can also commission arrangements or recordings of specific hymns.
   </dd>
 </dl>
 
+<dl class=hymn id=csh-264>
+  <dt class=tune>Tune</dt><dd class=tune>ST. GERTRUDE</dd>
+  <dt class=instance>Instance</dt><dd class=instance>
+    <span class=hymnal>CSH</span>
+    <span class=number>264</span>
+  </dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>Onward, Christian soldiers</dd>
+  <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
+  <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=piano>Piano</l-icon></dd>
+  <dt class=key>Key</dt><dd class=key>E♭</dd>
+  <dt class=files>Files</dt>
+  <dd class=file>
+    <a href="/files/hymns/264-piano.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+  </dd>
+</dl>
+
 <dl class=hymn id=csh-267>
   <dt class=tune>Tune</dt><dd class=tune>MOSELEY</dd>
   <dt class=instance>Instance</dt><dd class=instance>

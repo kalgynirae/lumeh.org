@@ -30,6 +30,7 @@
 /files/hymns/200.pdf
 /files/hymns/201.pdf
 /files/hymns/263.pdf
+/files/hymns/264-piano.pdf
 /files/hymns/264.pdf
 /files/hymns/270.pdf
 /files/hymns/293.pdf

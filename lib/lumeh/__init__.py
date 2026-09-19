@@ -262,6 +262,7 @@ def build():
                         "quiche.md",
                         "salmon_pate.md",
                         "shortbread_cookies.md",
+                        "smores_tart.mex",
                         "spiced_spinach.md",
                         "sweet_potato_casserole.md",
                         "thai_chicken_curry.md",

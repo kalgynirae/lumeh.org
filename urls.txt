@@ -395,6 +395,7 @@
 /recipes/quiche.html
 /recipes/salmon-pate
 /recipes/shortbread-cookies
+/recipes/smores-tart
 /recipes/spiced-spinach
 /recipes/sweet-potato-casserole
 /recipes/sweet_potato_casserole.html

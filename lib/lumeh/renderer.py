@@ -79,7 +79,10 @@ AMOUNT_RE = re.compile(
             (?P<mixednumber>
                 \\d+\\ \\d+[/\N{FRACTION SLASH}]\\d+
             ) | (?P<number>
-                \\d+(:?[\\./\N{FRACTION SLASH}]\\d+)?
+                (:?
+                    \\d+(:?[\\./\N{FRACTION SLASH}]\\d+)? |
+                    \\?
+                )
             )
         )
         (

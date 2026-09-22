@@ -348,6 +348,7 @@
 /recipes/asparagus_mushroom_soup.html
 /recipes/banana-bread
 /recipes/banana_bread.html
+/recipes/beans-by-colin
 /recipes/bettys-chili
 /recipes/bettys_chili.html
 /recipes/calico-beans

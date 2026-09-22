@@ -236,6 +236,7 @@ def build():
                         "apple_crisp.md",
                         "asparagus_mushroom_soup.md",
                         "banana_bread.md",
+                        "beans_by_colin.mex",
                         "bettys_chili.md",
                         "calico_beans.md",
                         "chana_masala.md",

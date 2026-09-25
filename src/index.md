@@ -116,6 +116,30 @@ diceButton.addEventListener("click", shuffleLinks);
 ## Recent updates
 
 <div class=recent-updates>
+<div class=recent-hymns-recipes>
+<h3>Hymns</h3>
+
+<p><time datetime=2026-09-15>2026-09-15</time></p>
+
+* New: [CSH #264 piano version](/hymns/#csh-264-piano)
+
+<p><time datetime=2026-09-13>2026-09-13</time></p>
+
+* New: [CSH #573 piano version](/hymns/#csh-573-piano)
+
+<p><time datetime=2026-09-10>2026-09-10</time></p>
+
+* New: [Hymnal 1982 #24](/hymns/#eh1982-24)
+
+<h3>Recipes</h3>
+
+<p><time datetime=2026-09-21>2026-09-21</time></p>
+
+* New: [Beans by Colin](/recipes/beans-by-colin/)
+
+</div>
+<div class=recent-changelog>
+<h3>Changelog</h3>
 
 <p><time datetime=2026-09-13>2026-09-13</time></p>
 
@@ -136,6 +160,7 @@ diceButton.addEventListener("click", shuffleLinks);
 
 * [lumeh.org](/projects/lumeh.org/) was given a [new section](https://www.lumeh.org/projects/lumeh.org/#no-llms) clarifying that all parts of the site were created without assistance from LLMs.
 
+</div>
 </div>
 
 ## Miscellaneous

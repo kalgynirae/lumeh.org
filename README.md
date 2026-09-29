@@ -1,7 +1,7 @@
 # lumeh.org
 
-[**lumeh.org**] is Colin Chan’s personal website. It is built using a custom static site generator
-called *Websleydale*. It uses neither [cookies](#cookies) nor [LLMs](#no-llms).
+[**lumeh.org**] is Colin Chan’s personal website. I build it using a custom static site generator
+called *Websleydale*. It uses no [cookies](#cookies) and collects only anonymous [usage data](#site-usage), which is publicly viewable. Everything related to the site I make [by hand](#made-by-hand).
 
 [**lumeh.org**]: https://www.lumeh.org/
 
@@ -44,9 +44,11 @@ doesn’t handle redirects, so a few links will lead to 404s.
 
 [Berkeley Mono]: https://usgraphics.com/products/berkeley-mono
 
-### No LLMs
+### Made by hand
 
-All parts of lumeh.org—code, prose, audio, graphics, etc.—were created by humans without assistance from LLMs. Some of these humans (notably Colin) have a preexisting fondness for em dashes and will continue to use them despite their recent stigma.
+All parts of lumeh.org—design, code, prose, music, graphics—are, and will always be, created by humans without assistance from [LLMs]. I impose this constraint primarily because I find great personal satisfaction in building and maintaining these skills and secondarily because I believe modern models have been trained unethically (due to their consumption of people’s copyrighted work without permission or compensation).
+
+[LLMs]: https://en.wikipedia.org/wiki/Large_language_model
 
 ## Data & privacy
 

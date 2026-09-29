@@ -151,15 +151,6 @@ diceButton.addEventListener("click", shuffleLinks);
 
 * Underline offset and thickness were adjusted. Underlines now have a more consistent appearance across browsers.
 
-<p><time datetime=2026-09-06>2026-09-06</time></p>
-
-* Underlines were added to most links so they are no longer distinguished by color alone.
-* [Poetry](/poetry/) was moved to the navigation bar.
-
-<p><time datetime=2026-08-23>2026-08-23</time></p>
-
-* [lumeh.org](/projects/lumeh.org/) was given a [new section](https://www.lumeh.org/projects/lumeh.org/#no-llms) clarifying that all parts of the site were created without assistance from LLMs.
-
 </div>
 </div>
 

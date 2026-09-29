@@ -119,6 +119,10 @@ diceButton.addEventListener("click", shuffleLinks);
 <div class=recent-hymns-recipes>
 <h3>Hymns</h3>
 
+<p><time datetime=2026-09-28>2026-09-28</time></p>
+
+* Updated: [CSH #237](/hymns/#csh-237)
+
 <p><time datetime=2026-09-15>2026-09-15</time></p>
 
 * New: [CSH #264 piano version](/hymns/#csh-264-piano)
@@ -126,10 +130,6 @@ diceButton.addEventListener("click", shuffleLinks);
 <p><time datetime=2026-09-13>2026-09-13</time></p>
 
 * New: [CSH #573 piano version](/hymns/#csh-573-piano)
-
-<p><time datetime=2026-09-10>2026-09-10</time></p>
-
-* New: [Hymnal 1982 #24](/hymns/#eh1982-24)
 
 <h3>Recipes</h3>
 

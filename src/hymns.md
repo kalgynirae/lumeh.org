@@ -299,10 +299,8 @@ You can also commission arrangements or recordings of specific hymns.
   <dt class=key>Key</dt><dd class=key>F</dd>
   <dt class=files>Files</dt>
   <dd class=file>
-    <a href="https://lychee.lumeh.org/hymns/hymn237.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
+    <a href="/files/hymns/237.pdf"><l-icon name=pdf>Sheet Music</l-icon></a>
   </dd>
-  <dt class=note>Note</dt>
-  <dd class=note>Draft copy—needs to be re-typed</dd>
 </dl>
 
 <dl class=hymn id=csh-263>

@@ -340,7 +340,7 @@ You can also commission arrangements or recordings of specific hymns.
   </dd>
 </dl>
 
-<dl class=hymn id=csh-264>
+<dl class=hymn id=csh-264-piano>
   <dt class=tune>Tune</dt><dd class=tune>ST. GERTRUDE</dd>
   <dt class=instance>Instance</dt><dd class=instance>
     <span class=hymnal>CSH</span>
@@ -727,7 +727,7 @@ You can also commission arrangements or recordings of specific hymns.
     <span class=hymnal>CSH</span>
     <span class=number>533</span>
   </dd>
-  <dt class=firstline>First Line</dt><dd class=firstline>My life flows on in endless song</dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>My life flows on in endless song… (How can I keep from singing?)</dd>
   <dt class=type>Type</dt><dd class=type>Full Accompaniment</dd>
   <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>F → G</dd>
@@ -880,7 +880,7 @@ You can also commission arrangements or recordings of specific hymns.
     <span class=hymnal>CSH</span>
     <span class=number>596</span>
   </dd>
-  <dt class=firstline>First Line</dt><dd class=firstline>When peace, like a river... (It is well with my soul)</dd>
+  <dt class=firstline>First Line</dt><dd class=firstline>When peace, like a river… (It is well with my soul)</dd>
   <dt class=type>Type</dt><dd class=type>Last Verse</dd>
   <dt class=instrument>Inst.</dt><dd class=instrument><l-icon name=organ>Organ</l-icon></dd>
   <dt class=key>Key</dt><dd class=key>C</dd>

@@ -117,6 +117,12 @@ diceButton.addEventListener("click", shuffleLinks);
 
 <div class=recent-updates>
 <div class=recent-hymns-recipes>
+<h3>Music</h3>
+
+<p><time datetime=2026-10-19>2026-10-19</time></p>
+
+* New: [Web Designering](/music/#web-designering)
+
 <h3>Hymns</h3>
 
 <p><time datetime=2026-09-28>2026-09-28</time></p>

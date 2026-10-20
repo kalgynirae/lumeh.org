@@ -23,6 +23,20 @@ Here’s a short list of the tracks I like best:
 
 <br>
 
+
+## 2026
+
+
+### Web Designering
+
+<l-music src-mp3="/files/music/Synthmaster Lumpy - Web Designering.mp3" src-flac="/files/music/Synthmaster Lumpy - Web Designering.flac">
+
+*October 2026:* Soundtrack for
+[MyKoolHomePage.com](https://ldjam.com/events/ludum-dare/60/mykoolhomepage-com).
+
+</l-music>
+
+
 ## 2025
 
 

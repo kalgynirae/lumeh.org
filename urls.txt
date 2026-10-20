@@ -184,6 +184,8 @@
 /files/music/Synthmaster Lumpy - Ultimate Banana Landscape.ogg
 /files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).mp3
 /files/music/Synthmaster Lumpy - Walkin' Lucas (He's a Fish).ogg
+/files/music/Synthmaster Lumpy - Web Designering.flac
+/files/music/Synthmaster Lumpy - Web Designering.mp3
 /files/music/Synthmaster Lumpy - Windmills... in Space!.flac
 /files/music/Synthmaster Lumpy - Windmills... in Space!.ogg
 /files/music/Synthmaster Lumpy - You're a Hero (Instrumental).flac
